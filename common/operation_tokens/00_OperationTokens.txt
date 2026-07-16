@@ -45,7 +45,7 @@ token_resistance_contacts = {
 	text_icon = GFX_text_contact_resistance_token
 	
 	intel_source = army
-	intel_gain = 5
+	intel_gain = 10 # WAS 5 - HOR
 	
 	# TODO: should we boost resistance growth?
 }
@@ -57,7 +57,7 @@ token_friendly_airforce = { # HOR
 	text_icon = GFX_text_infiltrate_air_token
 	
 	intel_source = airforce
-	intel_gain = 100
+	intel_gain = 200
 }
 
 token_friendly_army = { # HOR
@@ -67,7 +67,7 @@ token_friendly_army = { # HOR
 	text_icon = GFX_text_infiltrate_army_token
 	
 	intel_source = army
-	intel_gain = 100
+	intel_gain = 200
 }
 
 token_friendly_civilian = { # HOR
@@ -77,7 +77,7 @@ token_friendly_civilian = { # HOR
 	text_icon = GFX_text_infiltrate_civilian_token
 	
 	intel_source = civilian
-	intel_gain = 100
+	intel_gain = 200
 }
 
 token_friendly_navy = { # HOR
@@ -87,5 +87,5 @@ token_friendly_navy = { # HOR
 	text_icon = GFX_text_infiltrate_navy_token
 	
 	intel_source = navy
-	intel_gain = 100
+	intel_gain = 200
 }

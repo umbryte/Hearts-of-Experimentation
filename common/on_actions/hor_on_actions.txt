@@ -1,965 +1,265 @@
 on_actions = {
 
+	on_weekly = {
+		effect = {
+			every_country = {
+				for_each_scope_loop = {
+					array = THIS.CIVILIAN
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_civilian } }
+					}
+				}
+				for_each_scope_loop = {
+					array = THIS.ARMY
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_army } }
+					}
+				}
+				for_each_scope_loop = {
+					array = THIS.AIR
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_airforce } }
+					}
+				}
+				for_each_scope_loop = {
+					array = THIS.NAVY
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_navy } }
+					}
+				}
+				for_each_scope_loop = {
+					array = THIS.RESISTANCE
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_resistance_contacts } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_resistance_contacts } }
+					}
+				}
+			}
+		}
+
+		effect = {
+			for_each_scope_loop = {
+				array = GER.faction_friendly_intel
+				for_each_scope_loop = {
+					array = JAP.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = JAP.faction_friendly_intel
+				for_each_scope_loop = {
+					array = GER.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = ENG.faction_friendly_intel
+				for_each_scope_loop = {
+					array = SOV.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = SOV.faction_friendly_intel
+				for_each_scope_loop = {
+					array = ENG.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+		}
+	}
+
 	on_startup = {
 		effect = {
+			for_each_scope_loop = {
+				array = ENG.faction_friendly_intel
+				for_each_scope_loop = {
+					array = SOV.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = SOV.faction_friendly_intel
+				for_each_scope_loop = {
+					array = ENG.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = GER.faction_friendly_intel
+				for_each_scope_loop = {
+					array = JAP.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = JAP.faction_friendly_intel
+				for_each_scope_loop = {
+					array = GER.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+		}
+	}
 
-			### GEACPS FRIENDLY INTEL ON AXIS (AND SIAM) ###
+	on_startup = {
+		effect = {
+			## ALLIES ##
+			ENG = { add_to_array = { ENG.faction_friendly_intel = USA } }
+			ENG = { add_to_array = { ENG.faction_friendly_intel = ENG } }
+			ENG = { add_to_array = { ENG.faction_friendly_intel = FRA } }
+			ENG = { add_to_array = { ENG.faction_friendly_intel = CAN } }
+			ENG = { add_to_array = { ENG.faction_friendly_intel = RAJ } }
+			ENG = { add_to_array = { ENG.faction_friendly_intel = AST } }
+			ENG = { add_to_array = { ENG.faction_friendly_intel = NZL } }
+			ENG = { add_to_array = { ENG.faction_friendly_intel = SAF } }
+			ENG = { add_to_array = { ENG.faction_friendly_intel = MEX } }
+			ENG = { add_to_array = { ENG.faction_friendly_intel = BRA } }
+			ENG = { add_to_array = { ENG.faction_friendly_intel = PHI } }
 
-			JAP = {
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
-			MAN = {
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
-			SIA = {
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = GER
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = ITA
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = HUN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = ROM
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = BUL
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = FIN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SPR
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = VIC
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = YUG
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_navy
-				}
-			}
-	
-			### AXIS FRIENDLY INTEL ON GEACPS ###
+			## COMINTERN ##
+			SOV = { add_to_array = { SOV.faction_friendly_intel = SOV } }
+			SOV = { add_to_array = { SOV.faction_friendly_intel = MON } }
 
-			GER = {
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
-			ITA = {
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
-			HUN = {
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
-			ROM = {
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
-			BUL = {
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
-			FIN = {
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
-			SPR = {
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
-			VIC = {
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
-			YUG = {
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = JAP
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = MAN
-					token = token_friendly_navy
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_airforce
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_army
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_civilian
-				}
-				add_operation_token = {
-					tag = SIA
-					token = token_friendly_navy
-				}
-			}
+			## AXIS ##
+			GER = { add_to_array = { GER.faction_friendly_intel = GER } }
+			GER = { add_to_array = { GER.faction_friendly_intel = ITA } }
+			GER = { add_to_array = { GER.faction_friendly_intel = HUN } }
+			GER = { add_to_array = { GER.faction_friendly_intel = ROM } }
+			GER = { add_to_array = { GER.faction_friendly_intel = BUL } }
+			GER = { add_to_array = { GER.faction_friendly_intel = FIN } }
+			GER = { add_to_array = { GER.faction_friendly_intel = SPA } }
+			GER = { add_to_array = { GER.faction_friendly_intel = VIC } }
+			GER = { add_to_array = { GER.faction_friendly_intel = YUG } }
+
+			## GEACPS ##
+			JAP = { add_to_array = { JAP.faction_friendly_intel = JAP } }
+			JAP = { add_to_array = { JAP.faction_friendly_intel = MAN } }
+			JAP = { add_to_array = { JAP.faction_friendly_intel = SIA } }
 		}
 	}
 	
