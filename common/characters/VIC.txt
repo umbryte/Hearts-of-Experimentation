@@ -1,0 +1,17 @@
+characters={
+	VIC_philippe_petain={
+		name=VIC_philippe_petain
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_philippe_petain
+			}
+		}
+		country_leader={
+			ideology = gen_nazism
+			traits = {
+			}
+			expire = "1965.1.1.1"
+			id = -1
+		}	
+	}
+}

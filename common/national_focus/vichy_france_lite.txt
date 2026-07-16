@@ -1,0 +1,32 @@
+﻿focus_tree = {
+	id = vichy_french_lite_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 400
+			tag = VIC
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = VIC_hearts_of_retardation
+		icon = GFX_focus_generic_annex_country_2
+
+		x = 0
+		y = 0
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			load_focus_tree = generic_focus
+		}
+	}
+}

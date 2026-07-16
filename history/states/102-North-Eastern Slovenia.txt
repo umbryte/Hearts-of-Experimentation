@@ -1,0 +1,27 @@
+state=
+{
+	id=102
+	name="STATE_102"
+	manpower = 745000 # WAS 811050 - HOR # was 1144300 before Ljubljana split
+	
+	state_category = large_town
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1 # HOR
+		}
+		victory_points = {
+			665 1
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+	}
+	provinces={
+		596 665 3631 3654 9596 # USED TO HAVE 6672 BEFORE IT GOT MOVED TO 1059 - PREKMURJE - HOR
+	}
+	
+	local_supplies=0.0 
+}

@@ -1,0 +1,128 @@
+YUG_historical = {
+	name = "Yugoslavian historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = YUG
+		has_dlc = "Death or Dishonor"
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = YUG_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = YUG_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = YUG_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+
+		# 1936
+		YUG_western_focus
+		YUG_friendship_treaty_with_italy
+		YUG_attract_allied_capital
+		YUG_attract_axis_capital
+		YUG_evolution
+		YUG_establish_the_banovina_of_croatia
+		YUG_slovenia_for_support
+		YUG_surrender_macedonia
+		YUG_invite_german_military_mission
+		YUG_join_axis
+		
+		# 1937
+		YUG_surrender_italian_claims
+		YUG_local_militias
+		YUG_all_yugoslavian_regiments
+		YUG_invite_italian_naval_experts
+		YUG_brigadistas
+		YUG_industrialization_program
+		YUG_expand_the_mining_industry
+		YUG_develop_civilian_industry
+		YUG_expand_the_university_of_zagreb
+		YUG_improve_serbian_rail_network
+		
+		# 1938
+		YUG_improve_light_industry
+		YUG_serbian_steel
+		YUG_expand_the_university_of_belgrad
+		YUG_central_management
+		YUG_expand_the_sarajevo_arsenals
+		YUG_army_modernization
+		YUG_army_maneuvers
+		YUG_supremacy_of_defense
+		YUG_artillery_regiments
+		YUG_small_arms
+		
+		# 1939
+		YUG_domestic_artillery_production
+		YUG_anti_tank_defenses
+		YUG_mountain_brigades
+		YUG_independent_engineer_regiments
+		YUG_motorized_recon_companies
+		YUG_form_parachute_battalions
+		YUG_motorize_the_cavalry
+		YUG_motorized_logistics
+		YUG_armored_cavalry
+		YUG_tank_conversions
+		
+		# 1940
+		YUG_tank_licenses
+		YUG_modernize_the_air_force
+		YUG_purchase_foreign
+		YUG_license_production
+		YUG_fighter_license
+		YUG_expand_the_serbian_shipyards
+		YUG_coastal_defense
+		YUG_naval_bombers
+		YUG_modern_destroyers
+		YUG_expand_the_submarine_fleet
+	}
+	
+	#Focuses never to take
+	focus_factors = {
+		YUG_war_on_bulgaria = 0
+		YUG_greater_yugoslavia = 0
+	}
+	
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

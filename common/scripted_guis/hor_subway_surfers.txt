@@ -1,0 +1,60 @@
+scripted_gui = {
+
+	hor_subway_surfers_toggle_button = {
+		context_type = player_context
+
+		window_name = "hor_subway_surfers_toggle_button"
+
+		ai_enabled = { always = no }
+
+		visible = {
+			always = yes
+		}
+
+		effects = { 
+			hor_subway_surfers_toggle_button_click = {
+				if = {
+					limit = { ROOT = { NOT = { has_country_flag = hor_subway_surfers_enabled } } }
+					ROOT = { set_country_flag = hor_subway_surfers_enabled }
+				}
+				else = {
+					ROOT = { clr_country_flag = hor_subway_surfers_enabled }
+				}
+			}
+		}
+
+		triggers = {
+			hor_subway_surfers_toggle_button_click_enabled = {
+				always = yes
+			}
+		}		
+	}
+
+	hor_subway_surfers_background = {
+		context_type = player_context
+		
+		window_name = "hor_subway_surfers_background"
+
+		ai_enabled = { always = no }
+
+		visible = {
+			ROOT = {
+				has_country_flag = hor_subway_surfers_enabled
+			}
+		}	
+
+		hor_subway_surfers_video = {
+			context_type = player_context
+		
+			window_name = "hor_subway_surfers_video"
+
+			ai_enabled = { always = no }
+
+				visible = {
+					ROOT = {
+						has_country_flag = hor_subway_surfers_enabled
+					}
+				}	
+		}
+	}
+}

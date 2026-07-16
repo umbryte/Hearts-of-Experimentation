@@ -1,0 +1,19 @@
+state=
+{
+	id=767
+	name="STATE_767" # North Darfur
+	manpower = 1
+	
+	state_category = wasteland
+	impassable = yes
+	
+	provinces={
+		7987 8103 10900
+	}
+
+	history = {
+		owner = CNT
+	}
+
+	local_supplies=0.0 
+}

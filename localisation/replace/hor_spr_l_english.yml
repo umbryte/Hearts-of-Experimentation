@@ -1,0 +1,25 @@
+﻿l_english:
+
+# SPAIN STUFF
+
+ # TOOLTIPS
+ SPA_gain_cores_tt: "§Y[ROOT.GetNameWithFlag]§! will get cores on §Rall§! of it's §OSpanish§! land!"
+
+ # IDEAS
+ SPA_spanish_civil_war_commitments_ALT:0 "Spanish Civil War Commitments"
+ SPA_spanish_neutrality:0 "Spanish Neutrality"
+ SPA_spanish_neutrality_desc:0 "Spain has chosen to remain neutral in the global conflict. While this limits diplomatic options, it allows the nation to focus on internal recovery and avoid entanglement in foreign wars."
+ SPA_spanish_neutrality2:0 "Spanish Neutrality"
+ SPA_spanish_neutrality2_desc:0 "Spain has chosen to remain neutral in the global conflict. While this limits diplomatic options, it allows the nation to focus on internal recovery and avoid entanglement in foreign wars."
+ SPA_hor_spfv: "Spanish Special Forces Volunteers"
+ SPA_hor_spfv_desc: "Allows you to send infinite volunteers to the Axis as well as make infinite special forces divisons."
+ 
+ # FOCUSES
+ SPA_join_axis:0 "Join The Axis"
+ SPA_join_axis_desc:0 "With Europe engulfed in total war, it is time for Spain to choose a side. By aligning with the Axis, we will reclaim our rightful place on the world stage and pursue a new imperial destiny alongside Germany and Italy."
+ SPA_secure_portugal_resources:0 "Secure The Portuguese Resources"
+ SPA_secure_portugal_resources_desc:0 "Though we remain neutral, Spain must ensure access to vital resources. Through diplomacy and pressure, we will secure rights to Portuguese resource exports—strengthening our economy without firing a shot."
+ SPA_absorb_the_portuguese_empire:0 "Absorb Portugal"
+ SPA_absorb_the_portuguese_empire_desc:0 "Spain and Portugal have long shared history, blood, and land. It is time to end the division of Iberia and restore it under a single, united banner. The peninsula belongs to Spain — by right, by history, and by destiny."
+ SPA_neutrality:0 "Retain Spanish Neutrality"
+ SPA_neutrality_desc:0 "Spain will not bleed for foreign ambitions. Our destiny lies not in alliances, but in preserving peace, order, and strength at home."

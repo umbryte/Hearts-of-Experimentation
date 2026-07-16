@@ -1,0 +1,116 @@
+### IDEAS ### 
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_ROM_german_trade_treaty"
+		texturefile = "gfx/interface/ideas/ROM_german_trade_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_ford"
+		texturefile = "gfx/interface/ideas/USA_ford.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_expanded_OSS"
+		texturefile = "gfx/interface/ideas/expanded_OSS.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_imperial_metallurgy"
+		texturefile = "gfx/interface/ideas/imperial_metallurgy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_geacps_trade_spirit1"
+		texturefile = "gfx/interface/ideas/idea_geacps_trade_spirit1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_geacps_trade_spirit2"
+		texturefile = "gfx/interface/ideas/idea_geacps_trade_spirit2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_geacps_trade_spirit3"
+		texturefile = "gfx/interface/ideas/idea_geacps_trade_spirit3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_geacps_trade_spirit4"
+		texturefile = "gfx/interface/ideas/idea_geacps_trade_spirit4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_geacps_trade_spirit"
+		texturefile = "gfx/interface/ideas/idea_geacps_trade_spirit.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_soviet_forts"
+		texturefile = "gfx/interface/ideas/idea_soviet_forts.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_japanese_autarky"
+		texturefile = "gfx/interface/ideas/idea_japanese_autarky.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SPA_spanish_neutrality2"
+		texturefile = "gfx/interface/ideas/ideas_SPA_spanish_neutrality2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SPA_spanish_neutrality"
+		texturefile = "gfx/interface/ideas/ideas_SPA_spanish_neutrality.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_usa_neutral"
+		texturefile = "gfx/interface/ideas/ideas_usa_neutral.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hor_tora_tora_tora"
+		texturefile = "gfx/interface/ideas/hor_tora_tora_tora.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_raf_efficencies"
+		texturefile = "gfx/interface/ideas/idea_raf_efficencies.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_SAVE_UK"
+		texturefile = "gfx/interface/decisions/decision_USA_SAVE_UK.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_hor_usa_icon"
+		texturefile = "gfx/interface/decisions/decision_category_hor_usa_icon.dds"
+	}
+	spriteType  = {
+		name = "GFX_idea_jap_island_hopping"
+		texturefile = "gfx/interface/ideas/ideas_jap_island_hopping.dds"
+	}
+	spriteType  = {
+		name = "GFX_idea_usa_island_hopping"
+		texturefile = "gfx/interface/ideas/ideas_usa_island_hopping.dds"
+	}
+	spriteType = {
+		name = "GFX_adjuster_snow_bg"
+		texturefile = "gfx/interface/snow_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SPA_hor_spfv"
+		texturefile = "gfx/interface/ideas/idea_SPA_hor_spfv.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_ITA_hor_mare_nostrum"
+		texturefile = "gfx/interface/ideas/idea_ITA_hor_mare_nostrum.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ger_ita_trade"
+		texturefile = "gfx/interface/ideas/ger_ita_trade.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ita_ger_trade"
+		texturefile = "gfx/interface/ideas/ger_ita_trade.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ger_jap_trade"
+		texturefile = "gfx/interface/ideas/ger_jap_trade.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_jap_ger_trade"
+		texturefile = "gfx/interface/ideas/ger_jap_trade.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_neutrality_idea2"
+		texturefile = "gfx/interface/ideas/neutrality_idea.dds"
+	}	
+}

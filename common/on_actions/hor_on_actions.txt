@@ -1,0 +1,3723 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+
+			### GEACPS FRIENDLY INTEL ON AXIS (AND SIAM) ###
+
+			JAP = {
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+			MAN = {
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+			SIA = {
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = GER
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = ITA
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = HUN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = ROM
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = BUL
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = FIN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SPR
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = VIC
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = YUG
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_navy
+				}
+			}
+	
+			### AXIS FRIENDLY INTEL ON GEACPS ###
+
+			GER = {
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+			ITA = {
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+			HUN = {
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+			ROM = {
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+			BUL = {
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+			FIN = {
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+			SPR = {
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+			VIC = {
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+			YUG = {
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = JAP
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = MAN
+					token = token_friendly_navy
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_airforce
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_army
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_civilian
+				}
+				add_operation_token = {
+					tag = SIA
+					token = token_friendly_navy
+				}
+			}
+		}
+	}
+	
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = GER
+					}
+				}
+				GER = { set_cosmetic_tag = TRANS_REPUBLIC }
+				GER = { set_country_flag = trans_flag } # HAHAHahaha, trans...FLAG. Get it? Flag as in like an actual flag...tough crowd.
+
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = SOV
+					}
+				}
+				SOV = { set_cosmetic_tag = TRANS_REPUBLIC }
+				SOV = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = USA
+					}
+				}
+				USA = { set_cosmetic_tag = TRANS_REPUBLIC }
+				USA = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = ENG
+					}
+				}
+				ENG = { set_cosmetic_tag = TRANS_REPUBLIC }
+				ENG = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = FRA
+					}
+				}
+				FRA = { set_cosmetic_tag = TRANS_REPUBLIC }
+				FRA = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = ITA
+					}
+				}
+				ITA = { set_cosmetic_tag = TRANS_REPUBLIC }
+				ITA = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = JAP
+					}
+				}
+				JAP = { set_cosmetic_tag = TRANS_REPUBLIC }
+				JAP = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = HUN
+					}
+				}
+				HUN = { set_cosmetic_tag = TRANS_REPUBLIC }
+				HUN = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = ROM
+					}
+				}
+				ROM = { set_cosmetic_tag = TRANS_REPUBLIC }
+				ROM = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = BUL
+					}
+				}
+				BUL = { set_cosmetic_tag = TRANS_REPUBLIC }
+				BUL = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = FIN
+					}
+				}
+				FIN = { set_cosmetic_tag = TRANS_REPUBLIC }
+				FIN = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = SPR
+					}
+				}
+				SPR = { set_cosmetic_tag = TRANS_REPUBLIC }
+				SPR = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = YUG
+					}
+				}
+				YUG = { set_cosmetic_tag = TRANS_REPUBLIC }
+				YUG = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = VIC
+					}
+				}
+				VIC = { set_cosmetic_tag = TRANS_REPUBLIC }
+				VIC = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = MAN
+					}
+				}
+				MAN = { set_cosmetic_tag = TRANS_REPUBLIC }
+				MAN = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = SIA
+					}
+				}
+				SIA = { set_cosmetic_tag = TRANS_REPUBLIC }
+				SIA = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = CAN
+					}
+				}
+				CAN = { set_cosmetic_tag = TRANS_REPUBLIC }
+				CAN = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = RAJ
+					}
+				}
+				RAJ = { set_cosmetic_tag = TRANS_REPUBLIC }
+				RAJ = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = AST
+					}
+				}
+				AST = { set_cosmetic_tag = TRANS_REPUBLIC }
+				AST = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = NZL
+					}
+				}
+				NZL = { set_cosmetic_tag = TRANS_REPUBLIC }
+				NZL = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = SAF
+					}
+				}
+				SAF = { set_cosmetic_tag = TRANS_REPUBLIC }
+				SAF = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = MEX
+					}
+				}
+				MEX = { set_cosmetic_tag = TRANS_REPUBLIC }
+				MEX = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = BRA
+					}
+				}
+				BRA = { set_cosmetic_tag = TRANS_REPUBLIC }
+				BRA = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = PHI
+					}
+				}
+				PHI = { set_cosmetic_tag = TRANS_REPUBLIC }
+				PHI = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = MON
+					}
+				}
+				MON = { set_cosmetic_tag = TRANS_REPUBLIC }
+				MON = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = IRE
+					}
+				}
+				IRE = { set_cosmetic_tag = TRANS_REPUBLIC }
+				IRE = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = HOL
+					}
+				}
+				HOL = { set_cosmetic_tag = TRANS_REPUBLIC }
+				HOL = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = BEL
+					}
+				}
+				BEL = { set_cosmetic_tag = TRANS_REPUBLIC }
+				BEL = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = LUX
+					}
+				}
+				LUX = { set_cosmetic_tag = TRANS_REPUBLIC }
+				LUX = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = POL
+					}
+				}
+				POL = { set_cosmetic_tag = TRANS_REPUBLIC }
+				POL = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = CZE
+					}
+				}
+				CZE = { set_cosmetic_tag = TRANS_REPUBLIC }
+				CZE = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = AUS
+					}
+				}
+				AUS = { set_cosmetic_tag = TRANS_REPUBLIC }
+				AUS = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = CHI
+					}
+				}
+				CHI = { set_cosmetic_tag = TRANS_REPUBLIC }
+				CHI = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = SWI
+					}
+				}
+				SWI = { set_cosmetic_tag = TRANS_REPUBLIC }
+				SWI = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = NOR
+					}
+				}
+				NOR = { set_cosmetic_tag = TRANS_REPUBLIC }
+				NOR = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = SWE
+					}
+				}
+				SWE = { set_cosmetic_tag = TRANS_REPUBLIC }
+				SWE = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = DEN
+					}
+				}
+				DEN = { set_cosmetic_tag = TRANS_REPUBLIC }
+				DEN = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = GRE
+					}
+				}
+				GRE = { set_cosmetic_tag = TRANS_REPUBLIC }
+				GRE = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = ALB
+					}
+				}
+				ALB = { set_cosmetic_tag = TRANS_REPUBLIC }
+				ALB = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = VEN
+					}
+				}
+				VEN = { set_cosmetic_tag = TRANS_REPUBLIC }
+				VEN = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = TUR
+					}
+				}
+				TUR = { set_cosmetic_tag = TRANS_REPUBLIC }
+				TUR = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = IRQ
+					}
+				}
+				IRQ = { set_cosmetic_tag = TRANS_REPUBLIC }
+				IRQ = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = PER
+					}
+				}
+				PER = { set_cosmetic_tag = TRANS_REPUBLIC }
+				PER = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = ETH
+					}
+				}
+				ETH = { set_cosmetic_tag = TRANS_REPUBLIC }
+				ETH = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = POR
+					}
+				}
+				POR = { set_cosmetic_tag = TRANS_REPUBLIC }
+				POR = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = INS
+					}
+				}
+				INS = { set_cosmetic_tag = TRANS_REPUBLIC }
+				INS = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = LIT
+					}
+				}
+				LIT = { set_cosmetic_tag = TRANS_REPUBLIC }
+				LIT = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = LAT
+					}
+				}
+				LAT = { set_cosmetic_tag = TRANS_REPUBLIC }
+				LAT = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = EST
+					}
+				}
+				EST = { set_cosmetic_tag = TRANS_REPUBLIC }
+				EST = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = COG
+					}
+				}
+				COG = { set_cosmetic_tag = TRANS_REPUBLIC }
+				COG = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = ICE
+					}
+				}
+				ICE = { set_cosmetic_tag = TRANS_REPUBLIC }
+				ICE = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = MAL
+					}
+				}
+				MAL = { set_cosmetic_tag = TRANS_REPUBLIC }
+				MAL = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
+						option = CNT
+					}
+				}
+				CNT = { set_cosmetic_tag = TRANS_REPUBLIC }
+				CNT = { set_country_flag = trans_flag }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+    			if = {
+        			limit = {
+           				has_game_rule = {
+                				rule = mongolia_focus
+               	 				option = RULE_MONGOLIA_FOCUS_VANILLA
+            				}
+        			}
+        			MON = {
+           				load_focus_tree = generic_focus
+					remove_ideas = {
+						idea_MON_colectivistation_1
+					}
+        			}
+    			}
+		}
+	}
+
+	########## TANK SYSTEM ON_ACTIONS END HERE ##########
+
+	###### CZE BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				CZE = {
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+						improved_light_tank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				CZE = {
+					set_technology = {
+						gwtank = 1 popup = no
+						basic_light_tank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### CZE ENDS HERE ######
+
+	###### POL BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				POL = {
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				POL = {
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### POL ENDS HERE ######
+
+	###### YUG BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				YUG = {
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				YUG = {
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### YUG ENDS HERE ######
+
+	###### HUN BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				HUN = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				HUN = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### HUN ENDS HERE ######
+
+	###### ROM BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				ROM = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				ROM = { 
+					set_technology = {
+						gwtank = 1 popup = no
+						basic_light_tank popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### ROM ENDS HERE ######
+
+	###### SWE BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				SWE = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				SWE = { 
+					set_technology = {
+						gwtank = 1 popup = no
+						basic_light_tank popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### SWE ENDS HERE ######
+
+	###### BRA BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				BRA = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				BRA = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### BRA ENDS HERE ######
+
+	###### MEX BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				MEX = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				MEX = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### MEX ENDS HERE ######
+
+	###### MAN BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				MAN = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				MAN = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### MAN ENDS HERE ######
+
+	###### CAN BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				CAN = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				CAN = { 
+					set_technology = {
+						gwtank = 1 popup = no
+						basic_light_tank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### CAN ENDS HERE ######
+
+	###### RAJ BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				RAJ = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				RAJ = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### RAJ ENDS HERE ######
+
+	###### VIC BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				VIC = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+						basic_heavy_tank_chassis = 1 popup = no
+						improved_light_tank_chassis = 1 popup = no
+						armor_tech_1 = 1 popup = no
+						engine_tech_1 = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				VIC = { 
+					set_technology = {
+						gwtank = 1 popup = no
+						basic_light_tank = 1 popup = no
+						basic_heavy_tank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### VIC ENDS HERE ######
+
+	###### CHI BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				CHI = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				CHI = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### CHI ENDS HERE ######
+
+	###### MAL BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				MAL = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				MAL = { 
+					set_technology = {
+						gwtank = 1 popup = no
+						basic_light_tank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+	
+	###### MAL ENDS HERE ######
+
+	###### NZL BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				NZL = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				NZL = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### NZL ENDS HERE ######
+
+	###### AST BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				AST = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				AST = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### AST ENDS HERE ######
+	
+	###### SAF BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				SAF = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				SAF = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### SAF ENDS HERE ######
+
+	###### MON BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				MON = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				MON = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### MON ENDS HERE ######
+
+	###### TUR BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				TUR = { 
+					load_oob = "TUR_1936_tank_nsb"
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				TUR = { 
+					load_oob = "TUR_1936_tank_hor" 
+					set_technology = {
+						gwtank = 1 popup = no
+						basic_light_tank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### TUR ENDS HERE ######
+
+	###### AUS BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				AUS = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				AUS = { 
+					set_technology = {
+						gwtank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+	
+	###### AUS ENDS HERE ######
+
+	###### BEL BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				BEL = { 
+					load_oob = "BEL_1936_tank_nsb"
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				BEL = { 
+					load_oob = "BEL_1936_tank_hor" 
+					set_technology = {
+						gwtank = 1 popup = no
+						basic_light_tank = 1 popup = no
+						basic_light_td = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+	
+	###### BEL ENDS HERE ######
+
+	###### JAP BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				JAP = { 
+					load_oob = "JAP_1936_tank_nsb"
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+						improved_light_tank_chassis = 1 popup = no
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_tank_chassis_1
+							creator = JAP 
+							version_name = "Type 94 Tankette"
+						}
+						requested_factories = 1
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:JAP_osaka_army_arsenal_organization
+					}
+					add_equipment_production = {
+						equipment = {
+							type = medium_tank_chassis_0
+							creator = JAP 
+							version_name = "Type 89 I-Go"
+						}
+						requested_factories = 1
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:JAP_sagami_army_arsenal_organization
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				JAP = { 
+					load_oob = "JAP_1936_tank_hor" 
+					set_technology = {
+						gwtank = 1 popup = no 
+						basic_light_tank = 1 popup = no
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_tank_equipment_1
+							creator = JAP 
+						}
+						requested_factories = 1
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:JAP_osaka_army_arsenal_organization
+					}
+					add_equipment_production = {
+						equipment = {
+							type = gw_tank_equipment
+							creator = JAP
+						}
+						requested_factories = 1
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:JAP_sagami_army_arsenal_organization
+					}
+				}
+			}
+		}
+	}
+
+	###### JAP ENDS HERE ######
+
+	###### ITA BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				ITA = { 
+					load_oob = "ITA_1936_tank_nsb"
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+					}
+					add_equipment_production = { 
+						equipment = { 
+							type = light_tank_chassis_1 
+							creator = "ITA" 
+							version_name = "L3/35"
+						}
+						requested_factories = 1 
+						progress = 0.4 
+						efficiency = 50
+						industrial_manufacturer = mio:ITA_fiat_organization
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				ITA = { 
+					load_oob = "ITA_1936_tank_hor" 
+					set_technology = {
+						gwtank = 1 popup = no 
+						basic_light_tank = 1 popup = no
+					}
+					add_equipment_production = { 
+						equipment = { 
+							type = light_tank_equipment_1  
+							creator = "ITA"
+						}
+						requested_factories = 1 
+						progress = 0.4 
+						efficiency = 50
+						industrial_manufacturer = mio:ITA_fiat_organization
+					}
+				}
+			}
+		}
+	}
+
+	###### ITA ENDS HERE ######
+
+	###### FRA BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				FRA = { 
+					load_oob = "FRA_1936_tank_nsb"
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+						basic_heavy_tank_chassis = 1 popup = no
+						improved_light_tank_chassis = 1 popup = no
+						armor_tech_1 = 1 popup = no
+						engine_tech_1 = 1 popup = no
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_tank_chassis_1
+							creator = "FRA" 
+							version_name = "H-35"
+						}
+						requested_factories = 1
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:FRA_hotchkiss_organization
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				FRA = { 
+					load_oob = "FRA_1936_tank_hor" 
+					set_technology = {
+						gwtank = 1 popup = no 
+						basic_light_tank = 1 popup = no
+						basic_heavy_tank = 1 popup = no
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_tank_equipment_1
+							creator = "FRA"
+						}
+						requested_factories = 1
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:FRA_hotchkiss_organization
+					}
+				}
+			}
+		}
+	}
+
+	###### FRA ENDS HERE ######
+
+	###### USA BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				USA = { 
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				USA = { 
+					set_technology = {
+						gwtank = 1 popup = no 
+						basic_light_tank = 1 popup = no
+					}
+				}
+			}
+		}
+	}
+
+	###### USA ENDS HERE ######
+
+	###### ENG BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				ENG = { 
+					load_oob = "ENG_1936_tank_nsb_LaR"
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_tank_chassis_1
+							creator = "ENG" 
+							version_name = "Light Tank Mk. VI"
+						}
+						requested_factories = 1
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:ENG_vauxhall_organization
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				ENG = { 
+					load_oob = "ENG_1936_tank_hor" 
+					set_technology = {
+						gwtank = 1 popup = no 
+						basic_light_tank = 1 popup = no
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_tank_equipment_1
+							creator = "ENG" 
+						}
+						requested_factories = 1
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:ENG_vauxhall_organization
+					}
+				}
+			}
+		}
+	}
+
+	###### ENG ENDS HERE ######
+
+	###### SOV BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				SOV = { 
+					load_oob = "SOV_1936_tank_nsb"
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+						improved_light_tank_chassis = 1 popup = no
+						basic_heavy_tank_chassis = 1 popup = no
+						engine_tech_1 = 1 popup = no
+						engine_tech_2 = 1 popup = no
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_tank_chassis_2
+							creator = "SOV" 
+							version_name = "BT-7"
+						}
+						requested_factories = 3
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:SOV_morozov_design_bureau_organization
+					}
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				SOV = { 
+					load_oob = "SOV_1936_tank_hor" 
+					set_technology = {
+						gwtank = 1 popup = no 
+						basic_light_tank = 1 popup = no
+						basic_heavy_tank = 1 popup = no
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_tank_equipment_1
+							creator = "SOV"
+						}
+						requested_factories = 3
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:SOV_morozov_design_bureau_organization
+					}
+				}
+			}
+		}
+	}
+
+	###### SOV ENDS HERE ######
+	
+	###### GER BEGINS HERE ######
+
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+					}
+				}
+				GER = { 
+					load_oob = "GER_1936_tank_nsb"
+					set_technology = {
+						gwtank_chassis = 1 popup = no
+						basic_light_tank_chassis = 1 popup = no
+						improved_light_tank_chassis = 1 popup = no
+						basic_heavy_tank_chassis = 1 popup = no
+						engine_tech_1 = 1 popup = no
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_tank_chassis_2
+							creator = GER 
+							version_name = "Panzer II"
+						}
+						requested_factories = 2
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:GER_henschel_organization
+					} 
+				}
+
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = tank_system
+						option = RULE_TANK_SYSTEM_HOR_ENABLED
+					}
+				}
+				GER = { 
+					load_oob = "GER_1936_tank_hor" 
+					set_technology = {
+						gwtank = 1 popup = no 
+						basic_light_tank = 1 popup = no
+						basic_heavy_tank = 1 popup = no
+					}
+					add_equipment_production = {
+						equipment = {
+							type = light_tank_equipment_1
+							creator = GER
+						}
+						requested_factories = 2
+						progress = 0.4
+						efficiency = 50
+						industrial_manufacturer = mio:GER_henschel_organization
+					}
+				}
+			}
+		}
+	}
+	
+	###### GER ENDS HERE ######
+
+	########## TANK SYSTEM ON_ACTIONS BEGIN HERE ##########		
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = neutral_ai_nations_spirit
+						option = RULE_NEUTRAL_AI_NATIONS_SPIRIT_ENABLED
+					}
+				}
+				
+				PER = { add_ideas = neutrality_idea2 }
+				TUR = { add_ideas = neutrality_idea2 }
+				SWE = { add_ideas = neutrality_idea2 }
+				VEN = { add_ideas = neutrality_idea2 }
+				CHI = { add_ideas = neutrality_idea2 }
+				SWI = { add_ideas = neutrality_idea2 }
+				POR = { add_ideas = neutrality_idea2 }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = scw_volunteers
+						option = RULE_SCW_VOLUNTEERS_ENABLED
+					}
+				}
+				
+				GER = { add_ideas = ger_fra_SCW_volunteer_limit }
+				FRA = { add_ideas = ger_fra_SCW_volunteer_limit }
+				SOV = { add_ideas = sov_SCW_volunteer_limit }
+				ITA = { add_ideas = major_SCW_volunteer_limit }
+				JAP = { add_ideas = major_SCW_volunteer_limit }
+				HUN = { add_ideas = minor_SCW_volunteer_limit }
+				ROM = { add_ideas = minor_SCW_volunteer_limit }
+				BUL = { add_ideas = minor_SCW_volunteer_limit }
+				YUG = { add_ideas = minor_SCW_volunteer_limit }
+				FIN = { add_ideas = minor_SCW_volunteer_limit }
+				VIC = { add_ideas = minor_SCW_volunteer_limit }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = { 
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = japan_ai_nocap_rule
+						option = RULE_JAPAN_AI_NOCAP_RULE_TIMED_45_ENABLED
+					}
+				}
+
+				JAP = {
+					add_timed_idea = {
+						idea = japan_ai_nocap
+						days = 3285
+					}
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = { 
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = japan_ai_nocap_rule
+						option = RULE_JAPAN_AI_NOCAP_RULE_TIMED_44_ENABLED
+					}
+				}
+
+				JAP = {
+					add_timed_idea = {
+						idea = japan_ai_nocap
+						days = 2920
+					}
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = { 
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = japan_ai_nocap_rule
+						option = RULE_JAPAN_AI_NOCAP_RULE_TIMED_43_ENABLED
+					}
+				}
+
+				JAP = {
+					add_timed_idea = {
+						idea = japan_ai_nocap
+						days = 2555
+					}
+				}
+			}
+		}
+	}
+	
+	on_startup = {
+		effect = { 
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = japan_ai_nocap_rule
+						option = RULE_JAPAN_AI_NOCAP_RULE_ENABLED
+					}
+				}
+
+				JAP = {
+					add_ideas = {
+						japan_ai_nocap
+					}
+				}
+			}
+		}
+	}
+
+	on_daily = {
+		effect = { 
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = italy_war_join
+						option = RULE_ITALY_WAR_JOIN_ENABLED
+					}
+				}
+				
+				if = {
+					limit = {
+						ITA = {
+							has_country_flag = {
+								flag = ITA_war_join_flag
+								days > 89
+							}
+						}
+					}
+					
+					ITA = {
+						add_to_war = {
+							targeted_alliance = GER
+							enemy = FRA
+							hostility_reason = asked_to_join
+						}
+					}
+
+					ITA = {
+						add_to_war = {
+							targeted_alliance = GER
+							enemy = ENG
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = GER
+					}
+					FROM = {
+						OR = {
+							original_tag = ENG
+							original_tag = FRA
+							original_tag = POL
+						}
+					}
+				}
+				if = {
+					limit = {
+						USA = {
+							NOT = { is_ally_with = ENG }
+						}
+					}
+
+					ENG = {
+						add_to_faction = USA
+					}
+
+					USA = {
+						country_event = hor_events.19
+					}
+				}
+			}
+		}
+	}
+					
+
+	on_startup = {
+		effect = {
+			every_possible_country = { add_ideas = PNSD_hidden }
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_idea = PNSD_hidden }
+				}
+				add_ideas = PNSD_hidden
+			}
+		}
+	}
+
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_idea = PNSD_hidden }
+				}
+				add_ideas = PNSD_hidden
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = SWE
+						tag = FIN
+						tag = NOR
+						tag = DEN
+						tag = SOV
+						tag = EST
+						tag = LAT
+						tag = LIT
+						tag = MON
+						tag = ICE
+					}
+				}
+				set_technology = { winter_clothes_gw = 1 popup = no }
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = FRA
+						tag = ITA
+						tag = BEL
+						tag = BRA
+						tag = VEN
+						tag = VIC # HOR
+					}
+				}
+				set_technology = { jngdst_clothes_gw = 1 popup = no }
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = FRA
+						tag = ITA
+						tag = GER
+						tag = FIN
+						tag = VIC # HOR
+					}
+				}
+				set_technology = { camo = 1 popup = no }
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = FRA
+						tag = ITA
+						tag = GER
+						tag = SOV
+						tag = FIN
+						tag = TUR
+						tag = GRE
+						tag = BUL
+						tag = VIC # HOR
+					}
+				}
+				set_technology = { sniper_rifle = 1 popup = no }
+			}
+		}
+	}
+
+	on_state_control_changed = {
+		
+		##Island Hopping
+		effect = {
+			if = {
+				limit = {
+					FROM = { 						
+						OR = {
+						 	tag = JAP
+							is_in_faction_with = JAP
+							tag = GER
+							is_in_faction_with = GER
+						}  
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = USA 
+							tag = USA
+							is_in_faction_with = ENG 
+							tag = ENG
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = JAP_controls
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = USA_controls
+				 	clr_state_flag = JAP_controls
+				}
+			 	USA = { 
+			 		USA_island_hopping_level_up = yes
+			 	}
+		 		JAP = {
+		 			JAP_island_hopping_level_down = yes 
+		 		}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+					    OR = { 
+							is_in_faction_with = USA 
+							tag = USA
+							is_in_faction_with = ENG 
+							tag = ENG
+						}
+					}
+					ROOT = {
+						OR = {
+						 	tag = JAP
+						 	is_in_faction_with = JAP
+							tag = GER
+							is_in_faction_with = GER
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = USA_controls
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = JAP_controls 
+				 	clr_state_flag = USA_controls 
+				}
+		 		if = { 
+				   limit = {
+					   FROM = {
+				   		OR = {
+				  			original_tag = JAP
+					  		original_tag = MAN
+							original_tag = SIA
+				   		} 
+					   }	
+		 			 
+					} 
+		 		}
+				JAP = {
+				 	JAP_island_hopping_level_up = yes
+				}  
+		 		USA = {
+					USA_island_hopping_level_down = yes
+		 		} 
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			SOV = {
+				set_country_flag = SOV_debug_show_propaganda_system_flag
+				SOV_unlock_propaganda_campaign_slot_effect = yes
+				SOV_unlock_propaganda_campaign_slot_effect = yes
+				SOV_unlock_propaganda_campaign_slot_effect = yes
+			}
+		}
+	}
+
+	on_send_volunteers = {
+		effect = {
+			FROM = {
+				give_military_access = ROOT
+			}
+		}
+	}
+
+	on_before_peace_conference_start = {
+        	effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = big_manchu
+						option = RULE_BIG_MANCHU_ENABLED
+					}
+				}
+        			if = {
+                			limit = {
+                    				ROOT = { tag = JAP}
+						ROOT = { is_ai = yes }
+                    				FROM = { tag = CHI}
+                    				CHI = {
+                        				has_war_with = JAP
+                        				has_war_with = MAN
+                    				}
+                			}
+                			MAN = {
+						every_state = { 
+    							limit = { is_owned_by = CHI  is_core_of = CHI }
+    							MAN = { transfer_state = PREV }
+						}
+                			}
+            			}
+        		}
+    		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				country_event = hor_events.14
+			}
+		}
+	}
+
+	on_naval_invasion = {
+		effect = { 
+			THIS = {
+				if = {
+					limit = {
+						NOT = { CONTROLLER = { tag = ROOT } }
+						NOT = { CONTROLLER = { has_country_flag = notif_disable_inv_warning } }
+					}
+					save_global_event_target_as = invaded_state
+					# If the one getting dropped on, Give the alert
+					CONTROLLER = {
+						set_country_flag = ui_show_invasion_warning
+						set_variable = { ui_invaded_state = PREV }
+						set_variable = { ui_invaded_country = PREV.owner }
+						set_variable = { ui_invader_country = ROOT }
+					}
+					# If its a puppet, alert the overlord
+					if = {
+						limit = { CONTROLLER = { is_puppet = yes } }
+						CONTROLLER = {
+							OVERLORD = {
+								set_country_flag = ui_show_invasion_warning
+								set_variable = { ui_invaded_state = PREV.PREV }
+								set_variable = { ui_invaded_country = PREV.PREV.owner }
+								set_variable = { ui_invader_country = ROOT }
+							}
+						}
+					} 
+					# If its in the same faction as that country landed in, alert them
+					every_country = {
+						if = { 
+							limit = { 
+								THIS = { is_in_faction_with = PREV.PREV.CONTROLLER }
+							}
+							set_country_flag = ui_show_invasion_warning
+							set_variable = { ui_invaded_state = PREV }
+							set_variable = { ui_invaded_country = PREV.CONTROLLER }
+							set_variable = { ui_invader_country = ROOT }
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+	on_paradrop = {
+		effect = { 
+			THIS = {
+				if = {
+					limit = {
+						NOT = { CONTROLLER = { tag = ROOT } }
+						NOT = { CONTROLLER = { has_country_flag = notif_disable_para_warning } }
+					}
+					# If the one getting dropped on, Give the alert
+					CONTROLLER = {
+						set_country_flag = ui_show_paradrop_warning
+						set_variable = { ui_invaded_state = PREV }
+						set_variable = { ui_invaded_country = PREV.owner }
+						set_variable = { ui_invader_country = ROOT }
+					}
+					save_global_event_target_as = paradropped_state
+					# If its a puppet, alert the overlord
+					if = {
+						limit = { CONTROLLER = { is_puppet = yes } }
+						CONTROLLER = {
+							OVERLORD = {
+								set_country_flag = ui_show_paradrop_warning
+								set_variable = { ui_invaded_state = PREV.PREV }
+								set_variable = { ui_invaded_country = PREV.PREV.owner }
+								set_variable = { ui_invader_country = ROOT }
+							}
+						}
+					} 
+					# If its in the same faction as that country landed in, alert them
+					every_country = {
+						if = { 
+							limit = { 
+								THIS = { is_in_faction_with = PREV.PREV.CONTROLLER } 
+							}
+							set_country_flag = ui_show_paradrop_warning
+							set_variable = { ui_invaded_state = PREV }
+							set_variable = { ui_invaded_country = PREV.CONTROLLER }
+							set_variable = { ui_invader_country = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			FRA = {
+				#set_variable = { FRA_poster_center_icon_frame = 1 }
+				set_variable = { FRA_new_propaganda_campaign = 0 } #Used to pick a poster slot
+				set_variable = { FRA_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
+				#set_variable = { SOV_propaganda_locked_slot_index = 1 } #### === INSERT LOCKED SLOT INDEX IN STRIPE HERE === ####
+				set_variable = { FRA_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLOT INDEX IN STRIPE HERE === ####
+				set_variable = { FRA_poster_left_icon_frame = FRA_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
+				set_variable = { FRA_poster_center_icon_frame = FRA_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
+				#set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+				set_variable = { allies_poster_center_icon_frame = 1 }
+
+			}
+			GER = {
+				set_variable = { GER_new_propaganda_campaign = 0 } #Used to pick a poster slot
+                set_variable = { GER_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
+                #set_variable = { SOV_propaganda_locked_slot_index = 1 } #### === INSERT LOCKED SLOT INDEX IN STRIPE HERE === ####
+                set_variable = { GER_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLOT INDEX IN STRIPE HERE === ####
+                set_variable = { GER_poster_left_icon_frame = GER_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
+                set_variable = { GER_poster_center_icon_frame = GER_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
+                #set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+			}
+			ITA = {
+				#set_variable = { ITA_poster_center_icon_frame = 1 }
+				set_variable = { ITA_new_propaganda_campaign = 0 } #Used to pick a poster slot
+				set_variable = { ITA_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
+				#set_variable = { SOV_propaganda_locked_slot_index = 1 } #### === INSERT LOCKED SLOT INDEX IN STRIPE HERE === ####
+				set_variable = { ITA_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLOT INDEX IN STRIPE HERE === ####
+				set_variable = { ITA_poster_left_icon_frame = ITA_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
+				set_variable = { ITA_poster_center_icon_frame = ITA_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
+				#set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+			}
+			JAP = {
+				#set_variable = { JAP_poster_center_icon_frame = 1 }
+					set_variable = { JAP_new_propaganda_campaign = 0 } #Used to pick a poster slot
+					set_variable = { JAP_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
+					#set_variable = { SOV_propaganda_locked_slot_index = 1 } #### === INSERT LOCKED SLOT INDEX IN STRIPE HERE === ####
+					set_variable = { JAP_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLOT INDEX IN STRIPE HERE === ####
+					set_variable = { JAP_poster_left_icon_frame = JAP_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
+					set_variable = { JAP_poster_center_icon_frame = JAP_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
+					#set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+			}
+			ENG = {
+				set_variable = { ENG_new_propaganda_campaign = 0 } #Used to pick a poster slot
+				set_variable = { ENG_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
+				#set_variable = { SOV_propaganda_locked_slot_index = 1 } #### === INSERT LOCKED SLOT INDEX IN STRIPE HERE === ####
+				set_variable = { ENG_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLOT INDEX IN STRIPE HERE === ####
+				set_variable = { ENG_poster_left_icon_frame = ENG_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
+				set_variable = { ENG_poster_center_icon_frame = ENG_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
+				#set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+			}
+			USA = {
+				#set_variable = { USA_poster_center_icon_frame = 1 }
+				set_variable = { USA_new_propaganda_campaign = 0 } #Used to pick a poster slot
+				set_variable = { USA_propaganda_campaign_to_remove = 0 } #Used to reset a poster slot
+				#set_variable = { SOV_propaganda_locked_slot_index = 1 } #### === INSERT LOCKED SLOT INDEX IN STRIPE HERE === ####
+				set_variable = { USA_propaganda_empty_slot_index = 1 } #### === INSERT EMPTY SLOT INDEX IN STRIPE HERE === ####
+				set_variable = { USA_poster_left_icon_frame = USA_propaganda_empty_slot_index } #Set up the appropriate empty slot GFX
+				set_variable = { USA_poster_center_icon_frame = USA_propaganda_empty_slot_index } #Set up the appropriate locked slot GFX
+				#set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
+			}
+			CAN = {
+				set_variable = { COM_poster_center_icon_frame = 1 }
+			}
+			SAF = {
+				set_variable = { COM_poster_center_icon_frame = 1 }
+			}
+			RAJ = {
+				set_variable = { COM_poster_center_icon_frame = 1 }
+			}
+			NZL = {
+				set_variable = { COM_poster_center_icon_frame = 1 }
+			}
+			AST = {
+				set_variable = { COM_poster_center_icon_frame = 1 }
+			}
+			BUL ={
+				set_variable = { axis_poster_center_icon_frame = 1 }
+			}
+			YUG ={
+				set_variable = { axis_poster_center_icon_frame = 1 }
+			}
+			ROM = {
+				set_variable = { axis_poster_center_icon_frame = 1 }
+			}
+			SPR = {
+				set_variable = { axis_poster_center_icon_frame = 1 }
+			}
+			MAN = {
+				set_variable = { axis_poster_center_icon_frame = 1 }
+			}
+			SIA = {
+				set_variable = { axis_poster_center_icon_frame = 1 }
+			}
+			HUN = {
+				set_variable = { axis_poster_center_icon_frame = 1 }
+			}		
+			FIN = {
+				set_variable = { axis_poster_center_icon_frame = 1 }
+			}	
+			MEX = {
+				set_variable = { allies_poster_center_icon_frame = 1 }
+			}
+			PHI = {
+				set_variable = { allies_poster_center_icon_frame = 1 }
+			}
+			BRA = {
+				set_variable = { allies_poster_center_icon_frame = 1 }
+			}
+			MON = {
+				set_variable = { allies_poster_center_icon_frame = 1 }
+			}
+			VIC ={
+				set_variable = { axis_poster_center_icon_frame = 1 }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
+			if = {
+				limit = {has_game_rule = {rule = horst_host_country option = GER}}
+				set_variable={host = GER.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SOV}}
+				set_variable={host = SOV.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = USA}}
+				set_variable={host = USA.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ENG}}
+				set_variable={host = ENG.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = FRA}}
+				set_variable={host = FRA.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ITA}}
+				set_variable={host = ITA.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = JAP}}
+				set_variable={host = JAP.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = HUN}}
+				set_variable={host = HUN.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ROM}}
+				set_variable={host = ROM.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = BUL}}
+				set_variable={host = BUL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = FIN}}
+				set_variable={host = FIN.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SPR}}
+				set_variable={host = SPR.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = YUG}}
+				set_variable={host = YUG.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = VIC}}
+				set_variable={host = VIC.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = MAN}}
+				set_variable={host = MAN.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SIA}}
+				set_variable={host = SIA.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = CAN}}
+				set_variable={host = CAN.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = RAJ}}
+				set_variable={host = RAJ.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = AST}}
+				set_variable={host = AST.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = NZL}}
+				set_variable={host = NZL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SAF}}
+				set_variable={host = SAF.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = MEX}}
+				set_variable={host = MEX.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = BRA}}
+				set_variable={host = BRA.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = PHI}}
+				set_variable={host = PHI.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = MON}}
+				set_variable={host = MON.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = IRE}}
+				set_variable={host = IRE.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = HOL}}
+				set_variable={host = HOL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = BEL}}
+				set_variable={host = BEL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = LUX}}
+				set_variable={host = LUX.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = POL}}
+				set_variable={host = POL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = CZE}}
+				set_variable={host = CZE.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = AUS}}
+				set_variable={host = AUS.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = CHI}}
+				set_variable={host = CHI.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SWI}}
+				set_variable={host = SWI.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = NOR}}
+				set_variable={host = NOR.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SWE}}
+				set_variable={host = SWE.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = DEN}}
+				set_variable={host = DEN.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = GRE}}
+				set_variable={host = GRE.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ALB}}
+				set_variable={host = ALB.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = VEN}}
+				set_variable={host = VEN.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = TUR}}
+				set_variable={host = TUR.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = IRQ}}
+				set_variable={host = IRQ.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = PER}}
+				set_variable={host = PER.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ETH}}
+				set_variable={host = ETH.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = POR}}
+				set_variable={host = POR.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = INS}}
+				set_variable={host = INS.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = LIT}}
+				set_variable={host = LIT.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = LAT}}
+				set_variable={host = LAT.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = EST}}
+				set_variable={host = EST.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = COG}}
+				set_variable={host = COG.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ICE}}
+				set_variable={host = ICE.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = MAL}}
+				set_variable={host = MAL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = CNT}}
+				set_variable={host = CNT.id}
+			}
+			var:host = {
+				set_variable = { marked_states = 0 }
+				set_country_flag = host
+			}
+		}
+	}
+}

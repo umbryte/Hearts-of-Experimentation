@@ -1,0 +1,11 @@
+﻿l_english:
+
+# BRITISH RAJ STUFF
+
+ # TOOLTIPS
+ RAJ_land_clearance_effect_tt: "§YRural Industrialization§! decisions now add §G2§! Building Slots."
+ RAJ_mixed_economy_tt: "Gain §G+30§! resources for every §YExcavation Tech§! researched in every core state with more than 60 resources in it"
+ RAJ_agricultural_cooperatives_tt: "Gain §G2§! §YInfrastructure§! in every owned state with at least 8 §YCivilian Factories§!.\nGain §G2§! §YCivilian Factories§! for every 4 §YInfrastructure§! gained by this focus."
+ RAJ_imperial_rail_renewal_act_tt: "Add §G2§! §Y$industrial_complex$§! per Railway Focus completed in the Industrial branch."
+ RAJ_the_riches_of_the_raj_targets_oil_tt: "Every starting state with §Y$state_resource_oil$§!£resources_strip|1 : \n Add production of §Y+40§!£resources_strip|1. \n Add §G2§! §Y$infrastructure$§!."
+ RAJ_the_riches_of_the_raj_targets_tt: "Every starting state with at least §Y200§! units of §Y$state_resource_aluminium$§!£resources_strip|2 , §Y$state_resource_rubber$§!£resources_strip|3 , §Y$state_resource_chromium$§!£resources_strip|6 , §Y$state_resource_tungsten$§!£resources_strip|4, §Y$state_resource_coal$§!£resources_strip|0 or §Y$temporary_state_resource_steel$§!£resources_strip|5 : \n Add production of §Y+40§! additional units of the resource. \n Add §G2§! §Y$infrastructure$§!."

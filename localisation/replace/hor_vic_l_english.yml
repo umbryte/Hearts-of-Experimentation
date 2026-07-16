@@ -1,0 +1,57 @@
+﻿l_english:
+
+# VICHY FRANCE STUFF
+
+ # FOCUS TREE
+ VIC_hearts_of_retardation:0 "Hearts of Retardation"
+ VIC_hearts_of_retardation_desc:0 "fairs"
+
+ # BOOKMARK
+ VIC_GATHERING_STORM_DESC:0 ""
+
+ # POLITICAL PARTIES
+ VIC_communism_party:0 "Parti Communiste Francais"
+ VIC_democratic_party:0 "Parti Radical"
+ VIC_fascism_party:0 "Mouvement Franciste"
+ VIC_neutrality_party:0 "Action Française"
+ 
+ # CHARACTERS
+ VIC_philippe_petain:0 "Philippe Pétain"
+ 
+ # EQUIPMENT VERSIONS
+ VIC_EQUIPMENT_VERSION_1:0 "série A"
+ VIC_EQUIPMENT_VERSION_2:0 "série B"
+ VIC_EQUIPMENT_VERSION_3:0 "série C"
+ VIC_EQUIPMENT_VERSION_4:0 "série D"
+ VIC_EQUIPMENT_VERSION_5:0 "série E"
+ VIC_EQUIPMENT_VERSION_6:0 "série F"
+ VIC_EQUIPMENT_VERSION_7:0 "série G"
+ VIC_EQUIPMENT_VERSION_8:0 "série H"
+ VIC_EQUIPMENT_VERSION_9:0 "série I"
+ VIC_EQUIPMENT_VERSION_10:0 "série J"
+ VIC_EQUIPMENT_VERSION_11:0 "série K"
+ VIC_EQUIPMENT_VERSION_12:0 "série L"
+ VIC_EQUIPMENT_VERSION_13:0 "série M"
+ 
+ # UNIT GENERIC NAME
+ UNIT_GENERIC_NAME_VIC:0 "$NR$ème $NAME$"
+ 
+ # EQUIPMENT NAMES
+ VIC_heavy_tank_artillery_equipment_1:0 "Canon de 194 mle GPF"
+ VIC_heavy_tank_artillery_equipment_1_short:0 "Canon de 194"
+ VIC_light_tank_destroyer_equipment_2:0 "AMR 35 ZT-3"
+ VIC_light_tank_destroyer_equipment_2_short:0 "AMR 35 ZT-3"
+ VIC_light_tank_destroyer_equipment_3:0 "Renault UE 57"
+ VIC_light_tank_destroyer_equipment_3_short:0 "UE-57"
+ VIC_light_tank_artillery_equipment_3:0 "Canon de 155 mm Mle F3 Automoteur"
+ VIC_light_tank_artillery_equipment_3_short:0 "F3 155 mm"
+ VIC_medium_tank_destroyer_equipment_1:0 "Laffly W15 TCC"
+ VIC_medium_tank_destroyer_equipment_1_short:0 "W15 TCC"
+ VIC_medium_tank_destroyer_equipment_2:0 "Somua SAu 40"
+ VIC_medium_tank_destroyer_equipment_2_short:0 "SAu 40"
+ VIC_medium_tank_artillery_equipment_1:0 "ARL V39"
+ VIC_medium_tank_artillery_equipment_1_short:0 "ARL V39"
+ VIC_medium_tank_artillery_equipment_2:0 "AMX 13 105 AM"
+ VIC_medium_tank_artillery_equipment_2_short:0 "105 AM"
+ VIC_gw_tank_equipment:0 "Renault FT-17"
+ VIC_gw_tank_equipment_short:0 "FT-17"

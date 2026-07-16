@@ -1,0 +1,27 @@
+state=
+{
+	id=1059
+	name="STATE_1059"
+	manpower = 67500
+	
+	state_category = enclave
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1 # HOR
+		}
+		victory_points = {
+			6672 1
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+	}
+	provinces={
+		6672 # GOT IT FROM 102 - NORTH-EASTERN SLOVENIA - HOR
+	}
+	
+	local_supplies=0.0 
+}

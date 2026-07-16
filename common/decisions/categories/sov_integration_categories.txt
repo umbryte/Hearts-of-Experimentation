@@ -1,0 +1,12 @@
+sov_integration_cat = {
+	priority = 100
+	icon = generic_communism
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		NOT = { has_country_flag = SOV_paranoia_system_active_flag }
+		SOV = { has_completed_focus = SOV_integrate_western_territories }
+		SOV = { has_government = communism }
+	}
+}

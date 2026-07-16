@@ -1,0 +1,24 @@
+USA_sleeping_giant_modifier = { 
+	enable = { always = yes }
+	icon = GFX_idea_usa_neutral
+	custom_modifier_tooltip = HOR_IDEA_USA_CANT_JOIN_AND_CALL
+
+	remove_trigger = {
+		USA = {
+			NOT = {
+				has_idea = idea_usa_neutral
+			}
+		}
+	}
+}
+
+AXIS_atlantikwall = {
+	enable = { always = yes }
+
+	icon = GFX_decision_generic_coastal_fortification
+	
+	defence = 0.2
+	amphibious_invasion_defence = 0.25
+	max_dig_in_factor = 0.2
+	dig_in_speed_factor = 0.5
+}

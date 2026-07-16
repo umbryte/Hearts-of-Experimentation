@@ -1,0 +1,291 @@
+### MISC ###
+	
+spriteTypes = { 
+
+    ### HOR FLAME TANK ICONS ###
+	
+	## TECH ICONS ##
+	
+	SpriteType = {
+		name = "GFX_hor_flametank_tech_alt_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_flamethrower.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hor_flametank_tech_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_flamethrower.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hor_armored_advanced_flamethrower_tech_medium"
+		texturefile = "gfx/interface/technologies/sp_armored_advanced_flamethrower.dds"
+	}
+	
+	## SUPPORT COMPANIES ##
+	
+	spriteType = { name = "GFX_unit_light_flame_tank_hor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_light_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_flame_tank_hor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_flame_tank_hor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_flame_tank_hor_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_flamethrower_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_medium_flame_tank_hor_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_heavy_flame_tank_hor_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_flamethrower_tank_icon.dds" noOfFrames = 2}
+
+	### USA LEND LEASE EVENT PICTURE ### 
+	
+	spriteType = {
+		name = "GFX_report_yugoslav_partisans"
+		texturefile = "gfx/event_pictures/report_yugoslav_partisans.dds"
+	}
+
+	### AXIS RESEARCH ICON ###
+	
+	spriteType = {
+		name = "GFX_axis_research"
+		texturefile = "gfx/interface/technology_sharing/axis_research.dds"
+	}
+
+	### BUILDINGS STRIP NUMBER OF FRAMES ###
+	
+	spriteType = {
+		name = "GFX_buildings_strip"
+		textureFile = "gfx/interface/buildings/building_icon_strip.dds"
+		noOfFrames = 32
+	}
+
+	### ITALIAN SCIENTIST ###
+	
+	SpriteType = {
+		name = "GFX_portrait_ITA_fulangxisike_luoxi"
+		texturefile = "gfx/leaders/ITA/scientists/ITA_fulangxisike_luoxi.dds"
+	}
+
+	### SOVIET SCIENTISTS ###
+	
+	spriteType = {
+		name = "GFX_portrait_SOV_Boris_Georgievich_Chilikin"
+		texturefile = "gfx/leaders/SOV/scientists/SOV_Boris_Georgievich_Chilikin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_Boris_Mikhailovich_Malinin"
+		texturefile = "gfx/leaders/SOV/scientists/SOV_Boris_Mikhailovich_Malinin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_Mikhail_Ilyich_Koshkin"
+		texturefile = "gfx/leaders/SOV/scientists/SOV_Mikhail_Ilyich_Koshkin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_Joseph_Yakovlevich_Kotin"
+		texturefile = "gfx/leaders/SOV/scientists/SOV_Joseph_Yakovlevich_Kotin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_SOV_Vasily_Gavrilovich_Grabin"
+		texturefile = "gfx/leaders/SOV/scientists/SOV_Vasily_Gavrilovich_Grabin.dds"
+	}
+
+    ### USA LEND LEASE EVENT PICTURE ###
+	
+	spriteType = {
+		name = "GFX_report_event_usa_lend_lease"
+		texturefile = "gfx/event_pictures/report_event_usa_lend_lease.dds"
+	}
+
+	### HEAVY METAL REFINERY TEXTICON ###
+	
+	spriteType = {
+		name = "GFX_construction_speed_heavy_metal_refinery_texticon"
+		texturefile = "gfx/texticons/construction_speed_heavy_metal_refinery_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	### GERMAN REWORK TECH MOD STUFF ###
+	
+	SpriteType = {
+		name = "GFX_sniper_rifle_medium"
+		texturefile = "gfx/interface/technologies/sniper_rifle.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_flamethrower_medium"
+		texturefile = "gfx/interface/technologies/flamethrower.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_winter_clothes_gw_medium"
+		texturefile = "gfx/interface/technologies/winter_clothes_gw.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_winter_clothes_1939_medium"
+		texturefile = "gfx/interface/technologies/winter_clothes_1939.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_winter_clothes_1941_medium"
+		texturefile = "gfx/interface/technologies/winter_clothes_1941.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_winter_clothes_1944_medium"
+		texturefile = "gfx/interface/technologies/winter_clothes_1944.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ENG_winter_clothes_gw_medium"
+		texturefile = "gfx/interface/technologies/ENG_winter_clothes_gw.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_winter_clothes_gw_medium"
+		texturefile = "gfx/interface/technologies/FRA_winter_clothes_gw.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_winter_clothes_gw_medium"
+		texturefile = "gfx/interface/technologies/GER_winter_clothes_gw.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_winter_clothes_gw_medium"
+		texturefile = "gfx/interface/technologies/JAP_winter_clothes_gw.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_winter_clothes_gw_medium"
+		texturefile = "gfx/interface/technologies/SOV_winter_clothes_gw.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_winter_clothes_gw_medium"
+		texturefile = "gfx/interface/technologies/USA_winter_clothes_gw.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_jngdst_clothes_1944_medium"
+		texturefile = "gfx/interface/technologies/jngdst_clothes_1944.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_jngdst_clothes_1941_medium"
+		texturefile = "gfx/interface/technologies/jngdst_clothes_1941.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_jngdst_clothes_1939_medium"
+		texturefile = "gfx/interface/technologies/jngdst_clothes_1939.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_jngdst_clothes_gw_medium"
+		texturefile = "gfx/interface/technologies/jngdst_clothes_gw.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_camo1942_medium"
+		texturefile = "gfx/interface/technologies/ENG_camo1942.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_camo1942_medium"
+		texturefile = "gfx/interface/technologies/FRA_camo1942.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_camo1942_medium"
+		texturefile = "gfx/interface/technologies/GER_camo1942.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_camo1942_medium"
+		texturefile = "gfx/interface/technologies/ITA_camo1942.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_camo1942_medium"
+		texturefile = "gfx/interface/technologies/SOV_camo1942.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_camo1942_medium"
+		texturefile = "gfx/interface/technologies/USA_camo1942.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_camo1942_medium"
+		texturefile = "gfx/interface/technologies/camo1942.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_camo_medium"
+		texturefile = "gfx/interface/technologies/GER_camo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_camo_medium"
+		texturefile = "gfx/interface/technologies/SOV_camo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_camo_medium"
+		texturefile = "gfx/interface/technologies/USA_camo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_camo_medium"
+		texturefile = "gfx/interface/technologies/camo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_paratroopers4_medium"
+		texturefile = "gfx/interface/technologies/paratroopers4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_mountaineers4_medium"
+		texturefile = "gfx/interface/technologies/mountain4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_marines4_medium"
+		texturefile = "gfx/interface/technologies/marines4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_rangers_tech4_medium"
+		texturefile = "gfx/interface/technologies/rangers_tech4.dds"
+	}
+
+	### HOR SIAM AUTONOMY ###
+
+	spriteType = {
+        name = "GFX_hor_siam_autonomy_icon"
+        texturefile = "gfx/interface/autonomy/hor_siam_autonomy_icon.dds"
+    }
+
+	### MAX EVENT ###
+	
+	spriteType = {
+		name = "GFX_report_event_maxio"
+		texturefile = "gfx/event_pictures/report_event_maxio.dds"
+	}
+
+	### GARRISON UNIT ICONS ###
+	
+	spriteType = { 
+     		name = "GFX_unit_garrison_icon_medium"				
+    		textureFile = "gfx/interface/counters/divisions_large/unit_garrison_icon.dds"
+     		noOfFrames = 2
+	}
+
+	spriteType = { 
+     		name = "GFX_unit_garrison_icon_medium_white"					
+     		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_garrison_icon.dds" 
+     		noOfFrames = 2
+	}
+
+	spriteType = {
+     		name = "GFX_unit_garrison_icon_small"
+     		texturefile = "gfx/texticons/unit_garrison_icon_small.dds"
+     		legacy_lazy_load = no
+     		noOfFrames = 2		
+	}
+}

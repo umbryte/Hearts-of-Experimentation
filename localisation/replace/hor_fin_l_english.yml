@@ -1,0 +1,13 @@
+﻿l_english:
+
+# FINLAND STUFF
+
+ # FOCUSES
+ FIN_second_soviet_finnish_war:0 "The Second Soviet-Finnish War"
+ FIN_second_soviet_finnish_war_desc:0 "We have waited long enough! With the help of the German Reich, we shall strike against our greatest enemy once more in order to finish what we started!"
+
+ # TOOLTIPS
+ FIN_expansion_towards_the_atlantic_no_state_tt: "Adds §G4§! Building Slots, §Y4 Dockyards§! and §Y2 Naval Bases§! in a European state on the Atlantic Ocean."
+ FIN_expand_mining_prospection_tt: "Adds production of §Y20£resources_strip|5 §!in every core state already providing §Y£resources_strip|5 $state_resource_steel$§!. \nCurrent effects:"
+ FIN_found_pohjolan_voima_factories_tt: "\nAdds §G4§! Building Slots and §Y2 Civilian Factories§! in up to §Y10 fully controlled core states§! with at least 6 levels of $infrastructure$."
+ FIN_militarized_society_requirement_tt: "§RWill be temporarily removed§! if not §Y$extensive_conscription$§! or §Y$service_by_requirement$§! Conscription Law."

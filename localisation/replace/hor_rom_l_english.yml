@@ -1,0 +1,10 @@
+﻿l_english:
+
+# KINGDOM OF ROMANIA STUFF
+
+ # SCRIPTED GUI
+ hor_rom_civil_war_warning_text:0 "Make sure §RNOT to join§! the Axis by any means necessary §Runtil§! completing either the focus §YIron Guard§! or the focus §YNational Christian Party!§!"
+
+ # IDEAS
+ ROM_german_trade_treaty:0 "German-Romanian Trade Treaty"
+ ROM_german_trade_treaty_desc:0 "By utilising our vast natural resources to aid their impressive industries, we can potentially secure a great alliance with the German Reich in the near future."

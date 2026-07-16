@@ -1,0 +1,17 @@
+characters={
+	CNT_notmax = {
+		name= "John Not Max Cone"
+		portraits={
+			civilian={
+				large="gfx/leaders/CNT/notmax.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits = { CNT_retarded }
+			expire="1965.1.1.1"
+			id=-1
+		}	
+	}
+
+}

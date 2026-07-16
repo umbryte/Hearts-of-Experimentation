@@ -1,0 +1,220 @@
+sov_integration_cat = {
+
+	sov_integrate_western_poland = {
+
+		priority = 100
+		icon = eng_trade_unions_demand
+		cost = 25
+		days_remove = 60
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		available = {
+			89 = { is_owned_and_controlled_by = ROOT }
+			91 = { is_owned_and_controlled_by = ROOT }
+			93 = { is_owned_and_controlled_by = ROOT }
+			94 = { is_owned_and_controlled_by = ROOT }
+			95 = { is_owned_and_controlled_by = ROOT }
+			96 = { is_owned_and_controlled_by = ROOT }
+			97 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		remove_effect = {
+			89 = { add_core_of = ROOT }
+			91 = { add_core_of = ROOT }
+			93 = { add_core_of = ROOT }
+			94 = { add_core_of = ROOT }
+			95 = { add_core_of = ROOT }
+			96 = { add_core_of = ROOT }
+			97 = { add_core_of = ROOT }
+		}
+	}
+
+	sov_integrate_lithuania = {
+
+		priority = 100
+		cost = 25
+		days_remove = 45
+		fire_only_once = yes
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		available = {
+			189 = { is_owned_and_controlled_by = ROOT }
+			189 = { compliance > 40 }
+			815 = { is_owned_and_controlled_by = ROOT }
+			815 = { compliance > 40 }
+			11 = { is_owned_and_controlled_by = ROOT }
+			11 = { compliance > 40 }
+			814 = { is_owned_and_controlled_by = ROOT }
+			814 = { compliance > 40 }
+			784 = { is_owned_and_controlled_by = ROOT }
+			784 = { compliance > 40 }
+		}
+
+		remove_effect = {
+			188 = { add_core_of = ROOT }
+			189 = { add_core_of = ROOT }
+			815 = { add_core_of = ROOT }
+			11 = { add_core_of = ROOT }
+			814 = { add_core_of = ROOT }
+			784 = { add_core_of = ROOT }
+		}
+
+	}
+
+	sov_integrate_latvia = {
+
+		priority = 100
+		icon = eng_trade_unions_demand
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		cost = 25
+		days_remove = 45
+
+		available = {
+			190 = { is_owned_and_controlled_by = ROOT }
+			190 = { compliance > 40 }
+			809 = { is_owned_and_controlled_by = ROOT }
+			809 = { compliance > 40 }
+			808 = { is_owned_and_controlled_by = ROOT }
+			808 = { compliance > 40 }
+			12 = { is_owned_and_controlled_by = ROOT }
+			12 = { compliance > 40 }
+			810 = { is_owned_and_controlled_by = ROOT }
+			810 = { compliance > 40 }
+		}
+
+		remove_effect = {
+			190 = { add_core_of = ROOT }
+			809 = { add_core_of = ROOT }
+			808 = { add_core_of = ROOT }
+			12 = { add_core_of = ROOT }
+			810 = { add_core_of = ROOT }
+		}
+
+	}
+
+	sov_integrate_estonia = {
+		priority = 100
+		cost = 25
+		days_remove = 45
+		fire_only_once = yes
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		available = {
+			811 = { is_owned_and_controlled_by = ROOT }
+			811 = { compliance > 40 }
+			812 = { is_owned_and_controlled_by = ROOT }
+			812 = { compliance > 40 }
+			13 = { is_owned_and_controlled_by = ROOT }
+			13 = { compliance > 40 }
+			813 = { is_owned_and_controlled_by = ROOT }
+			813 = { compliance > 40 }
+			191 = { is_owned_and_controlled_by = ROOT }
+			191 = { compliance > 40 }
+		}
+
+		remove_effect = {
+			811 = { add_core_of = ROOT }
+			812 = { add_core_of = ROOT }
+			13 = { add_core_of = ROOT }
+			813 = { add_core_of = ROOT }
+			191 = { add_core_of = ROOT }
+		}
+
+	}
+
+	sov_integrate_bessarabia = {
+
+		priority = 100
+		cost = 25
+		days_remove = 30
+		fire_only_once = yes
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		available = {
+			80 = { is_owned_and_controlled_by = ROOT }
+			80 = { compliance > 40 }
+			78 = { is_owned_and_controlled_by = ROOT }
+			78 = { compliance > 40 }
+			766 = { is_owned_and_controlled_by = ROOT }
+			766 = { compliance > 40 }
+		}
+
+		remove_effect = {
+			80 = { add_core_of = ROOT }
+			78 = { add_core_of = ROOT }
+			766 = { add_core_of = ROOT }
+		}
+	}
+
+	sov_integrate_finnish_karelia = {
+
+		priority = 100
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		available = {
+			146 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		remove_effect = {
+			146 = { add_core_of = ROOT }
+
+			if = {
+				limit = { 147 = { is_owned_and_controlled_by = ROOT } }
+				147 = { add_core_of = ROOT }
+			}
+		}
+
+	}
+}

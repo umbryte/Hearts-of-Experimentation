@@ -1,0 +1,50 @@
+﻿l_english:
+
+# YUGOSLAVIA STUFF
+
+ # EVENTS
+ hor_events.20.t:0 "The Yugoslav Partisans rise up!"
+ hor_events.20.a:0 "A honorable display of bravery."
+ hor_events.20.d:0 ""
+
+ # IDEAS
+ yugoslav_indigenous_designs:0 "Indigenous Designs"
+ yugoslav_partisans:0 "Partisan Spirit"
+ yugoslav_radicals:0 "Demoralised Puppet State"
+
+ # FOCUSES
+ YUG_a_true_balkan_union:0 "A True Balkan Union"
+ YUG_a_true_balkan_union_desc:0 "A True Balkan Union"
+ YUG_integrate_turkey:0 "Integrate Eastern Thrace"
+ YUG_integrate_turkey_desc:0 "Integrate Eastern Thrace"
+ YUG_reach_out_to_turkey:0 "Reach out to Turkey"
+ YUG_reach_out_to_turkey_desc:0 "Reach out to Turkey"
+ YUG_integrate_greece:0 "Integrate Greece"
+ YUG_integrate_greece_desc:0 "Integrate Greece"
+ YUG_reach_out_to_greece:0 "Reach out to Greece"
+ YUG_reach_out_to_greece_desc:0 "Reach out to Greece"
+ YUG_reach_out_to_italy:0 "Reach out to Italy"
+ YUG_reach_out_to_italy_desc:0 "Reach out to Italy"
+ YUG_integrate_romania:0 "Integrate Romania"
+ YUG_integrate_romania_desc:0 "Integrate Romania"
+ YUG_reach_out_to_romania:0 "Reach out to Romania"
+ YUG_reach_out_to_romania_desc:0 "Reach out to Romania"
+ YUG_integrate_albania:0 "Integrate Albania"
+ YUG_integrate_albania_desc:0 "Integrate Albania"
+ YUG_reach_out_to_albania:0 "Reach out to Albania"
+ YUG_reach_out_to_albania_desc:0 "Reach out to Albania"
+ YUG_establish_SFRY:0 "Establish the SFRY"
+ YUG_establish_SFRY_desc:0 "Now that we have came out of the war victorious, it is time to act upon our true ambitions and to enact our ultimate plan of establishing a Socialist Federal Republic of our Yugoslavia! For the people, by the people, of the people!"
+ YUG_partisan_uprising:0 "Redetermination of Our Fate"
+ YUG_partisan_uprising_desc:0 "Our country has been restrained under the Fascist scum's shackles for far too long! It is time to rise, fellow Partisan brothers and sisters! It is time to rise and to take back our Fatherland!"
+ YUG_greater_yugoslavia_desc:0 "Our vision is complete. With the unification of South Slavic and neighboring lands under one banner, we proclaim the birth of Greater Yugoslavia — a singular, indivisible nation, rightful master of the Balkans."
+ YUG_surrender_italian_claims:0 "Join the Axis"
+ YUG_surrender_italian_claims_desc:0 "Yugoslavia shall no longer stand idle or weak. By joining the Axis, we embrace our destiny among the victors of a new world order—united in strength, discipline, and the triumph of the will!"
+ YUG_war_on_bulgaria:0 "War on Bulgaria"
+ YUG_war_on_bulgaria_desc:0 "Bulgaria defies our rightful claims. We will settle this with steel, not words."
+ 
+ # TOOLTIPS
+ YUG_establish_SFRY_tt:0 "§RThe Democratic Federal Yugoslavia becomes SFR Yugoslavia§!"
+ YUG_partisan_uprising_tt:0 "§RUpon this focus' completion, Yugoslavia will break apart in a civil war between the Partisans and the Radicals!§!"
+ YUG_coastal_defense_effect_tt1:0 "Add 2 §YCoastal Forts§! on the coastline\n"
+ YUG_coastal_defense_effect_tt2:0 "Add 1 §YCoastal Fort§! to §YNaval Base§! locations\n"

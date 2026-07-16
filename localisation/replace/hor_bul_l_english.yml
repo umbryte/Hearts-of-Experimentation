@@ -1,0 +1,13 @@
+﻿l_english:
+
+# BULGARIA STUFF
+
+ # IDEAS
+ BUL_more_recruitable_army:0 "Bulgarian Militarism"
+
+ # TOOLTIPS
+ BUL_bulgaria_on_the_three_seas_buliding_tt:0 "Add §Y4 Naval Dockyard§! to any state with a Naval Dockyard already built along the coast of the Aegean, Adriatic or Black Sea. \nAdd §Y1 Naval Base§! and §Y2 Coastal Fort§! in any province with a Naval Base in the Aegean, Adriatic or Black Sea. \nCurrent effects:"
+ BUL_defensive_lines_tt:0 "Add §Y2 Infrastructure§!, §Y1 Anti-Air§! and §Y1 Land Fort§! in every initial Bulgarian state or historical territorial claims fully controlled by Bulgaria and neighboring a country that has generated §YWorld Tension§!."
+ BUL_reinforce_naval_bases_tt:0 "Add §Y2 Land Fort§!, §Y2 Coastal Fort§!, §Y1 Anti-Air§! and §Y2 Naval Base§! in §Y[211.GetName]§!, §Y[77.GetName]§!, §Y[184.GetName]§!, §Y[731.GetName]§!, as long as they are fully controlled by [BUL.GetNameDef]. \nCurrent effects:"
+ BUL_an_aegean_sea_fleet_tt:0 "Adds §Y1 Naval Base§!, §G2§! Building Slot and §Y2 Naval Dockyard§! to every state with a dockyard in the Aegean Sea. \nCurrent effects:"
+ BUL_the_third_bulgarian_empire_tt:0 "Adds §G2§! Building Slot, §Y2 Civilian Factory§! and §Y2 Infrastructure§! in three historical states retaken and cored by Bulgaria."

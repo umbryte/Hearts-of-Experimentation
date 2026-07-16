@@ -1,0 +1,41 @@
+pacific_war = {
+	priority = 100
+	icon = GFX_decision_category_NOR_fascist_deploy_prep
+	picture = GFX_decision_cat_picture_generic_shipbuilding
+
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+	}
+
+	visible_when_empty = yes
+
+	on_map_area = {
+		state = 629 
+		state = 647
+		state = 645
+		state = 526
+		state = 648
+		state = 646
+		state = 638
+		state = 632
+		state = 631
+		state = 630
+		state = 633
+		name = islands_jap
+		zoom = 700
+	}
+}
+
+hor_japan_transfer_indochina_category = {
+    allowed = {
+	tag = JAP
+    }
+    visible = {
+	has_completed_focus = JAP_occupy_indochina
+    }
+    icon = GFX_decision_category_hor_japan_transfer_indochina_icon
+    picture = GFX_decision_cat_hor_japan_transfer_indochina_image
+    priority = 50
+}

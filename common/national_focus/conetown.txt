@@ -1,0 +1,12 @@
+﻿focus_tree = {
+	id = conetown_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 1000
+			tag = CNT
+		}
+	}
+	default = no
+}

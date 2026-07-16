@@ -1,0 +1,54 @@
+﻿l_english:
+
+# UNITED KINGDOM STUFF
+
+ # FOCUSES
+ uk_australia_focus:0 "Develop Australia"
+ uk_canada_focus:0 "Develop Canada"
+ uk_india_focus:0 "Develop India"
+ 
+ # PROPAGANDA (COMMONWEALTH)
+ COM_propaganda_campaigns:0 "Ministry of Propaganda"
+ COM_together_prop:0 "Together"
+ COM_women_prop:0 "Come into the Factories"
+ COM_finest_hour_prop:0 "Our Finest Hour"
+ COM_careless_talk_prop:0 "Careless Talk Costs Lives"
+ COM_wings_victory_prop:0 "Wings of Victory"
+ COM_dig_victory_prop:0 "Dig for Victory"
+ COM_running_prop:0 "Running Propaganda Campaign"
+ 
+ # PROPAGANDA
+ ENG_propaganda_campaigns:0 "Ministry of Propaganda"
+ ENG_together_prop:0 "Together"
+ ENG_women_prop:0 "Come into the Factories"
+ ENG_finest_hour_prop:0 "Our Finest Hour"
+ ENG_careless_talk_prop:0 "Careless Talk Costs Lives"
+ ENG_wings_victory_prop:0 "Wings of Victory"
+ ENG_dig_victory_prop:0 "Dig for Victory"
+ ENG_japan_prop:0 "Pursue Japan To The End"
+ ENG_oil_prop:0 "Turn That Gas Down"
+ ENG_air_production_prop:0 "Mightier Yet!"
+ ENG_blood_prop:0 "Urgent Call For Blood!"
+ ENG_german_prop:0 "We Beat 'Em Before..."
+ ENG_war_savings_prop:0 "Back The Great Attack"
+ 
+ # IDEAS
+ raf_efficencies:0 "RAF Efficiencies"
+ 
+ # PLANE NAMES - ENG
+ ENG_cv_nav_bomber_equipment_4:0 "Fairey Spearfish"
+ ENG_cv_nav_bomber_equipment_4_short:0 "Spearfish"
+ ENG_nav_bomber_equipment_4:0 "Fairey Spearfish"
+ ENG_nav_bomber_equipment_4_short:0 "Spearfish"
+ ENG_fighter_equipment_4:0 "Supermarine Seafang"
+ ENG_fighter_equipment_4_short:0 "Seafang"
+ ENG_cv_fighter_equipment_4:0 "Supermarine Seafire"
+ ENG_cv_fighter_equipment_4_short:0 "Seafire"
+ ENG_CAS_equipment_4:0 "Hawker Sea Fury"
+ ENG_CAS_equipment_4_short:0 "Sea Fury"
+ ENG_tac_bomber_equipment_4:0 "de Havilland Mosquito B.35"
+ ENG_tac_bomber_equipment_4_short:0 "Mosquito B.35"
+ ENG_heavy_fighter_equipment_4:0 "de Havilland Hornet"
+ ENG_heavy_fighter_equipment_4_short:0 "Sea Hornet"
+ ENG_strat_bomber_equipment_4:0 "Avro Shackleton"
+ ENG_strat_bomber_equipment_4_short:0 "Shackleton"

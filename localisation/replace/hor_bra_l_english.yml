@@ -1,0 +1,49 @@
+﻿l_english:
+
+# SECOND BRAZILIAN REPUBLIC STUFF 
+ 
+ # EVENTS
+ hor_events.5.t:0 "Brazil asks for direct control of British Guyana"
+ hor_events.5.d:0 "The Brazilian government has approached us with a formal request to assume control of British Guiana. Citing its geographic proximity and the need to secure the region from Axis threats, they argue that Brazil is better positioned to administer and defend the territory during wartime."
+ hor_events.5.a:0 "Sure!"
+ hor_events.5.b:0 "Nah!"
+ 
+ hor_events.8.t:0 "The United Kingdom accepts our offer"
+ hor_events.8.d:0 "The United Kingdom has agreed to our request. British Guiana will be placed under our administration to better secure the region."
+ hor_events.8.a:0 "What a wonderful friendship!"
+ 
+ hor_events.9.t:0 "The United Kingdom refuses our offer"
+ hor_events.9.d:0 "The United Kingdom has rejected our proposal. They intend to retain control of British Guiana despite the ongoing threat."
+ hor_events.9.a:0 "Curse them!"
+ 
+ hor_events.6.t:0 "Brazil asks for direct control of French Guiana"
+ hor_events.6.d:0 "In light of our weakened colonial position, Brazil has offered to take responsibility for French Guiana. They insist this move is in the interest of defending the Americas from Axis influence and maintaining order along the South American coast."
+ hor_events.6.a:0 "Sure!"
+ hor_events.6.b:0 "Nah!"
+ 
+ hor_events.10.t:0 "France accepts our offer"
+ hor_events.10.d:0 "France has accepted our offer. French Guiana will now fall under Brazilian protection for the duration of the war."
+ hor_events.10.a:0 "What a wonderful friendship!
+ 
+ hor_events.11.t:0 "France refuses our offer"
+ hor_events.11.d:0 "France has declined our request and will maintain its hold on French Guiana, regardless of strategic concerns."
+ hor_events.11.a:0 "Curse them!"
+ 
+ hor_events.7.t:0 "Brazil asks for direct control of Suriname"
+ hor_events.7.d:0 "Brazil has proposed that we transfer control of Suriname to them, claiming it is necessary for regional security and continued Allied cooperation. Given our occupied homeland, they argue that the colony would be safer under Brazilian protection for the duration of the war."
+ hor_events.7.a:0 "Sure!"
+ hor_events.7.b:0 "Nah!"
+ 
+ hor_events.12.t:0 "The Netherlands accepts our offer"
+ hor_events.12.d:0 "The Dutch government has approved the transfer of Suriname to Brazilian control, citing our commitment to Allied security."
+ hor_events.12.a:0 "What a wonderful friendship!"
+ 
+ hor_events.13.t:0 "The Netherlands refuses our offer"
+ hor_events.13.d:0 "The Netherlands has refused to relinquish Suriname, despite their current inability to manage the colony directly."
+ hor_events.13.a:0 "Curse them!
+ 
+ # FOCUSES
+ BRA_ask_for_the_guianas:0 "Ask For The Guianas"
+ BRA_ask_for_the_guianas_desc:0 "The European powers can no longer afford to hold distant colonies in South America. As a committed Ally, Brazil will request the transfer of the Guianas to better secure the region and deny the Axis any foothold on our continent."
+ BRA_war_on_venezuela:0 "War On Venezuela"
+ BRA_war_on_venezuela_desc:0 "Venezuela’s growing instability and oil reserves make it a potential target for Axis subversion. To protect the Allied war effort and ensure regional stability, Brazil must intervene and bring Venezuela into the fold—by force if necessary."

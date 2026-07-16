@@ -1,0 +1,469 @@
+add_namespace = hor_events
+
+# Yugoslavia asks to join Axis
+country_event = {
+	id = hor_events.1
+	title = hor_events.1.t
+	desc = hor_events.1.d
+
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			GER = {
+				save_event_target_as = alliance_inviter
+			}
+			YUG = {
+				save_event_target_as = alliance_applicant
+			}
+		}
+	}
+
+	# Accept them
+	option = {
+		name = hor_events.1.a
+		trigger = {
+			YUG = { has_rule = can_join_factions }
+		}
+		ai_chance = {
+			base = 100
+		}
+		add_to_faction = YUG
+		YUG = { country_event = { id = generic.3 hours = 6 } }
+		hidden_effect = {
+			YUG = { army_experience = 35 }
+			YUG = { add_war_support = 0.1 }
+			YUG = { set_politics = {
+    					ruling_party = fascism
+    					elections_allowed = no
+					}
+			}
+			YUG = { set_political_party = {
+    					ideology = fascism
+    					popularity = 100
+					}
+			}
+			set_country_flag = alliance_inviter@ROOT
+			YUG = { set_country_flag = alliance_applicant@ROOT }
+			news_event = { id = news.289 hours = 12 }
+		}
+
+		YUG = {
+			add_ai_strategy = {
+				type = alliance
+				id = GER
+				value = 200
+			}
+		}
+	}
+	# Decline them
+	option = { 
+		name = hor_events.1.b
+		ai_chance = {
+			base = 0
+		}
+		YUG = { 
+			country_event = { id = generic.4 hours = 6 }
+		}
+	}		
+}
+
+# Japan requests to puppet us (Siam)
+country_event = {
+	id = hor_events.2
+	title = hor_events.2.t
+	desc = hor_events.2.d
+
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	# Accept their offer (Siam gets puppeted)
+	option = {
+		name = hor_events.2.a
+		SIA = { set_politics = { ruling_party = JAP } }
+		#puppet = SIA
+		
+		SIA_phraya_phahon = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = { collaborator_king }
+				}
+				promote_leader = yes
+			}
+		}
+
+		JAP = {
+			country_event = { id = hor_events.3 }
+
+			add_to_faction = SIA
+
+			set_autonomy = {
+    				target = SIA
+				freedom_level = 0.1
+    				autonomous_state = hor_siam_autonomy
+    				end_wars = no
+    				end_civil_wars = no
+			}
+		}
+	}
+
+	# Decline their offer (Siam doesn't get puppeted)
+	option = { 
+		name = hor_events.2.b
+		ai_chance = {
+			base = 0
+		}
+		JAP = { 
+			country_event = { id = hor_events.4 }
+		}
+	}
+}
+
+# Siam accepts to get puppeted by Japan
+country_event = {
+	id = hor_events.3
+	title = hor_events.3.t
+	desc = hor_events.3.d
+
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.3.a
+	}
+}
+
+# Siam declines to get puppeted by Japan
+country_event = {
+	id = hor_events.4
+	title = hor_events.4.t
+	desc = hor_events.4.d
+
+	picture = GFX_report_event_japanese_siam_politicians
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hor_events.4.a
+	}
+}
+
+# Brazil asks the uk for the guianas
+country_event = {
+	id = hor_events.5
+	title = hor_events.5.t
+	desc = hor_events.5.d
+
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.5.a
+		BRA = {
+			transfer_state = 687
+		}
+		687 = { add_core_of = BRA }
+		BRA = { 
+			country_event = { id = hor_events.8 }
+		}
+	}
+
+	option = {
+		name = hor_events.5.b
+		ai_chance = {
+			base = 0
+		}
+		BRA = { 
+			country_event = { id = hor_events.9 }
+		}
+	}
+}
+
+# Brazil asks france for the guianas
+country_event = {
+	id = hor_events.6
+	title = hor_events.6.t
+	desc = hor_events.6.d
+
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.6.a
+		BRA = {
+			transfer_state = 310
+		}
+		310 = { add_core_of = BRA }
+		BRA = { 
+			country_event = { id = hor_events.10 }
+		}
+	}
+
+	option = {
+		name = hor_events.6.b
+		ai_chance = {
+			base = 0
+		}
+		BRA = { 
+			country_event = { id = hor_events.11 }
+		}
+	}
+}
+
+# Brazil asks netherlands for suriname
+country_event = {
+	id = hor_events.7
+	title = hor_events.7.t
+	desc = hor_events.7.d
+
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.7.a
+		BRA = {
+			transfer_state = 309
+		}
+		309 = { add_core_of = BRA }
+		BRA = { 
+			country_event = { id = hor_events.12 }
+		}
+	}
+
+	option = {
+		name = hor_events.7.b
+		ai_chance = {
+			base = 0
+		}
+		BRA = { 
+			country_event = { id = hor_events.13 }
+		}
+	}
+}
+
+# UK gives Brazil Guyana
+country_event = {
+	id = hor_events.8
+	title = hor_events.8.t
+	desc = hor_events.8.d
+
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.8.a
+	}
+}
+
+# UK doesnt give Brazil Guyana
+country_event = {
+	id = hor_events.9
+	title = hor_events.9.t
+	desc = hor_events.9.d
+
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.9.a
+	}
+}
+
+# France gives Brazil Guiana
+country_event = {
+	id = hor_events.10
+	title = hor_events.10.t
+	desc = hor_events.10.d
+
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.10.a
+	}
+}
+
+# France doesnt give Brazil Guiana
+country_event = {
+	id = hor_events.11
+	title = hor_events.11.t
+	desc = hor_events.11.d
+
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.11.a
+	}
+}
+
+# Netherlands gives Brazil Suriname
+country_event = {
+	id = hor_events.12
+	title = hor_events.12.t
+	desc = hor_events.12.d
+
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.12.a
+	}
+}
+
+# Netherlands doesnt give Brazil Suriname
+country_event = {
+	id = hor_events.13
+	title = hor_events.13.t
+	desc = hor_events.13.d
+
+	picture = GFX_report_event_gre_allied_diplomacy_military
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.13.a
+	}
+}
+
+# HOR starting event
+country_event = {
+	id = hor_events.14
+	title = hor_events.14.t
+	desc = hor_events.14.d
+
+	picture = GFX_report_event_maxio
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hor_events.14.a
+	}
+}
+
+# Manchu asks Japan for their cores back
+country_event = {
+	id = hor_events.15
+	title = hor_events.15.t
+	desc = hor_events.15.d
+
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.15.a
+		ai_chance = {
+			base = 100
+		}
+		MAN = {
+			transfer_state = 609
+		}
+		MAN = {
+			transfer_state = 745
+		}
+		609 = { add_core_of = MAN }
+		MAN = { 
+			country_event = { id = hor_events.16 }
+		}
+	}
+
+	option = {
+		name = hor_events.15.b
+		ai_chance = {
+			base = 0
+		}
+		MAN = { 
+			country_event = { id = hor_events.17 }
+		}
+	}
+}
+
+# Japan agrees
+country_event = {
+	id = hor_events.16
+	title = hor_events.16.t
+	desc = hor_events.16.d
+
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.16.a
+	}
+}
+
+# Japan disagrees
+country_event = {		
+	id = hor_events.17
+	title = hor_events.17.t
+	desc = hor_events.17.d
+
+	picture = GFX_report_event_japan_europe_pact
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.17.a
+	}
+}
+
+# USA Lend-leased us
+country_event = {
+	id = hor_events.18
+	title = hor_events.18.t
+	desc = hor_events.18.d
+
+	picture = GFX_report_event_usa_lend_lease
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.18.a
+	}
+}
+
+# USA joins allies
+country_event = {
+	id = hor_events.19
+	title = hor_events.19.t
+	desc = hor_events.19.d
+
+	picture = GFX_report_event_usa_lend_lease
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hor_events.19.a
+	}
+}
+
+# Yugoslavia enters civil war
+country_event = {
+	id = hor_events.20
+	title = hor_events.20.t
+	desc = hor_events.20.d 
+
+	picture = GFX_report_yugoslav_partisans
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hor_events.20.a
+	}
+}

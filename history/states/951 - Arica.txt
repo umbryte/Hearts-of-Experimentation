@@ -1,0 +1,39 @@
+state = {
+	id = 951
+	name = "STATE_951"
+	manpower = 1 #340000
+	
+	state_category = rural
+
+	#resources = {
+	#	tungsten = 140 # In replacement of Nitrate
+	#}
+
+	history = {
+		owner = CNT
+		#owner = CHL
+		#add_core_of = CHL
+		#add_claim_by = PRU
+		#
+		#buildings = {
+		#	infrastructure = 2
+		#	arms_factory = 2
+		#	air_base = 1
+		#}
+		#
+		#victory_points = {
+		#	5131 2
+		#}
+		#
+		#victory_points = {
+		#	8217 1
+		#}
+
+	}
+
+	provinces = {
+		5131 8217 8231 13303
+	}
+
+	local_supplies = 0.0 
+}

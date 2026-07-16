@@ -1,0 +1,32 @@
+state={
+	id=713
+	name="STATE_713"
+	manpower=96
+	state_category = megalopolis # WAS tiny_island
+
+	resources = { # HOR
+		coal = 10
+		oil = 10
+	}
+
+	history={
+		owner = VIC
+		add_core_of = VIC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1 # HOR
+			arms_factory = 1 # HOR
+			dockyard = 1 # HOR
+			heavy_metal_refinery = 1 # HOR
+			2165 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		2165 
+	}
+
+	local_supplies=0.0 
+}

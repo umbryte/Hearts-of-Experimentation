@@ -1,0 +1,8 @@
+hor_rom_civil_war_warning_inlay_window = {
+
+	window_name = hor_rom_civil_war_warning_ui_window
+
+  	visible = {
+		always = yes
+	}
+}

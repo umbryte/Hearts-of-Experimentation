@@ -1,0 +1,49 @@
+﻿l_english:
+
+# MANCHUKUO STUFF
+
+ # PROPAGANDA
+ MAN_propaganda_campaigns:0 "Naikaku Jōhōbu"
+ MAN_china_prop:0 "Jinsei Hoso"
+ MAN_tech_prop:0 "Ka Bō Kuni"
+ MAN_air_prop:0 "Kyūsei"
+ MAN_tank_prop:0 "Hyaku go Senkin"
+ MAN_strike_prop:0 "Nishi o Utsu"
+ MAN_bombing_prop:0 "I no Kasane Sora Shito"
+ MAN_running_prop:0 "Running Propaganda Campaign"
+
+ # EVENTS
+ hor_events.15.t:0 "Manchukuo Petitions for the Return of Former Lands"
+ hor_events.15.d:0 "Manchukuo asks that we return East Hebei and Dalian. Granting this would strengthen our alliance, but we may prefer to keep control ourselves."
+ hor_events.15.a:0 "Return the lands to them!"
+ hor_events.15.b:0 "No! East Hebei and Dalian shall stay Japanese!"
+ 
+ hor_events.16.t:0 "The Rising Sun Grants Our Lands Back!"
+ hor_events.16.d:0 "Japan has agreed to return East Hebei and Dalian. Our people celebrate this generous act that cements our bond."
+ hor_events.16.a:0 "Wonderful!"
+ 
+ hor_events.17.t:0 "The Rising Sun Denys Our Lands Back!"
+ hor_events.17.d:0 "Japan has refused to return East Hebei and Dalian. While our alliance remains, our people are left disappointed."
+ hor_events.17.a:0 "Well shit."
+ 
+ # IDEAS
+ MAN_zaibatsu_investments:0 "Zaibatsus Investments"
+ MAN_supply_empire:0 "Supply The Empire"
+ MAN_imperial_metallurgy:0 "Imperial Metallurgy"
+ 
+ # FOCUSES
+ MAN_qing_cores:0 "Restore the Northern Frontier"
+ MAN_qing_cores_desc:0 "The Great Qing once ruled far into the steppes of Mongolia and the frozen reaches of Siberia. By asserting our rightful claims, we will bring these lost lands back under imperial authority."
+ MAN_port_expansion:0 "Issue Imperial Port Expansion"
+ MAN_port_expansion_desc:0 "A stronger maritime network will ensure Manchuria’s prosperity and place us firmly on the world stage. We must issue an edict to expand and modernize them to take full advantage of the lifeline of our Empire."
+ MAN_supply_empire_desc:0 "The Manchurian Empire shall need to expand it's nation-wide resource reserves for if we ever wish to supply our war-machine!"
+ MAN_tsr_expand_tungsten:0 "Expand Tungsten Mining"
+ MAN_tsr_expand_tungsten_desc:0 "Tungsten is vital for the production of advanced munitions and heavy equipment. By expanding our mining operations and improving extraction techniques, we can ensure a steady supply of this critical resource for our war industry."
+ MAN_tsr_chromium_deposits:0 "Develop Chromium Deposits"
+ MAN_tsr_chromium_deposits_desc:0 "Chromium is indispensable for producing durable armor and modern warships. Investing in new deposits and refining infrastructure will strengthen our ability to sustain advanced military production."
+ MAN_tsr_petroleum_investments:0 "Increase Petroleum Investments"
+ MAN_tsr_petroleum_investments_desc:0 "Modern industry runs on oil, and our current reserves are far too limited. By expanding exploration and investing in extraction, we can secure the fuel needed to power our armies, factories, and future growth."
+ MAN_tsr_reintegrate_japan_lands:0 "Reintegrate Our Lands From The Rising Sun"
+ MAN_tsr_reintegrate_japan_lands_desc:0 "Taiwan, East Hebei, and Dalian were taken during our weakness. It is time to demand their rightful return to our nation."
+ MAN_independence_war:0 "Gain Independence"
+ MAN_independence_war_desc:0 "The time has come for Manchukuo to be recognized as a glorious, self-functioning and free Qing China!"

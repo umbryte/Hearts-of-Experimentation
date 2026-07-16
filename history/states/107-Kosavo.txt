@@ -1,0 +1,35 @@
+
+state={
+	id=107
+	name="STATE_107"
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+			arms_factory = 8 # WAS 6, THEN 11 - MOVED 3 MILS TO 1060 - BELGRADE - HOR
+			#industrial_complex = 3 # WAS 8 - HOR # MOVED TO 1060 - BELGRADE - HOR
+			#air_base = 5 # MOVED TO 1060 - BELGRADE - HOR
+		}
+		#victory_points = { # MOVED TO 1060 - BELGRADE - HOR
+		#	11586 15 
+		#}
+		add_core_of = YUG
+		add_core_of = SER
+
+	}
+
+	provinces={
+		797 3609 3956 3984 6634 9599 11583 # REMOVED 11586 AND MOVED IT TO 1060 - BELGRADE - HOR 
+	}
+	manpower=979121 # WAS 1279121, MOVED 300000 TO 1060 - BELGRADE - HOR
+
+	#resources = { # MOVED TO 1060 - BELGRADE - HOR
+	#	coal = 40 # initial distribution
+	#}
+
+	buildings_max_level_factor=1.000
+	state_category=rural # WAS large_city - HOR
+
+	local_supplies=0.0 # WAS 4.0 - HOR
+}

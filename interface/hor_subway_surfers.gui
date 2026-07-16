@@ -1,0 +1,50 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "hor_subway_surfers_toggle_button"
+		position = { x = -356 y = 4 }	
+		#size = { width = 29 height= 29 }
+		orientation = UPPER_RIGHT
+		buttonType = {
+			name = "hor_subway_surfers_toggle_button"
+			quadTextureSprite = "GFX_hor_subway_surfers_tiktok"
+			position = { x = 0 y = 0 }
+			#scale=1.1
+			#pdx_tooltip = "[ST_TOOLTIP]"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+	}
+	
+	containerWindowType = {
+		name = "hor_subway_surfers_background"
+		position = { x = 0 y = 0 }	
+		size = { width = 205 height= 466 }
+		orientation = CENTER
+		origo = CENTER
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_hor_subway_surfers_background"
+		}
+	
+		containerWindowType = {
+			name = "hor_subway_surfers_video"
+			position = { x = 0 y = 0 }	
+			size = { width = 180 height= 360 }
+			orientation = CENTER
+			origo = CENTER
+			moveable = no
+		
+			background = {
+				name = "Video"		
+				quadTextureSprite ="GFX_hor_subway_surfers_video"
+			}
+		}
+	}
+}

@@ -1,0 +1,604 @@
+war_measures = {
+	diversify_special_forces_again = {
+		
+		icon = GFX_decision_generic_military
+
+		available = {
+			date > 1942.1.1
+		}
+
+		visible = {
+			has_dlc = "Arms Against Tyranny"
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			add_potential_special_forces_tree = yes
+		}
+		ai_will_do = {
+			factor = 201
+			modifier = {
+				factor = 0
+				is_major = no
+			}
+		}
+	}
+}
+
+hor_japan_transfer_indochina_category = {
+
+    hor_japan_transfer_indochina_1 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		670 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		670 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	670 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_2 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		741 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		741 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	741 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_3 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		286 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		286 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	286 = {
+	transfer_state_to = SIA
+	}
+    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_4 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		671 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		671 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	671 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_5 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		1017 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		1017 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	1017 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+}
+
+operations = {
+
+	reapply_trans_republic_tag = {
+		allowed = {
+			ROOT = { has_country_flag = trans_flag }
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			ROOT = { has_country_flag = trans_flag }
+		}
+		complete_effect = {
+			ROOT = { set_cosmetic_tag = TRANS_REPUBLIC }
+		}
+	}
+	
+	create_mp_template = {
+		allowed = {
+
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_ai = no
+		}
+		complete_effect = {
+			division_template = {
+				name = ".MP"
+
+				regiments = {
+					cavalry = { x = 0 y = 0 }
+					cavalry = { x = 0 y = 1 }
+					cavalry = { x = 0 y = 2 }
+					cavalry = { x = 0 y = 3 }
+					#cavalry = { x = 0 y = 4 }
+					cavalry = { x = 1 y = 0 }
+					cavalry = { x = 1 y = 1 }
+					cavalry = { x = 1 y = 2 }
+					cavalry = { x = 1 y = 3 }
+					#cavalry = { x = 1 y = 4 }
+					cavalry = { x = 2 y = 0 }
+					cavalry = { x = 2 y = 1 }
+					cavalry = { x = 2 y = 2 }
+					cavalry = { x = 2 y = 3 }
+					#cavalry = { x = 2 y = 4 }
+					cavalry = { x = 3 y = 0 }
+					cavalry = { x = 3 y = 1 }
+					cavalry = { x = 3 y = 2 }
+					cavalry = { x = 3 y = 3 }
+					#cavalry = { x = 3 y = 4 }
+					cavalry = { x = 4 y = 0 }
+					cavalry = { x = 4 y = 1 }
+					cavalry = { x = 4 y = 2 }
+					cavalry = { x = 4 y = 3 }
+					#cavalry = { x = 4 y = 4 }
+				}
+			}
+		}
+	}
+	
+	create_xp_template = {
+		allowed = {
+
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			is_ai = no
+		}
+		complete_effect = {
+			division_template = {
+				name = ".XP"
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					#infantry = { x = 0 y = 4 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					#infantry = { x = 1 y = 4 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					#infantry = { x = 2 y = 4 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+					infantry = { x = 3 y = 3 }
+					#infantry = { x = 3 y = 4 }
+					infantry = { x = 4 y = 0 }
+					infantry = { x = 4 y = 1 }
+					infantry = { x = 4 y = 2 }
+					infantry = { x = 4 y = 3 }
+					#infantry = { x = 4 y = 4 }
+				}
+			}
+		}
+	}
+
+	#JAP_annex_man = {
+	#	allowed = {
+	#		tag = JAP
+	#	}
+	#	available = {
+	#		date > 1939.1.1
+	#		MAN = {
+	#			is_ai = yes
+	#			is_puppet_of = JAP
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	cost = 0
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	visible = {
+	#		tag = JAP
+	#	}
+	#	targets = {
+	#		MAN
+	#	}
+	#	complete_effect = {
+	#		JAP = {
+	#			annex_country = {
+	#				target = MAN
+	#			}
+	#		}
+	#		every_state = {
+	#			limit = {
+	#				is_core_of = MAN
+	#				is_controlled_by = JAP
+	#			}
+	#			add_compliance = 100
+	#		}
+	#	}
+	#}
+	#ENG_annex_ire = {
+	#	allowed = {
+	#		tag = ENG
+	#	}
+	#	available = {
+	#		date > 1939.1.1
+	#		IRE = {
+	#			is_ai = yes
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	cost = 0
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	visible = {
+	#		tag = ENG
+	#	}
+	#	targets = {
+	#		IRE
+	#	}
+	#	complete_effect = {
+	#		ENG = {
+	#			annex_country = {
+	#				target = IRE
+	#			}
+	#		}
+	#		every_state = {
+	#			limit = {
+	#				is_core_of = IRE
+	#				is_controlled_by = ENG
+	#			}
+	#			add_compliance = 100
+	#		}
+	#	}
+	#}
+	#AST_annex_nzl = { 
+	#	allowed = {
+	#		tag = AST
+	#	}
+	#	available = {
+	#		date > 1939.1.1
+	#		NZL = {
+	#			is_ai = yes
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	cost = 0
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	visible = {
+	#		tag = AST
+	#	}
+	#	targets = {
+	#		NZL
+	#	}
+	#	complete_effect = {
+	#		AST = {
+	#			annex_country = {
+	#				target = NZL
+	#			}
+	#		}
+	#		every_state = {
+	#			limit = {
+	#				is_core_of = NZL
+	#				is_controlled_by = AST
+	#			}
+	#			#add_core_of = AST
+	#			add_compliance = 100
+	#		}
+	#	}
+	#}
+	#SOV_annex_mon = {
+	#	allowed = {
+	#		tag = SOV
+	#	}
+	#	available = {
+	#		date > 1939.1.1
+	#		MON = {
+	#			is_ai = yes
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	cost = 0
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	visible = {
+	#		tag = SOV
+	#	}
+	#	targets = {
+	#		MON
+	#	}
+	#	complete_effect = {
+	#		SOV = {
+	#			annex_country = {
+	#				target = MON
+	#			}
+	#		}
+	#		every_state = {
+	#			limit = {
+	#				is_core_of = MON
+	#				is_controlled_by = SOV
+	#			}
+	#			add_compliance = 100
+	#		}
+	#	}
+	#}
+	#USA_annex_mex = {
+	#	allowed = {
+	#		tag = USA
+	#	}
+	#	available = {
+	#		date > 1939.1.1
+	#		MEX = {
+	#			is_ai = yes
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	cost = 0
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	visible = {
+	#		tag = USA
+	#	}
+	#	targets = {
+	#		MEX
+	#	}
+	#	complete_effect = {
+	#		USA = {
+	#			annex_country = {
+	#				target = MEX
+	#			}
+	#		}
+	#		every_state = {
+	#			limit = {
+	#				is_core_of = MEX
+	#				is_controlled_by = USA
+	#			}
+	#			add_compliance = 100
+	#		}
+	#	}
+	#}
+	#BRA_annex_mex = {
+	#	allowed = {
+	#		tag = BRA
+	#	}
+	#	available = {
+	#		date > 1939.1.1
+	#		MEX = {
+	#			is_ai = yes
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	cost = 0
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	visible = {
+	#		tag = BRA
+	#	}
+	#	targets = {
+	#		MEX
+	#	}
+	#	complete_effect = {
+	#		BRA = {
+	#			annex_country = {
+	#				target = MEX
+	#			}
+	#		}
+	#		every_state = {
+	#			limit = {
+	#				is_core_of = MEX
+	#				is_controlled_by = BRA
+	#			}
+	#			#add_core_of = BRA
+	#			add_compliance = 100
+	#		}
+	#	}
+	#}
+	#MEX_annex_bra = {
+	#	allowed = {
+	#		tag = MEX
+	#	}
+	#	available = {
+	#		date > 1939.1.1
+	#		BRA = {
+	#			is_ai = yes
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	cost = 0
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	visible = {
+	#		tag = MEX
+	#	}
+	#	targets = {
+	#		BRA
+	#	}
+	#	complete_effect = {
+	#		MEX = {
+	#			annex_country = {
+	#				target = BRA
+	#			}
+	#		}
+	#		every_state = {
+	#			limit = {
+	#				is_core_of = BRA
+	#				is_controlled_by = MEX
+	#			}
+	#			#add_core_of = MEX
+	#			add_compliance = 100
+	#		}
+	#	}
+	#}
+	#AST_annex_ins = {
+	#	allowed = {
+	#		tag = AST
+	#	}
+	#	available = {
+	#		date > 1939.1.1
+	#		INS = {
+	#			is_ai = yes
+	#		}
+	#	}
+	#	fire_only_once = yes
+	#	cost = 0
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#	visible = {
+	#		tag = AST
+	#	}
+	#	targets = {
+	#		INS
+	#	}
+	#	complete_effect = {
+	#		AST = {
+	#			annex_country = {
+	#				target = INS
+	#			}
+	#		}
+	#		every_state = {
+	#			limit = {
+	#				is_core_of = INS
+	#				is_controlled_by = AST
+	#			}
+	#			#add_core_of = AST
+	#			add_compliance = 100
+	#		}
+	#	}
+	#}	
+
+	add_convoy = {
+		priority = 100
+        icon = SWE_set_navy_budget
+        allowed = {
+ 		}
+		visible = {
+			is_ai = no
+		}
+        days_remove = 1
+        cost = 0
+        complete_effect = {
+            add_manpower = 1
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = 1
+            }
+        }
+ 		remove_effect = {
+            add_manpower = -1
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = -1
+            }
+ 		}
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

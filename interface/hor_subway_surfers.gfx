@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = { 
+		name = "GFX_hor_subway_surfers_tiktok"
+		texturefile = "gfx/interface/scripted_gui_graphics/hor_subway_surfers_tiktok.dds"
+	}
+	spriteType = { 
+		name = "GFX_hor_subway_surfers_background"
+		texturefile = "gfx/interface/scripted_gui_graphics/hor_subway_surfers_background.dds"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_hor_subway_surfers_video"
+		texturefile = "gfx/interface/scripted_gui_graphics/hor_subway_surfers_video.png"
+		noOfFrames = 57
+		animation_rate_fps = 5
+		looping = yes
+		play_on_show = yes
+	}
+}

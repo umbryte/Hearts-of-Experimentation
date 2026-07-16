@@ -1,0 +1,2068 @@
+focus_tree = {
+	id = mongolia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			tag = MON
+			add = 10
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 450 y = 1000 }
+	
+
+	#########################
+	####### POLITICAL #######
+	#########################
+
+
+
+	focus = {
+		id = MON_pol1
+		icon = GFX_goal_generic_demand_territory
+		x = 7
+		y = 0		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+			
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = MON_pol2
+		icon = GFX_focus_generic_communist_industry
+		x = 0
+		y = 1		
+		relative_position_id = MON_pol1
+		cost = 10
+		prerequisite = { focus = MON_pol1 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = -0.05
+			330 = {
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
+			}
+			820 = {
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+			}
+			818 = {
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+			}
+			819 = {
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+			}
+			817 = {
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+			}
+		}
+	}
+	focus = {
+		id = MON_pol3
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol1 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -50
+			effect_tooltip = {
+					swap_ideas = {
+						remove_idea = idea_MON_colectivistation_1
+						add_idea = idea_MON_colectivistation_2
+					}
+				}
+			hidden_effect = {
+				remove_ideas = idea_MON_colectivistation_1
+				add_ideas = idea_MON_colectivistation_2
+			}
+
+		}
+	}
+	
+	focus = {
+		id = MON_pol4
+		icon = GFX_goal_generic_propaganda
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol1 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = indoctrination_focus
+			
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = MON_pol5
+		icon = GFX_focus_research
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol2 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+			
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = MON_pol6
+		icon = GFX_focus_BRA_socialist_theologians
+		x = -2
+		y = 3
+		cost = 10
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol5 }
+		mutually_exclusive = { focus = MON_pol8 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = idea_MON_cooperation_with_church
+			
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = MON_pol7
+		icon = GFX_goal_generic_forceful_treaty
+		x = -3
+		y = 4
+		cost = 5
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol6 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 250
+			add_stability = 0.05
+			add_popularity = { ideology = communism popularity = 0.15 }
+			add_ideas = political_commissars_focus
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = MON_pol8
+		icon = GFX_focus_BRA_state_atheism
+		x = 2
+		y = 3
+		cost = 10
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol5 }
+		mutually_exclusive = { focus = MON_pol6 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = idea_MON_secular_state
+			
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = MON_pol9
+		icon = GFX_goal_generic_construct_civilian
+		x = 3
+		y = 4	
+		cost = 5
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol8 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			330 = {
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_building_construction = {
+					type = industrial_complex
+					level = 2 # WAS 1 - HOR
+					instant_build = yes
+				}
+			}
+			818 = {
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_building_construction = {
+					type = industrial_complex
+					level = 2 # WAS 1 - HOR
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_pol10
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 0
+		y = 4	
+		cost = 5
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol6 focus = MON_pol8 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			date > 1939.1.1
+		}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = idea_MON_colectivistation_1
+			hidden_effect = {
+				remove_ideas = idea_MON_colectivistation_2
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_pol11
+		icon = GFX_SOV_war_economy_ccp_2d_sov_compatibility
+		x = 0
+		y = 5
+		cost = 10
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol10 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			330 = {
+				add_extra_state_shared_building_slots = 8 # WAS 4 - HOR
+				add_building_construction = {
+						type = infrastructure
+						level = 4 # WAS 2 - HOR
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 4 # WAS 2 - HOR
+						instant_build = yes
+				}
+			}
+			820 = {
+				add_extra_state_shared_building_slots = 6 # WAS 3 - HOR
+					add_building_construction = {
+						type = infrastructure
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+			}
+			818 = {
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
+					add_building_construction = {
+						type = infrastructure
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+			}
+			819 = {
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
+					add_building_construction = {
+						type = infrastructure
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+			}
+			817 = {
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+					add_building_construction = {
+						type = infrastructure
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+			}
+			
+			
+			
+			
+		}
+	}
+	
+	focus = {
+		id = MON_pol12
+		icon = GFX_focus_chi_united_front
+		x = -1
+		y = 6
+		cost = 5
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol11 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = idea_MON_refugees_from_china
+			
+		}
+	}
+	
+	focus = {
+		id = MON_pol13
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 1
+		y = 6
+		cost = 5
+		relative_position_id = MON_pol1
+		prerequisite = { focus = MON_pol11 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_country_leader_trait = GER_staunch_stalinist
+		}
+	}
+	
+	#########################
+	####### EXPANTION #######
+	#########################
+	
+	#focus = { # HOR
+	#	id = MON_exp1
+	#	icon = GFX_SOV_annex_tannu_tuva_ccp_2d_sov_compatibility
+	#	x = 11
+	#	y = 0
+	#	cost = 10
+	#	
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	available = {
+	#		date > 1938.1.1
+	#	}
+	#	bypass = {
+	#		NOT = {
+	#			country_exists = TAN
+	#		}
+	#	}
+	#	
+	#	cancel_if_invalid = no
+	#	continue_if_invalid = yes
+	#	available_if_capitulated = yes
+	#
+	#	completion_reward = {
+	#		annex_country = {
+	#			target = TAN
+	#			transfer_troops = yes
+	#		}
+	#	}
+	#}	
+	
+	#	focus = { # HOR
+	#	id = MON_exp2
+	#	icon = GFX_focus_AFG_sinkang_intervention
+	#	x = 2
+	#	y = 0
+	#	cost = 10
+	#	relative_position_id = MON_exp1
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	available = {
+	#		OR = {
+	#			CHI = {
+	#				has_war = yes
+	#			}
+	#			SIK = {
+	#				has_war = yes
+	#			}
+	#		}
+	#		SIK = {
+	#			is_ai = yes
+	#		}
+	#	}
+	#	bypass = {}
+	#	
+	#	cancel_if_invalid = no
+	#	continue_if_invalid = yes
+	#	available_if_capitulated = yes
+	#
+	#	completion_reward = {
+	#		MON = {
+	#			transfer_state = 618
+	#			transfer_state = 760
+	#			transfer_state = 617
+	#			transfer_state = 759
+	#			transfer_state = 287
+	#			transfer_state = 619
+	#		}
+	#		hidden_effect = {
+	#			annex_country = {
+	#				target = SIK
+	#				transfer_troops = yes
+	#			}
+	#		}
+	#	}
+	#}
+	
+	focus = {
+		id = MON_exp3
+		icon = GFX_SOV_development_aid_for_eastern_allies_ccp_2d_sov_compatibility
+		x = 12 # WAS 1 - HOR
+		y = 0 # # WAS 1 - HOR
+		cost = 5
+		#relative_position_id = MON_exp1
+		#prerequisite = { focus = MON_exp1 focus = MON_exp2}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = idea_MON_beging_mongolisation
+				days = 365
+			}	
+		}
+	}
+	
+	focus = {
+		id = MON_exp4
+		icon = GFX_goal_generic_alliance
+		x = 0 # WAS 1 - HOR
+		y = 1 # WAS 2 - HOR
+		cost = 10
+		relative_position_id = MON_exp3
+		prerequisite = { focus = MON_exp3 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			not = { has_idea = idea_MON_beging_mongolisation }
+		}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = TAN
+				}
+				add_core_of = MON
+			}
+			every_state = {
+				limit = {
+					is_core_of = SIK
+				}
+				add_core_of = MON
+			}
+			
+			
+			
+		}
+	}	
+	
+	
+	#########################
+	####### INDUSTRY ########
+	#########################
+	
+	
+	
+	focus = {
+		id = MON_eco1
+		icon = GFX_goal_generic_production
+		x = 18
+		y = 0		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.65
+				uses = 3
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_eco2
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -1
+		y = 1		
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_eco1 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_eco1
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_building_construction = {
+					type = industrial_complex
+					level = 2 # WAS 1 - HOR
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_eco3
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -3
+		y = 2		
+		cost = 10
+		prerequisite = { focus = MON_eco2 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_eco1
+
+		completion_reward = {
+			330 = {
+
+				add_building_construction = {
+						type = infrastructure
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+			}
+			820 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+			}
+			818 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+			}
+			819 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2 # WAS 1 - HOR
+						instant_build = yes
+					}
+			}
+		}
+	}
+		
+	focus = {
+		id = MON_eco4
+		icon = GFX_focus_generic_public_works
+		x = -1
+		y = 2		
+		cost = 10
+		prerequisite = { focus = MON_eco2 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_eco1
+
+		completion_reward = {
+			add_ideas = idea_MON_public_works
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_building_construction = {
+					type = industrial_complex
+					level = 2 # WAS 1 - HOR
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_eco5
+		icon = GFX_focus_GER_wirtschaftswunder
+		x = -1
+		y = 3		
+		cost = 10
+		prerequisite = { focus = MON_eco4 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_eco1
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
+				add_building_construction = {
+					type = industrial_complex
+					level = 4 # WAS 2 - HOR
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_eco6
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1		
+		cost = 5
+		prerequisite = { focus = MON_eco1 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_eco1
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_building_construction = {
+					type = arms_factory
+					level = 2 # WAS 1 - HOR
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_eco7
+		icon = GFX_focus_DEN_no_regulations
+		x = 3
+		y = 2
+		cost = 10
+		prerequisite = { focus = MON_eco6 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_eco1
+
+		completion_reward = {
+			add_ideas = idea_MON_minimum_wage
+		}
+	}
+	
+	focus = {
+		id = MON_eco8
+		icon = GFX_focus_generic_military_industry
+		x = 1
+		y = 2		
+		cost = 5
+		prerequisite = { focus = MON_eco6 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_eco1
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_building_construction = {
+					type = arms_factory
+					level = 2 # WAS 1 - HOR
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_eco9
+		icon = GFX_focus_generic_reorient_production
+		x = 1
+		y = 3		
+		cost = 10
+		prerequisite = { focus = MON_eco8 }
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_eco1
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
+				add_building_construction = {
+					type = arms_factory
+					level = 4 # WAS 2 - HOR
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = MON_eco10
+		icon = GFX_focus_mex_privatisation
+		x = 0
+		y = 4		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_eco5 }
+		prerequisite = { focus = MON_eco9 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_eco1
+
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = idea_MON_Booming_Economy
+		}
+	}
+	
+	
+	#########################
+	######### ARMY #########
+	#########################
+
+	
+	
+	
+	
+	
+	focus = {
+		id = MON_lan1
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 27
+		y = 0		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		completion_reward = {
+			IF = {
+				limit = {
+					NOT = { has_tech = infantry_weapons1 }
+				}
+				set_technology = { 
+					infantry_weapons1 = 1
+					popup = yes
+				}
+			}
+			IF = {
+				limit = {
+					NOT = { has_tech = tech_support }
+				}
+				set_technology = { 
+					tech_support = 1
+					popup = yes
+				}
+			}
+			IF = {
+				limit = {
+					NOT = { has_tech = gw_artillery }
+				}
+				set_technology = { 
+					gw_artillery = 1
+					popup = yes
+				}
+			}
+			IF = {
+				limit = {
+					NOT = { has_tech = tech_trucks }
+				}
+				set_technology = { 
+					tech_trucks = 1
+					popup = yes
+				}
+			}
+			IF = {
+				limit = {
+					NOT = { has_tech = basic_train }
+				}
+				set_technology = { 
+					basic_train = 1
+					popup = yes
+				}
+			}
+			add_timed_idea = {
+				idea = idea_MON_purchasing_technology
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = MON_lan2
+		icon = GFX_goal_generic_cavalry
+		x = -2
+		y = 1		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan1 }
+		mutually_exclusive = { focus = MON_lan5 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			add_ideas = idea_MON_mongol_legacy_1
+		}
+	}
+	
+	focus = {
+		id = MON_lan3
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = -3
+		y = 2		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan2 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = idea_MON_mongol_legacy_1
+					add_idea = idea_MON_mongol_legacy_2
+				}
+			}
+			hidden_effect = {
+				remove_ideas = idea_MON_mongol_legacy_1
+				add_ideas = idea_MON_mongol_legacy_2
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_lan4
+		icon = GFX_focus_focus_fra_maquis
+		x = -1
+		y = 2	
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan2 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 2.0
+				uses = 1
+				category = infantry_weapons
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = MON_lan5
+		icon = GFX_focus_generic_army_tanks2
+		x = 2
+		y = 1		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan1 }
+		mutually_exclusive = { focus = MON_lan2 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			add_ideas = idea_MON_adapt_to_modern_times_1
+		}
+	}
+	
+	focus = {
+		id = MON_lan6
+		icon = GFX_focus_generic_truck
+		x = 3
+		y = 2		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan5 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+				
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = idea_MON_adapt_to_modern_times_1
+					add_idea = idea_MON_adapt_to_modern_times_2
+				}
+			}
+			hidden_effect = {
+				remove_ideas = idea_MON_adapt_to_modern_times_1
+				add_ideas = idea_MON_adapt_to_modern_times_2
+			}
+		}
+	}
+	
+	focus = {
+		id = MON_lan7
+		icon = GFX_goal_generic_army_tanks
+		x = 1
+		y = 2		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan5 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 3
+				category = armor
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = MON_lan8
+		icon = GFX_goal_generic_army_doctrines
+		x = 0
+		y = 3		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan1 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			IF = {
+				limit = { 
+					330 = {
+						is_fully_controlled_by = ROOT
+						air_facility < 1
+						land_facility < 1
+						naval_facility < 1
+						nuclear_facility < 1
+					}
+				}
+				330 = {
+					add_building_construction = {
+						type = land_facility
+						level = 1
+						instant_build = yes
+						province = 4801 
+					}
+				}
+			}
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+		focus = {
+		id = MON_lan9
+		icon = GFX_goal_generic_small_arms
+		x = -3
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan8 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+		focus = {
+		id = MON_lan10
+		icon = GFX_goal_generic_army_artillery2
+		x = -1
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan8 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1.0
+				uses = 3
+				category = artillery
+			}
+		}
+	}
+	
+		focus = {
+		id = MON_lan11
+		icon = GFX_goal_generic_army_motorized
+		x = 1
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan8 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 1.5
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+			IF = {
+				limit = {
+					has_tech = motorised_infantry
+				}
+				add_equipment_to_stockpile = { 
+					type = motorized_equipment
+					amount = 500
+				}
+			}
+		}
+	}
+	
+		focus = {
+		id = MON_lan12
+		icon = GFX_goal_generic_army_artillery
+		x = 3
+		y = 4
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan8 }
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 0.5
+				uses = 3
+				category = support_tech
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = MON_lan13
+		icon = GFX_focus_research
+		x = 0
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {}
+		bypass = {}
+		prerequisite = { focus = MON_lan9  focus = MON_lan10  focus = MON_lan11  focus = MON_lan12}
+		
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = MON_lan1
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	
+	#########################
+	#######   AIR    ########
+	#########################
+	
+	focus = {
+		id = MON_air1
+		icon = GFX_goal_generic_build_airforce
+		x = 35
+		y = 0
+		cost = 10
+		
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 50
+			if = { limit = { has_country_flag = aviation_effort_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}			
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}			
+		}
+
+		completion_reward = {
+			air_experience = 50
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = MON_air2
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = MON_air1 }
+		mutually_exclusive = {  }
+		x = -2
+		y = 1
+		relative_position_id = MON_air1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = MON_air3
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = MON_air1 }
+		mutually_exclusive = {  }
+		x = 0
+		y = 1
+		relative_position_id = MON_air1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 100
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+			
+		}
+	}
+
+	focus = {
+		id = MON_air4
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = MON_air1 }
+		x = 2
+		y = 1
+		relative_position_id = MON_air1
+		cost = 10
+
+		search_filters = {   FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_2_AB }
+				add_building_construction = {
+					type = air_base
+					level = 4 # WAS 2 - HOR
+					instant_build = yes
+				}
+			}
+			add_doctrine_cost_reduction = {
+				name =  air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 1.5
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = MON_air5
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = MON_air2 }
+		prerequisite = { focus = MON_air3 }
+		prerequisite = { focus = MON_air4 }
+		x = 0
+		y = 2
+		relative_position_id = MON_air1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.3
+				uses = 4
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = MON_air6
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = MON_air5 }
+		#mutually_exclusive = { focus = MON_air7  } # HOR
+		x = -1
+		y = 3
+		relative_position_id = MON_air1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
+			}
+
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 2
+				uses = 1 # was 2
+				category = rocketry
+				category = jet_technology
+			}
+
+		}
+	}
+
+	focus = {
+		id = MON_air7
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = MON_air5 }
+		#mutually_exclusive = { focus = MON_air6  } # HOR
+		x = 1
+		y = 3
+		relative_position_id = MON_air1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				category = nuclear
+			}
+			
+			
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.5
+			}
+		}
+	}
+	
+	#########################
+	#######    SEA    #######
+	#########################
+	
+	focus = {
+		id = MON_nav1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 41
+		y = 0
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			navy_experience = 50
+			add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
+			add_building_construction = {
+				type = dockyard
+				level = 4 # WAS 2 - HOR
+				instant_build = yes
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 50
+			if = {
+				limit = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 0 # WAS 1 - HOR
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
+					add_building_construction = {
+						type = dockyard
+						level = 4 # WAS 2 - HOR
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}			
+		}
+	}
+
+	focus = {
+		id = MON_nav2
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = MON_nav1 }
+		#mutually_exclusive = { focus = MON_nav3 } # HOR
+		x = -1
+		y = 1
+		relative_position_id = MON_nav1
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+
+
+	focus = {
+		id = MON_nav3
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = MON_nav1 }
+		#mutually_exclusive = { focus =MON_nav2 } # HOR
+		x = 1
+		y = 1
+		relative_position_id = MON_nav1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = MON_nav4
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = MON_nav2 }
+		x = -1
+		y = 2
+		relative_position_id = MON_nav1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_ideas = idea_SIA_sub_raiding
+		}
+	}
+	
+	focus = {
+		id = MON_nav5
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = MON_nav3 }
+		x = 1
+		y = 2
+		relative_position_id = MON_nav1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = idea_SIA_escorting
+		}
+	}
+	
+	focus = {
+		id = MON_nav6
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 3
+		cost = 10
+		relative_position_id = MON_nav1
+		prerequisite = { focus = MON_nav4 focus = MON_nav5 }
+
+
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			navy_experience = 100
+			add_extra_state_shared_building_slots = 6 # WAS 3 - HOR
+			add_building_construction = {
+				type = dockyard
+				level = 6 # WAS 3 - HOR
+				instant_build = yes
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 100
+			if = {
+				limit = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 0 # WAS 2 - HOR
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 6 # WAS 3 - HOR
+					add_building_construction = {
+						type = dockyard
+						level = 6 # WAS 3 - HOR
+						instant_build = yes
+					}
+				}
+			}			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

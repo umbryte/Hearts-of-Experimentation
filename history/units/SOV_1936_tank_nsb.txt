@@ -1,0 +1,129 @@
+﻿division_template = {
+	name = "Mekhanizirovaniy Korpus" 				# Represents regular mechanized corps (4 existed in 1935-38); 
+	division_names_group = SOV_MEC_01
+												# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
+													# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }		
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+		motorized = { x = 2 y = 2 }		
+		motorized = { x = 2 y = 3 }		
+	}
+}
+
+units = {
+	division= {			
+		name = "LVO Mekhanizirovanaya Gruppa"		
+		location = 3151
+		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+		force_equipment_variants = {
+			light_tank_chassis_1 = { owner = SOV version_name = "T-26TU mod. 1933" amount = 150 }
+		}
+	}
+	division= {		
+		name = "7ya Mekhanizirovaniy Korpus"		
+		location = 6174
+		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
+		start_experience_factor = 0.3
+		force_equipment_variants = { light_tank_chassis_1 = { owner = SOV version_name = "BT-5" amount = 200 } }
+	}
+	# Subordinate to AG
+	division= {			
+		name = "11ya Mekhanizirovaniy Korpus"		
+		location = 149
+		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge
+		start_experience_factor = 0.3
+		force_equipment_variants = {
+			light_tank_chassis_1 = { owner = SOV version_name = "T-26TU mod. 1933" amount = 150 }
+		}
+	}	
+	division= {	 		
+		name = "1ya BVO Mekhanizirovanaya Gruppa"		
+		location = 126
+		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+		force_equipment_variants = {
+			light_tank_chassis_1 = { owner = SOV version_name = "BT-5" amount = 250 }
+		}
+	}
+	division= {			
+		name = "2ya BVO Mekhanizirovanaya Gruppa"		
+		location = 11202
+		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+		force_equipment_variants = {
+			light_tank_chassis_1 = { owner = SOV version_name = "T-26TU mod. 1933" amount = 250 }
+		}
+	
+	}
+	division= {			
+		name = "MVO Mekhanizirovanaya Gruppa"		
+		location = 6380
+		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+		force_equipment_variants = {
+			light_tank_chassis_1 = { owner = SOV version_name = "BT-5" amount = 150 }
+		}
+	}
+	# Subordinate to AG
+	division= {			
+		name = "5ya Mekhanizirovaniy Korpus"		
+		location = 6380
+		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
+		start_experience_factor = 0.3
+		force_equipment_variants = {
+			light_tank_chassis_1 = { owner = SOV version_name = "T-26TU mod. 1933" amount = 250 }
+		}
+	}
+	# Subordinate to VO
+	division= {			
+		name = "2ya KiVO Mekhanizirovanaya Gruppa"		
+		location = 525
+		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+		force_equipment_variants = {
+			light_tank_chassis_1 = { owner = SOV version_name = "BT-5" amount = 150 }
+		}
+	}
+	division= {	 		
+		name = "1ya KiVO Mekhanizirovanaya Gruppa"		
+		location = 11670
+		division_template = "Mekhanizirovaniy Korpus"		# 1x H Tank Bge, 2x Mekh Bge
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+		force_equipment_variants = {
+			light_tank_chassis_1 = { owner = SOV version_name = "T-26TU mod. 1933" amount = 250 }
+		}
+	}
+	# Subordinate to VO
+	division= {			
+		name = "45ya Mekhanizirovaniy Korpus"		
+		location = 11437
+		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
+		start_experience_factor = 0.3
+		force_equipment_variants = {
+			light_tank_chassis_1 = { owner = SOV version_name = "BT-5" amount = 250 }
+		}
+	}
+	division= {			
+		name = "DVVO Mekhanizirovaniy Korpus"		
+		location = 12189
+		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+		force_equipment_variants = {
+			light_tank_chassis_1 = { owner = SOV version_name = "T-26TU mod. 1933" amount = 250 }
+		}
+	}	
+}

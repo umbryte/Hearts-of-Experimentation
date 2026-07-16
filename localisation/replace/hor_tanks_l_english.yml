@@ -1,0 +1,35 @@
+﻿l_english:
+
+# TANKS
+
+ # FLAME TANKS
+ light_flame_tank_hor:0 "Light Flame Tank Company"
+ heavy_flame_tank_hor:0 "Heavy Flame Tank Company"
+ medium_flame_tank_hor:0 "Medium Flame Tank Company"
+ hor_armored_advanced_flamethrower_tech:0 "Advanced Flamethrower"
+ hor_armored_advanced_flamethrower_tech_desc:0 "Enhanced flamethrower systems, ideal for clearing fortified positions and inflicting devastating damage in close-quarters combat."
+ hor_flametank_tech:0 "Flamethrower Tank"
+ hor_flametank_tech_desc:0 "An armored vehicle equipped with devastating close-range firepower, designed to unleash torrents of flames upon enemy positions."
+ hor_flametank_tech_alt:0 "Flamethrower Tank"
+ hor_flametank_tech_alt_desc:0 "An armored vehicle equipped with devastating close-range firepower, designed to unleash torrents of flames upon enemy positions."
+
+ # SUBTITLES
+ ARMOUR_TITLE_MODERN_SPAA:0 "MODERN SP ANTI-AIR"
+ ARMOUR_TITLE_MODERN_ART:0 "MODERN SP ARTILLERY"
+ ARMOUR_TITLE_MODERN_TD:0 "MODERN DESTROYER"
+ ARMOUR_TITLE_SUPERHEAVY_SPAA:0 "SUPER-HEAVY SP ANTI-AIR"
+ ARMOUR_TITLE_SUPERHEAVY_ART:0 "SUPER-HEAVY SP ARTILLERY"
+ ARMOUR_TITLE_SUPERHEAVY_TD:0 "SUPER-HEAVY DESTROYER"
+ ARMOUR_TITLE_HEAVY_SPAA:0 "HEAVY SP ANTI-AIR"
+ ARMOUR_TITLE_HEAVY_ART:0 "HEAVY SP ARTILLERY"
+ ARMOUR_TITLE_HEAVY_TD:0 "HEAVY DESTROYER"
+ ARMOUR_TITLE_MEDIUM_SPAA:0 "MEDIUM SP ANTI-AIR"
+ ARMOUR_TITLE_MEDIUM_ART:0 "MEDIUM SP ARTILLERY"
+ ARMOUR_TITLE_MEDIUM_TD:0 "MEDIUM DESTROYER"
+ ARMOUR_TITLE_LIGHT_SPAA:0 "LIGHT SP ANTI-AIR"
+ ARMOUR_TITLE_LIGHT_ART:0 "LIGHT SP ARTILLERY"
+ ARMOUR_TITLE_LIGHT_TD:0 "LIGHT DESTROYER"
+ ARMOUR_TITLE_MODERN:0 "MODERN"
+ ARMOUR_TITLE_GREATWAR:0 "GREAT WAR"
+ ARMOUR_TITLE_SUPERHEAVY:0 "SUPER-HEAVY"
+ ARMOUR_TITLE_FLAMETHROWER:0 "FLAMETHROWER"

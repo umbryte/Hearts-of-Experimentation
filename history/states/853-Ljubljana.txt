@@ -1,0 +1,28 @@
+state=
+{
+	id=853
+	name="STATE_853"
+	manpower = 333250 # 336279 in 1942 # was 1144300 before Ljubljana split
+	
+	state_category = large_town
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+			dockyard = 4 # HOR
+			industrial_complex = 1 # HOR
+		}
+		victory_points = {
+			9627 3 
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+	}
+	provinces={
+		6650 9627 13252 # GOT 13252 FROM 103 - DALMATIA - HOR
+	}
+	
+	local_supplies=5.0 
+}
