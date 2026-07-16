@@ -45,6 +45,50 @@ on_actions = {
 			for_each_scope_loop = {
 				array = GER.faction_friendly_intel
 				for_each_scope_loop = {
+					array = GER.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = GER.faction_friendly_intel
+				for_each_scope_loop = {
+					array = JAP.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = JAP.faction_friendly_intel
+				for_each_scope_loop = {
 					array = JAP.faction_friendly_intel
 					if = {
 						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
@@ -68,6 +112,28 @@ on_actions = {
 				array = JAP.faction_friendly_intel
 				for_each_scope_loop = {
 					array = GER.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = ENG.faction_friendly_intel
+				for_each_scope_loop = {
+					array = ENG.faction_friendly_intel
 					if = {
 						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
 						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
@@ -138,6 +204,28 @@ on_actions = {
 			for_each_scope_loop = {
 				array = ENG.faction_friendly_intel
 				for_each_scope_loop = {
+					array = ENG.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = ENG.faction_friendly_intel
+				for_each_scope_loop = {
 					array = SOV.faction_friendly_intel
 					if = {
 						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
@@ -181,6 +269,50 @@ on_actions = {
 			}
 			for_each_scope_loop = {
 				array = GER.faction_friendly_intel
+				for_each_scope_loop = {
+					array = GER.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = GER.faction_friendly_intel
+				for_each_scope_loop = {
+					array = JAP.faction_friendly_intel
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_airforce } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_airforce } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_army } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_army } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_navy } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_navy } }
+					}
+					if = {
+						limit = {  NOT = { PREV = { has_operation_token = { tag = PREV token = token_friendly_civilian } } } }
+						PREV = { add_operation_token = { tag = PREV token = token_friendly_civilian } }
+					}
+				}
+			}
+			for_each_scope_loop = {
+				array = JAP.faction_friendly_intel
 				for_each_scope_loop = {
 					array = JAP.faction_friendly_intel
 					if = {
@@ -229,37 +361,37 @@ on_actions = {
 	on_startup = {
 		effect = {
 			## ALLIES ##
-			ENG = { add_to_array = { ENG.faction_friendly_intel = USA } }
-			ENG = { add_to_array = { ENG.faction_friendly_intel = ENG } }
-			ENG = { add_to_array = { ENG.faction_friendly_intel = FRA } }
-			ENG = { add_to_array = { ENG.faction_friendly_intel = CAN } }
-			ENG = { add_to_array = { ENG.faction_friendly_intel = RAJ } }
-			ENG = { add_to_array = { ENG.faction_friendly_intel = AST } }
-			ENG = { add_to_array = { ENG.faction_friendly_intel = NZL } }
-			ENG = { add_to_array = { ENG.faction_friendly_intel = SAF } }
-			ENG = { add_to_array = { ENG.faction_friendly_intel = MEX } }
-			ENG = { add_to_array = { ENG.faction_friendly_intel = BRA } }
-			ENG = { add_to_array = { ENG.faction_friendly_intel = PHI } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = USA } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = ENG } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = FRA } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = CAN } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = RAJ } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = AST } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = NZL } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = SAF } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = MEX } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = BRA } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = PHI } }
 
 			## COMINTERN ##
-			SOV = { add_to_array = { SOV.faction_friendly_intel = SOV } }
-			SOV = { add_to_array = { SOV.faction_friendly_intel = MON } }
+			SOV = {  add_to_array = { SOV.faction_friendly_intel = SOV } }
+			SOV = {  add_to_array = { SOV.faction_friendly_intel = MON } }
 
 			## AXIS ##
-			GER = { add_to_array = { GER.faction_friendly_intel = GER } }
-			GER = { add_to_array = { GER.faction_friendly_intel = ITA } }
-			GER = { add_to_array = { GER.faction_friendly_intel = HUN } }
-			GER = { add_to_array = { GER.faction_friendly_intel = ROM } }
-			GER = { add_to_array = { GER.faction_friendly_intel = BUL } }
-			GER = { add_to_array = { GER.faction_friendly_intel = FIN } }
-			GER = { add_to_array = { GER.faction_friendly_intel = SPA } }
-			GER = { add_to_array = { GER.faction_friendly_intel = VIC } }
-			GER = { add_to_array = { GER.faction_friendly_intel = YUG } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = GER } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = ITA } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = HUN } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = ROM } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = BUL } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = FIN } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = SPA } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = VIC } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = YUG } }
 
 			## GEACPS ##
-			JAP = { add_to_array = { JAP.faction_friendly_intel = JAP } }
-			JAP = { add_to_array = { JAP.faction_friendly_intel = MAN } }
-			JAP = { add_to_array = { JAP.faction_friendly_intel = SIA } }
+			JAP = {  add_to_array = { JAP.faction_friendly_intel = JAP } }
+			JAP = {  add_to_array = { JAP.faction_friendly_intel = MAN } }
+			JAP = {  add_to_array = { JAP.faction_friendly_intel = SIA } }
 		}
 	}
 	
