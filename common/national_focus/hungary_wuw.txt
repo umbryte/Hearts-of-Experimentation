@@ -3647,18 +3647,18 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			IF = {
-				limit = {
-					FRA = { has_completed_focus = FRA_strengthen_the_little_entente }
-				}
-				FRA = { country_event = DOD_hungary.140 }
-			}
-			IF = {
-				limit = {
-					NOT = { FRA = { has_completed_focus = FRA_strengthen_the_little_entente } }
-				}
+			#IF = { # HOR
+			#	limit = {
+			#		FRA = { has_completed_focus = FRA_strengthen_the_little_entente }
+			#	}
+			#	FRA = { country_event = DOD_hungary.140 }
+			#}
+			#IF = { # HOR
+				#limit = {
+				#	NOT = { FRA = { has_completed_focus = FRA_strengthen_the_little_entente } }
+				#}
 				ROM = { country_event = DOD_hungary.140 }
-			}
+			#}
 
 			custom_effect_tooltip = HUN_bled_agreement_custom_effect_tooltip
 

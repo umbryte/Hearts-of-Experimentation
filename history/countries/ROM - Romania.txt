@@ -138,7 +138,7 @@ if = {
 	}
 	#give_guarantee = CZE - HOR
 	#give_guarantee = GRE - HOR
-	give_guarantee = TUR
+	#give_guarantee = TUR - HOR
 	#give_guarantee = YUG - HOR
 }
 if = {
@@ -149,7 +149,7 @@ if = {
 		}
 	}
 	#give_guarantee = GRE - HOR
-	give_guarantee = TUR
+	#give_guarantee = TUR = HOR
 	#give_guarantee = YUG - HOR
 }
 add_ideas = neutrality_idea
