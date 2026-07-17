@@ -2,9 +2,11 @@ ideas = {
 
 	country = {
 
+		ROM_king_michaels_go
+
 		ROM_descalating_political_unrest = { # HOR
 			
-			picture = ROM_descalating_political_unrest
+			picture = generic_morale_bonus
 			
 			removal_cost = -1
 

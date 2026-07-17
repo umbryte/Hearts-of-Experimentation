@@ -1,3 +1,13 @@
+ROM_RPR = { # HOR
+	color = rgb { 156 28 23 }
+	color_ui = rgb { 227 37 31 }
+}
+
+ROM_LEGIONARY = { # HOR
+	color = rgb { 207 227 57 }
+	color_ui = rgb { 228 250 62 }
+}
+
 TRANS_REPUBLIC = { # HOR
 	color = rgb { 250 75 200 }
 	color_ui = rgb { 250 75 200 }

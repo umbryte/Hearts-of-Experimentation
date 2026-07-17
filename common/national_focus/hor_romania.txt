@@ -230,6 +230,11 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.05
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = {
+				decision = ROM_pacify_the_communists
+				show_modifiers = yes
+			}
 		}
 	}
 
@@ -248,7 +253,8 @@ focus_tree = {
 		}
 
 		available = {
-
+			fascism < 0.5
+			has_stability > 0.2
 		}
 
 		bypass = {
@@ -260,7 +266,30 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_stability = 0.1
+			add_political_power = -50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = {
+				decision = ROM_pacify_the_communists
+				show_modifiers = yes
+			}
 		}
 
 	}
@@ -511,8 +540,43 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			promote_character = { character = ROM_king_michael ideology = despotism }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = { ROM_king_carol_ii }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 50
+			}	
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_completed_focus = ROM_iron_guard
+				}
+				remove_ideas = ROM_iron_guard
+			}
+			hidden_effect = {
+				news_event = { id = news.322 days = 1 }
+				set_country_flag = can_change_sides_dem
+				set_country_flag = can_change_sides_com			
+			}
+			unlock_decision_category_tooltip = ROM_change_sides
+			unlock_decision_tooltip = ROM_change_sides_to_allies
+			unlock_decision_tooltip = ROM_change_sides_to_commintern
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_political_power = 200
+			add_stability = -0.5
+			add_war_support = -0.5
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -5000 
+			}
+			country_resource_oil = -300
 		}
-
 	}
 }

@@ -47,7 +47,7 @@ leader_traits = {
 		random = no
 		communism_drift = -0.1
 		political_power_factor = 0.1
-		sprite = 2
+		sprite = 13
 	}
 
 	CNT_retarded = { # HOR

@@ -1,6 +1,58 @@
 on_actions = {
 
-	on_daily = {
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					ROM = {
+						has_government = neutrality
+					}
+				}
+				ROM = { drop_cosmetic_tag }
+			}
+		}
+	}
+
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					ROM = {
+						has_government = democratic
+					}
+				}
+				ROM = { drop_cosmetic_tag }
+			}
+		}
+	}
+
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					ROM = {
+						has_government = communism
+					}
+				}
+				ROM = { set_cosmetic_tag = ROM_RPR }
+			}
+		}
+	}
+
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					ROM = {
+						has_government = fascism
+					}
+				}
+				ROM = { set_cosmetic_tag = ROM_LEGIONARY }
+			}
+		}
+	}
+
+	on_daily_ROM = {
 		effect = {
 			if = {
 				limit = {
