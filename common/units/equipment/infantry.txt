@@ -177,4 +177,8 @@ equipments = {
 		priority = 05
 		visual_level = 0
 	}
+
+	radio_equipment = {
+	
+	}
 }

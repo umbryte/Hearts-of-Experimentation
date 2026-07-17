@@ -2,6 +2,24 @@ ideas = {
 
 	country = {
 
+		ROM_the_shadow_behind_the_crown = { # HOR
+			
+			picture = ROM_king_carol_ii_handled
+			
+			removal_cost = -1
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = 0.1
+				democratic_drift = -0.1
+			}
+			
+		}
+
 		ROM_german_trade_treaty = { # HOR
 			
 			picture = ROM_german_trade_treaty

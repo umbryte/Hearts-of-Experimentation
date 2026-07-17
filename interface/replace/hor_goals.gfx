@@ -3,6 +3,80 @@
 spriteTypes = {	
 
 	spriteType = {
+		name = "GFX_ROM_royal_intrigue"
+		texturefile = "gfx/interface/goals/ROM_royal_intrigue.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ROM_royal_intrigue_shine"
+		texturefile = "gfx/interface/goals/ROM_royal_intrigue.dds"
+				effectfile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM_royal_intrigue.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0       
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM_royal_intrigue.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+			animationrotation = 90.0        
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+			legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ROM_reaffirm_territorial_gains"
+		texturefile = "gfx/interface/goals/ROM_reaffirm_territorial_gains.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ROM_reaffirm_territorial_gains_shine"
+		texturefile = "gfx/interface/goals/ROM_reaffirm_territorial_gains.dds"
+				effectfile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM_reaffirm_territorial_gains.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
+			animationrotation = -90.0       
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/ROM_reaffirm_territorial_gains.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
+			animationrotation = 90.0        
+			animationlooping = no           
+			animationtime = 0.75                
+			animationdelay = 0          
+			animationblendmode = "add"       
+			animationtype = "scrolling"      
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+			legacy_lazy_load = no
+	}
+
+	spriteType = {
 		name = "GFX_YUG_partisan_uprising"
 		texturefile = "gfx/interface/goals/YUG_partisan_uprising.dds"
 	}

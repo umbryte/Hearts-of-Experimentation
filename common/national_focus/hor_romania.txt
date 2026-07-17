@@ -1,0 +1,492 @@
+focus_tree = {
+
+	id = hor_romanian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = ROM
+			has_dlc = "Death or Dishonor"
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 1030 y = 1100 }
+
+#	focus = {
+#		id = ROM_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id = 
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	} 
+
+	focus = {
+		id = ROM_reaffirm_territorial_gains
+		icon = GFX_ROM_reaffirm_territorial_gains
+		x = 10
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_full_control_of_state = 77
+			has_full_control_of_state = 84
+			has_full_control_of_state = 76
+			has_full_control_of_state = 81
+			has_full_control_of_state = 82
+			has_full_control_of_state = 83
+			has_full_control_of_state = 80
+			has_full_control_of_state = 78
+			has_full_control_of_state = 766
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.05
+			77 = {
+				add_manpower = 25000
+			}
+			84 = {
+				add_manpower = 25000
+			}
+			80 = {
+				add_manpower = 25000
+			}
+			46 = {
+				add_manpower = -75000
+			}
+			add_political_power = 120
+		}
+
+	}
+
+	focus = {
+		id = ROM_royal_intrigue
+		icon = GFX_ROM_royal_intrigue
+		prerequisite = { focus = ROM_reaffirm_territorial_gains }
+		x = 0
+		y = 1
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = ROM_the_shadow_behind_the_crown
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+
+	}
+
+	focus = {
+		id = ROM_the_craiova_trial
+		icon = GFX_focus_generic_court # CHANGE LATER - HOR
+		prerequisite = { focus = ROM_royal_intrigue }
+		x = 2
+		y = 2
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ROM_unity_and_order_decree
+		icon = GFX_goal_generic_national_unity # CHANGE LATER - HOR
+		prerequisite = { focus = ROM_royal_intrigue }
+		x = 0
+		y = 2
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ROM_national_renewal_directive
+		icon = GFX_focus_generic_fascist_propaganda # CHANGE LATER - HOR
+		prerequisite = { focus = ROM_unity_and_order_decree }
+		x = 0
+		y = 3
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ROM_the_constitutional_revival_act
+		icon = GFX_focus_generic_monarchy_1 # CHANGE LATER - HOR
+		prerequisite = { focus = ROM_the_craiova_trial }
+		mutually_exclusive = { focus = ROM_the_legionary_youth_integration_program }
+		x = 2
+		y = 3
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ROM_the_legionary_youth_integration_program
+		icon = GFX_focus_generic_population_growth # CHANGE LATER - HOR
+		prerequisite = { focus = ROM_the_craiova_trial }
+		mutually_exclusive = { focus = ROM_the_constitutional_revival_act }
+		x = 4
+		y = 3
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ROM_integration_of_national_movements
+		icon = GFX_focus_generic_workers # CHANGE LATER - HOR
+		prerequisite = { focus = ROM_the_legionary_youth_integration_program }
+		x = 4
+		y = 5
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ROM_national_awakening_campaign 
+		icon = GFX_focus_generic_military_academy # CHANGE LATER - HOR
+		prerequisite = { focus = ROM_the_legionary_youth_integration_program }
+		x = 6
+		y = 5
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ROM_national_industrial_mobilisation_plan
+		icon = GFX_focus_generic_full_employment # CHANGE LATER - HOR
+		prerequisite = { focus = ROM_the_legionary_youth_integration_program }
+		x = 2
+		y = 5
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ROM_the_national_reorganisation_of_the_state
+		icon = GFX_focus_rom_preserve_romania # CHANGE LATER - HOR
+		prerequisite = { focus = ROM_national_industrial_mobilisation_plan }
+		prerequisite = { focus = ROM_integration_of_national_movements }
+		prerequisite = { focus = ROM_national_awakening_campaign }
+		x = 4
+		y = 7
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+				
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+		id = ROM_king_michaels_coup_hor
+		icon = GFX_focus_rom_coup
+		prerequisite = { focus = ROM_national_renewal_directive }
+		x = 0
+		y = 5
+		relative_position_id = ROM_reaffirm_territorial_gains
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			date > 1940.1.1
+			is_subject = no
+			threat > 0.99
+			has_war_with = SOV
+			ROOT = {
+				casualties_inflicted_by = {
+					opponent = SOV
+					thousands > 500
+				}
+			}
+			GER = {
+				casualties_inflicted_by = {
+					opponent = SOV
+					thousands > 500
+				}
+			}
+			NOT = {
+				GER = {
+					divisions_in_state = {
+						state = 46
+						size > 9
+					}
+				}
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+
+	}
+}
