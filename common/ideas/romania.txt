@@ -2,9 +2,44 @@ ideas = {
 
 	country = {
 
+		ROM_descalating_political_unrest = { # HOR
+			
+			picture = ROM_descalating_political_unrest
+			
+			removal_cost = -1
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.1
+			}
+
+		}
+
+		ROM_king_carol_ii = { # HOR
+			
+			picture = ROM_king_carol_ii
+			
+			removal_cost = -1
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = 0.10
+				stability_factor = -0.15
+			}
+
+		}
+
 		ROM_the_shadow_behind_the_crown = { # HOR
 			
-			picture = ROM_king_carol_ii_handled
+			picture = generic_monarchist_uprising
 			
 			removal_cost = -1
 

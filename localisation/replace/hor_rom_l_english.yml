@@ -5,10 +5,25 @@
  # SCRIPTED GUI
  hor_rom_civil_war_warning_text:0 "Make sure §RNOT to join§! the Axis by any means necessary §Runtil§! completing either the focus §YIron Guard§! or the focus §YNational Christian Party!§!"
 
+ # CHARACTERS
+ ROM_horia_sima:0 "Horia Sima"
+
+ # TRAITS
+ legionary_commander:0 "Legionary Commander"
+
+ # DECISIONS
+ ROM_pacify_the_communists_category:0 "Pacify the Communists"
+ ROM_pacify_the_communists:0 "Pacify the Communists"
+
+ # TOOLTIPS
+ ROM_descalating_political_unrest_tt:0 "This §YNational Spirit§! will last only up until §RJanuary 1 1938!§!"
+
  # IDEAS
  ROM_german_trade_treaty:0 "German-Romanian Trade Treaty"
  ROM_german_trade_treaty_desc:0 "By utilising our vast natural resources to aid their impressive industries, we can potentially secure a great alliance with the German Reich in the near future."
  ROM_the_shadow_behind_the_crown:0 "The Shadow Behind The Crown"
+ ROM_king_carol_ii:0 "King Carol II"
+ ROM_descalating_political_unrest:0 "Descalating Political Unrest"
 
  # FOCUS
  ROM_reaffirm_territorial_gains:0 "Reaffirm Territorial Gains"
@@ -18,7 +33,7 @@
  ROM_the_craiova_trial:0 "The Craiova Trial"
  ROM_the_craiova_trial_desc:0 "Held under heavy government scrutiny, the trial is portrayed by the state as a necessary measure to defend national unity and the territorial settlement established after 1918. Critics, however, see it as a tool for consolidating power and suppressing minority political movements in regions where integration remains fragile."
  ROM_unity_and_order_decree:0 "Unity and Order Decree"
- ROM_unity_and_order_decree_desc:0 "In the aftermath of escalating political unrest and the destabilising effects of the Craiova Trials, Romania introduces the Unity and Order Decree as a sweeping emergency measure designed to restore control over the state and reaffirm national cohesion. It authorises the detention of individuals suspected of separatist agitation, extremist organising, or collaboration with foreign political movements, often without immediate trial."
+ ROM_unity_and_order_decree_desc:0 "In the aftermath of escalating political unrest and the destabilising effects of the Craiova Trials, Romania introduces the Unity and Order Decree, It authorises the detention of individuals suspected of separatist agitation, extremist organising, or collaboration with foreign political movements, often without immediate trial."
  ROM_national_renewal_directive:0 "National Renewal Directive"
  ROM_national_renewal_directive_desc:0 "Following the Unity and Order Decree, rising instability and political violence within Romania creates space for increasingly radical solutions. Conservative elites and segments of the security apparatus begin quietly shifting toward cooperation with nationalist and fascist movements as a means of restoring full control."
  ROM_the_constitutional_revival_act:0 "The Constitutional Revival Act"

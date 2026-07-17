@@ -1,6 +1,18 @@
 ### IDEAS ### 
 
-spriteTypes = {	
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_ROM_horia_sima"
+		texturefile = "gfx/leaders/ROM/portrait_ROM_horia_sima.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ROM_horia_sima_small"
+		texturefile = "gfx/interface/ideas/ROM_horia_sima.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_king_carol_ii"
+		texturefile = "gfx/interface/ideas/ROM_king_carol_ii.dds"
+	}
 	spriteType = {
 		name = "GFX_idea_ROM_german_trade_treaty"
 		texturefile = "gfx/interface/ideas/ROM_german_trade_treaty.dds"

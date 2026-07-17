@@ -85,7 +85,9 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_political_power = 120
 			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			77 = {
 				add_manpower = 25000
 			}
@@ -98,9 +100,7 @@ focus_tree = {
 			46 = {
 				add_manpower = -75000
 			}
-			add_political_power = 120
 		}
-
 	}
 
 	focus = {
@@ -131,16 +131,16 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ROM_the_shadow_behind_the_crown
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
 			}
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.05
+				popularity = -0.05
 			}
 		}
-
 	}
 
 	focus = {
@@ -158,7 +158,10 @@ focus_tree = {
 		}
 
 		available = {
-				
+			#has_character = ROM_horia_sima
+			ROM_horia_sima = {
+				is_political_advisor = yes
+			}
 		}
 
 		bypass = {
@@ -170,9 +173,21 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
-
 	}
 
 	focus = {
@@ -190,7 +205,8 @@ focus_tree = {
 		}
 
 		available = {
-				
+			fascism < 0.5
+			has_stability > 0.2
 		}
 
 		bypass = {
@@ -202,9 +218,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_ideas = ROM_descalating_political_unrest
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ROM_descalating_political_unrest_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = { 
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
 		}
-
 	}
 
 	focus = {

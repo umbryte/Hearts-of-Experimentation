@@ -1,4 +1,33 @@
 characters={
+
+	ROM_horia_sima={ # HOR
+		name=ROM_horia_sima
+		portraits={
+			civilian={
+				large="GFX_portrait_ROM_horia_sima"
+				small="GFX_portrait_ROM_horia_sima_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ROM_horia_sima
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				legionary_commander 
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	ROM_gheorghe_tatarescu={
 		name=ROM_gheorghe_tatarescu
 		portraits={

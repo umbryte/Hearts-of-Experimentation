@@ -178,7 +178,7 @@ equipments = {
 		visual_level = 0
 	}
 
-	radio_equipment = {
-	
-	}
+	#radio_equipment = {
+	#
+	#}
 }

@@ -1,5 +1,25 @@
 on_actions = {
 
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					ROM = {
+						has_idea = { ROM_descalating_political_unrest }
+					}
+					if = {
+						limit = {
+							date > 1938.1.1
+						}
+						ROM = {
+							remove_ideas = { ROM_descalating_political_unrest }
+						}
+					}
+				}
+			}
+		}
+	}
+
 	on_weekly = {
 		effect = {
 			every_country = {

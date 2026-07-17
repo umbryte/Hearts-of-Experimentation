@@ -2,6 +2,8 @@
 
 add_ideas = axis_minor_specialforces_cap # HOR
 
+add_ideas = ROM_king_carol_ii # HOR
+
 set_rule = { can_send_volunteers = yes } # HOR
 
 if = {
@@ -73,6 +75,7 @@ recruit_character = ROM_mihail_sturdza
 recruit_character = ROM_gheorghe_argeseanu
 recruit_character = ROM_king_michael
 recruit_character = ROM_octavian_goga
+recruit_character = ROM_horia_sima # HOR
 
 # Starting tech
 set_technology = {
@@ -359,9 +362,9 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 20 # USED TO BE 60 - HOR
-	fascism = 18
-	communism = 2
-	neutrality = 60 # USED TO BE 20 - HOR
+	fascism = 10 # USED TO BE 18 - HOR
+	communism = 50 # USED TO BE 2 - HOR
+	neutrality = 20
 }
 
 1939.1.1 = {

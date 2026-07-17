@@ -1,3 +1,36 @@
+ROM_pacify_the_communists_category = { # HOR
+
+	ROM_pacify_the_communists = {
+	
+		icon = GFX_decision_generic_political_discourse
+		
+		allowed = {
+			original_tag = ROM
+			has_completed_focus = ROM_unity_and_order_decree
+		}
+
+		available = {
+
+		}
+
+		visible = {
+			original_tag = ROM
+			has_completed_focus = ROM_unity_and_order_decree
+		}
+
+		cost = 25
+	
+		fire_only_once = yes
+
+		days_remove = 80
+		
+		modifier = {
+			communism_drift = -0.02
+			stability_weekly_factor = 0.0005
+		}
+	}
+}
+
 ROM_change_sides = {
 	
 	# Allies
