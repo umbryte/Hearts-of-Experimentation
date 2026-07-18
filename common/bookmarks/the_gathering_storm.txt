@@ -298,14 +298,16 @@ bookmarks = {
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
 			ideology = neutrality
+			new_content = yes # HOR
 			ideas = {
+				ROM_king_carol_ii
 				ROM_king_carol_ii_hedonist
 				neutrality_idea
 			}
 			focuses = {
-				ROM_institute_royal_dictatorship
-				ROM_preserve_greater_romania
-				ROM_king_michaels_coup
+				ROM_reaffirm_territorial_gains
+				ROM_royal_intrigue
+				ROM_king_michaels_coup_hor
 			}
 		}
 		"MAN"={

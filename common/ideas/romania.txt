@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 
-		ROM_king_michaels_go
+		#ROM_king_michaels 
 
 		ROM_descalating_political_unrest = { # HOR
 			
