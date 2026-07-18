@@ -84,6 +84,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			add_political_power = 120
 			add_war_support = 0.05
@@ -128,6 +130,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			add_ideas = ROM_the_shadow_behind_the_crown
@@ -174,6 +178,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			add_stability = 0.05
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -219,6 +225,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			add_ideas = ROM_descalating_political_unrest
@@ -268,6 +276,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			add_ideas = ROM_constitutional_guarantees
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -296,7 +306,6 @@ focus_tree = {
 				show_modifiers = yes
 			}
 		}
-
 	}
 
 	focus = {
@@ -326,6 +335,8 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			add_ideas = ROM_the_sentinel_of_the_motherland
@@ -376,10 +387,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			
 		}
-
 	}
 
 	focus = {
@@ -408,10 +420,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			
 		}
-
 	}
 
 	focus = {
@@ -440,10 +453,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			
 		}
-
 	}
 
 	focus = {
@@ -472,10 +486,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			
 		}
-
 	}
 
 	focus = {
@@ -495,7 +510,7 @@ focus_tree = {
 		}
 
 		available = {
-				
+			has_completed_focus = ROM_force_abdication_hor # MIGHT NOT BE ACCURATE !!
 		}
 
 		bypass = {
@@ -506,8 +521,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			add_ideas = { ROM_securitate }
+			add_ideas = { ROM_iron_guard }
 		}
 	}
 
@@ -544,7 +562,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			#Removes king carol and makes the most popular party the ruling one
@@ -586,6 +604,7 @@ focus_tree = {
 					elections_allowed = no
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				add_idea = ROM_figurehead_king_michael
 				remove_idea = ROM_king_carol_ii_hedonist
@@ -610,7 +629,7 @@ focus_tree = {
 		icon = GFX_focus_rom_coup
 		prerequisite = { focus = ROM_force_abdication_hor }
 		x = 0
-		y = 5
+		y = 6
 		relative_position_id = ROM_reaffirm_territorial_gains
 
 		cost = 1
@@ -654,13 +673,19 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
 		completion_reward = {
 			promote_character = { character = ROM_king_michael ideology = despotism }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			remove_ideas = { ROM_king_carol_ii }
+			retire_character = ROM_horia_sima
+			retire_character = ROM_octavian_goga
+			retire_character = ROM_corneliu_codreanu
+			retire_character = ROM_mihail_sturdza
+			retire_character = ROM_ion_antonescu
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_politics = {
-				ruling_party = communism
+				ruling_party = neutrality
 				elections_allowed = yes
 			}
 			set_political_party = {

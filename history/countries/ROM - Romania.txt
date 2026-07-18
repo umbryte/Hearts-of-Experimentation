@@ -2,8 +2,6 @@
 
 add_ideas = axis_minor_specialforces_cap # HOR
 
-add_ideas = ROM_king_carol_ii # HOR
-
 set_rule = { can_send_volunteers = yes } # HOR
 
 if = {

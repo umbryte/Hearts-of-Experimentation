@@ -12,7 +12,7 @@
  legionary_commander:0 "Legionary Commander"
 
  # DECISIONS
- ROM_pacify_the_communists_category:0 "Pacify the Communists"
+ ROM_pacify_the_communists_category:0 "The Political Landscape of Romania"
  ROM_pacify_the_communists:0 "Pacify the Communists"
 
  # TOOLTIPS
@@ -22,10 +22,13 @@
  ROM_german_trade_treaty:0 "German-Romanian Trade Treaty"
  ROM_german_trade_treaty_desc:0 "By utilising our vast natural resources to aid their impressive industries, we can potentially secure a great alliance with the German Reich in the near future."
  ROM_the_shadow_behind_the_crown:0 "The Shadow Behind The Crown"
- ROM_king_carol_ii:0 "King Carol II"
+ ROM_king_carol_ii_hedonist:0 "King Carol II"
  ROM_descalating_political_unrest:0 "Descalating Political Unrest"
 
- # FOCUS
+ # EVENTS
+ 
+
+ # FOCUSES
  ROM_reaffirm_territorial_gains:0 "Reaffirm Territorial Gains"
  ROM_reaffirm_territorial_gains_desc:0 "Bucharest emphasizes the legitimacy of the post-war treaties and frames any external challenge to its borders as a threat to regional stability. The government strengthens administrative integration in newly acquired territories, promotes national unity through education and culture, and reinforces its military posture as a guarantee that the hard-won borders will not be revised by force or diplomatic pressure."
  ROM_royal_intrigue:0 "Royal Intrigue"

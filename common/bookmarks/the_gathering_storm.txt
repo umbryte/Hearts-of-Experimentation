@@ -300,7 +300,6 @@ bookmarks = {
 			ideology = neutrality
 			new_content = yes # HOR
 			ideas = {
-				ROM_king_carol_ii
 				ROM_king_carol_ii_hedonist
 				neutrality_idea
 			}

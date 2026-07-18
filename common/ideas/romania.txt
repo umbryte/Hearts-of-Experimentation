@@ -21,24 +21,6 @@ ideas = {
 
 		}
 
-		ROM_king_carol_ii = { # HOR
-			
-			picture = ROM_king_carol_ii
-			
-			removal_cost = -1
-
-			allowed = {
-				original_tag = ROM
-			}
-
-			modifier = {
-				political_power_factor = 0.05
-				consumer_goods_factor = 0.10
-				stability_factor = -0.15
-			}
-
-		}
-
 		ROM_the_shadow_behind_the_crown = { # HOR
 			
 			picture = generic_monarchist_uprising
@@ -219,7 +201,7 @@ ideas = {
 		ROM_king_carol_ii_hedonist = {
 
 			removal_cost = -1
-			
+
 			allowed = {
 				original_tag = ROM
 			}
@@ -239,7 +221,9 @@ ideas = {
 			}
 
 			modifier = {
-				
+				political_power_factor = 0.05 # HOR
+				consumer_goods_factor = 0.10 # HOR
+				stability_factor = -0.15 # HOR
 			}
 		}
 
