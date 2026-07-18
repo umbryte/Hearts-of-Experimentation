@@ -5,11 +5,11 @@ focus_tree = {
 	country = {
 		factor = 0
 		
-		modifier = {
-			add = 20
-			tag = ROM
-			has_dlc = "Death or Dishonor"
-		}
+		#modifier = {
+		#	add = 20
+		#	tag = ROM
+		#	has_dlc = "Death or Dishonor"
+		#}
 	}
 	
 	default = no
@@ -524,18 +524,29 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			set_cosmetic_tag = ROM_LEGIONARY
 			promote_character = ROM_ion_antonescu
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_politics = {
+				ruling_party = fascism
+			}
+			set_political_party = {
+				ideology = fascism
+				popularity = 100
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_party_name = { 
 			    ideology = fascism
 			    long_name = ROM_fascism_party_long
 			    name = ROM_fascism_party
 			}
-			hidden_effect = { retire_character = ROM_corneliu_codreanu }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = { ROM_iron_guard }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = { ROM_securitate }
-			add_ideas = { ROM_iron_guard }
+			hidden_effect = { 
+				retire_character = ROM_corneliu_codreanu
+				set_cosmetic_tag = ROM_LEGIONARY
+			}
 		}
 	}
 
@@ -660,8 +671,6 @@ focus_tree = {
 				retire_character = ROM_mihail_sturdza
 				retire_character = ROM_ion_antonescu
 			}
-			custom_effect_tooltip = ROM_fascist_advisors_gone_tt
-			custom_effect_tooltip = generic_skip_one_line_tt
 			set_politics = {
 				ruling_party = neutrality
 				elections_allowed = yes
@@ -671,30 +680,33 @@ focus_tree = {
 				popularity = 50
 			}	
 			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ROM_fascist_advisors_gone_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = ROM_raised_militia_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
-					has_completed_focus = ROM_iron_guard
+					has_idea = ROM_iron_guard
 				}
 				remove_ideas = ROM_iron_guard
 			}
-			hidden_effect = {
-				news_event = { id = news.322 days = 1 }
-				set_country_flag = can_change_sides_dem
-				set_country_flag = can_change_sides_com			
-			}
-			unlock_decision_category_tooltip = ROM_change_sides
-			unlock_decision_tooltip = ROM_change_sides_to_allies
-			unlock_decision_tooltip = ROM_change_sides_to_commintern
-			custom_effect_tooltip = generic_skip_one_line_tt
 			add_political_power = 200
 			add_stability = -0.5
 			add_war_support = -0.5
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
-				archetype = infantry_equipment
-				amount = -5000 
+				type = infantry_equipment
+				amount = -5000
 			}
-			country_resource_oil = -300
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_resource = {
+				type = oil
+				amount = -300
+				state = 46
+			}
+			hidden_effect = {
+				news_event = { id = news.322 days = 1 }		
+			}
 		}
 	}
 

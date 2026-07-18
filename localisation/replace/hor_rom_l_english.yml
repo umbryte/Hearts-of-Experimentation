@@ -16,8 +16,9 @@
  ROM_pacify_the_communists:0 "Pacify the Communists"
 
  # TOOLTIPS
+ ROM_raised_militia_tt:0 "§Yhe amount of Militia that gets spawned in upon the completion of this Focus depends on how many Milita you raised by doing the decisions unlocked by the previous Focus.§!"
  ROM_king_carol_ii_abdicates_tt:0 "§YKing Carol II§! abdicates."
- ROM_fascist_advisors_gone_tt:0 "§YIon Antonescu's§! §YFascist§! dictatorship will be abolished and every §YFascist§! political figures will be either executed or imprisoned."
+ ROM_fascist_advisors_gone_tt:0 "§YIon Antonescu's§! §YFascist§! dictatorship will be §Rabolished§! and every §YFascist Political Figure§! will be either §Rfired§!, §Rimprisoned§! or §Rexecuted§!."
  ROM_force_abdication_hor_tt:0 "This focus can §Ronly§! be completed upon §Ythe Abdication of King Carol II§! on §RSeptember 6 1940!§!"
  ROM_descalating_political_unrest_tt:0 "This §YNational Spirit§! will last only up until §RJanuary 1 1938!§!"
 

@@ -1,5 +1,13 @@
 on_actions = {
 
+	#on_startup = {
+        #	effect = { 
+        #    		every_country = {
+        #        		news_event = { id = news.323 days = 1708 } # Should fire on September 6 1940
+        #    		}
+        #	}	
+    	}
+
 	on_government_change = {
 		effect = {
 			if = {

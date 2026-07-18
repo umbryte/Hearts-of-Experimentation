@@ -12885,10 +12885,6 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
-
-	trigger = {
-		date > 1936.1.1
-	}
 	
 	option = {
 		name = news.323.a
