@@ -4,11 +4,10 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROM = {
-						has_government = neutrality
-					}
+					original_tag = ROM
+					has_government = neutrality
 				}
-				ROM = { drop_cosmetic_tag }
+				drop_cosmetic_tag = yes
 			}
 		}
 	}
@@ -17,11 +16,10 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROM = {
-						has_government = democratic
-					}
+					original_tag = ROM
+					has_government = democratic
 				}
-				ROM = { drop_cosmetic_tag }
+				drop_cosmetic_tag = yes
 			}
 		}
 	}
@@ -30,11 +28,10 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROM = {
-						has_government = communism
-					}
+					original_tag = ROM
+					has_government = communism
 				}
-				ROM = { set_cosmetic_tag = ROM_RPR }
+				set_cosmetic_tag = ROM_RPR
 			}
 		}
 	}
@@ -43,11 +40,10 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROM = {
-						has_government = fascism
-					}
+					original_tag = ROM
+					has_government = fascism
 				}
-				ROM = { set_cosmetic_tag = ROM_LEGIONARY }
+				set_cosmetic_tag = ROM_LEGIONARY
 			}
 		}
 	}

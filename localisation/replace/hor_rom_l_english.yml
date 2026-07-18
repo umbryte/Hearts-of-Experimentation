@@ -16,6 +16,9 @@
  ROM_pacify_the_communists:0 "Pacify the Communists"
 
  # TOOLTIPS
+ ROM_king_carol_ii_abdicates_tt:0 "§YKing Carol II§! abdicates."
+ ROM_fascist_advisors_gone_tt:0 "§YIon Antonescu's§! §YFascist§! dictatorship will be abolished and every §YFascist§! political figures will be either executed or imprisoned."
+ ROM_force_abdication_hor_tt:0 "This focus can §Ronly§! be completed upon §Ythe Abdication of King Carol II§! on §RSeptember 6 1940!§!"
  ROM_descalating_political_unrest_tt:0 "This §YNational Spirit§! will last only up until §RJanuary 1 1938!§!"
 
  # IDEAS
@@ -51,7 +54,7 @@
  ROM_national_industrial_mobilisation_plan_desc:0 "The National Industrial Mobilisation Plan is introduced as a state-led effort to modernise heavy industry, expand infrastructure, and centralise economic planning under national priorities. The government argues that economic strength is essential for preserving sovereignty and internal stability in a rapidly destabilising Europe."
  ROM_the_national_reorganisation_of_the_state:0 "National Reorganisation of the State"
  ROM_the_national_reorganisation_of_the_state_desc:0 "The National Reorganisation of the State marks the culmination of the long transition from parliamentary instability to authoritarian-national consolidation. Officially justified as a necessary response to external threats and internal fragmentation, the act dissolves the remaining pluralistic structures of government and replaces them with a centralised national leadership system."
- ROM_force_abdication_hor:0 "Force Abdication"
+ ROM_force_abdication_hor:0 "The Forceful Abdication of King Carol II"
  ROM_force_abdication_hor_desc:0 "King Carol II is no longer required, and, indeed, is proving to be more of a hassle than a leader. Though he still has extensive control over the nation's government and finances, he must be made to abdicate for the long-term good of Romania."
  ROM_king_michaels_coup_hor:0 "King Michael’s Coup"
  ROM_king_michaels_coup_hor_desc:0 "As the war situation deteriorates and Soviet forces approach Romania’s borders, King Michael, supported by opposition politicians and elements of the military, orders the arrest of Antonescu and his key allies. Royal forces seize control of Bucharest, radio stations, and government ministries in a swift, coordinated operation."

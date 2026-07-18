@@ -510,7 +510,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = ROM_force_abdication_hor # MIGHT NOT BE ACCURATE !!
+			has_completed_focus = ROM_force_abdication_hor
 		}
 
 		bypass = {
@@ -524,6 +524,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
+			set_cosmetic_tag = ROM_LEGIONARY
+			promote_character = ROM_ion_antonescu
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_party_name = { 
+			    ideology = fascism
+			    long_name = ROM_fascism_party_long
+			    name = ROM_fascism_party
+			}
+			hidden_effect = { retire_character = ROM_corneliu_codreanu }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = { ROM_securitate }
 			add_ideas = { ROM_iron_guard }
 		}
@@ -544,14 +554,12 @@ focus_tree = {
 		}
 
 		available = {
-			has_idea = ROM_king_carol_ii_hedonist
-			OR = {
-				democratic > 0.35
-				communism > 0.35
-				fascism > 0.35
-			}
-			is_subject = no
-			
+			custom_trigger_tooltip = {
+				tooltip = ROM_force_abdication_hor_tt
+				NOT = {
+					has_idea = ROM_king_carol_ii_hedonist
+				}
+			}	
 		}
 
 		bypass = {
@@ -565,7 +573,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			#Removes king carol and makes the most popular party the ruling one
+			custom_effect_tooltip = ROM_king_carol_ii_abdicates_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_country_leader = { 
@@ -574,53 +583,19 @@ focus_tree = {
 				}
 				retire_country_leader = yes
 			}
-			if = {
-				limit = {
-					democratic > party_popularity@communism
-					democratic > party_popularity@fascism
-				}
-				set_politics = {
-					ruling_party = democratic
-					elections_allowed = yes
-				}
-			}
-			else_if = {
-				limit = {
-					communism > party_popularity@fascism
-					communism > party_popularity@democratic
-				}
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-				}
-			}
-			else_if = {
-				limit = {
-					fascism > party_popularity@democratic
-					fascism > party_popularity@communism
-				}
-				set_politics = {
-					ruling_party = fascism
-					elections_allowed = no
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				add_idea = ROM_figurehead_king_michael
 				remove_idea = ROM_king_carol_ii_hedonist
 			}
-
 			if = {
 				limit = {
 					has_idea = ROM_the_sentinel_of_the_motherland
 				}
 				remove_ideas = ROM_the_sentinel_of_the_motherland
 			}
-			
+			remove_ideas = ROM_the_shadow_behind_the_crown
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 360 }
-			hidden_effect = {
-				news_event = { id = news.323 days = 1 }
-			}
 		}
 	}
 
@@ -678,11 +653,14 @@ focus_tree = {
 		completion_reward = {
 			promote_character = { character = ROM_king_michael ideology = despotism }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			retire_character = ROM_horia_sima
-			retire_character = ROM_octavian_goga
-			retire_character = ROM_corneliu_codreanu
-			retire_character = ROM_mihail_sturdza
-			retire_character = ROM_ion_antonescu
+			hidden_effect = {
+				retire_character = ROM_horia_sima
+				retire_character = ROM_octavian_goga
+				retire_character = ROM_corneliu_codreanu
+				retire_character = ROM_mihail_sturdza
+				retire_character = ROM_ion_antonescu
+			}
+			custom_effect_tooltip = ROM_fascist_advisors_gone_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_politics = {
 				ruling_party = neutrality
@@ -713,10 +691,80 @@ focus_tree = {
 			add_war_support = -0.5
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				archetype = infantry_equipment
 				amount = -5000 
 			}
 			country_resource_oil = -300
+		}
+	}
+
+	focus = {
+		id = ROM_national_christian_party
+		icon = GFX_goal_generic_propaganda
+		#prerequisite = { focus = ROM_appoint_german_friendly_government }
+		x = 8
+		y = 1
+		#relative_position_id = ROM_appoint_german_friendly_government
+		#mutually_exclusive = { focus = ROM_iron_guard }
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			ROM_octavian_goga = {
+				promote_character = {
+					ideology = fascism_ideology
+				}
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = ROM_fascism_party2_long
+				name = ROM_fascism_party2
+			}
+			if = {
+				limit = { has_idea = ROM_the_sentinel_of_the_motherland }
+				swap_ideas = {
+					add_idea = ROM_national_christian_party_in_power
+					remove_idea = ROM_the_sentinel_of_the_motherland
+				}
+				else = {
+					remove_ideas = ROM_the_sentinel_of_the_motherland
+					add_ideas = ROM_national_christian_party_in_power
+				}
+			}
+			#Remove ideas or display tooltip warning that it will happen
+			if = {
+				limit = {
+					has_idea = ROM_securitate
+				}
+				remove_ideas = ROM_securitate
+				else = {
+					if = {
+						limit = {
+							has_idea = ROM_constitutional_guarantees
+						}
+						remove_ideas = ROM_constitutional_guarantees
+						else = {
+							custom_effect_tooltip = ROM_appoint_german_friendly_government_tooltip_ncp
+						}
+					}
+				}
+			}
 		}
 	}
 }

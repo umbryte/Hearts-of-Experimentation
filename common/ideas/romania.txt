@@ -2,8 +2,6 @@ ideas = {
 
 	country = {
 
-		#ROM_king_michaels 
-
 		ROM_descalating_political_unrest = { # HOR
 			
 			picture = generic_morale_bonus

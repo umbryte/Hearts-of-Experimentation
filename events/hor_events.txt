@@ -454,7 +454,7 @@ country_event = {
 }
 
 # Yugoslavia enters civil war
-country_event = {
+news_event = {
 	id = hor_events.20
 	title = hor_events.20.t
 	desc = hor_events.20.d 
@@ -467,3 +467,10 @@ country_event = {
 		name = hor_events.20.a
 	}
 }
+
+# Romanian PM election
+#country_event = {
+#
+#}
+
+# A

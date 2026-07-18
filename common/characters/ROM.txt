@@ -73,6 +73,11 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		country_leader={ # HOR
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
 
 	ROM_armand_calinescu={
@@ -226,6 +231,9 @@ characters={
 				small="GFX_idea_ROM_constantin_sanatescu"
 				large="GFX_Portrait_romania_constantin_sanatescu"
 			}
+			civilian = { # HOR
+				large = "GFX_Portrait_romania_constantin_sanatescu"
+			}
 		}
 		advisor={
 			slot = army_chief
@@ -241,7 +249,6 @@ characters={
 				factor = 1.000
 			}
 		}
-
 		corps_commander={
 			traits={ infantry_expert }
 			skill=3
@@ -251,7 +258,11 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 		}
-		
+		country_leader={ # HOR
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
 
 	ROM_ion_antonescu={
@@ -288,6 +299,14 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1
+		}
+		country_leader = { # HOR
+			ideology = fascism_ideology
+			expire = "1965.1.1"
+			id=-1
+			traits = {
+				ROM_conductor
+			}
 		}
 	}
 

@@ -2,7 +2,7 @@
 # Romanian Events
 ###########################
 
-add_namespace = romania
+add_namespace = Romania
 
 # Soviet Union demands Bessarabia
 country_event = {

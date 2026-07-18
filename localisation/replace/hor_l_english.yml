@@ -477,9 +477,8 @@ WTREMOVE_DELAYED:0 ""
 
 # COUNTRY NAMES
 
- ROM_democratic:0 "Romanian Republic"
- ROM_democratic_DEF:0 "the Romanian Republic"
-
+ ROM_democratic:0 "Kingdom of Romania"
+ ROM_democratic_DEF:0 "the Kingdom of Romania"
  ROM_communism:0 "Romanian People's Republic"
  ROM_communism_DEF:0 "the Romanian People's Republic"
 
