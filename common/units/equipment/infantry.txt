@@ -152,6 +152,14 @@ equipments = {
 		}
 	}
 
+	sf_equipment_0 = {
+		year = 1918
+	
+		archetype = sf_equipment
+		priority = 05
+		visual_level = 0
+	}
+
 	radio_equipment = {
 		year = 1936
 
