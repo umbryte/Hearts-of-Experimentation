@@ -1684,7 +1684,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		offset = {
-			x = -1
+			x = 0 # WAS -1 - HOR
 			y = 0
 			trigger = {
 				NOT = { has_dlc = "Man the Guns" }
@@ -3399,7 +3399,7 @@ focus_tree = {
 
 		icon = GFX_focus_RAJ_two_nation_theory
 		x = 1
-		y = 1
+		y = 3 # WAS 1 - HOR
 		relative_position_id = ENG_foundations_for_an_indian_state
 		cost = 10
 		ai_will_do = {
@@ -6793,7 +6793,7 @@ focus_tree = {
 		x = -4 # WAS -3 - HOR
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 
 		available_if_capitulated = yes
 
@@ -7007,7 +7007,7 @@ focus_tree = {
 		x = 2 # WAS 1 - HOR
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 
 		available_if_capitulated = yes
 
@@ -7169,7 +7169,7 @@ focus_tree = {
 		y = 1
 		#relative_position_id = uk_australia_focus # HOR
 		relative_position_id = uk_commonwealth_focus # HOR
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 
 		available_if_capitulated = yes
 
@@ -7329,7 +7329,7 @@ focus_tree = {
 		x = 4 # WAS 0 - HOR
 		y = 1 # WAS 3 - HOR
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 
 		available_if_capitulated = yes
 
@@ -7488,7 +7488,7 @@ focus_tree = {
 		x = 0 # WAS 2 - HOR
 		y = 1 # WAS 3 - HOR
 		relative_position_id = uk_commonwealth_focus
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 
 		available_if_capitulated = yes
 
