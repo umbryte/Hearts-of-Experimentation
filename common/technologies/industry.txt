@@ -1702,22 +1702,22 @@ technologies = {
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = steel
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = aluminium 
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = tungsten
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = chromium
-				amount = 10
+				amount = 15
 			}
 		}
 
@@ -1816,22 +1816,22 @@ technologies = {
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = steel
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = aluminium 
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = tungsten
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = chromium
-				amount = 10
+				amount = 15
 			}
 		}
 
@@ -1944,22 +1944,22 @@ technologies = {
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = steel
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = aluminium 
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = tungsten
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = chromium
-				amount = 10
+				amount = 15
 			}
 		}
 
@@ -2067,22 +2067,22 @@ technologies = {
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = steel
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = aluminium 
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = tungsten
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = chromium
-				amount = 10
+				amount = 15
 			}
 		}
 
@@ -2181,22 +2181,22 @@ technologies = {
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = steel
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = aluminium 
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = tungsten
-				amount = 10
+				amount = 15
 			}
 			modify_building_resources = {
 				building = heavy_metal_refinery
 				resource = chromium
-				amount = 10
+				amount = 15
 			}
 		}
 

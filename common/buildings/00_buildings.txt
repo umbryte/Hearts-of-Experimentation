@@ -275,12 +275,12 @@ buildings = {
 
 	heavy_metal_refinery = { # HOR
 		show_on_map = 1
-		base_cost = 14000
+		base_cost = 12000
 		per_level_extra_cost = -2000
-		local_resources_steel = 10
-		local_resources_aluminium = 10
-		local_resources_tungsten = 10
-		local_resources_chromium = 10
+		local_resources_steel = 15
+		local_resources_aluminium = 15
+		local_resources_tungsten = 15
+		local_resources_chromium = 15
 		
 		icon_frame = 32
 		level_cap = {
@@ -296,7 +296,7 @@ buildings = {
 
 	synthetic_refinery = {
 		show_on_map = 1
-		base_cost = 14000
+		base_cost = 13000
 		per_level_extra_cost = -2000
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name

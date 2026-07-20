@@ -9320,16 +9320,16 @@ focus_tree = {
 				custom_effect_tooltip = BUL_the_third_bulgarian_empire_tt
 			}
 
-			if = {
-				limit = {
-					NOT = { has_wargoal_against = TUR }
-					NOT = { is_in_faction_with = TUR }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = TUR
-				}
-			}
+			#if = { # HOR
+			#	limit = {
+			#		NOT = { has_wargoal_against = TUR }
+			#		NOT = { is_in_faction_with = TUR }
+			#	}
+			#	create_wargoal = {
+			#		type = annex_everything
+			#		target = TUR
+			#	}
+			#}
 
 			#Set ideology cosmetic tag to show the appropriate 3D models
 			set_country_flag = BUL_tbe_flag
@@ -9339,11 +9339,11 @@ focus_tree = {
 				news_event = { id = bftb_news.7 hours = 8 random_hours = 4 }
 			}
 
-			add_ai_strategy = {
-				type = declare_war
-				id = TUR
-				value = 100
-			}
+			#add_ai_strategy = { # HOR
+			#	type = declare_war
+			#	id = TUR
+			#	value = 100
+			#}
 		}
 	}
 }

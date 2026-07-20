@@ -468,23 +468,21 @@ news_event = {
 	}
 }
 
-# Romanian PM election
-country_event = {
-	id = hor_events.21
-	title = hor_events.21.t
-	desc = hor_events.21.d
-	
-	picture = 
-
-	is_triggered_only = yes
-
-	option = { # Octavian Goga
-		name = hor_events.21.a
-	}
-
-	option = { # Corneliu Zelea Codreanu
-		name = hor_events.21.b
-	}
-}
-
-# A
+## Romanian PM election
+#country_event = {
+#	id = hor_events.21
+#	title = hor_events.21.t
+#	desc = hor_events.21.d
+#	
+#	picture = 
+#
+#	is_triggered_only = yes
+#
+#	option = { # Octavian Goga
+#		name = hor_events.21.a
+#	}
+#
+#	option = { # Corneliu Zelea Codreanu
+#		name = hor_events.21.b
+#	}
+#}
