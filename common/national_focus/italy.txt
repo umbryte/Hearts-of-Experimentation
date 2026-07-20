@@ -4225,7 +4225,8 @@ focus_tree = {
 		relative_position_id = ITA_preserve_army_traditions
 		cost = 5
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
+			#NOT = { has_global_flag = second_italo_ethiopian_war_flag } # HOR
+			NOT = { has_war_with = ETH } # HOR
 			#NTH_Manu: Should probably also require a completed focus in any of the ME political paths, so that it can unlock appropriate generals
 		}
 
@@ -4248,21 +4249,21 @@ focus_tree = {
 				custom_effect_tooltip = available_military_high_command
 				show_ideas_tooltip = ITA_achille_starace	
 			}
-			if = {
-				limit = {
-					OR = {
-						has_government = democratic
-						has_government = neutrality
-					}
-				}
-				show_unit_leaders_tooltip = ITA_giovanni_duca
-			}
-			else_if = { #Communist
-				limit = {
-					has_government = communism
-				}
-				show_unit_leaders_tooltip = ITA_ada_gobetti
-			}
+			#if = { # HOR
+			#	limit = {
+			#		OR = {
+			#			has_government = democratic
+			#			has_government = neutrality
+			#		}
+			#	}
+			#	show_unit_leaders_tooltip = ITA_giovanni_duca
+			#}
+			#else_if = { #Communist
+			#	limit = {
+			#		has_government = communism
+			#	}
+			#	show_unit_leaders_tooltip = ITA_ada_gobetti
+			#}
 			
 			#NTH_Manu: Medals to Divsion Commanders
 		}
