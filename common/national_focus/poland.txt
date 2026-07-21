@@ -14731,25 +14731,57 @@ focus_tree = {
 			add_ideas = POL_aces_in_exile
 			air_experience = 75
 			add_manpower = 9700
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
-				}
+			#if = { # HOR
+			#	limit = {
+			#		NOT = {
+			#			has_dlc = "By Blood Alone"
+			#		}
+			#	}
 				add_equipment_to_stockpile = {
 					type = CAS_equipment_1
 					amount = 50
 					producer = POL
 				}
+			#} # HOR
+			#else = { 
+			#	add_equipment_to_stockpile = {
+			#		type = small_plane_cas_airframe_1
+			#		amount = 50
+			#		producer = POL
+			#		variant_name = "PZL P.23"
+			#	}	
+			#}
+		}
+	}
+
+	focus = { # HOR
+		id = POL_press_for_liberia_hor
+		icon = GFX_focus_generic_africa_factory
+		prerequisite = { focus = a }
+		relative_position_id = POL_aces_in_exile
+
+		x = 0
+		y = 1
+		cost = 10
+
+		available = {
+			is_subject = no 
+		}
+
+		ai_will_do = {
+			factor = 2.5
+		}
+
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			LIB = {
+				country_event = { id = NSB_poland_events.6 days = 1 }
 			}
-			else = {
-				add_equipment_to_stockpile = {
-					type = small_plane_cas_airframe_1
-					amount = 50
-					producer = POL
-					variant_name = "PZL P.23"
-				}	
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				puppet = LIB
 			}
 		}
 	}
@@ -14941,8 +14973,8 @@ focus_tree = {
 			has_capitulated = yes
 		}
 
-		x = -1
-		y = 2
+		x = 0 # WAS -1 - HOR
+		y = 1 # WAS 2 - HOR
 		relative_position_id = POL_expand_polish_intelligence
 		cost = 10
 
@@ -15022,7 +15054,7 @@ focus_tree = {
 			}
 		}
 
-		x = 0
+		x = 2 # WAS 0 - HOR
 		y = 1
 		relative_position_id = POL_expand_polish_intelligence
 		cost = 10
@@ -15081,7 +15113,7 @@ focus_tree = {
 		available = {
 		}
 
-		x = 4
+		x = 6 # WAS 4 - HOR
 		y = 1
 		relative_position_id = POL_expand_polish_intelligence
 		cost = 10
@@ -15137,7 +15169,7 @@ focus_tree = {
 		available = {
 		}
 
-		x = 2
+		x = 4 # WAS 2 - HOR
 		y = 1
 		relative_position_id = POL_expand_polish_intelligence
 		cost = 10
