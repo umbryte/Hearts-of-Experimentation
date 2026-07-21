@@ -36,7 +36,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 0
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
@@ -59,7 +59,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = army_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -91,7 +91,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = army_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -113,7 +113,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = army_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -137,7 +137,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = equipment_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -168,7 +168,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = motorization_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 
@@ -200,7 +200,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = doctrine_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -224,7 +224,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = equipment_effort_2
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -255,7 +255,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = mechanization_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -280,7 +280,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = equipment_effort_3
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -307,7 +307,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 5
 		y = 0
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		
 		search_filters = {   FOCUS_FILTER_RESEARCH }
 
@@ -395,7 +395,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = aviation_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -420,7 +420,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = aviation_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -444,7 +444,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = bomber_focus
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {   FOCUS_FILTER_RESEARCH }
 		
@@ -534,7 +534,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = aviation_effort_2
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -559,7 +559,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = aviation_effort_2
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -599,7 +599,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = aviation_effort_2
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -621,7 +621,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 9
 		y = 0
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
@@ -751,7 +751,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = naval_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 
@@ -803,7 +803,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = naval_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		
 		search_filters = {   FOCUS_FILTER_RESEARCH }
 
@@ -854,7 +854,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = flexible_navy
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -892,7 +892,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = large_navy
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 
@@ -930,7 +930,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = submarine_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -968,7 +968,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = cruiser_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
@@ -1006,7 +1006,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		x = 13
 		y = 0
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
@@ -1069,7 +1069,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = industrial_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1152,7 +1152,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = industrial_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1238,7 +1238,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = construction_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1324,7 +1324,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = production_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 
@@ -1410,7 +1410,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = construction_effort_2
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -1550,7 +1550,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = production_effort_2
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1636,7 +1636,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = infrastructure_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
@@ -1774,7 +1774,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = infrastructure_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -1859,7 +1859,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = infrastructure_effort_2
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 
@@ -1896,7 +1896,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = infrastructure_effort_2
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		ai_will_do = {
 			base = 2
 			modifier = {
@@ -1925,7 +1925,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = extra_tech_slot
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 		ai_will_do = {
 			base = 2
 			modifier = {
@@ -1949,7 +1949,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = infrastructure_effort_2
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 		
@@ -1984,7 +1984,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		x = 19
 		y = 0
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	
@@ -2010,7 +2010,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = political_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL   }
 
@@ -2054,7 +2054,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = collectivist_ethos
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 
@@ -2111,7 +2111,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = collectivist_ethos
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 
@@ -2158,7 +2158,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = political_effort
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -2210,7 +2210,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = nationalism_focus
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 
@@ -2234,7 +2234,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = internationalism_focus
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 
@@ -2258,7 +2258,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = liberty_ethos
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -2300,7 +2300,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = liberty_ethos
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -2332,7 +2332,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = militarism
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 
@@ -2364,7 +2364,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = neutrality_focus
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 
@@ -2382,7 +2382,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = interventionism_focus
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -2400,7 +2400,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = military_youth
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 
@@ -2418,7 +2418,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = political_correctness
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 
@@ -2437,7 +2437,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = volunteer_corps
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -2464,7 +2464,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = foreign_expeditions
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -2491,7 +2491,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = indoctrination_focus
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 
@@ -2524,7 +2524,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = paramilitarism
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -2560,7 +2560,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ideological_fanaticism
-		cost = 10
+		cost = 7 # WAS 10 - HOR
 	
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 

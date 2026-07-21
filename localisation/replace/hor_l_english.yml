@@ -597,6 +597,8 @@ WTREMOVE_DELAYED:0 ""
  VICTORY_POINTS_4076: "Romanian Paratroopers Burial Site"
  VICTORY_POINTS_11834: "Legz Fell Asleep Here"
  VICTORY_POINTS_3516: "El Námur"
+ VICTORY_POINTS_13204: "The Gulag"
+ VICTORY_POINTS_11560: "Jake was WUS here"
  
 # NAVAL EQUIPMENT YEAR NAMES
  ship_hull_light_3:2 "1939 Destroyer"

@@ -15,6 +15,8 @@ focus_tree = {
 	}
 	default = no
 
+	continuous_focus_position = { x = 3025 y = 950 } # HOR
+
 
 	############################
 	#### INDUSTRIAL SECTION ####
@@ -108,7 +110,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_start_central_industrial_region_1 }
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -116,7 +118,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_start_central_industrial_region_1 }
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -142,10 +144,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_start_central_industrial_region_1
@@ -159,22 +161,22 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_start_central_industrial_region_1
 			}
 			random_owned_controlled_state = {
 				prioritize = { 92 }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				set_state_flag = POL_start_central_industrial_region_1
 			}
 			random_owned_controlled_state = {
 				prioritize = { 87 }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				set_state_flag = POL_start_central_industrial_region_1
 			}
 			add_tech_bonus = {
@@ -214,7 +216,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_expansion_of_new_towns_1 }
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -222,7 +224,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_expansion_of_new_towns_1 }
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -243,10 +245,10 @@ focus_tree = {
 					}
 					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
@@ -261,10 +263,10 @@ focus_tree = {
 					}
 					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_expansion_of_new_towns_1
@@ -305,12 +307,12 @@ focus_tree = {
 				limit = { has_state_flag = POL_start_central_industrial_region_1 }
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -330,15 +332,15 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_start_central_industrial_region_1
@@ -375,7 +377,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_start_central_industrial_region_1 }
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4 # WAS 2 - HOR
 					instant_build = yes
 				}
 			}
@@ -383,7 +385,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_start_central_industrial_region_1 }
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -403,10 +405,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4 # WAS 2 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_start_central_industrial_region_1
@@ -420,10 +422,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_start_central_industrial_region_1
@@ -464,12 +466,12 @@ focus_tree = {
 			}
 			add_resource = {
 				type = steel
-				amount = 24
+				amount = 240 # WAS 24 - HOR
 				state = 762
 			}
 			add_resource = {
 				type = aluminium
-				amount = 12
+				amount = 120 # WAS 12 - HOR
 				state = 762
 			}
 		}
@@ -593,7 +595,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
-						size < 1
+						size < 2 # WAS 1 - HOR 
 					}
 				}
 			}
@@ -612,12 +614,12 @@ focus_tree = {
 					is_core_of = ROOT 
 					free_building_slots = {
 						building = infrastructure 
-						size > 2
+						size > 4 # WAS 2 - HOR 
 					}
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 			}
@@ -738,7 +740,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_develop_upper_silesia_1 }
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 			}
@@ -758,10 +760,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR 
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 				set_state_flag = POL_develop_upper_silesia_1
@@ -860,7 +862,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_develop_east_poland_1 }
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 			}
@@ -868,7 +870,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_develop_east_poland_2 }
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 			}
@@ -876,7 +878,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_develop_east_poland_3 }
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 			}
@@ -884,7 +886,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_develop_east_poland_4 }
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 			}
@@ -904,10 +906,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR 
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 				set_state_flag = POL_develop_east_poland_1
@@ -921,10 +923,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR 
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 				set_state_flag = POL_develop_east_poland_2
@@ -938,10 +940,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR 
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 				set_state_flag = POL_develop_east_poland_3
@@ -955,10 +957,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR 
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 				set_state_flag = POL_develop_east_poland_4
@@ -993,7 +995,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_invest_in_the_old_polish_region_1 }
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR 
 					instant_build = yes
 				}
 			}
@@ -1013,10 +1015,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_invest_in_the_old_polish_region_1
@@ -1053,12 +1055,12 @@ focus_tree = {
 				limit = { has_state_flag = POL_modernize_congressional_factories_1 }
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -1066,7 +1068,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_modernize_congressional_factories_2 }
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -1074,7 +1076,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_modernize_congressional_factories_3 }
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -1094,15 +1096,15 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_modernize_congressional_factories_1
@@ -1116,10 +1118,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_modernize_congressional_factories_2
@@ -1133,10 +1135,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_modernize_congressional_factories_3
@@ -1191,10 +1193,10 @@ focus_tree = {
 						size > 0
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2 # WAS 1 - HOR
 						instant_build = yes
 				}
 				if = {
@@ -1248,7 +1250,7 @@ focus_tree = {
 		id = POL_prepare_for_the_next_war
 		icon = GFX_goal_generic_build_tank
 		
-		x = 23
+		x = 23 # WAS 23 - HOR
 		y = 0
 		cost = 5
 
@@ -2007,7 +2009,7 @@ focus_tree = {
 		icon = GFX_focus_POL_complete_april_constitution
 		mutually_exclusive = { focus = POL_organize_the_peasants_strike focus = POL_nationalist_constitution focus = POL_assemble_the_regency_council focus = POL_restore_the_sejm }
 		
-		x = 49
+		x = 45 # WAS 49 - HOR
 		y = 0
 		cost = 10
 
@@ -2254,10 +2256,10 @@ focus_tree = {
 			POL_sanation_right_opposition_down = yes
 			random_owned_controlled_state = {
 				prioritize = { 89 }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -2496,7 +2498,7 @@ focus_tree = {
 				limit = {
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 			}
 		}
 	}
@@ -2757,6 +2759,10 @@ focus_tree = {
 		icon = GFX_focus_POL_polish_revanchism
 		prerequisite = { focus = POL_ozon }
 		mutually_exclusive = { focus = POL_align_with_the_west focus = POL_baltic_security }
+
+		allow_branch = { # HOR
+			always = no
+		}
 		
 		x = 0
 		y = 1
@@ -2997,6 +3003,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = POL_dissolve_the_bbwr
 		cost = 10
+
+		allow_branch = { # HOR
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 10
@@ -3462,8 +3472,8 @@ focus_tree = {
 		id = POL_plan_west
 		icon = GFX_focus_POL_plan_west
 		prerequisite = { focus = POL_prepare_for_the_next_war }
-		x = -14
-		y = 1
+		x = -12 # WAS -14 - HOR
+		y = 4 # WAS 1 - HOR
 		relative_position_id = POL_complete_april_constitution
 		cost = 10
 
@@ -3507,13 +3517,14 @@ focus_tree = {
 		id = POL_the_prusya_line
 		icon = GFX_focus_POL_prussia_line
 		prerequisite = { focus = POL_plan_west }
-		x = 4
-		y = 1
-		relative_position_id = POL_plan_west
+		x = 10 # WAS 4 - HOR
+		y = 5 # WAS 1 - HOR
+		#relative_position_id = POL_plan_west # HOR
+		relative_position_id = POL_prepare_for_the_next_war # HOR
 		cost = 10
 		
 		available = {
-			NOT = { has_completed_focus = POL_complete_plan_west }
+			#NOT = { has_completed_focus = POL_complete_plan_west } # HOR
 		}
 
 		ai_will_do = {
@@ -3581,13 +3592,14 @@ focus_tree = {
 		id = POL_invest_anti_air
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = POL_plan_west }
-		x = 2
-		y = 1
-		relative_position_id = POL_plan_west
+		x = 8 # WAS 2 - HOR
+		y = 5 # WAS 1 - HOR
+		#relative_position_id = POL_plan_west # HOR
+		relative_position_id = POL_prepare_for_the_next_war # HOR
 		cost = 10
 		
 		available = {
-			NOT = { has_completed_focus = POL_complete_plan_west }
+			#NOT = { has_completed_focus = POL_complete_plan_west } # HOR
 		}
 
 		ai_will_do = {
@@ -3610,13 +3622,14 @@ focus_tree = {
 		id = POL_the_prusya_army
 		icon = GFX_focus_generic_manpower
 		prerequisite = { focus = POL_plan_west }
-		x = -1
-		y = 1
-		relative_position_id = POL_the_prusya_line
+		x = 9 # WAS -1 - HOR
+		y = 6 # WAS 1 - HOR
+		#relative_position_id = POL_the_prusya_line # HOR
+		relative_position_id = POL_prepare_for_the_next_war # HOR
 		cost = 10
 		
 		available = {
-			NOT = { has_completed_focus = POL_complete_plan_west }
+			#NOT = { has_completed_focus = POL_complete_plan_west } # HOR
 		}
 
 		ai_will_do = {
@@ -3666,13 +3679,14 @@ focus_tree = {
 		id = POL_expand_poznan_forts
 		icon = GFX_goal_fortify_the_westwall
 		prerequisite = { focus = POL_plan_west }
-		x = 1
-		y = 1
-		relative_position_id = POL_the_prusya_line
+		x = 11 # WAS 1 - HOR
+		y = 6 # WAS 1 - HOR
+		#relative_position_id = POL_the_prusya_line # HOR
+		relative_position_id = POL_prepare_for_the_next_war # HOR
 		cost = 10
 		
 		available = {
-			NOT = { has_completed_focus = POL_complete_plan_west }
+			#NOT = { has_completed_focus = POL_complete_plan_west } # HOR
 			ROOT = {
 				controls_state = 86
 				controls_state = 87
@@ -3720,13 +3734,14 @@ focus_tree = {
 		id = POL_hel_fortified_area
 		icon = GFX_goal_fortify_the_westwall
 		prerequisite = { focus = POL_plan_west }
-		x = 3
-		y = 1
-		relative_position_id = POL_the_prusya_line
+		x = 13 # WAS 3 - HOR
+		y = 6 # WAS 1 - HOR
+		#relative_position_id = POL_the_prusya_line # HOR
+		relative_position_id = POL_prepare_for_the_next_war # HOR
 		cost = 10
 		
 		available = {
-			NOT = { has_completed_focus = POL_complete_plan_west }
+			#NOT = { has_completed_focus = POL_complete_plan_west } # HOR
 			OR = {
 				ROOT = { controls_state = 85 }
 				ROOT = { controls_state = 807 }
@@ -3808,13 +3823,14 @@ focus_tree = {
 		id = POL_local_western_plans
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = POL_plan_west }
-		x = 0
-		y = 1
-		relative_position_id = POL_plan_west
+		x = 6 # WAS 0 - HOR
+		y = 5 # WAS 1 - HOR
+		#relative_position_id = POL_plan_west # HOR
+		relative_position_id = POL_prepare_for_the_next_war # HOR
 		cost = 10
 		
 		available = {
-			NOT = { has_completed_focus = POL_complete_plan_west }
+			#NOT = { has_completed_focus = POL_complete_plan_west } # HOR
 		}
 
 		ai_will_do = {
@@ -3838,13 +3854,14 @@ focus_tree = {
 		id = POL_sudeten_mountaineers
 		icon = GFX_focus_GRE_a_land_of_mountains
 		prerequisite = { focus = POL_plan_west }
-		x = 1
-		y = 2
-		relative_position_id = POL_plan_west
+		x = 7 # WAS 1 - HOR
+		y = 6 # WAS 2 - HOR
+		#relative_position_id = POL_plan_west # HOR
+		relative_position_id = POL_prepare_for_the_next_war # HOR
 		cost = 10
 		
 		available = {
-			NOT = { has_completed_focus = POL_complete_plan_west }
+			#NOT = { has_completed_focus = POL_complete_plan_west } # HOR
 		}
 
 		ai_will_do = {
@@ -3902,13 +3919,14 @@ focus_tree = {
 		id = POL_silesia_fortified_area
 		icon = GFX_goal_fortify_the_westwall
 		prerequisite = { focus = POL_plan_west }
-		x = 6
-		y = 1
-		relative_position_id = POL_plan_west
+		x = 12 # WAS 6 - HOR
+		y = 5 # WAS 1 - HOR
+		#relative_position_id = POL_plan_west # HOR
+		relative_position_id = POL_prepare_for_the_next_war # HOR
 		cost = 10
 
 		available = {
-			NOT = { has_completed_focus = POL_complete_plan_west }
+			#NOT = { has_completed_focus = POL_complete_plan_west } # HOR
 			OR = {
 				controls_state = 72
 				controls_state = 88
@@ -3996,6 +4014,10 @@ focus_tree = {
 			focus = POL_expand_poznan_forts
 			focus = POL_hel_fortified_area
 		}
+
+		allow_branch = { # HOR
+			always = no
+		}
 		
 		available = {
 			has_completed_focus = POL_plan_west
@@ -4035,6 +4057,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = POL_complete_april_constitution
 		cost = 10
+
+		allow_branch = { # HOR
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 10
@@ -4585,9 +4611,10 @@ focus_tree = {
 		id = POL_sabotage_polish_industry
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = POL_plan_east focus = POL_plan_west }
-		x = 1
-		y = 2
-		relative_position_id = POL_plan_east
+		x = 14 # WAS 1 - HOR
+		y = 5 # WAS 2 - HOR
+		#relative_position_id = POL_plan_east # HOR
+		relative_position_id = POL_prepare_for_the_next_war # HOR
 		cost = 10
 
 		ai_will_do = {
@@ -4630,6 +4657,10 @@ focus_tree = {
 					}
 				}
 			}
+		}
+
+		allow_branch = { # HOR
+			always = no
 		}
 
 		ai_will_do = {
@@ -5084,6 +5115,10 @@ focus_tree = {
 		id = POL_organize_the_peasants_strike
 		icon = GFX_goal_generic_war_with_comintern
 		allow_branch = { has_dlc = "No Step Back" }
+
+		allow_branch = { # HOR
+			always = no
+		}
 		
 		mutually_exclusive = { focus = POL_complete_april_constitution focus = POL_assemble_the_regency_council focus = POL_nationalist_constitution }
 
@@ -7213,6 +7248,11 @@ focus_tree = {
 		#prerequisite = { focus = POL_empower_the_morges }
 		relative_position_id = POL_raise_the_black_madonna
 		mutually_exclusive = { focus = POL_KPP_focus }
+
+		allow_branch = { # HOR
+			always = no
+		}
+
 		allow_branch = {
 			has_dlc = "No Step Back"
 			if = {
@@ -7594,6 +7634,10 @@ focus_tree = {
 		allow_branch = { has_dlc = "No Step Back" }
 		mutually_exclusive = { focus = POL_complete_april_constitution focus = POL_organize_the_peasants_strike focus = POL_nationalist_constitution }
 		
+		allow_branch = { # HOR
+			always = no
+		}
+
 		available = {
 		}
 
@@ -9086,6 +9130,10 @@ focus_tree = {
 			}
 		}
 
+		allow_branch = { # HOR
+			always = no
+		}
+
 		available_if_capitulated = no
 		
 		available = {
@@ -9483,6 +9531,10 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = POL_assert_western_claims focus = POL_claim_russia }
 		relative_position_id = POL_assert_western_claims
+
+		allow_branch = { # HOR
+			always = no
+		}
 		
 		allow_branch = {
 			has_dlc = "No Step Back"
@@ -11423,6 +11475,10 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		allow_branch = { has_dlc = "No Step Back" }
 
+		allow_branch = { # HOR
+			always = no
+		}
+
 		available = {
 			
 		}
@@ -11856,6 +11912,10 @@ focus_tree = {
 			}
 		}
 
+		allow_branch = { # HOR
+			always = no
+		}
+
 		x = 87
 		y = 7
 		cost = 10
@@ -11930,6 +11990,10 @@ focus_tree = {
 					}
 				}
 			}
+		}
+
+		allow_branch = { # HOR
+			always = no
 		}
 
 		x = 89
@@ -13068,6 +13132,10 @@ focus_tree = {
 		prerequisite = { focus = POL_prepare_german_line focus = POL_declare_independence }
 		relative_position_id = POL_declare_independence
 
+		allow_branch = { # HOR
+			always = no
+		}
+
 		x = 3
 		y = 1
 		cost = 10
@@ -13118,6 +13186,10 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = POL_prepare_german_line focus = POL_declare_independence }
 		relative_position_id = POL_declare_independence
+
+		allow_branch = { # HOR
+			always = no
+		}
 
 		x = 1
 		y = 1
@@ -13532,6 +13604,11 @@ focus_tree = {
 	focus = {
 		id = POL_the_between_the_seas_concept
 		icon = GFX_goal_anschluss
+
+		allow_branch = { # HOR
+			always = no
+		}
+		
 		available = {
 			is_subject = no
 			if = {
@@ -14388,8 +14465,8 @@ focus_tree = {
 			}
 		}
 		allow_branch = { has_dlc = "Man the Guns" }
-		x = 106
-		y = 0
+		x = 4 # WAS 106 - HOR
+		y = 5 # WAS 0 - HOR
 		offset = {
 			x = 2
 			y = 0
@@ -14507,8 +14584,8 @@ focus_tree = {
 			else = {
 				add_ideas = POL_influx_of_exiles
 			}
-			add_offsite_building = { type = industrial_complex level = 3 }
-			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 6 } # WAS 3 - HOR
+			add_offsite_building = { type = arms_factory level = 4 } # WAS 2 - HOR
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 10000
@@ -14553,12 +14630,12 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 50
 			# 19400 Poles served in the exile airforce, 100 manpower per plane making it around 200 planes total.
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
-				}
+			#if = { # HOR
+			#	limit = {
+			#		NOT = {
+			#			has_dlc = "By Blood Alone"
+			#		}
+			#	}
 				add_equipment_to_stockpile = {
 					type = fighter_equipment_1
 					amount = 100
@@ -14569,22 +14646,22 @@ focus_tree = {
 					amount = 50
 					producer = POL
 				}
-			}
-			else = {
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_0
-					amount = 100
-					producer = POL
-					variant_name = "PZL P.11"
-				}
-				add_equipment_to_stockpile = {
-					type = small_plane_cas_airframe_1
-					amount = 50
-					producer = POL
-					variant_name = "PZL P.23"
-				}
-			}
-			add_offsite_building = { type = arms_factory level = 2 }
+			#} # HOR
+			#else = {
+			#	add_equipment_to_stockpile = {
+			#		type = small_plane_airframe_0
+			#		amount = 100
+			#		producer = POL
+			#		variant_name = "PZL P.11"
+			#	}
+			#	add_equipment_to_stockpile = {
+			#		type = small_plane_cas_airframe_1
+			#		amount = 50
+			#		producer = POL
+			#		variant_name = "PZL P.23"
+			#	}
+			#}
+			add_offsite_building = { type = arms_factory level = 4 } # WAS 2 - HOR
 		}
 	}
 
@@ -14619,7 +14696,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 75
 			add_manpower = 9700
-			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = arms_factory level = 4 } # WAS 2 - HOR
 		}
 	}
 
@@ -14706,7 +14783,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_offsite_building = { type = dockyard level = 5 }
+			add_offsite_building = { type = dockyard level = 10 } # WAS 5 - HOR
 		}
 	}
 
@@ -14739,7 +14816,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 5 }
+			add_offsite_building = { type = industrial_complex level = 10 } # WAS 5 - HOR
 		}
 	}
 
@@ -14772,8 +14849,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 3 }
-			add_offsite_building = { type = arms_factory level = 3 }
+			add_offsite_building = { type = industrial_complex level = 6 } # WAS 3 - HOR
+			add_offsite_building = { type = arms_factory level = 6 } # WAS 3 - HOR
 		}
 	}
 
@@ -15196,7 +15273,7 @@ focus_tree = {
 				limit = { has_state_flag = POL_develop_polish_ship_building_1 }
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 8 # WAS 4 - HOR
 					instant_build = yes
 				}
 			}
@@ -15208,15 +15285,15 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = dockyard
-						size > 3
+						size > 6 # WAS 3 - HOR
 						include_locked = yes
 					}
 					NOT = { state = 85 }
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 8 # WAS 4 - HOR
 				add_building_construction = {
 					type = dockyard
-					level = 4
+					level = 8 # WAS 4 - HOR
 					instant_build = yes
 				}
 				set_state_flag = POL_develop_polish_ship_building_1
@@ -15350,14 +15427,14 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = dockyard
-						size > 1
+						size > 2 # WAS 1 - HOR
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4 # WAS 2 - HOR
 					instant_build = yes
 				}
 			}
@@ -15488,10 +15565,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 			random_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4 # WAS 2 - HOR
 					instant_build = yes
 				}
 			}
@@ -15503,10 +15580,10 @@ focus_tree = {
 				limit = {
 					is_coastal = yes
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4 # WAS 2 - HOR
 					instant_build = yes
 				}
 			}
@@ -15538,10 +15615,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		complete_tooltip = {
 			random_state = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4 # WAS 2 - HOR
 					instant_build = yes
 				}
 			}
@@ -15562,10 +15639,10 @@ focus_tree = {
 				limit = {
 					is_coastal = yes
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4 # WAS 2 - HOR
 					instant_build = yes
 				}
 			}
@@ -15617,15 +15694,15 @@ focus_tree = {
 				limit = {
 					is_coastal = yes
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}			
@@ -15674,10 +15751,10 @@ focus_tree = {
 
 			random_owned_controlled_state = {
 				prioritize = { 85 }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}

@@ -2326,13 +2326,13 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = steel
-					amount > 4999 # WAS 9999 #This needs to correspond to the Bypass values in the previous focuses
+					amount > 9999 # WAS 9999 #This needs to correspond to the Bypass values in the previous focuses
 					extracted = yes
 				}
 				any_subject_country = {
 					has_resources_in_country = {
 						resource = steel
-						amount > 4999 # WAS 9999 #This needs to correspond to the Bypass values in the previous focuses
+						amount > 9999 # WAS 9999 #This needs to correspond to the Bypass values in the previous focuses
 						extracted = yes
 					}
 				}
@@ -2340,13 +2340,13 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = aluminium
-					amount > 2999 # WAS 4999 #This needs to correspond to the Bypass values in the previous focuses
+					amount > 4999 # WAS 4999 #This needs to correspond to the Bypass values in the previous focuses
 					extracted = yes
 				}
 				any_subject_country = {
 					has_resources_in_country = {
 						resource = aluminium
-						amount > 2999 # WAS 4999 #This needs to correspond to the Bypass values in the previous focuses
+						amount > 4999 # WAS 4999 #This needs to correspond to the Bypass values in the previous focuses
 						extracted = yes
 					}
 				}
@@ -2354,13 +2354,13 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = oil
-					amount > 599 #This needs to correspond to the Bypass values in the previous focuses
+					amount > 399 #This needs to correspond to the Bypass values in the previous focuses
 					extracted = yes
 				}
 				any_subject_country = {
 					has_resources_in_country = {
 						resource = oil
-						amount > 599 #This needs to correspond to the Bypass values in the previous focuses
+						amount > 399 #This needs to correspond to the Bypass values in the previous focuses
 						extracted = yes
 					}
 				}
@@ -2368,13 +2368,13 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = tungsten
-					amount > 999 # WAS 1999 #This needs to correspond to the Bypass values in the previous focuses
+					amount > 3999 # WAS 1999 #This needs to correspond to the Bypass values in the previous focuses
 					extracted = yes
 				}
 				any_subject_country = {
 					has_resources_in_country = {
 						resource = tungsten
-						amount > 999 # WAS 1999 #This needs to correspond to the Bypass values in the previous focuses
+						amount > 2999 # WAS 1999 #This needs to correspond to the Bypass values in the previous focuses
 						extracted = yes
 					}
 				}
@@ -2382,13 +2382,13 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = chromium
-					amount > 999 #This needs to correspond to the Bypass values in the previous focuses
+					amount > 2999 #This needs to correspond to the Bypass values in the previous focuses
 					extracted = yes
 				}
 				any_subject_country = {
 					has_resources_in_country = {
 						resource = chromium
-						amount > 999 #This needs to correspond to the Bypass values in the previous focuses
+						amount > 2999 #This needs to correspond to the Bypass values in the previous focuses
 						extracted = yes
 					}
 				}
@@ -2396,13 +2396,13 @@ focus_tree = {
 			OR = {
 				has_resources_in_country = {
 					resource = rubber
-					amount > 999 #This needs to correspond to the Bypass values in the previous focuses
+					amount > 1999 #This needs to correspond to the Bypass values in the previous focuses
 					extracted = yes
 				}
 				any_subject_country = {
 					has_resources_in_country = {
 						resource = rubber
-						amount > 999 #This needs to correspond to the Bypass values in the previous focuses
+						amount > 1999 #This needs to correspond to the Bypass values in the previous focuses
 						extracted = yes
 					}
 				}

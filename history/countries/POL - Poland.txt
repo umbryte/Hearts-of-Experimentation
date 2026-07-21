@@ -48,6 +48,7 @@ set_technology = {
 	synth_oil_experiments = 1
 	basic_train = 1
 	sf_gear = 1 # HOR
+	motorised_infantry = 1 # HOR
 }
 
 set_grand_doctrine = grand_battleplan
