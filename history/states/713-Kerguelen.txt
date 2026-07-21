@@ -5,8 +5,8 @@ state={
 	state_category = megalopolis # WAS tiny_island
 
 	resources = { # HOR
-		coal = 10
-		oil = 10
+		coal = 15
+		oil = 15
 	}
 
 	history={

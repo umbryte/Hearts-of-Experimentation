@@ -13,6 +13,9 @@ state=
 			infrastructure = 6
 			dockyard = 4 # HOR
 			industrial_complex = 1 # HOR
+			13252 = { # HOR
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			9627 3 
