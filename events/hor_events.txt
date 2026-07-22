@@ -468,21 +468,62 @@ news_event = {
 	}
 }
 
+# Poland asks for Liberia
+country_event = {
+	id = hor_events.21
+	title = hor_events.21.t
+	desc = hor_events.21.d
+	
+	picture = GFX_report_event_generic_rally
+		
+	is_triggered_only = yes
+
+	option = {
+		name = hor_events.21.a
+		ai_chance = { base = 100 }
+		if = {
+			limit = { owns_state = 298 }
+			298 = { transfer_state_to = POL }
+		}
+	}
+	
+	option = {
+		name = hor_events.21.b
+		ai_chance = { base = 0 }
+		POL = { country_event = { id = hor_events.22 } }
+	}
+}
+
+country_event = {
+	id = hor_events.22
+	title = hor_events.22.t
+	desc = hor_events.22.d
+
+	picture = GFX_report_event_polish_army
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hor_events.22.a
+		ai_chance = { base = 100 }
+	}
+}
+
 ## Romanian PM election
 #country_event = {
-#	id = hor_events.21
-#	title = hor_events.21.t
-#	desc = hor_events.21.d
+#	id = hor_events.23
+#	title = hor_events.23.t
+#	desc = hor_events.23.d
 #	
 #	picture = 
 #
 #	is_triggered_only = yes
 #
 #	option = { # Octavian Goga
-#		name = hor_events.21.a
+#		name = hor_events.23.a
 #	}
 #
 #	option = { # Corneliu Zelea Codreanu
-#		name = hor_events.21.b
+#		name = hor_events.23.b
 #	}
 #}

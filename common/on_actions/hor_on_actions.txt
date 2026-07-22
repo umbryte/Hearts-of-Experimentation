@@ -448,6 +448,18 @@ on_actions = {
 			ENG = {  add_to_array = { ENG.faction_friendly_intel = MEX } }
 			ENG = {  add_to_array = { ENG.faction_friendly_intel = BRA } }
 			ENG = {  add_to_array = { ENG.faction_friendly_intel = PHI } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = POL } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = IRE } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = HOL } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = BEL } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = LUX } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = NOR } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = GRE } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = IRQ } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = COG } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = MAL } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = INS } }
+			ENG = {  add_to_array = { ENG.faction_friendly_intel = ETH } }
 
 			## COMINTERN ##
 			SOV = {  add_to_array = { SOV.faction_friendly_intel = SOV } }
@@ -463,6 +475,26 @@ on_actions = {
 			GER = {  add_to_array = { GER.faction_friendly_intel = SPA } }
 			GER = {  add_to_array = { GER.faction_friendly_intel = VIC } }
 			GER = {  add_to_array = { GER.faction_friendly_intel = YUG } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = DEN } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = AOI } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = SLO } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = AUS } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = CRO } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = ALB } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKB } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKN } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKG } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKU } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKO } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKK } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKT } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKM } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKL } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = GEN } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKH } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKI } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RKC } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = RGB } }
 
 			## GEACPS ##
 			JAP = {  add_to_array = { JAP.faction_friendly_intel = JAP } }

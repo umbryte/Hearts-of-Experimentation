@@ -14754,35 +14754,48 @@ focus_tree = {
 		}
 	}
 
-	focus = { # HOR
-		id = POL_press_for_liberia_hor
-		icon = GFX_focus_generic_africa_factory
-		prerequisite = { focus = a }
+	focus = { # HOR FOCUS
+		id = POL_request_liberian_bases
+		icon = GFX_focus_generic_africa_defense
+		prerequisite = { focus = POL_prepare_for_the_inevitable }
 		relative_position_id = POL_aces_in_exile
 
-		x = 0
+		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
-			is_subject = no 
+			has_capitulated = yes
+			is_in_faction = yes
+			298 = {
+				OWNER = {
+					is_ally_with = ROOT
+				}
+			}
+			OR = {
+				has_war_with = GER
+				has_war_with = SOV
+			}
 		}
 
 		ai_will_do = {
-			factor = 2.5
+			factor = 10
 		}
 
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			LIB = {
-				country_event = { id = NSB_poland_events.6 days = 1 }
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_ally_with = ROOT
+						has_full_control_of_state = 298
+					}
+					country_event = { id = hor_events.21 }
+				}
 			}
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				puppet = LIB
-			}
+			custom_effect_tooltip = POL_request_liberian_bases_tt
 		}
 	}
 

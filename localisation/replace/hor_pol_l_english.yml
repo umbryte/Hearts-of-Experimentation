@@ -1,0 +1,20 @@
+﻿l_english:
+
+# POLAND STUFF
+
+ # FOCUSES
+ POL_request_liberian_bases:0 "Request Liberian Bases"
+ POL_request_liberian_bases_desc:0 "Now that our government is left without it's state, we should press for the bases in Liberia to more effectively fight against the occupators."
+ 
+ # EVENTS
+ hor_events.21.t:0 "The Polish government-in-exile requests transfer of Liberia"
+ hor_events.21.d:0 ""
+ hor_events.21.a:0 "Sure, why not?"
+ hor_events.21.b:0 "We need our territories as much as they do."
+ 
+ hor_events.22.t:0 "Our humble request for the transfer of Liberia has been turned down"
+ hor_events.22.d:0 ""
+ hor_events.22.a:0 "Fairs." 
+ 
+ # TOOLTIPS
+ POL_request_liberian_bases_tt:0 "§0Poland will ask the owner of Liberia to transfer the state over to them.§!"

@@ -35,14 +35,14 @@ LUX = {
 BEL = { color 	 = rgb { 219 196 22  }
 		color_ui = rgb { 250 224 32 }
 	  }
-HOL = {	color = rgb { 203 98 74 }
+HOL = {	color = rgb { 203 113 74 }
 		color_ui = rgb { 245 117 88 }
 }
 CZE = {	color = rgb { 54 126 167 }
 		color_ui = rgb { 70 217 203 }
 }
 POL = {
-	color = rgb { 214 102 139 }
+	color = rgb { 214 102 119 }
 	color_ui = rgb { 255 120 138 }
 }
 AUS = {

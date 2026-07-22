@@ -93,6 +93,8 @@ YUG_historical = {
 	focus_factors = {
 		YUG_war_on_bulgaria = 0
 		YUG_greater_yugoslavia = 0
+		YUG_partisan_uprising = 0
+		YUG_establish_SFRY = 0
 	}
 	
 	research = {
