@@ -301,7 +301,7 @@ focus_tree = {
 		icon = GFX_focus_prc_agrarian_socialism
 		x = 0
 		y = 4	
-		cost = 5
+		cost = 10
 		relative_position_id = MON_pol1
 		prerequisite = { focus = MON_pol6 focus = MON_pol8 }
 		ai_will_do = {
@@ -1054,7 +1054,7 @@ focus_tree = {
 		relative_position_id = MON_eco1
 
 		completion_reward = {
-			add_research_slot = 1
+			#add_research_slot = 1 # HOR
 			add_ideas = idea_MON_Booming_Economy
 		}
 	}
@@ -1087,6 +1087,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 2 } # HOR
+			add_offsite_building = { type = arms_factory level = 2 } # HOR
 			IF = {
 				limit = {
 					NOT = { has_tech = infantry_weapons1 }
@@ -1495,24 +1497,22 @@ focus_tree = {
 		id = MON_lan13
 		icon = GFX_focus_research
 		x = 0
-		y = 5
+		y = 1 # WAS 5 - HOR
 		cost = 10
-
-		allow_branch = { # HOR
-			always = no
-		}
 
 		ai_will_do = {
 			factor = 1
 		}
 		available = {}
 		bypass = {}
-		prerequisite = { focus = MON_lan9  focus = MON_lan10  focus = MON_lan11  focus = MON_lan12}
+		#prerequisite = { focus = MON_lan9  focus = MON_lan10  focus = MON_lan11  focus = MON_lan12} # HOR
+		prerequisite = { focus = MON_eco10 }
 		
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = yes
-		relative_position_id = MON_lan1
+		#relative_position_id = MON_lan1 # HOR
+		relative_position_id = MON_eco10 # HOR
 
 		completion_reward = {
 			add_research_slot = 1
