@@ -69,19 +69,19 @@ focus_tree = {
 			add_stability = -0.1
 			add_war_support = -0.05
 			330 = {
-				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
+				add_extra_state_shared_building_slots = 8 # WAS 2 - HOR
 			}
 			820 = {
-				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_extra_state_shared_building_slots = 4 # WAS 1 - HOR
 			}
 			818 = {
-				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_extra_state_shared_building_slots = 4 # WAS 1 - HOR
 			}
 			819 = {
-				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_extra_state_shared_building_slots = 4 # WAS 1 - HOR
 			}
 			817 = {
-				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_extra_state_shared_building_slots = 4 # WAS 1 - HOR
 			}
 		}
 	}
@@ -104,7 +104,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = -50
+			add_political_power = 50 # WAS -50 - HOR
 			effect_tooltip = {
 					swap_ideas = {
 						remove_idea = idea_MON_colectivistation_1
@@ -124,7 +124,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 		relative_position_id = MON_pol1
 		prerequisite = { focus = MON_pol1 }
 		ai_will_do = {
@@ -139,7 +139,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = indoctrination_focus
-			
+			add_war_support = 5
 			
 			
 			
@@ -151,7 +151,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 		relative_position_id = MON_pol1
 		prerequisite = { focus = MON_pol2 }
 		ai_will_do = {
@@ -220,7 +220,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 250
+			add_political_power = 150 # WAS 250 - HOR
 			add_stability = 0.05
 			add_popularity = { ideology = communism popularity = 0.15 }
 			add_ideas = political_commissars_focus
@@ -286,10 +286,10 @@ focus_tree = {
 				}
 			}
 			818 = {
-				add_extra_state_shared_building_slots = 2 # WAS 1 - HOR
+				add_extra_state_shared_building_slots = 4 # WAS 1 - HOR
 				add_building_construction = {
-					type = industrial_complex
-					level = 2 # WAS 1 - HOR
+					type = arms_factory # WAS industrial_complex - HOR
+					level = 4 # WAS 1 - HOR
 					instant_build = yes
 				}
 			}
@@ -308,7 +308,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			date > 1939.1.1
+			date > 1938.6.1 # WAS 1939.1.1
 		}
 		bypass = {}
 		
@@ -697,7 +697,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = -3
 		y = 2		
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 		prerequisite = { focus = MON_eco2 }
 		
 		ai_will_do = {
@@ -1369,7 +1369,7 @@ focus_tree = {
 		icon = GFX_goal_generic_small_arms
 		x = -3
 		y = 4
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 
 		ai_will_do = {
 			factor = 1
@@ -1398,7 +1398,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		x = -1
 		y = 4
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 
 		ai_will_do = {
 			factor = 1
@@ -1427,7 +1427,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		x = 1
 		y = 4
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 
 		ai_will_do = {
 			factor = 1
@@ -1466,7 +1466,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		x = 3
 		y = 4
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 
 		ai_will_do = {
 			factor = 1
@@ -1497,6 +1497,10 @@ focus_tree = {
 		x = 0
 		y = 5
 		cost = 10
+
+		allow_branch = { # HOR
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -1793,6 +1797,10 @@ focus_tree = {
 		x = 41
 		y = 0
 		cost = 10
+
+		allow_branch = { # HOR
+			always = no
+		}
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
