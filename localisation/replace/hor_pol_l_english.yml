@@ -18,3 +18,7 @@
  
  # TOOLTIPS
  POL_request_liberian_bases_tt:0 "§0Poland will ask the owner of Liberia to transfer the state over to them.§!"
+ POL_prepare_for_the_inevitable_tt_1:0 "§0Finishing this Focus will give us§! §O1 Off-Map Civilian Factory§!§0,§! §G1 Off-Map Military Factory§! §0and§! §21 Off-Map Naval Dockyard§! §0more upon finishing the Focus§! §YPrepare for the Inevitable§!"
+ POL_prepare_for_the_inevitable_tt_2:0 "§0Due to completing other Focuses, we will gain [?POL_prepare_for_the_inevitable_var]§! §OOff-Map Civilian Factory§!§0,§! §GOff-Map Military Factory§! §0and§! §2Off-Map Naval Dockyard§!"
+ POL_prepare_for_the_inevitable_tt_3:0 "§0Due to completing other Focuses, we will gain [?POL_prepare_for_the_inevitable_var]§! §OOff-Map Civilian Factories§!§0,§! §GOff-Map Military Factories§! §0and§! §2Off-Map Naval Dockyards§!"
+ POL_prepare_for_the_inevitable_tt_4:0 "§0By completing other Focuses, we will gain a number of§! §OOff-Map Civilian Factories§!§0,§! §GOff-Map Military Factories§! §0and§! §2Off-Map Naval Dockyards§!"

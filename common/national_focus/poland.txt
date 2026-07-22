@@ -102,6 +102,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -131,6 +137,12 @@ focus_tree = {
 		}
 	
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -208,6 +220,12 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -231,6 +249,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -299,6 +323,12 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -319,6 +349,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -369,6 +405,12 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -392,6 +434,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -732,6 +780,12 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -747,6 +801,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -854,6 +914,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -893,6 +959,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -987,6 +1059,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -1002,6 +1080,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -1047,6 +1131,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -1083,6 +1173,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -1165,6 +1261,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -1174,13 +1276,19 @@ focus_tree = {
 				limit = { has_state_flag = POL_warsaw_main_railway_station_1 }
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 4 # WAS 2 - HOR
 					instant_build = yes
 				}
 			}
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			add_to_variable = {
 				var = POL_investments_var
 				value = 1
@@ -3487,12 +3595,12 @@ focus_tree = {
 					is_subject_of = GER
 					is_in_faction_with = GER
 				}
-				has_completed_focus = POL_reach_out_to_underground_state
+				#has_completed_focus = POL_reach_out_to_underground_state # HOR
 			}
-			OR = {
-				NOT = { has_completed_focus = POL_plan_east }
-				has_completed_focus = POL_complete_plan_east
-			}
+			#OR = { # HOR
+			#	NOT = { has_completed_focus = POL_plan_east }
+			#	has_completed_focus = POL_complete_plan_east
+			#}
 		}
 
 		
@@ -5083,6 +5191,10 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		mutually_exclusive = { focus = POL_complete_april_constitution }
 		allow_branch = { NOT = { has_dlc = "No Step Back" } }
+
+		allow_branch = { # HOR
+			always = no
+		}
 
 		x = 10
 		y = 0
@@ -13276,6 +13388,10 @@ focus_tree = {
 		relative_position_id = POL_restore_the_sejm
 		allow_branch = { NOT = { has_dlc = "No Step Back" } }
 
+		allow_branch = { # HOR
+			always = no
+		}
+
 		x = 0
 		y = 1
 		cost = 10
@@ -14467,69 +14583,69 @@ focus_tree = {
 		allow_branch = { has_dlc = "Man the Guns" }
 		x = 4 # WAS 106 - HOR
 		y = 5 # WAS 0 - HOR
-		offset = {
-			x = 2
-			y = 0
-			trigger = {
-				has_country_flag = romanov_enabled
-			}
-		}
-		offset = {
-			x = -27
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "No Step Back" }
-			}
-		}
+		#offset = { # HOR
+		#	x = 2
+		#	y = 0
+		#	trigger = {
+		#		has_country_flag = romanov_enabled
+		#	}
+		#}
+		#offset = { # HOR
+		#	x = -27
+		#	y = 0
+		#	trigger = {
+		#		NOT = { has_dlc = "No Step Back" }
+		#	}
+		#}
 		
-		offset = {
-			x = -38
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = POL_complete_april_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		#offset = { # HOR
+		#	x = -38
+		#	y = 0
+		#	trigger = {
+		#		has_dlc = "No Step Back"
+		#		has_completed_focus = POL_complete_april_constitution
+		#		has_game_rule = {
+		#			rule = obsolete_focus_branches_visibility
+		#			option = HIDE
+		#		}
+		#	}
+		#}
 		
-		offset = {
-			x = -39
-			y = 0
-			trigger = {
-				has_completed_focus = POL_organize_the_peasants_strike
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		#offset = { # HOR
+		#	x = -39
+		#	y = 0
+		#	trigger = {
+		#		has_completed_focus = POL_organize_the_peasants_strike
+		#		has_game_rule = {
+		#			rule = obsolete_focus_branches_visibility
+		#			option = HIDE
+		#		}
+		#	}
+		#}
 		
-		offset = {
-			x = -31
-			y = 0
-			trigger = {
-				has_completed_focus = POL_assemble_the_regency_council
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		#offset = { # HOR
+		#	x = -31
+		#	y = 0
+		#	trigger = {
+		#		has_completed_focus = POL_assemble_the_regency_council
+		#		has_game_rule = {
+		#			rule = obsolete_focus_branches_visibility
+		#			option = HIDE
+		#		}
+		#	}
+		#}
 		
-		offset = {
-			x = -47
-			y = 0
-			trigger = {
-				has_completed_focus = POL_nationalist_constitution
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
+		#offset = { # HOR
+		#	x = -47
+		#	y = 0
+		#	trigger = {
+		#		has_completed_focus = POL_nationalist_constitution
+		#		has_game_rule = {
+		#			rule = obsolete_focus_branches_visibility
+		#			option = HIDE
+		#		}
+		#	}
+		#}
 		cost = 10
 
 		ai_will_do = {
@@ -14541,6 +14657,35 @@ focus_tree = {
 			#Should maybe also purge all Sanation spirits/effects.
 			#Historically, when Poland surrendered, the Sanation became deeply irrelevant and most of the military just operated from France before fleeing to Britain.
 			#Mosciki himself just waited the war out in Romania while Sikorski focussed on retaking the homeland.
+			if = { # HOR
+				limit = {
+					check_variable = {
+    					var = POL_prepare_for_the_inevitable_var
+    					value = 1
+    					compare = equals
+					}
+				}
+				custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_2
+			}
+			else_if = { # HOR
+				limit = {
+					check_variable = {
+    					var = POL_prepare_for_the_inevitable_var
+    					value = 1
+    					compare = greater_than
+					}
+				}
+				custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_3
+			}
+			else = { # HOR
+				custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_4
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			hidden_effect = { # HOR
+				add_offsite_building = { type = industrial_complex level = POL_prepare_for_the_inevitable_var?0 }
+				add_offsite_building = { type = arms_factory level = POL_prepare_for_the_inevitable_var?0 }
+				add_offsite_building = { type = dockyard level = POL_prepare_for_the_inevitable_var?0 }
+			}
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -14584,8 +14729,8 @@ focus_tree = {
 			else = {
 				add_ideas = POL_influx_of_exiles
 			}
-			add_offsite_building = { type = industrial_complex level = 6 } # WAS 3 - HOR
-			add_offsite_building = { type = arms_factory level = 4 } # WAS 2 - HOR
+			#add_offsite_building = { type = industrial_complex level = 6 } # WAS 3 - HOR ## MOVED TO REQUEST LIBERIAN BASES - HOR
+			#add_offsite_building = { type = arms_factory level = 4 } # WAS 2 - HOR ## MOVED TO REQUEST LIBERIAN BASES - HOR
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 10000
@@ -14596,6 +14741,7 @@ focus_tree = {
 				amount = 100
 				producer = POL
 			}
+			clear_variable = POL_prepare_for_the_inevitable_var # HOR
 		}
 	}
 
@@ -14784,7 +14930,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			hidden_effect = {
 				every_country = {
@@ -14796,6 +14942,9 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = POL_request_liberian_bases_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_offsite_building = { type = industrial_complex level = 6 }
+			add_offsite_building = { type = arms_factory level = 4 }
 		}
 	}
 
@@ -15314,6 +15463,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			random_state = {
 				limit = { has_state_flag = POL_develop_polish_ship_building_1 }
 				add_building_construction = {
@@ -15325,6 +15480,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			random_owned_controlled_state = {
 				prioritize = { 807 }
 				limit = {
@@ -15454,6 +15615,12 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			if = {
 				limit = {
 					owns_state = 85
@@ -15609,6 +15776,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			random_state = {
 				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				add_building_construction = {
@@ -15620,6 +15793,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			random_owned_controlled_state = {
 				prioritize = { 85 }
 				limit = {
@@ -15659,6 +15838,12 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		complete_tooltip = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			random_state = {
 				add_extra_state_shared_building_slots = 4 # WAS 2 - HOR
 				add_building_construction = {
@@ -15670,6 +15855,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			if = {
 				limit = {
 					has_idea = uncontrolled_exports
@@ -15725,6 +15916,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			if = {
 				limit = {
 					has_idea = uncontrolled_exports
@@ -15774,6 +15971,12 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = POL_prepare_for_the_inevitable_tt_1 # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			add_to_variable = { # HOR
+				var = POL_prepare_for_the_inevitable_var
+				value = 1
+			}
 			if = {
 				limit = {
 					has_completed_focus = POL_clamp_down_on_danzig

@@ -146,6 +146,11 @@ horst_host_country = {
 		desc = ""
 	}
 	option = {
+		name = POL
+		text = "Poland"
+		desc = ""
+	}
+	option = {
 		name = MON
 		text = "Mongolian People's Republic"
 		desc = ""
@@ -168,11 +173,6 @@ horst_host_country = {
 	option = {
 		name = LUX
 		text = "Luxembourg"
-		desc = ""
-	}
-	option = {
-		name = POL
-		text = "Poland"
 		desc = ""
 	}
 	option = {
@@ -629,6 +629,11 @@ trans_republic = {
 		desc = "They become trans."
 	}
 	option = {
+		name = POL
+		text = "Poland"
+		desc = "They become trans."
+	}
+	option = {
 		name = MON
 		text = "Mongolian People's Republic"
 		desc = "They become trans."
@@ -651,11 +656,6 @@ trans_republic = {
 	option = {
 		name = LUX
 		text = "Luxembourg"
-		desc = "They become trans."
-	}
-	option = {
-		name = POL
-		text = "Poland"
 		desc = "They become trans."
 	}
 	option = {

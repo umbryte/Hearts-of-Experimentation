@@ -750,6 +750,16 @@ on_actions = {
 				limit = {
 					has_game_rule = {
 						rule = trans_republic
+						option = POL
+					}
+				}
+				POL = { set_cosmetic_tag = TRANS_REPUBLIC }
+				POL = { set_country_flag = trans_flag }
+			}
+			else_if = { 
+				limit = {
+					has_game_rule = {
+						rule = trans_republic
 						option = MON
 					}
 				}
@@ -795,16 +805,6 @@ on_actions = {
 				}
 				LUX = { set_cosmetic_tag = TRANS_REPUBLIC }
 				LUX = { set_country_flag = trans_flag }
-			}
-			else_if = { 
-				limit = {
-					has_game_rule = {
-						rule = trans_republic
-						option = POL
-					}
-				}
-				POL = { set_cosmetic_tag = TRANS_REPUBLIC }
-				POL = { set_country_flag = trans_flag }
 			}
 			else_if = { 
 				limit = {
@@ -3141,6 +3141,10 @@ on_actions = {
 				set_variable={host = PHI.id}
 			}
 			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = POL}}
+				set_variable={host = POL.id}
+			}
+			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = MON}}
 				set_variable={host = MON.id}
 			}
@@ -3159,10 +3163,6 @@ on_actions = {
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = LUX}}
 				set_variable={host = LUX.id}
-			}
-			else_if = {
-				limit = {has_game_rule = {rule = horst_host_country option = POL}}
-				set_variable={host = POL.id}
 			}
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = CZE}}
