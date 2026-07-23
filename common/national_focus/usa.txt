@@ -63,8 +63,8 @@ focus_tree = {
 
 	focus = {
 		id = USA_continue_the_new_deal
-		icon = GFX_focus_hol_the_foundations_of_defense # USED TO BE GFX_focus_generic_self_management - HOR
-		x = 6 # USED TO BE 14 - HOR
+		icon = GFX_focus_generic_self_management
+		x = 7 # USED TO BE 14 - HOR
 		y = 0
 		offset = {
 			x = -12
@@ -152,6 +152,10 @@ focus_tree = {
 		prerequisite = { focus = USA_continue_the_new_deal }
 		relative_position_id = USA_continue_the_new_deal
 		cost = 10
+
+		allow_branch = { # HOR
+			always = no 
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -1287,7 +1291,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = USA_continue_the_new_deal }
 		relative_position_id = USA_continue_the_new_deal
-		x = -3 # USED TO BE -4 - HOR
+		x = -5 # WAS -4 - HOR
 		y = 1
 
 		offset = {
@@ -1381,7 +1385,7 @@ focus_tree = {
 		}
 
 		available = {
-			ENG = {
+			ENG = { # HOR
 				has_war_with = GER
 			}
 			congress_medium_support_trigger = yes
@@ -1520,11 +1524,11 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_office_of_scientific_research_and_development
-		icon = GFX_focus_generic_university_3 # USED TO BE GFX_focus_research - HOR
-		x = 1
-		y = 2
-		prerequisite = { focus = USA_neutrality_act } # USED TO BE USA_wpa - HOR
-		relative_position_id = USA_continue_the_new_deal # USED TO BE USA_wpa - HOR
+		icon = GFX_focus_research
+		x = 2
+		y = 1
+		prerequisite = { focus = USA_wpa }
+		relative_position_id = USA_wpa
 		cost = 10
 
 		ai_will_do = {
@@ -1551,13 +1555,13 @@ focus_tree = {
 	focus = {
 		id = USA_rubber_reserve_company
 		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = USA_military_construction } # USED TO BE USA_office_of_scientific_research_and_development - HOR
+		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		available = {
 			
 		}
-		x = 0 # USED TO BE 2 - HOR
-		y = 1 # USED TO BE 2 - HOR
-		relative_position_id = USA_military_construction # USED TO BE USA_wpa - HOR
+		x = 2
+		y = 2
+		relative_position_id = USA_wpa
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -1573,7 +1577,6 @@ focus_tree = {
 				technology = advanced_rubber_processing
 				technology = modern_rubber_processing
 			}
-
 		}
 	}
 #   ### #   # ### ### ### ###      ### #  # ### ### ###  #   # ### #  # ### ###  ##  #  # 
@@ -1705,6 +1708,10 @@ focus_tree = {
 			has_government = democratic
 		}
 
+		allow_branch = { # HOR
+			always = no
+		}
+
 		bypass = {
 			
 		}
@@ -1816,6 +1823,11 @@ focus_tree = {
 		id = USA_office_of_strategic_services
 		icon = GFX_focus_SWI_embrace_rote_drei # USED TO BE GFX_goal_generic_major_war - HOR
 		prerequisite = { focus = USA_arsenal_of_democracy } # USED TO BE USA_focus_on_europe - HOR
+
+		allow_branch = { # HOR
+			always = no
+		}
+
 		available = {
 			
 		}
@@ -1916,6 +1928,10 @@ focus_tree = {
 		prerequisite = { focus = USA_war_plan_orange } # USED TO BE USA_focus_on_asia - HOR
 		relative_position_id = USA_war_plan_orange # USED TO BE USA_limited_intervention - HOR
 
+		allow_branch = { # HOR
+			always = no 
+		}
+
 		offset = {
 			x = 0
 			y = -1
@@ -1958,6 +1974,10 @@ focus_tree = {
 		x = 0 # USED TO BE 1 - HOR
 		y = 1
 		relative_position_id = USA_scientist_haven
+
+		allow_branch = {
+			always = no
+		}
 
 		offset = {
 			x = -1
@@ -2058,10 +2078,10 @@ focus_tree = {
 	focus = { # HOR FOCUS
 		id = USA_consolidate_oss
 		icon = GFX_focus_generic_secret_service_agency
-		prerequisite = { focus = USA_office_of_strategic_services }
-		x = 0
+		prerequisite = { focus = USA_arsenal_of_democracy }
+		x = 3
 		y = 1
-		relative_position_id = USA_office_of_strategic_services
+		relative_position_id = USA_arsenal_of_democracy
 
 		cost = 10
 
@@ -2071,7 +2091,8 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
-			has_war_support > 0.3
+			has_war_support > 0.25
+			is_spymaster = no
 		}
 		
 		bypass = {
@@ -2103,8 +2124,9 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
-			has_war_support > 0.3
+			has_war_support > 0.5
 			has_war = yes
+			is_spymaster = no
 		}
 		
 		bypass = {
@@ -2139,8 +2161,9 @@ focus_tree = {
 
 		available = {
 			has_government = democratic
-			has_war_support > 0.3
+			has_war_support > 0.75
 			has_war = yes
+			is_spymaster = no
 		}
 		
 		bypass = {
@@ -2162,18 +2185,18 @@ focus_tree = {
 	focus = { # HOR FOCUS
 		id = USA_investigate_uranium
 		icon = GFX_focus_generic_nuclear_development
-		prerequisite = { focus = USA_black_chamber }
+		prerequisite = { focus = USA_scientist_haven }
 		
 		x = 0
 		y = 1
-		relative_position_id = USA_black_chamber
+		relative_position_id = USA_scientist_haven
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
 		available = {
 			OR = {
-				date > 1940.2.1
+				date > 1941.1.1
 				#ENG = { has_completed_focus = ENG_tizard_mission }
 				has_tech = atomic_research
 			}
@@ -2225,11 +2248,15 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		available = { # HOR
+			date > 1942.1.1
+		}
+
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			custom_effect_tooltip = USA_strat2_manhattan_project_tt # HOR
 			custom_effect_tooltip = generic_skip_one_line_tt
-			hidden_effect = { 
+			hidden_effect = { # HOR
 				IF = {
 					NOT = {
 						has_tech = strategic_bomber1
@@ -2248,7 +2275,7 @@ focus_tree = {
 						popup = yes
 					}
 				}
-			} # HOR
+			}
 			IF = {
 				limit = {
 					NOT = {
@@ -2280,7 +2307,7 @@ focus_tree = {
 	focus = {
 		id = USA_neutrality_act
 		icon = GFX_goal_generic_neutrality_focus
-		x = 1 # USED TO BE 4 - HOR
+		x = 0 # USED TO BE 4 - HOR
 		y = 1
 		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
 		mutually_exclusive = { focus = USA_limited_intervention }
@@ -2923,9 +2950,9 @@ focus_tree = {
 	focus = {
 		id = USA_arsenal_of_democracy
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = USA_office_of_scientific_research_and_development }
+		prerequisite = { focus = USA_neutrality_act }
 		x = 0
-		y = 3
+		y = 3 # WAS 2 - HOR
 		relative_position_id = USA_neutrality_act
 
 		offset = {
@@ -2946,7 +2973,7 @@ focus_tree = {
 		}
 		available = {
 			democratic > 0.95
-			has_war_support > 0.3 # HOR
+			has_war_support > 0.35 # HOR
 		}
 		bypass = {
 			AND = {
@@ -2955,7 +2982,7 @@ focus_tree = {
 					all_owned_state = {
 						free_building_slots = {
 							building = industrial_complex
-							size < 3
+							size < 6 # USED TO BE 3 - HOR
 							include_locked = yes
 						}
 					}
@@ -2965,7 +2992,7 @@ focus_tree = {
 					all_owned_state = {
 						free_building_slots = {
 							building = dockyard
-							size < 3
+							size < 6 # USED TO BE 3 - HOR
 							include_locked = yes
 						}
 					}
@@ -2996,7 +3023,7 @@ focus_tree = {
 					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
-						size > 0 # USED TO BE 2 - HOR
+						size > 4 # USED TO BE 2 - HOR
 						include_locked = yes
 					}
 				}
@@ -3013,7 +3040,7 @@ focus_tree = {
 					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
-						size > 0 # USED TO BE 2 - HOR
+						size > 4 # USED TO BE 2 - HOR
 						include_locked = yes
 					}
 				}
@@ -3031,7 +3058,7 @@ focus_tree = {
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
-						size > 0 # USED TO BE 2 - HOR
+						size > 4 # USED TO BE 2 - HOR
 						include_locked = yes
 					}
 				}
@@ -3049,7 +3076,7 @@ focus_tree = {
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
-						size > 0 # USED TO BE 2 - HOR
+						size > 4 # USED TO BE 2 - HOR
 						include_locked = yes
 					}
 				}
@@ -3066,18 +3093,18 @@ focus_tree = {
 	focus = {
 		id = USA_the_giant_wakes
 		icon = GFX_focus_generic_the_giant_wakes # USED TO BE GFX_goal_generic_construct_civ_factory - HOR
-		prerequisite = { focus = USA_war_propaganda }
+		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
 			OR = {
 				has_war = yes
-				has_war_support > 0.3
+				has_war_support > 0.4 # WAS 0.3 - HOR
 			}
 			democratic > 0.95
 		}
 		continue_if_invalid = yes
-		x = 0
+		x = -1 # USED TO BE 0 - HOR
 		y = 1 # USED TO BE 2 - HOR
-		relative_position_id = USA_war_propaganda
+		relative_position_id = USA_arsenal_of_democracy
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3125,6 +3152,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			democratic > 0.95
+			has_war = yes # HOR
+			has_war_support = 0.4 # HOR
 		}
 		completion_reward = {
 			add_ideas = wartime_industry_focus
@@ -3141,6 +3170,7 @@ focus_tree = {
 		prerequisite = { focus = USA_USACE_projects }
 
 		available = {
+			date > 1944.1.1
 			has_war_with = JAP
 			has_war_with = GER
 		}
@@ -3180,7 +3210,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_war = yes
-				has_war_support > 0.3
+				has_war_support > 0.4 # WAS 0.3 - HOR
 			}
 		}
 
@@ -3460,10 +3490,10 @@ focus_tree = {
 	focus = {
 		id = USA_USACE_projects
 		icon = GFX_focus_SOV_merge_plants # USED TO BE GFX_goal_generic_production - HOR
-		prerequisite = { focus = USA_rubber_reserve_company }
+		prerequisite = { focus = USA_military_construction }
 		available = {
 			OR = {
-				has_war_support > 0.3
+				has_war_support > 0.4 # WAS 0.3 - HOR
 				has_war = yes
 			}
 		}
@@ -3472,7 +3502,7 @@ focus_tree = {
 		
 		x = 0
 		y = 1 
-		relative_position_id = USA_rubber_reserve_company
+		relative_position_id = USA_military_construction
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -5538,7 +5568,7 @@ focus_tree = {
 			custom_effect_tooltip = USA_reinforce_monroe_doctrine_tt
 			unlock_decision_category_tooltip = USA_intervention_mandate
 			hidden_effect = {
-				#CUB = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+				#CUB = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } } # HOR
 				#HAI = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
 				#DOM = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
 				#GUA = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
@@ -6119,7 +6149,8 @@ focus_tree = {
 			}
 		}
 		will_lead_to_war_with = JAP
-		x = -1 # USED TO BE 0 - HOR
+
+		x = 0
 		y = 2
 		relative_position_id = USA_intervention_in_asia
 		cost = 10
@@ -6551,7 +6582,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		prerequisite = { focus = USA_tank_experiments }
-		#mutually_exclusive = { focus = USA_main_battle_tanks } # USED TO BE MUTUALLY EXCLUSIVE - HOR
+		mutually_exclusive = { focus = USA_main_battle_tanks }
 		relative_position_id = USA_selective_training_act
 		cost = 5
 
@@ -6598,6 +6629,10 @@ focus_tree = {
 		relative_position_id = USA_tank_destroyer_doctrine
 		cost = 10
 
+		allow_branch = { # HOR
+			always = no
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -6625,7 +6660,7 @@ focus_tree = {
 		x = 4
 		y = 3
 		prerequisite = { focus = USA_tank_experiments }
-		#mutually_exclusive = { focus = USA_tank_destroyer_doctrine } # USED TO BE MUTUALLY EXCLUSIVE - HOR
+		mutually_exclusive = { focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
 		cost = 5
 
@@ -6671,6 +6706,10 @@ focus_tree = {
 		relative_position_id = USA_main_battle_tanks
 		cost = 10
 
+		allow_branch = { # HOR
+			always = no
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -6695,8 +6734,8 @@ focus_tree = {
 		id = USA_armored_infantry
 		icon = GFX_goal_generic_build_tank
 		x = 3
-		y = 5 # USED TO BE 4 - HOR
-		prerequisite = { focus = USA_ford_motor_company focus = USA_the_sherman } # USED TO BE focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine - HOR
+		y = 4
+		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
 		cost = 10
 
@@ -6825,7 +6864,7 @@ focus_tree = {
 		id = USA_air_support
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = USA_air_war_plans_division }
-		#mutually_exclusive = { focus = USA_strategic_bombing } # USED TO BE MUTUALLY EXCLUSIVE - HOR
+		mutually_exclusive = { focus = USA_strategic_bombing }
 		x = -1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
@@ -6845,7 +6884,7 @@ focus_tree = {
 		id = USA_strategic_bombing
 		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = USA_air_war_plans_division }
-		#mutually_exclusive = { focus = USA_air_support } # USED TO BE MUTUALLY EXCLUSIVE - HOR
+		mutually_exclusive = { focus = USA_air_support }
 		x = 1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
@@ -7249,7 +7288,7 @@ focus_tree = {
 		id = USA_battleship_primacy
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = USA_bureau_of_ships }
-		#mutually_exclusive = { focus = USA_carrier_primacy } # USED TO BE MUTUALLY EXCLUSIVE - HOR
+		mutually_exclusive = { focus = USA_carrier_primacy }
 		x = -3
 		y = 1
 		relative_position_id = USA_bureau_of_ships
@@ -7359,7 +7398,7 @@ focus_tree = {
 		id = USA_carrier_primacy
 		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { focus = USA_bureau_of_ships }
-		#mutually_exclusive = { focus = USA_battleship_primacy } # USED TO BE MUTUALLY EXCLUSIVE - HOR
+		mutually_exclusive = { focus = USA_battleship_primacy }
 		x = -1
 		y = 1
 		relative_position_id = USA_bureau_of_ships

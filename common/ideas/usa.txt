@@ -88,7 +88,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				operative_slot = 4
+				operative_slot = 2
+				operation_infiltrate_outcome = 0.25
+				boost_resistance_factor = 0.25
 				intel_network_gain_factor = 0.1
 				enemy_operative_detection_chance_factor = 0.05
 			}
@@ -109,7 +111,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				operative_slot = 2
+				operative_slot = 1
+				operation_infiltrate_outcome = 0.25
+				boost_resistance_factor = 0.25
 				intel_network_gain_factor = 0.1
 				enemy_operative_detection_chance_factor = 0.05
 			}
@@ -130,7 +134,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				operative_slot = 2
+				operative_slot = 1
+				operation_infiltrate_outcome = 0.25
+				boost_resistance_factor = 0.25
 			}
 		}
 
