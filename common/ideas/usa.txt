@@ -200,7 +200,10 @@ ideas = {
 				army_core_attack_factor = -0.2
 				army_core_defence_factor = -0.2
 				industrial_capacity_factory = -0.10
+				industrial_capacity_factory_powered = -0.10
 				industrial_capacity_dockyard = 0.25
+				industrial_capacity_dockyard_powered = 0.25
+				
 			}
 			targeted_modifier = {
 				tag = GER
@@ -274,7 +277,9 @@ ideas = {
 				army_core_attack_factor = -0.1
 				army_core_defence_factor = -0.1
 				industrial_capacity_factory = -0.05
+				industrial_capacity_factory_powered = -0.05
 				industrial_capacity_dockyard = 0.20
+				industrial_capacity_dockyard_powered = 0.20
 			}
 			targeted_modifier = {
 				tag = GER
@@ -346,6 +351,7 @@ ideas = {
 				war_support_factor = -0.10
 				stability_factor = -0.10
 				industrial_capacity_dockyard = 0.15
+				industrial_capacity_dockyard_powered = 0.15
 			}
 			targeted_modifier = {
 				tag = GER
@@ -419,6 +425,7 @@ ideas = {
 				army_core_attack_factor = 0.25
 				army_core_defence_factor = 0.25
 				industrial_capacity_dockyard = 0.10
+				industrial_capacity_dockyard_powered = 0.10
 			}
 			targeted_modifier = {
 				tag = GER
@@ -491,6 +498,7 @@ ideas = {
 				army_core_attack_factor = 0.375
 				army_core_defence_factor = 0.375
 				industrial_capacity_dockyard = 0.05
+				industrial_capacity_dockyard_powered = 0.05
 			}
 			targeted_modifier = {
 				tag = GER
