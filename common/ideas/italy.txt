@@ -6,7 +6,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_ITA_BFTM_0
+			picture = ITA_BFTM_0
 			removal_cost = -1
 
 			modifier = {
@@ -18,7 +18,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_ITA_BFTM_1
+			picture = ITA_BFTM_1
 			removal_cost = -1
 
 			modifier = {
@@ -30,7 +30,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_ITA_BFTM_2
+			picture = ITA_BFTM_2
 			removal_cost = -1
 
 			modifier = {
@@ -42,7 +42,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_ITA_BFTM_3
+			picture = ITA_BFTM_3
 			removal_cost = -1
 
 			modifier = {
@@ -54,7 +54,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_ITA_BFTM_4
+			picture = ITA_BFTM_4
 			removal_cost = -1
 
 			modifier = {
@@ -66,7 +66,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_ITA_BFTM_5
+			picture = ITA_BFTM_5
 			removal_cost = -1
 
 			modifier = {
@@ -78,7 +78,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			picture = idea_ITA_BFTM_6
+			picture = ITA_BFTM_6
 			removal_cost = -1
 
 			modifier = {
