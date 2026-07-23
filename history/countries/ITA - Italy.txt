@@ -1,5 +1,7 @@
 ﻿create_intelligence_agency = yes # HOR
 
+add_ideas = { ITA_BFTM_0 } # HOR
+
 capital = 2 # Rome
 
 ETH_set_up_lon_arms_resolution_effect = yes 

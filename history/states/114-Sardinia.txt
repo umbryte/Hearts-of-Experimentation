@@ -10,6 +10,7 @@ state = {
 	state_category = town
 	
 	history = {
+		set_state_flag = ITA_controls # HOR
 		owner = ITA
 		victory_points = {
 			11773 3 

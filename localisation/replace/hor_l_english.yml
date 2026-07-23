@@ -124,7 +124,7 @@
 
 # STARTUP EVENT
  hor_events.14.t:0 "You are playing the Hearts of Retardation (HOR) mod"
- hor_events.14.d:0 "Ts mod changes stuff!\nLike everyone has way more Factories (although the IC output is decreased to 2 IC for CIVs and MILs, DOCs decreased to 1.5 IC),\n10x Resources (although the resource costs for all equipment is increased),\nPre-BBA Planes (no designer needed!) and an entirely new line of 1944 planes to make and research,\n2W Artillery, Anti-Air and Anti-Tank brigades,\nNew unit type: Garrison (cheaper and weaker infantry offensive-wise but nice for defending areas),\nAll 1940 Naval tech pushed back to 1939,\nPropaganda Posters (like the Soviet ones) for all countries,\nModified, larger combat widths,\nMuch more forgiving Naval Invasion system,\nFaster and more convenient Mastery system,\nAnd more!"
+ hor_events.14.d:0 "Ts mod changes stuff!\nLike everyone has way more factories, although the IC output is decreased to 4 IC for CIVs, 3.5 IC for MILs and DOCs are the same as vanilla: 2.5 IC,\n10x Resources (although the resource costs for all equipment is increased),\nPre-BBA Planes (no designer needed!) and an entirely new line of 1944 planes to make and research,\n2W Artillery, Anti-Air and Anti-Tank brigades,\nNew unit type: Garrison (cheaper and weaker infantry offensive-wise but nice for defending areas),\nAll 1940 Naval tech pushed back to 1939,\nPropaganda Posters (like the Soviet ones) for all countries,\nModified, larger combat widths,\nMuch more forgiving Naval Invasion system,\nFaster and more convenient Mastery system,\nAnd more!"
  hor_events.14.a:0 "Okay saar I gyatt it bruh !!"
 
 # GARRISON BATALLION

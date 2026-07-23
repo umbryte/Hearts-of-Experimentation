@@ -2,6 +2,62 @@
 
 spriteTypes = {
 	spriteType = {
+		name = "GFX_ITA_BFTM_6"
+		texturefile = "gfx/ideas/ITA_BFTM_6.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_BFTM_5"
+		texturefile = "gfx/ideas/ITA_BFTM_5.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_BFTM_4"
+		texturefile = "gfx/ideas/ITA_BFTM_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_BFTM_3"
+		texturefile = "gfx/ideas/ITA_BFTM_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_BFTM_2"
+		texturefile = "gfx/ideas/ITA_BFTM_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_BFTM_1"
+		texturefile = "gfx/ideas/ITA_BFTM_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_BFTM_0"
+		texturefile = "gfx/ideas/ITA_BFTM_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_BFTM_6"
+		texturefile = "gfx/ideas/ENG_BFTM_6.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_BFTM_5"
+		texturefile = "gfx/ideas/ENG_BFTM_5.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_BFTM_4"
+		texturefile = "gfx/ideas/ENG_BFTM_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_BFTM_3"
+		texturefile = "gfx/ideas/ENG_BFTM_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_BFTM_2"
+		texturefile = "gfx/ideas/ENG_BFTM_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_BFTM_1"
+		texturefile = "gfx/ideas/ENG_BFTM_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_BFTM_0"
+		texturefile = "gfx/ideas/ENG_BFTM_0.dds"
+	}
+	spriteType = {
 		name = "GFX_portrait_ROM_horia_sima"
 		texturefile = "gfx/leaders/ROM/portrait_ROM_horia_sima.dds"
 	}

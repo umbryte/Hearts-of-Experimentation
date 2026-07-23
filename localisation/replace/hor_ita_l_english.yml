@@ -68,6 +68,20 @@
  ITA_mare_nostrum_desc:0 "These great few years have seen the rapid expansion of the Italian state to borders near what the Romans possessed at the height of their empire. The time has come to proclaim the Mare Nostrum!"
  
  # IDEAS
+ ITA_BFTM_0:0 "§0Battle for the Mediterranean§!"
+ ITA_BFTM_0_desc:0 "§8The Battle for the Mediterranean will provide buffs to §G[ITA.GetNameWithFlag]§! if it controls:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!\n\n§8But it will also provide debuffs to §G[ITA.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!"
+ ITA_BFTM_1:0 "§0Battle for the Mediterranean§!"
+ ITA_BFTM_1_desc:0 "§8The Battle for the Mediterranean will provide buffs to §G[ITA.GetNameWithFlag]§! if it controls:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!\n\n§8But it will also provide debuffs to §G[ITA.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!"
+ ITA_BFTM_2:0 "§0Battle for the Mediterranean§!"
+ ITA_BFTM_2_desc:0 "§8The Battle for the Mediterranean will provide buffs to §G[ITA.GetNameWithFlag]§! if it controls:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!\n\n§8But it will also provide debuffs to §G[ITA.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!"
+ ITA_BFTM_3:0 "§0Battle for the Mediterranean§!"
+ ITA_BFTM_3_desc:0 "§8The Battle for the Mediterranean will provide buffs to §G[ITA.GetNameWithFlag]§! if it controls:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!\n\n§8But it will also provide debuffs to §G[ITA.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!"
+ ITA_BFTM_4:0 "§0Battle for the Mediterranean§!"
+ ITA_BFTM_4_desc:0 "§8The Battle for the Mediterranean will provide buffs to §G[ITA.GetNameWithFlag]§! if it controls:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!\n\n§8But it will also provide debuffs to §G[ITA.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!"
+ ITA_BFTM_5:0 "§0Battle for the Mediterranean§!"
+ ITA_BFTM_5_desc:0 "§8The Battle for the Mediterranean will provide buffs to §G[ITA.GetNameWithFlag]§! if it controls:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!\n\n§8But it will also provide debuffs to §G[ITA.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!"
+ ITA_BFTM_6:0 "§0Battle for the Mediterranean§!"
+ ITA_BFTM_6_desc:0 "§8The Battle for the Mediterranean will provide buffs to §G[ITA.GetNameWithFlag]§! if it controls:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!\n\n§8But it will also provide debuffs to §G[ITA.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!"
  ITA_german_occupation:0 "German Occupation"
  ITA_hor_mare_nostrum:0 "Mare Nostrum"
  

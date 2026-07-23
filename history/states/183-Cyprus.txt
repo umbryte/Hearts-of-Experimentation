@@ -8,8 +8,8 @@ state= {
 		chromium = 30 # was: 4
 	}
 
-	history=
-	{
+	history= {
+		set_state_flag = ENG_controls # HOR
 		owner = ENG
 		add_core_of = CYP
 		victory_points = {

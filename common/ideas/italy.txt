@@ -2,6 +2,90 @@ ideas = {
 	##### HOR #####
 	country = {
 
+		ITA_BFTM_0 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ITA_BFTM_0
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		ITA_BFTM_1 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ITA_BFTM_1
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+	
+		ITA_BFTM_2 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ITA_BFTM_2
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		ITA_BFTM_3 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ITA_BFTM_3
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		ITA_BFTM_4 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ITA_BFTM_4
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		ITA_BFTM_5 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ITA_BFTM_5
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+	
+		ITA_BFTM_6 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ITA_BFTM_6
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
 		ITA_hor_mare_nostrum = {			
 			
 			allowed = {

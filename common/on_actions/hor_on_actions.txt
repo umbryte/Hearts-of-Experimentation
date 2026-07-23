@@ -1,5 +1,75 @@
 on_actions = {
 
+	### BFTM ###
+
+	on_state_control_changed = {
+		
+		effect = {
+			if = {
+				limit = {
+					FROM = { 						
+						OR = {
+						 	tag = ITA
+							is_in_faction_with = ITA
+						}  
+					}
+					ROOT = { 
+						OR = {
+							tag = ENG
+							is_in_faction_with = ENG 
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = ITA_controls
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = ENG_controls
+				 	clr_state_flag = ITA_controls
+				}
+			 	ENG = { 
+			 		ENG_BFTM_level_up = yes
+			 	}
+		 		ITA = {
+		 			ITA_BFTM_level_down = yes 
+		 		}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+					    OR = { 
+							tag = ENG
+							is_in_faction_with = ENG 
+						}
+					}
+					ROOT = {
+						OR = {
+						 	tag = ITA
+						 	is_in_faction_with = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = ENG_controls
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = ITA_controls 
+				 	clr_state_flag = ENG_controls 
+				}
+				ITA = {
+				 	ITA_BFTM_level_up = yes
+				}  
+		 		ENG = {
+					ENG_BFTM_level_down = yes
+		 		} 
+			}
+		}
+	}
+	
+	### BFTM ###
+
 	#on_startup = {
         #	effect = { 
         #    		every_country = {

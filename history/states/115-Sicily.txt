@@ -4,6 +4,7 @@ state = {
 	name = "STATE_115"
 
 	history = {
+		set_state_flag = ITA_controls # HOR
 		owner = ITA
 		victory_points = {
 			10074 20 

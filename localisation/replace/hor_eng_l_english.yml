@@ -33,6 +33,20 @@
  ENG_war_savings_prop:0 "Back The Great Attack"
  
  # IDEAS
+ ENG_BFTM_0:0 "§0Battle for the Mediterranean§!"
+ ENG_BFTM_0_desc:0 "§8The Battle for the Mediterranean will provide buffs to §R[ENG.GetNameWithFlag]§! if it controls:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!\n\n§8But it will also provide debuffs to §R[ENG.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!"
+ ENG_BFTM_1:0 "§0Battle for the Mediterranean§!"
+ ENG_BFTM_1_desc:0 "§8The Battle for the Mediterranean will provide buffs to §R[ENG.GetNameWithFlag]§! if it controls:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!\n\n§8But it will also provide debuffs to §R[ENG.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!"
+ ENG_BFTM_2:0 "§0Battle for the Mediterranean§!"
+ ENG_BFTM_2_desc:0 "§8The Battle for the Mediterranean will provide buffs to §R[ENG.GetNameWithFlag]§! if it controls:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!\n\n§8But it will also provide debuffs to §R[ENG.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!"
+ ENG_BFTM_3:0 "§0Battle for the Mediterranean§!"
+ ENG_BFTM_3_desc:0 "§8The Battle for the Mediterranean will provide buffs to §R[ENG.GetNameWithFlag]§! if it controls:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!\n\n§8But it will also provide debuffs to §R[ENG.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!"
+ ENG_BFTM_4:0 "§0Battle for the Mediterranean§!"
+ ENG_BFTM_4_desc:0 "§8The Battle for the Mediterranean will provide buffs to §R[ENG.GetNameWithFlag]§! if it controls:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!\n\n§8But it will also provide debuffs to §R[ENG.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!"
+ ENG_BFTM_5:0 "§0Battle for the Mediterranean§!"
+ ENG_BFTM_5_desc:0 "§8The Battle for the Mediterranean will provide buffs to §R[ENG.GetNameWithFlag]§! if it controls:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!\n\n§8But it will also provide debuffs to §R[ENG.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!"
+ ENG_BFTM_6:0 "§0Battle for the Mediterranean§!"
+ ENG_BFTM_6_desc:0 "§8The Battle for the Mediterranean will provide buffs to §R[ENG.GetNameWithFlag]§! if it controls:§!\n\n§Y[115.GetName]\n[114.GetName]\n[164.GetName]§!\n\n§8But it will also provide debuffs to §R[ENG.GetNameWithFlag]§! if it doesn't control:§!\n\n§Y[118.GetName]\n[183.GetName]\n[116.GetName]§!"
  raf_efficencies:0 "RAF Efficiencies"
  
  # PLANE NAMES - ENG

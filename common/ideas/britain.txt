@@ -1,6 +1,91 @@
 ideas = {
 	##### HOR #####
 	country = {
+		
+		ENG_BFTM_0 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ENG_BFTM_0
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		ENG_BFTM_1 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ENG_BFTM_1
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+	
+		ENG_BFTM_2 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ENG_BFTM_2
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		ENG_BFTM_3 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ENG_BFTM_3
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		ENG_BFTM_4 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ENG_BFTM_4
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		ENG_BFTM_5 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ENG_BFTM_5
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		ENG_BFTM_6 = {
+			allowed = {
+				always = no
+			}
+			picture = idea_ENG_BFTM_6
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
 		raf_efficencies = {
 		
 			allowed = {

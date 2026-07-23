@@ -1,0 +1,185 @@
+###### BFTM ######
+
+### UNITED KINGDOM ###
+
+ENG_BFTM_level_up = {
+	if = {
+		limit = { has_idea = ENG_BFTM_6 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_6
+			add_idea = ENG_BFTM_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_BFTM_5 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_5
+			add_idea = ENG_BFTM_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_BFTM_4 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_4
+			add_idea = ENG_BFTM_0
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_BFTM_0 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_0
+			add_idea = ENG_BFTM_1
+		}		
+	}
+	else_if = {
+		limit = { has_idea = ENG_BFTM_1 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_1
+			add_idea = ENG_BFTM_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_BFTM_2 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_2
+			add_idea = ENG_BFTM_3
+		}
+	}
+}
+
+ENG_BFTM_level_down = {
+	if = {
+		limit = { has_idea = ENG_BFTM_3 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_3
+			add_idea = ENG_BFTM_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_BFTM_2 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_2
+			add_idea = ENG_BFTM_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_BFTM_1 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_1
+			add_idea = ENG_BFTM_0
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_BFTM_0 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_0
+			add_idea = ENG_BFTM_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = ENG_BFTM_4 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_4
+			add_idea = ENG_BFTM_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = ENG_BFTM_5 }
+		swap_ideas = {
+			remove_idea = ENG_BFTM_5
+			add_idea = ENG_BFTM_6
+		}
+	}
+}
+
+### KINGDOM OF ITALY ###
+
+ITA_BFTM_level_up = {
+	if = {
+		limit = { has_idea = ITA_BFTM_6 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_6
+			add_idea = ITA_BFTM_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = ITA_BFTM_5 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_5
+			add_idea = ITA_BFTM_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = ITA_BFTM_4 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_4
+			add_idea = ITA_BFTM_0
+		}
+	}
+	else_if = {
+		limit = { has_idea = ITA_BFTM_0 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_0
+			add_idea = ITA_BFTM_1
+		}		
+	}
+	else_if = {
+		limit = { has_idea = ITA_BFTM_1 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_1
+			add_idea = ITA_BFTM_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = ITA_BFTM_2 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_2
+			add_idea = ITA_BFTM_3
+		}
+	}
+}
+
+ITA_BFTM_level_down = {
+	if = {
+		limit = { has_idea = ITA_BFTM_3 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_3
+			add_idea = ITA_BFTM_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = ITA_BFTM_2 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_2
+			add_idea = ITA_BFTM_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = ITA_BFTM_1 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_1
+			add_idea = ITA_BFTM_0
+		}
+	}
+	else_if = {
+		limit = { has_idea = ITA_BFTM_0 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_0
+			add_idea = ITA_BFTM_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = ITA_BFTM_4 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_4
+			add_idea = ITA_BFTM_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = ITA_BFTM_5 }
+		swap_ideas = {
+			remove_idea = ITA_BFTM_5
+			add_idea = ITA_BFTM_6
+		}
+	}
+}
