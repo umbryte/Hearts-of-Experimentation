@@ -1,0 +1,225 @@
+POL = {
+	##order:
+	##tank - art - td - spaa - flame - rocket - etc
+
+	light_tank_chassis_0 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_tk2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_tk1.dds"
+				
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_vickers_mark_e_b.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_vickers_mark_e_b_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_vickers_mark_e_a_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_vickers_mark_e_a_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_vickers_mark_e_a_5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_vickers_mark_e_a_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_vickers_mark_e_a_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_vickers_mark_e_a.dds"
+				
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_flame_renault_ft_z.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_renault_ft_wz32_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_renault_ft_wz32.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_renault_ft_cannon.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_renault_ft.dds"
+			}
+			models = {
+				"POL_light_armor_entity"
+			}
+		}
+	}
+	light_tank_chassis_1 = {
+		pool = {
+			weight = 2.5
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_td_tks-D.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_td_tks_20mm_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_td_tks_20mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_td_tk3_20mm.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_art_tkd.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_tks_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_tks_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_tks_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_tkf.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_tk3_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_tk3_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_tk3.dds"
+			}
+			models = {
+				"POL_light_armor_entity"
+			}
+		}
+	}
+
+	light_tank_chassis_2 = {
+		pool = {
+			weight = 2.5
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_pzinz_140_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_pzinz_140.dds"
+				
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_7tp_jw_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_7tp_jw_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_7tp_jw_5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_7tp_jw_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_7tp_jw.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_7tp_dw_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_7tp_dw_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_7tp_dw.dds"
+			}
+			models = {
+				"POL_light_armor_entity"
+			}
+		}
+	}
+
+	light_tank_chassis_3 = {
+		pool = {
+			weight = 2.5
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_t-60_42.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_9tp_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_9tp_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_9tp.dds"
+			}
+			models = {
+				"POL_light_armor_entity"
+			}
+		}
+	}
+	amphibious_tank_chassis_1 = {
+		pool = {
+			weight = 2.5
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/amphibious_pzinz_130_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/amphibious_pzinz_130_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/amphibious_pzinz_130.dds"
+			}
+			models = {
+				"POL_light_armor_entity"
+			}
+		}
+	}
+	medium_tank_chassis_0 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_renault_nc1_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/light_renault_nc1.dds"
+			}
+			models = {
+				"POL_medium_armor_entity"
+			}
+		}
+	}
+	medium_tank_chassis_1 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/medium_10tp_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/medium_10tp_2.dds"
+			}
+			models = {
+				"POL_medium_armor_entity"
+			}
+		}
+	}
+
+	medium_tank_chassis_2 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/medium_14tp_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/medium_14tp.dds"
+			}
+			models = {
+				"POL_medium_armor_entity"
+			}
+		}
+	}
+
+	medium_tank_chassis_3 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/medium_t-34-85_43.dds"
+				
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/medium_25tp_pzinz_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/medium_25tp_pzinz_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/medium_25tp_pzinz.dds"
+			}
+			models = {
+				"POL_medium_armor_entity"
+			}
+		}
+	}
+	modern_tank_chassis_1 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/modern_t-44.dds"
+			}
+			models = {
+				"POL_medium_armor_entity"
+			}
+		}
+	}
+	heavy_tank_chassis_0 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/heavy_st_chamond_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/heavy_st_chamond.dds"
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_chassis_1 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/heavy_23tp_jw_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/heavy_23tp_jw.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/heavy_23tp_tw.dds"
+			}
+			models = {
+			}
+		}
+	}
+
+	heavy_tank_chassis_2 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/heavy_kv-1_42.dds"
+			}
+			models = {
+			}
+		}
+	}
+
+	heavy_tank_chassis_3 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/heavy_is-3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/heavy_is-2_45.dds"
+			}
+			models = {
+			}
+		}
+	}
+	super_heavy_tank_chassis_1 = {
+		pool = {
+			weight = 2.5
+			icons = { 
+				"gfx/interface/equipmentdesigner/tanks/designer/POL/super_heavy_pawel_chrobok.dds"
+			}
+			models = {
+				"POL_heavy_armor_entity"
+			}
+		}
+	}
+}
