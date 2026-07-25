@@ -775,6 +775,22 @@ trans_republic = {
 	}
 }
 
+bftm = {
+	name = "RULE_BFTM"
+	group = "RULE_GROUP_HOR"
+	icon = "GFX_decision_hol_draw_up_staff_plans"
+	default = {
+		name = "RULE_BFTM_ENABLED"
+		text = "RULE_BFTM_ENABLED"
+		desc = "RULE_BFTM_ENABLED"
+	}
+	option = {
+		name = "RULE_BFTM_DISABLED"
+		text = "RULE_BFTM_DISABLED"
+		desc = "RULE_BFTM_DISABLED"
+	}
+}
+
 tank_system = {
 	name = "RULE_TANK_SYSTEM"
 	group = "RULE_GROUP_HOR"

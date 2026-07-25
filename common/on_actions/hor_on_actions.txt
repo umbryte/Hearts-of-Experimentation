@@ -2,6 +2,22 @@ on_actions = {
 
 	### BFTM ###
 
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = bftm
+						option = RULE_BFTM_ENABLED
+					}
+				}
+				
+				ITA = { add_ideas = ITA_BFTM_0 }
+				ENG = { add_ideas = ENG_BFTM_0 }
+			}
+		}
+	}
+
 	on_state_control_changed = {
 		
 		effect = {

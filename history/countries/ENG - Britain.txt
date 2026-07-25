@@ -4,8 +4,6 @@ set_rule = { can_create_collaboration_government = no } # HOR
 
 give_guarantee = POL # HOR
 
-add_ideas = { ENG_BFTM_0 } # HOR
-
 capital = 126
 
 if = {
