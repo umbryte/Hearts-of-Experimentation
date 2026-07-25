@@ -6995,8 +6995,7 @@ focus_tree = {
 		icon = GFX_focus_usa_escort_fighters
 		x = 0
 		y = 2
-		prerequisite = { focus = USA_air_support }
-		prerequisite = { focus = USA_strategic_bombing } # HOR
+		prerequisite = { focus = USA_air_support USA_strategic_bombing  }
 
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
