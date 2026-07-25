@@ -472,6 +472,8 @@ if = {
 			CAS1 = 1
 			early_transport_plane = 1
 			fighter1 = 1 # HOR
+			naval_bomber1 = 1 # HOR
+			tactical_bomber1 = 1 # HOR
 		}
 #	}
 #}
