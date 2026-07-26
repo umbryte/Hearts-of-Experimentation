@@ -1,0 +1,30 @@
+state={
+	id=1082
+	name="STATE_1082"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 6
+		}
+		
+		add_core_of = EGY
+
+		victory_points = {
+			1071 1 
+		}
+
+	}
+
+	provinces={
+		1071 10127 13430 13425
+	}
+
+	resources = { # HOR
+		oil = 40
+	}
+	
+	manpower=8345
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}
