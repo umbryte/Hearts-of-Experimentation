@@ -14347,10 +14347,23 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-			SIA = {
-				is_ally_with = ROOT
+		bypass = { # HOR
+			OR = {
+				NOT = {
+					country_exists = SIA
+				}
+				has_war_with = SIA
+				SIA = {
+					is_puppet_of = JAP
+				}
 			}
+		}
+
+		cancel = { # HOR
+			NOT = {
+				country_exists = SIA
+			}
+			has_war_with = SIA
 		}
 
 		cancel_if_invalid = yes
@@ -14462,10 +14475,23 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-			SIA = {
-				has_war_with = ROOT
+		bypass = { # HOR
+			OR = {
+				NOT = {
+					country_exists = SIA
+				}
+				has_war_with = SIA
+				SIA = {
+					is_puppet_of = JAP
+				}
 			}
+		}
+
+		cancel = { # HOR
+			NOT = {
+				country_exists = SIA
+			}
+			has_war_with = SIA
 		}
 
 		will_lead_to_war_with = SIA
@@ -14623,10 +14649,10 @@ focus_tree = {
 	focus = { # HOR FOCUS
 		id = JAP_singapore 
 		icon = GFX_JAP_singapore
-		prerequisite = { focus = JAP_sea_pressure_siam focus = JAP_occupy_siam focus = JAP_subjugate_siam }
-		x = 0
+		prerequisite = { focus = JAP_strike_the_southern_road }
+		x = 1
 		y = 1
-		relative_position_id = JAP_occupy_siam
+		relative_position_id = JAP_strike_the_southern_road
 
 		cost = 4
 
@@ -15007,7 +15033,7 @@ focus_tree = {
 		id = JAP_occupy_east_timor
 		icon = GFX_focus_generic_attack_timor
 		#mutually_exclusive = { focus = JAP_sea_pressure_siam }
-		x = 0
+		x = -1 # WAS 0 - HOR
 		y = 1
 		relative_position_id = JAP_strike_the_southern_road
 

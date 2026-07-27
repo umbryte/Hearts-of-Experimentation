@@ -1,8 +1,8 @@
 strategic_region={
-	id=302
-	name="STRATEGICREGION_302"
+	id=310
+	name="STRATEGICREGION_310"
 	provinces={
-		2855 2879 2901 3995 12140 13023 13024 
+		8908 8933 8956 13052 
 	}
 	naval_terrain=water_deep_ocean
 	static_modifiers={
