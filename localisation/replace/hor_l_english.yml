@@ -636,10 +636,6 @@ WTREMOVE_DELAYED:0 ""
  chromium_green_tt:0 "[?resource@chromium|0+]"
  coal_green_tt:0 "[?resource@coal|0+]"
  
-# DIVERSIFY SPECIAL FORCES EXTRA
- diversify_special_forces_again: "Diversify Elite Forces"
- diversify_special_forces_again_desc: "Our conventional forces simply aren't enough to combat the oncoming storm. We must innovate."
- 
 # HEAVY METAL REFINERIES 
  modifier_production_speed_heavy_metal_refinery_factor: "£construction_speed_heavy_metal_refinery_texticon  §YHeavy Metal Refinery§! construction speed"
  modifier_production_speed_heavy_metal_refinery_factor_desc: "Modifies the speed of £construction_speed_heavy_metal_refinery_texticon  §YHeavy Metal Refinery§! construction."

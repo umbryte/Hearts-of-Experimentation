@@ -1,3 +1,146 @@
+### HOR ###
+
+hor_japan_transfer_indochina_category = {
+
+    hor_japan_transfer_indochina_1 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		670 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		670 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	670 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_2 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		741 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		741 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	741 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_3 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		286 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		286 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	286 = {
+	transfer_state_to = SIA
+	}
+    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_4 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		671 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		671 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	671 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_5 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		1017 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		1017 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	1017 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+}
+
+### HOR ###
+
 ###DEBUG STUFF
 
 debug_decisions = {
@@ -2036,6 +2179,10 @@ JAP_pacific_guardian = {
 					has_full_control_of_state = 671
 					has_full_control_of_state = 286
 					has_full_control_of_state = 741
+					has_full_control_of_state = 1066 
+					has_full_control_of_state = 1067 
+					has_full_control_of_state = 1068 
+					has_full_control_of_state = 1069 
 				}
 			}
 		}
@@ -11257,6 +11404,10 @@ JAP_the_co_prosperity_sphere_decisions = {
 				state = 670
 				state = 741
 				state = 286
+				state = 1066 
+				state = 1067 
+				state = 1068 
+				state = 1069 
 			}
 		}
 
@@ -11296,7 +11447,18 @@ JAP_the_co_prosperity_sphere_decisions = {
 			286 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
-
+			1066 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			1067 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			1068 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+			1069 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
 		}
 
 		complete_effect = {
@@ -11312,6 +11474,7 @@ JAP_the_co_prosperity_sphere_decisions = {
 							state = 671
 							state = 1017
 							state = 670
+							state = 1069 
 						}
 					}
 					transfer_state_to = VIN
@@ -11324,6 +11487,9 @@ JAP_the_co_prosperity_sphere_decisions = {
 						OR = {
 							state = 741
 							state = 286
+							state = 1066 
+							state = 1067 
+							state = 1068 
 						}
 					}
 					transfer_state_to = CAM
@@ -11389,6 +11555,7 @@ JAP_the_co_prosperity_sphere_decisions = {
 				state = 671
 				state = 1017
 				state = 286
+				state = 1066 
 			}
 		}
 
@@ -11416,6 +11583,9 @@ JAP_the_co_prosperity_sphere_decisions = {
 			286 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
+			1066 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
 
 		}
 
@@ -11432,6 +11602,7 @@ JAP_the_co_prosperity_sphere_decisions = {
 							state = 671
 							state = 1017
 							state = 286
+							state = 1066
 						}
 					}
 					transfer_state_to = VIN
@@ -11487,6 +11658,7 @@ JAP_the_co_prosperity_sphere_decisions = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 741
+				state = 1067
 			}
 		}
 
@@ -11519,6 +11691,10 @@ JAP_the_co_prosperity_sphere_decisions = {
 
 				# Cambodian States
 				741 = {
+					transfer_state_to = CAM
+					add_core_of = CAM
+				}
+				1067 = {
 					transfer_state_to = CAM
 					add_core_of = CAM
 				}
@@ -11568,6 +11744,8 @@ JAP_the_co_prosperity_sphere_decisions = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 670
+				state = 1068 
+				state = 1069 
 			}
 		}
 
@@ -11593,6 +11771,14 @@ JAP_the_co_prosperity_sphere_decisions = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 
+			1068 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+
+			1069 = {
+				is_controlled_by_ROOT_or_subject = yes
+			}
+
 		}
 
 		complete_effect = {
@@ -11603,6 +11789,14 @@ JAP_the_co_prosperity_sphere_decisions = {
 
 				# Laotian States
 				670 = {
+					transfer_state_to = LAO
+					add_core_of = LAO
+				}
+				1068 = {
+					transfer_state_to = LAO
+					add_core_of = LAO
+				}
+				1069 = {
 					transfer_state_to = LAO
 					add_core_of = LAO
 				}
