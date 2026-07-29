@@ -1921,13 +1921,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			flamethrower 
-		}
-
-		enable_equipment_modules = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
+			flamethrower
 			lc_flamethrower_turret
 		}
 

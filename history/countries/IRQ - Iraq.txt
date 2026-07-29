@@ -209,8 +209,17 @@ IF = {
 		modifier = IRQ_anglo_iraqi_treaty_in_place_opm
 	}
 
+	# Kurdish Resistance
 	676 = {
 		add_dynamic_modifier = { modifier = KUR_resistance_modifier }
+	}
+
+	# Unhappy and Autonomous Shia Tribes 
+	1010 = {
+		add_dynamic_modifier = { modifier = IRQ_shia_resistance_modifier }
+	}
+	675 = {
+		add_dynamic_modifier = { modifier = IRQ_shia_resistance_modifier }
 	}
 
 }

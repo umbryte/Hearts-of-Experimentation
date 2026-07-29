@@ -6995,7 +6995,7 @@ focus_tree = {
 		icon = GFX_focus_usa_escort_fighters
 		x = 0
 		y = 2
-		prerequisite = { focus = USA_air_support USA_strategic_bombing  }
+		prerequisite = { focus = USA_air_support focus = USA_strategic_bombing }
 
 		relative_position_id = USA_air_war_plans_division
 		cost = 10
@@ -7637,7 +7637,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
-				completion_reward = {
+
+		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = USA_fund_the_navy
 				uses = 3

@@ -30,14 +30,18 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7396;1401;sea;5615;-1;-1;-1;-1;;Bangka Belitung-Sumatra
 1342;10279;sea;2737;-1;-1;-1;-1;;Java-Sumatra
 7396;4211;sea;4225;-1;-1;-1;-1;;Bangka-Belitung
+7290;13412;sea;9081;-1;-1;-1;-1;;NZ Samoa 
 1460;12126;sea;812;-1;-1;-1;-1;;Tanahbala-Sumatra
 12126;1428;sea;812;-1;-1;-1;-1;;Tanahbala-Siberut
+12126;13397;sea;812;-1;-1;-1;-1;;Tanahbala-Other Island 
 4306;4608;sea;5666;-1;-1;-1;-1;;Soerbaja-Madura
 7654;4273;sea;2239;-1;-1;-1;-1;;Java-Bali
-7293;4273;sea;2239;-1;-1;-1;-1;;Bali-Lombok
-7293;10191;sea;2239;-1;-1;-1;-1;;Lombok-W.Nusa Tenggara
-12162;1298;sea;2124;-1;-1;-1;-1;;West Nusa Tenggara-East Nusa Tenggara
-12151;10219;sea;5414;-1;-1;-1;-1;;East Nusa Tenggara-Pulau Alor
+7293;13386;sea;2239;-1;-1;-1;-1;;Bali-Lombok
+7293;13388;sea;2239;-1;-1;-1;-1;;Lombok-W.Nusa Tenggara
+13391;1298;sea;2124;-1;-1;-1;-1;;West Nusa Tenggara-East Nusa Tenggara
+13393;10219;sea;5414;-1;-1;-1;-1;;East Nusa Tenggara-Pulau Alor
+13393;12151;sea;5414;-1;-1;-1;-1;;East Nusa Tenggara-Pulau Alor 2 
+13394;10219;sea;5414;-1;-1;-1;-1;;East Nusa Tenggara-Pulau Alor 3 
 12444;10222;sea;5515;-1;-1;-1;-1;;Sulawesi-Pulau Buton
 1293;4269;sea;8751;-1;-1;-1;-1;;Surigao-Leyte
 1311;4228;sea;2856;-1;-1;-1;-1;;San Bernardino Strait
@@ -243,6 +247,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1421;10184;sea;2899;-1;-1;-1;-1;;Sulu-Mindanao
 12118;1224;sea;8751;-1;-1;-1;-1;;Cebu-Samar
 5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
+7333;4346;impassable;-1;-1;-1;-1;-1;;Kokoda Track
+7333;12995;impassable;-1;-1;-1;-1;-1;;Kokoda Track
+7333;7378;impassable;-1;-1;-1;-1;-1;;Kokoda Track
+10231;12995;impassable;-1;-1;-1;-1;-1;;Kokoda Track
+13401;13396;sea;436;-1;-1;-1;-1;;Aceh-Islands
+1428;13395;sea;812;-1;-1;-1;-1;;Padang-Islands
 5087;10821;impassable;-1;-1;-1;-1;-1;;Kashmir
 8112;5042;impassable;-1;-1;-1;-1;-1;;Kashmir
 4973;5042;impassable;-1;-1;-1;-1;-1;;Kashmir
@@ -342,67 +352,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11167;11204;impassable;-1;-1;-1;-1;-1;;Finland-Lappi
 11167;6076;impassable;-1;-1;-1;-1;-1;;Finland-Lappi
 2992;6076;impassable;-1;-1;-1;-1;-1;;Finland-Lappi
-2170;4335;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2170;12955;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2170;8221;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2170;2184;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2170;2222;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2170;1230;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-7424;2222;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-7424;2184;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-7424;5176;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-7424;7443;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-7424;2117;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-5226;7299;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-5226;4236;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-5226;5176;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-5226;2117;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2047;10269;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2047;8091;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2047;1335;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2047;12243;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2047;7415;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2047;1404;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2047;4236;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-2047;2117;impassable;-1;-1;-1;-1;-1;;inner-Kalimantan
-12428;1389;impassable;-1;-1;-1;-1;-1;;Papua
-12428;4393;impassable;-1;-1;-1;-1;-1;;Papua
-12428;7614;impassable;-1;-1;-1;-1;-1;;Papua
-12428;12240;impassable;-1;-1;-1;-1;-1;;Papua
-12428;12400;impassable;-1;-1;-1;-1;-1;;Papua
-11018;12400;impassable;-1;-1;-1;-1;-1;;Papua
-11018;10423;impassable;-1;-1;-1;-1;-1;;Papua
-11004;4635;impassable;-1;-1;-1;-1;-1;;Papua
-11004;10423;impassable;-1;-1;-1;-1;-1;;Papua
-11004;1617;impassable;-1;-1;-1;-1;-1;;Papua
-10990;10423;impassable;-1;-1;-1;-1;-1;;West Papua
-10990;12371;impassable;-1;-1;-1;-1;-1;;West Papua
-10990;10396;impassable;-1;-1;-1;-1;-1;;West Papua
-7570;10396;impassable;-1;-1;-1;-1;-1;;West Papua
-7570;4552;impassable;-1;-1;-1;-1;-1;;West Papua
-10436;4552;impassable;-1;-1;-1;-1;-1;;West Papua
-10436;1546;impassable;-1;-1;-1;-1;-1;;West Papua
-10436;4593;impassable;-1;-1;-1;-1;-1;;West Papua
-10436;7269;impassable;-1;-1;-1;-1;-1;;West Papua
-8235;4593;impassable;-1;-1;-1;-1;-1;;West Papua
-8235;1602;impassable;-1;-1;-1;-1;-1;;West Papua
-8250;1602;impassable;-1;-1;-1;-1;-1;;West Papua
-8250;1617;impassable;-1;-1;-1;-1;-1;;West Papua
-2129;4635;impassable;-1;-1;-1;-1;-1;;Papua
-2129;12107;impassable;-1;-1;-1;-1;-1;;Papua
-10954;12107;impassable;-1;-1;-1;-1;-1;;Papua
-10954;12123;impassable;-1;-1;-1;-1;-1;;Papua
-10954;1222;impassable;-1;-1;-1;-1;-1;;Papua
-5135;12154;impassable;-1;-1;-1;-1;-1;;Papua
-5135;1222;impassable;-1;-1;-1;-1;-1;;Papua
-5135;7614;impassable;-1;-1;-1;-1;-1;;Papua
-5135;12193;impassable;-1;-1;-1;-1;-1;;Papua
-12931;1222;impassable;-1;-1;-1;-1;-1;;Papua
-12931;1242;impassable;-1;-1;-1;-1;-1;;Papua
-12931;12193;impassable;-1;-1;-1;-1;-1;;Papua
-12931;12237;impassable;-1;-1;-1;-1;-1;;Papua
-12931;4418;impassable;-1;-1;-1;-1;-1;;Papua
-12931;7409;impassable;-1;-1;-1;-1;-1;;Papua
 7133;2154;impassable;-1;-1;-1;-1;-1;;Congo
 7133;12783;impassable;-1;-1;-1;-1;-1;;Congo
 7088;12783;impassable;-1;-1;-1;-1;-1;;Congo

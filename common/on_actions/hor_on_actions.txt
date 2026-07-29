@@ -86,7 +86,7 @@ on_actions = {
 	
 	### BFTM ###
 
-	#on_startup = {
+	#on_startup = { # REMOVE THE BRACKETS FOR WHEN FINALIZING THE ROMANIA REWORK AS THIS IS THE ON_ACTION THAT FIRES THE KING CAROL II ABDICATION EVENT ON THE HISTORICAL TIME, THIS IS THE ONLY INTENDED WAY YOU CAN GET HIM TO ABDICATE
         #	effect = { 
         #    		every_country = {
         #        		news_event = { id = news.323 days = 1708 } # Should fire on September 6 1940
@@ -558,7 +558,7 @@ on_actions = {
 			GER = {  add_to_array = { GER.faction_friendly_intel = ROM } }
 			GER = {  add_to_array = { GER.faction_friendly_intel = BUL } }
 			GER = {  add_to_array = { GER.faction_friendly_intel = FIN } }
-			GER = {  add_to_array = { GER.faction_friendly_intel = SPA } }
+			GER = {  add_to_array = { GER.faction_friendly_intel = SPR } }
 			GER = {  add_to_array = { GER.faction_friendly_intel = VIC } }
 			GER = {  add_to_array = { GER.faction_friendly_intel = YUG } }
 			GER = {  add_to_array = { GER.faction_friendly_intel = DEN } }

@@ -434,7 +434,7 @@ IF = {
 	set_garrison_strength = 1.0
 }
 
-
+store_core_states_on_game_start = yes
 
 ###########################
 ### Starting Technology ###
@@ -640,6 +640,7 @@ set_autonomy = {
 	target = MAN
 	autonomous_state = autonomy_wtt_imperial_protectorate
 }
+
 
 # Setup Politics 
 set_politics = {
@@ -1494,6 +1495,12 @@ create_equipment_variant = {
 		fixed_ship_secondaries_slot = ship_secondaries_1
 		fixed_ship_armor_slot = empty
 	}
+	optional_assets = {
+		{
+			icon = "GFX_JAP_carrier_hoso"
+			model = "JAP_carrier_entity"
+		}
+	}
 	obsolete = yes
 }
 create_equipment_variant = {
@@ -1534,6 +1541,12 @@ create_equipment_variant = {
 		mid_2_custom_slot = ship_airplane_launcher_1
 		rear_1_custom_slot = ship_heavy_battery_2
 	}
+	optional_assets = {
+		{
+			icon = "GFX_JAP_battleship_nagato"
+			model = "JAP_battleship_3_entity"
+		}
+	}
 }
 create_equipment_variant = {
 	name = "Kongo Class"
@@ -1554,9 +1567,42 @@ create_equipment_variant = {
 		mid_2_custom_slot = ship_airplane_launcher_1
 		rear_1_custom_slot = ship_heavy_battery_1
 	}
+	optional_assets = {
+		{
+			icon = "GFX_JAP_battleship_kongo"
+			model = "JAP_battleship_0_entity"
+		}
+	}
 }
 create_equipment_variant = {
-	name = "Fuso/Ise Class"
+	name = "Fuso Class"
+	type = ship_hull_heavy_1
+	design_team = mio:JAP_sasebo_naval_arsenal_organization
+	name_group = JAP_BB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		front_1_custom_slot = ship_heavy_battery_1
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_airplane_launcher_1
+		rear_1_custom_slot = ship_heavy_battery_1
+	}
+	optional_assets = {
+		{
+			icon = "GFX_JAP_battleship_fuso"
+			model = "JAP_battleship_1_entity"
+		}
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Ise Class"
 	type = ship_hull_heavy_1
 	design_team = mio:JAP_sasebo_naval_arsenal_organization
 	name_group = JAP_BB_HISTORICAL
@@ -1575,6 +1621,12 @@ create_equipment_variant = {
 		rear_1_custom_slot = ship_heavy_battery_1
 	}
 	obsolete = yes
+	optional_assets = {
+		{
+			icon = "GFX_JAP_battleship_ise"
+			model = "JAP_battleship_2_entity"
+		}
+	}
 }
 	
 ### Cruiser Variants			
@@ -1701,6 +1753,12 @@ create_equipment_variant = {
 		mid_2_custom_slot = ship_airplane_launcher_1
 		rear_1_custom_slot = ship_airplane_launcher_1
 	}
+	optional_assets = {
+		{
+			icon = "GFX_JAP_heavy_cruiser_tone"
+			model = "JAP_heavy_cruiser_1_entity"
+		}
+	}
 }
 
 create_equipment_variant = {
@@ -1781,6 +1839,12 @@ create_equipment_variant = {
 		mid_1_custom_slot = ship_torpedo_1
 		mid_2_custom_slot = ship_airplane_launcher_1
 		rear_1_custom_slot = ship_mine_layer_1
+	}
+	optional_assets = {
+		{
+			icon = "GFX_JAP_light_cruiser_sendai"
+			model = "JAP_light_cruiser_entity"
+		}
 	}
 	obsolete = yes
 }
@@ -2223,6 +2287,12 @@ create_equipment_variant = {
 				front_1_custom_slot = ship_deck_space
 				mid_1_custom_slot = ship_deck_space
 			}
+			optional_assets = {
+				{
+					icon = "GFX_JAP_carrier_shokaku"
+					model = "JAP_carrier_0_entity"
+				}
+			}
 		}
 		create_equipment_variant = {
 			name = "Yamato Class"
@@ -2294,6 +2364,12 @@ create_equipment_variant = {
 				fixed_ship_torpedo_slot = ship_torpedo_2
 				mid_1_custom_slot = ship_torpedo_2
 				rear_1_custom_slot = ship_depth_charge_1
+			}
+			optional_assets = {
+				{
+					icon = "GFX_JAP_destroyer_yukikaze"
+					model = "JAP_destroyer_1_entity"
+				}
 			}
 		}
 		create_equipment_variant = {

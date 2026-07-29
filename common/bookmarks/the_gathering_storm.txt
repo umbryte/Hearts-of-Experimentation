@@ -6,10 +6,24 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 		default = yes
-		
+
+		filters = { new_content continent }
+		# filters can also contain 'label'
+		# in that case the countries below can have 'label = { label_1 }' or 'label = { label_1 label_2 }'
+		# all these labels will be gathered and displayed as filter buttons
+
+		# sort_unplayed_first = no            # defaults to yes: countries with unplayed content are listed first
+		# include_majors_in_minor_list = no   # defaults to yes: when a filter is active, majors also show in the mini list
+		# apply_filter_to_majors = yes        # defaults to no: when yes, the major row also respects the filter (only majors matching it are shown)
+		# apply_filter_to_other_country = yes # defaults to no: by default the "other" (---) entry is always shown; when yes it respects the filter too
+		# label_order = { label_1 label_2 }   # optional: forces the label filter button order; a warning is logged for
+		#                                     # any label used by a country that is missing from this list
+		# scrollable_country_list = yes       # defaults to no: scroll the minor list with its vertical scrollbar instead of the overflow dropdown
+
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
+			version = base_game
 			available = { NOT = { has_dlc = "La Resistance" } }
 			ideas = {
 				FRA_victors_of_wwi
@@ -25,7 +39,8 @@ bookmarks = {
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { has_dlc = "La Resistance" } 
+			version = la_resistance
+			required_dlc = { "La Resistance" }
 			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
@@ -40,6 +55,7 @@ bookmarks = {
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
+			version = base_game
 			ideas = {
 				home_of_the_free
 				great_depression
@@ -54,7 +70,8 @@ bookmarks = {
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
-			available = { has_dlc = "Man the Guns" }
+			version = man_the_guns
+			required_dlc = { "Man the Guns" }
 			ideas = {
 				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
@@ -69,6 +86,7 @@ bookmarks = {
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
+			version = base_game
 			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
 				stiff_upper_lip
@@ -84,7 +102,8 @@ bookmarks = {
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" }
+			version = gotterdammerung
+			required_dlc = { "Gotterdammerung" }
 			ideas = {
 				sour_loser
 				general_staff
@@ -99,7 +118,8 @@ bookmarks = {
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
+			version = base_game
+			available = { NOT = { has_dlc = "Gotterdammerung" } }
 			ideas = {
 				sour_loser
 				general_staff
@@ -114,7 +134,8 @@ bookmarks = {
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
-			available = { has_dlc = "By Blood Alone" }
+			version = by_blood_alone
+			required_dlc = { "By Blood Alone" }
 			ideas = {
 				vittorio_emanuele
 				ITA_iri_fake_ns
@@ -129,6 +150,7 @@ bookmarks = {
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
+			version = base_game
 			available = { NOT = { has_dlc = "By Blood Alone" } }
 			ideas = {
 				vittorio_emanuele
@@ -145,7 +167,7 @@ bookmarks = {
 			history = "JAP_GATHERING_STORM_DESC"
 			available = {  NOT = { has_dlc = "No Compromise, No Surrender" } }
 			ideology = neutrality
-			#new_content = yes # HOR
+			version = base_game
 			override_leader_portrait = JAP_emperor_hirohito
 			ideas = {
 				JAP_1936_fake_state_shintoism_idea
@@ -160,8 +182,9 @@ bookmarks = {
 		}
 		JAP = {
 			history = "JAP_GATHERING_STORM_DESC"
+			required_dlc = { "No Compromise, No Surrender" }
+			version = no_compromise_no_surrender
 			ideology = neutrality
-			#new_content = yes # HOR
 			override_leader_portrait = JAP_emperor_hirohito
 			ideas = {
 				JAP_1936_fake_state_shintoism_idea
@@ -177,7 +200,8 @@ bookmarks = {
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
-			available = { has_dlc = "No Step Back" }
+			version = no_step_back
+			required_dlc = { "No Step Back" }
 			ideas = {
 				trotskyite_plot_nsb
 				SOV_second_five_year_plan_fake_1936_ns
@@ -192,6 +216,7 @@ bookmarks = {
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
+			version = base_game
 			available = { NOT = { has_dlc = "No Step Back" } }
 			ideas = {
 				trotskyite_plot_nsb
@@ -214,6 +239,7 @@ bookmarks = {
 		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
+			version = base_game
 			ideology = democratic
 			ideas = {
 				CAN_great_depression_1
@@ -228,6 +254,9 @@ bookmarks = {
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
+			available = {  NOT = { has_dlc = "Thunder at Our Gates" } }
+			version = base_game
+			assume_not_played_if_missing_data = yes
 			ideology = democratic
 			ideas = {
 				AST_great_depression_1
@@ -238,22 +267,43 @@ bookmarks = {
 				AST_squash_the_squanderbugs
 			}
 		}
+		"AST"={
+			minor = yes
+			history = "AST_GATHERING_STORM_DESC"
+			required_dlc = { "Thunder at Our Gates" }
+			version = thunder_at_our_gates
+			assume_not_played_if_missing_data = yes
+			ideology = democratic
+			ideas = {
+				AST_poor_population_growth
+				AST_great_depression_taog_spirit_fake
+				AST_citizen_army_spirit_fake
+			}
+			focuses = {
+				AST_war_is_coming
+				AST_overseas_loyalties
+				AST_anzac_spirit
+			}
+		}
 		"NZL"={
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
+			version = thunder_at_our_gates
+			assume_not_played_if_missing_data = yes			
 			ideology = democratic
 			ideas = {
 				
 			}
 			focuses = {
 				NZL_the_first_labor_government
-				NZL_bob_semple_tank
+				NZL_bob_semple_tank				
 				NZL_maori_volunteers
 			}
 		}
 		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
+			version = base_game
 			ideology = democratic
 			ideas = {
 				SAF_ossewabrandwag
@@ -265,13 +315,33 @@ bookmarks = {
 				SAF_secure_interests_in_africa
 			}
 		}
-		"RAJ"={
+		RAJ = {
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
+			available = {  NOT = { has_dlc = "Graveyard of Empires" } }
 			ideology = neutrality
+			version = base_game
 			ideas = {
 				RAJ_agrarian_society
 				RAJ_princely_states
+			}
+			focuses = {
+				RAJ_all_india_forward_bloc
+				RAJ_indian_gurkhas
+				RAJ_the_smiling_buddha
+			}
+		}
+
+		RAJ = {
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			required_dlc = { "Graveyard of Empires" }
+			ideology = neutrality
+			version = graveyard_of_empires
+			ideas = {
+				RAJ_marginalized_muslim_community
+				RAJ_princely_states
+				idea_RAJ_great_depression_1
 			}
 			focuses = {
 				RAJ_tryst_with_destiny
@@ -279,13 +349,34 @@ bookmarks = {
 				RAJ_to_shake_the_world
 			}
 		}
+		
+		HUN = {
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			available = {  NOT = { has_dlc = "Gotterdammerung" } }
+			version = base_game
+			ideas = {
+				HUN_treaty_of_triannon
+				HUN_gombos_trade_treaty
+			}
+			focuses = {
+				HUN_economic_intervention
+				HUN_secret_rearmament
+				HUN_proclaim_greater_hungary
+			}
+		}
 
 		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
 			ideology = neutrality
+			required_dlc = { "Gotterdammerung" }
+			version = gotterdammerung			
 			ideas = {
 				HUN_treaty_of_triannon
+				HUN_gombos_trade_treaty
+				HUN_hungarian_national_defense_association
 			}
 			focuses = {
 				wuw_HUN_continue_the_regency
@@ -298,7 +389,7 @@ bookmarks = {
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
 			ideology = neutrality
-			new_content = yes # HOR
+			version = base_game
 			ideas = {
 				ROM_king_carol_ii_hedonist
 				neutrality_idea
@@ -309,11 +400,28 @@ bookmarks = {
 				ROM_king_michaels_coup_hor
 			}
 		}
+		"YUG"={
+			minor = yes
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = neutrality
+			version = base_game
+			ideas = {
+				anti_german_military
+				YUG_idea_croatian_opposition
+				YUG_idea_serbian_general_staff
+			}
+			focuses = {
+				YUG_join_axis
+				YUG_war_on_bulgaria
+				YUG_greater_yugoslavia
+			}
+		}
 		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
 			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
 			ideology = fascism
+			version = base_game
 			ideas = {
 				MAN_banditry
 				MAN_kwantung_veto
@@ -328,9 +436,9 @@ bookmarks = {
 		MAN = {
 			minor = yes
 			history = "MAN_TSR_GATHERING_STORM_DESC"
-			available = { has_dlc = "No Compromise, No Surrender" } 
+			required_dlc = { "No Compromise, No Surrender" }
 			ideology = fascism
-			#new_content = yes # HOR
+			version = no_compromise_no_surrender
 			ideas = {
 				MAN_banditry
 				MAN_the_kangde_emperor
@@ -346,6 +454,7 @@ bookmarks = {
 			minor = yes
 			history = "MEXICO_GATHERING_STORM_DESC"
 			ideology = neutrality
+			version = base_game
 			ideas = {
 				MEX_church_power_2
 				MEX_politicised_army
@@ -361,6 +470,7 @@ bookmarks = {
 			minor = yes
 			history = "SPAIN_GATHERING_STORM_DESC"
 			ideology = democratic
+			version = base_game
 			ideas = {
 				SPR_military_disloyalty
 				SPA_carlism_1
@@ -377,6 +487,7 @@ bookmarks = {
 			minor = yes
 			history = "BUL_GATHERING_STORM_DESC"
 			ideology = neutrality
+			version = base_game
 			ideas = {
 				BUL_second_national_catastrophe
 				BUL_army_restrictions
@@ -393,6 +504,7 @@ bookmarks = {
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
 			ideology = neutrality
+			version = base_game
 			ideas = {
 				uncontrolled_exports
 				POL_april_constitution_1
@@ -409,6 +521,7 @@ bookmarks = {
 			history = FIN_GATHERING_STORM_DESC
 			ideology = neutrality
 			available = {  NOT = { has_dlc = "Arms Against Tyranny" } }
+			version = base_game
 			ideas = {
 				FIN_sisu_2
 			}
@@ -422,7 +535,8 @@ bookmarks = {
 			minor = yes
 			history = FIN_GATHERING_STORM_DESC
 			ideology = neutrality
-			available = { has_dlc = "Arms Against Tyranny" } 
+			required_dlc = { "Arms Against Tyranny" }
+			version = arms_against_tyranny			
 			ideas = {
 				FIN_sisu_2
 			}
@@ -436,7 +550,8 @@ bookmarks = {
 			minor = yes
 			history = BRA_GATHERING_STORM_DESC
 			ideology = democratic
-			available = { has_dlc = "Trial of Allegiance" }
+			required_dlc = { "Trial of Allegiance" }
+			version = trial_of_allegiance			
 			ideas = {
 				#BRA_undiversified_economy_modifier
 				#SMB_MTG_naval_arms_race_legacy
@@ -451,33 +566,21 @@ bookmarks = {
 				BRA_war_on_venezuela
 			}
 		}
-		"YUG"={
-			minor = yes
-			history = "YUG_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				anti_german_military
-				YUG_idea_croatian_opposition
-				YUG_idea_serbian_general_staff
-			}
-			focuses = {
-				YUG_join_axis
-				YUG_war_on_bulgaria
-				YUG_greater_yugoslavia
-			}
-		}
 		"SIA"={
 			minor = yes
 			history = "SIA_GATHERING_STORM_DESC"
 			ideology = neutrality
+			required_dlc  = { "Thunder at Our Gates" }
+			version = thunder_at_our_gates
+			assume_not_played_if_missing_data = yes
 			ideas = {
-				idea_SIA_army_of_siam
-				idea_SIA_unruly_military # HOR
+				idea_SIA_military_neutral
+				idea_SIA_civilian_neutral
 			}
 			focuses = {
-				SIA_pol5
-				SIA_pol13
-				SIA_pol21
+				SIA_the_khana_ratsadon
+				SIA_shuffle_pridi_to_the_minister_of_interior
+				SIA_for_the_preservation_of_siamese_independence
 			}
 		}
 		"MON"={
@@ -498,8 +601,8 @@ bookmarks = {
 			minor = yes
 			history = "PHI_GATHERING_STORM_DESC" 
 			ideology = neutrality
-			available = { has_dlc = "No Compromise, No Surrender" }
-			#new_content = yes # HOR
+			required_dlc = { "No Compromise, No Surrender" }
+			version = no_compromise_no_surrender
 			ideas = {
 				PHI_island_nation_ns_fake
 				PHI_the_great_depression_ns_fake
@@ -515,7 +618,6 @@ bookmarks = {
 			minor = yes
 			history = "VIC_GATHERING_STORM_DESC"
 			ideology = fascism
-			new_content = yes
 			ideas = {
 				FRA_milice
 				FRA_anti_bolshevist_volunteers

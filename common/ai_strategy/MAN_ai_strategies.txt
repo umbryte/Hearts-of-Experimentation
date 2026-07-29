@@ -82,7 +82,7 @@ MAN_dont_leave_japan = { # HOR
 		is_in_faction = yes
 	}
 	abort = {
-	
+		always = no
 	}
 	
 	ai_strategy = {

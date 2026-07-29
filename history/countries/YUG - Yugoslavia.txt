@@ -1,4 +1,4 @@
-﻿capital = 1060 # WAS 107 - HOR
+﻿capital = 1093 # WAS 107 - HOR
 
 add_ideas = axis_minor_specialforces_cap # HOR
 
