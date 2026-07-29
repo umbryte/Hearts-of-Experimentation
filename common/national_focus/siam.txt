@@ -13,11 +13,11 @@
 	
 	default = no
 
-	continuous_focus_position = { x = 1000 y = 1500 } # x WAS 50 y WAS 2500
+	continuous_focus_position = { x = 900 y = 1500 } # x WAS 50 y WAS 2500
 
 	inlay_window = {
 		id = sia_khana_ratsadon_inlay_window
-		position = { x = 2200 y = 300 }
+		position = { x = 2350 y = 300 } # x WAS 2200 - HOR
 	}
 
 	initial_show_position = {
@@ -31,7 +31,7 @@
 		id = SIA_the_khana_ratsadon
 		icon = GFX_focus_SIA_khana_ratsadon
 		#prerequisite = { focus = }
-		x = 13 # WAS 20 - HOR
+		x = 0 # WAS 20 - HOR
 		y = 0
 
 		#mutually_exclusive = { focus =  focus =  }
@@ -4983,6 +4983,10 @@
 		available = {
 		}
 
+		allow_branch = { # HOR
+			always = no
+		}
+
 		bypass = {
 			all_of_scopes = {
 				array = ROOT.malaysia_burma_states
@@ -5025,12 +5029,18 @@
 		#allow_branch = {
 		#}
 
+		allow_branch = { # HOR
+			always = no
+		}
+
 		bypass = {
 			all_of_scopes = {
 				array = ROOT.indochina_states
 				is_controlled_by = ROOT
 			}
 		}
+
+		
 
 		will_lead_to_war_with = FRA
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -5051,6 +5061,10 @@
 		y = 0
 		relative_position_id = SIA_recover_indochina	
 		prerequisite = { focus = SIA_pan_thaiism }
+
+		allow_branch = { # HOR
+			always = no
+		}
 
 		cost = 10
 		ai_will_do = {
@@ -5138,7 +5152,8 @@
 		x = 1
 		y = 1
 		relative_position_id = SIA_recover_indochina
-		prerequisite = { focus = SIA_recover_indochina focus = SIA_demand_the_return_of_lost_territory }
+		#prerequisite = { focus = SIA_recover_indochina focus = SIA_demand_the_return_of_lost_territory } # HOR
+		prerequisite = { focus = SIA_pan_thaiism } # HOR
 		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
@@ -5219,7 +5234,7 @@
 	focus = {
 		id = SIA_crack_down_of_foreign_merchants
 		icon = GFX_focus_SIA_crack_down_of_foreign_merchants
-		x = 2
+		x = 1 # WAS 2 - HOR
 		y = 0
 		relative_position_id = SIA_demand_the_return_of_lost_territory	
 		prerequisite = { focus = SIA_pan_thaiism }
@@ -5370,9 +5385,10 @@
 		id = SIA_new_territories_administration
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 1
-		y = 1
+		y = 0 # WAS 1 - HOR
 		relative_position_id = SIA_retake_lost_british_states	
-		prerequisite = { focus = SIA_retake_lost_british_states focus = SIA_recover_indochina focus = SIA_demand_the_return_of_lost_territory }
+		#prerequisite = { focus = SIA_retake_lost_british_states focus = SIA_recover_indochina focus = SIA_demand_the_return_of_lost_territory } # HOR
+		prerequisite = { focus = SIA_pan_thaiism } # HOR
 		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
