@@ -14691,15 +14691,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			289 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 10
-					instant_build = yes
-				}
-			}
 			SIA = {			
 				give_resource_rights = { receiver = JAP state = 289 }
+				give_resource_rights = { receiver = JAP state = 724 }
+				give_resource_rights = { receiver = JAP state = 1076 }
+				give_resource_rights = { receiver = JAP state = 869 }
 			}
 		}
 	}

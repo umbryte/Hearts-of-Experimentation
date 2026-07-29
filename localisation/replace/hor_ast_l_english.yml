@@ -1,0 +1,8 @@
+﻿l_english:
+
+# AUSTRALIA STUFF
+
+ # TOOLTIPS
+ ABDA_develop_naval_infrastructure_ast_tt:0 "[AST.GetName] receives §Y4 dockyards§! in a core territory."
+ ABDA_develop_naval_infrastructure_ins_tt:0 "[INS.GetName] receives §Y4 dockyards§! in a core territory."
+ ABDA_develop_naval_infrastructure_generic_tt:0 "Depending on the membership of §YABDACOM§!, [AST.GetName] and the [INS.GetName] may each receive 4 dockyards in their core territories."

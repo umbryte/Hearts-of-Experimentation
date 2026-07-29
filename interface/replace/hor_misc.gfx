@@ -289,7 +289,7 @@ spriteTypes = {
      		noOfFrames = 2		
 	}
 	
-	### 
+	### GRANT INDOCHINA TO SIAM DECISIONS ###
 	
 	spriteType = {
 		name = "GFX_decision_cat_hor_japan_transfer_indochina_image"

@@ -1,4 +1,4 @@
-﻿set_research_slots = 4 # HOR
+﻿﻿set_research_slots = 3 # HOR
 
 set_rule = { can_create_collaboration_government = no } # HOR
 

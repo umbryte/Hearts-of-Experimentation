@@ -418,7 +418,7 @@ focus_tree = {
 
 		available = {
 			NOT = { has_idea = BUL_second_national_catastrophe }
-			num_of_factories > 58 # WAS 29 - HOR
+			num_of_factories > 59 # WAS 29 - HOR
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}

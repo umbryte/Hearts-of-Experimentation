@@ -599,11 +599,11 @@ ideas = {
 
 			available = {
 				OR = {
-					has_idea = extensive_conscription
-					has_idea = service_by_requirement
+					has_idea = extensive_conscription # WAS all_adults_serve - HOR
+					has_idea = service_by_requirement # WAS scraping_the_barrel - HOR
 				}
 			}
-
+			
 			modifier = {
 				training_time_factor = -0.15
 				industrial_capacity_factory = 0.15

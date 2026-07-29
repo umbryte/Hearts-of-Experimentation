@@ -218,7 +218,6 @@ POL = {
 				"gfx/interface/equipmentdesigner/tanks/designer/POL/super_heavy_pawel_chrobok.dds"
 			}
 			models = {
-				"POL_heavy_armor_entity"
 			}
 		}
 	}

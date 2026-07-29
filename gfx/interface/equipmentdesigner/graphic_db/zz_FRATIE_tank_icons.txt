@@ -61,7 +61,6 @@ FRA = {
 				"gfx/interface/equipmentdesigner/tanks/designer/FRA/light_renault_nc2_3.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/FRA/light_renault_nc2_2.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/FRA/light_renault_nc2.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/light_hotchkiss_h39_4.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/FRA/light_hotchkiss_h39_3.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/FRA/light_hotchkiss_h39_2.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/FRA/light_hotchkiss_h39.dds"

@@ -956,6 +956,33 @@ ideas = {
 				compliance_growth = 0.2
 			}
 		}
+
+		umberto_idea = {
+
+			name = ITA_prince_umberto_king
+
+			picture = umberto_idea
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				NOT = {
+					has_government = neutrality #remove if King in power
+				}
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = fascism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = 0.15 
+			}
+		}
                         
 
 		ITA_offensive_in_ethiopia = {
@@ -1712,7 +1739,7 @@ ideas = {
 			}
 
 			modifier = {
-				air_superiority_bonus_in_combat = 0.05
+				army_bonus_air_superiority_factor = 0.05
 				air_cas_present_factor = 0.05
 				experience_gain_air_factor = 0.1
 			}
@@ -1737,7 +1764,7 @@ ideas = {
 			}
 
 			modifier = {
-				air_superiority_bonus_in_combat = 0.1
+				army_bonus_air_superiority_factor = 0.1
 				air_cas_present_factor = 0.1
 				experience_gain_air_factor = 0.15
 			}
@@ -1781,7 +1808,8 @@ ideas = {
 			}
 
 			modifier = {
-				local_intel_to_enemies = -0.1
+				civilian_intel_to_others = -0.1
+				army_intel_to_others = -0.1
 			}
 		}
 
@@ -1803,7 +1831,8 @@ ideas = {
 			}
 
 			modifier = {
-				local_intel_to_enemies = -0.15
+				civilian_intel_to_others = -0.15
+				army_intel_to_others = -0.15
 			}
 		}
 
@@ -4681,6 +4710,91 @@ ideas = {
 			}
 			
 			traits = { motorized_equipment_manufacturer }
+		}
+
+		ITA_ansaldo_manufacturer = { #NORTH
+
+			name = "ITA_ansaldo_train_organization"
+
+			picture = AUS_ansaldo
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			visible = {
+				NOT = {
+					AND = {
+						has_completed_focus = ITA_new_industrialization_program
+						has_completed_focus = ITA_strengthen_northern_industry
+					}
+				}
+			}
+
+			research_bonus = {
+				train_tech = 0.15
+				support_tech = 0.07
+			}
+
+			equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = -0.10
+					armor_value = 0.10
+					air_attack = 0.10
+					instant = yes
+				}
+			}
+
+			cost = 150
+
+			traits = { train_equipment_manufacturer }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		ITA_ansaldo_manufacturer_improved = { #NORTH
+
+			name = "ITA_ansaldo_train_organization"
+
+			picture = AUS_ansaldo
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			visible = {
+				has_completed_focus = ITA_new_industrialization_program
+				has_completed_focus = ITA_strengthen_northern_industry
+			}
+
+			research_bonus = {
+				train_tech = 0.15
+				support_tech = 0.07
+				armor = 0.05
+			}
+
+			equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = -0.15
+					armor_value = 0.15
+					air_attack = 0.15
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+
+			cost = 150
+
+			traits = { train_equipment_manufacturer }
+
+			ai_will_do = {
+				factor = 0
+			}
 		}
 	}
 
