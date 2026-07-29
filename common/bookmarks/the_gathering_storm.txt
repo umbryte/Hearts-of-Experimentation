@@ -292,7 +292,9 @@ bookmarks = {
 			assume_not_played_if_missing_data = yes			
 			ideology = democratic
 			ideas = {
-				
+				NZL_railways_board
+				NZL_great_depression
+				NZL_commonwealth_loyalty
 			}
 			focuses = {
 				NZL_the_first_labor_government
