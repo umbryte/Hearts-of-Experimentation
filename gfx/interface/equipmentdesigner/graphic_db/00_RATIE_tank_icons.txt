@@ -366,11 +366,9 @@ SOV = {
 	}
 }
 
-RUS = {
+MON = { # HOR
 	##order:
 	##tank - art - td - spaa - flame - rocket - etc
-	
-	##Different tank icons are available in order to ensure icons work with Kaiserreich's tech tree
 
 	light_tank_chassis_0 = {
 		pool = {
@@ -405,6 +403,28 @@ RUS = {
 		pool = {
 			weight = 2.5
 			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/amphibious_pt-1a.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_rocket_rbt-5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_rocket_rs-132.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_rocket_bt-5r.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_flame_op-5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_art_bt-5a.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_art_d-38.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5tu_35.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_35_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_35.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_34_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_34.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5tu_33.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_33_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_33.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2-is.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2_5.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2_4.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2_3.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2_2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-1.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_flame_htt-133.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_flame_tt-26.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_flame_ot-130.dds"
@@ -464,28 +484,6 @@ RUS = {
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-7_35.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-7tu_35.dds"
 				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-7_35.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/amphibious_pt-1a.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_rocket_rbt-5.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_rocket_rs-132.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_rocket_bt-5r.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_flame_op-5.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_art_bt-5a.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_art_d-38.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5tu_35.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_35_2.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_35.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_34_2.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_34.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5tu_33.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_33_2.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-5_33.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2-is.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2_5.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2_4.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2_3.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2_2.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-2.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/SOV/light_bt-1.dds"
 			}
 		}
 	}

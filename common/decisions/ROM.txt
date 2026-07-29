@@ -15,7 +15,6 @@ ROM_pacify_the_communists_category = { # HOR
 
 		visible = {
 			original_tag = ROM
-			has_completed_focus = ROM_unity_and_order_decree
 		}
 
 		cost = 25

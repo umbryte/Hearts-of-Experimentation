@@ -13981,7 +13981,7 @@ focus_tree = {
 
 		prerequisite = { focus = JAP_demand_tonkinese_bases }
 
-		cost = 4
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -14121,6 +14121,70 @@ focus_tree = {
 					}
 				}
 			}
+
+			hidden_trigger = {
+				IF = {
+					limit = {
+						is_ai = yes 
+					}
+
+					OR = {
+						# Either Siam doesn't hold it 
+						NOT = {
+							286 = { 
+								CONTROLLER = { 
+									original_tag = SIA
+								} 
+							}
+							670 = { 
+								CONTROLLER = { 
+									original_tag = SIA
+								} 
+							}
+							1017 = { 
+								CONTROLLER = { 
+									original_tag = SIA
+								} 
+							}
+							741 = { 
+								CONTROLLER = { 
+									original_tag = SIA
+								} 
+							}
+						}
+
+						# Siam holds it and we have decided on our approach tpwards them first 
+						AND = {
+							OR = {
+								286 = { 
+									CONTROLLER = { 
+										original_tag = SIA
+									} 
+								}
+								670 = { 
+									CONTROLLER = { 
+										original_tag = SIA
+									} 
+								}
+								1017 = { 
+									CONTROLLER = { 
+										original_tag = SIA
+									} 
+								}
+								741 = { 
+									CONTROLLER = { 
+										original_tag = SIA
+									} 
+								}
+							}
+							OR = {
+								has_completed_focus = JAP_sea_pressure_siam
+								has_completed_focus = JAP_occupy_siam
+							}
+						}
+					}
+				}
+			}	
 			
 		}
 
@@ -14141,12 +14205,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-
-			transfer_state = 670 # HOR
-			transfer_state = 671 # HOR
-			transfer_state = 741 # HOR
-			transfer_state = 286 # HOR
-			transfer_state = 1017 # HOR
 				
 			IF = {
 				limit = {

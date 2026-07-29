@@ -2,7 +2,7 @@ operations = {
 
 	reapply_trans_republic_tag = {
 		allowed = {
-			ROOT = { has_country_flag = trans_flag }
+			has_country_flag = trans_flag
 		}
 		cost = 0
 		ai_will_do = {
