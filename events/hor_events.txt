@@ -169,7 +169,6 @@ country_event = {
 		BRA = {
 			transfer_state = 687
 		}
-		687 = { add_core_of = BRA }
 		BRA = { 
 			country_event = { id = hor_events.8 }
 		}
@@ -201,7 +200,6 @@ country_event = {
 		BRA = {
 			transfer_state = 310
 		}
-		310 = { add_core_of = BRA }
 		BRA = { 
 			country_event = { id = hor_events.10 }
 		}
@@ -233,7 +231,6 @@ country_event = {
 		BRA = {
 			transfer_state = 309
 		}
-		309 = { add_core_of = BRA }
 		BRA = { 
 			country_event = { id = hor_events.12 }
 		}

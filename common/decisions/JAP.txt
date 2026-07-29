@@ -137,6 +137,114 @@ hor_japan_transfer_indochina_category = {
 	    factor = 100
 	}
     }
+    hor_japan_transfer_indochina_6 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		1069 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		1069 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	1069 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_7 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		1068 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		1068 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	1068 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_8 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		1067 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		1067 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	1067 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
+    hor_japan_transfer_indochina_9 = {
+	icon = GFX_decision_infiltrate_state
+	available = {
+		1066 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	fire_only_once = yes
+	
+	visible = {
+		1066 = {
+		is_owned_by = JAP
+		}
+	}
+	
+	complete_effect = {
+	1066 = {
+	transfer_state_to = SIA
+	}
+	    
+	}
+	
+	ai_will_do = {
+	    factor = 100
+	}
+    }
 }
 
 ### HOR ###

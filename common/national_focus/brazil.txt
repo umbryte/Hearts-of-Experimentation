@@ -20,7 +20,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 0 y = 2500 }
+	continuous_focus_position = { x = 1450 y = 1000 } # x WAS 0 y WAS 2500 - HOR
 
 	initial_show_position = {
 		x = 27
@@ -2549,6 +2549,10 @@ focus_tree = {
 		relative_position_id = BRA_ask_for_the_guianas
 		x = 0
 		y = 1
+
+		allow_branch = { # HOR
+			always = no
+		}
 
 		cost = 5
 

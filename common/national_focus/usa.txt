@@ -24,6 +24,7 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = { x = 1600 y = 600 } # x USED TO BE 50 y USED TO BE 1400 - HOR
+	shared_focus = ABDA_abdacom
 	default = no
 #	focus = {
 #		id = USA_

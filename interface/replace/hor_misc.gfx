@@ -288,4 +288,17 @@ spriteTypes = {
      		legacy_lazy_load = no
      		noOfFrames = 2		
 	}
+	
+	### 
+	
+	spriteType = {
+		name = "GFX_decision_cat_hor_japan_transfer_indochina_image"
+		texturefile = "gfx/interface/decisions/decision_cat_hor_japan_transfer_indochina_image.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_category_hor_japan_transfer_indochina_icon"
+		texturefile = "gfx/interface/decisions/decision_category_hor_japan_transfer_indochina_icon.dds"
+	}
+
 }

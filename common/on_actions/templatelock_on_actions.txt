@@ -1643,6 +1643,25 @@ on_actions = {
 					is_locked = no
 				}
 			}
+			##The two below were presumably added after DLC release
+			if = {
+				limit = {
+					has_template = "Turkestan Legion"
+				}
+				set_division_template_lock = {
+					division_template = "Turkestan Legion"
+					is_locked = no
+				}
+			}
+			if = {
+				limit = {
+					has_template = "Sikh Division"
+				}
+				set_division_template_lock = {
+					division_template = "Sikh Division"
+					is_locked = no
+				}
+			}
 			#SEA
 			#Mengukuo
 			if = {
@@ -1717,6 +1736,74 @@ on_actions = {
 				}
 				set_division_template_lock = {
 					division_template = "Blueshirt Militia"
+					is_locked = no
+				}
+			}
+			#Rt56
+			if = {
+				limit = {
+					has_template = "Tribal Levy"
+				}
+				set_division_template_lock = {
+					division_template = "Tribal Levy"
+					is_locked = no
+				}
+			}
+			#ToaG
+			#INS
+			if = {
+				limit = {
+					has_template = "Indigenous Auxiliary Corps"
+				}
+				set_division_template_lock = {
+					division_template = "Indigenous Auxiliary Corps"
+					is_locked = no
+				}
+			}
+			if = {
+				limit = {
+					has_template = "Exile Division"
+				}
+				set_division_template_lock = {
+					division_template = "Exile Division"
+					is_locked = no
+				}
+			}
+			if = {
+				limit = {
+					has_template = "Freedom Fighter Militia"
+				}
+				set_division_template_lock = {
+					division_template = "Freedom Fighter Militia"
+					is_locked = no
+				}
+			}
+			#HOL
+			if = {
+				limit = {
+					has_template = "Indian Division"
+				}
+				set_division_template_lock = {
+					division_template = "Indian Division"
+					is_locked = no
+				}
+			}
+			if = {
+				limit = {
+					has_template = "Australian Division"
+				}
+				set_division_template_lock = {
+					division_template = "Australian Division"
+					is_locked = no
+				}
+			}
+			#SIA
+			if = {
+				limit = {
+					has_template = "Expeditionary Paratrooper Division"
+				}
+				set_division_template_lock = {
+					division_template = "Expeditionary Paratrooper Division"
 					is_locked = no
 				}
 			}
