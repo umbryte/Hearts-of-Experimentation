@@ -225,7 +225,7 @@ focus_tree = {
 		id = YUG_attract_allied_capital
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = YUG_friendship_treaty_with_italy } # HOR
-		x = 1
+		x = 2 # WAS 1 - HOR
 		y = 1
 		relative_position_id = YUG_friendship_treaty_with_italy # WAS YUG_reinforce_old_alliances - HOR
 
@@ -258,7 +258,7 @@ focus_tree = {
 		id = YUG_attract_axis_capital
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = YUG_friendship_treaty_with_italy } # HOR
-		x = -1
+		x = -2 # WAS -1 - HOR
 		y = 1
 		relative_position_id = YUG_friendship_treaty_with_italy
 
@@ -2591,7 +2591,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YUG_partisan_uprising_tt
 			hidden_effect = {
-				1093 = {
+				1060 = {
 					add_building_construction = {
 						type = bunker
 						level = 5
@@ -2620,7 +2620,7 @@ focus_tree = {
 					air_ratio = 0.0
 					capital = 109
 					states = {
-						107 103 109 104 108 45 764 803 802 804 970 106 1092 102 105 853
+						107 103 109 104 108 45 764 803 802 804 970 106 1059 102 105 853
 					}
 					PREV = {
         				YUG_milan_stojadinovic = {
@@ -2663,7 +2663,7 @@ focus_tree = {
 						anti_air = { x = 0 y = 2 }
 					}
 				}
-				1093 = {
+				1060 = {
 					create_unit = {
 						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
 						owner = YUG
@@ -2726,7 +2726,7 @@ focus_tree = {
 						allow_spawning_on_enemy_provs = yes
 					}
 				}
-				1092 = {
+				1059 = {
 					create_unit = {
 						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
 						owner = YUG
@@ -2834,9 +2834,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = YUG_establish_SFRY_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
-			YUG = { 
-				drop_cosmetic_tag = yes 
-			}
+			YUG = { drop_cosmetic_tag }
 			hidden_effect = {
 				set_politics = {
 					ruling_party = communism
@@ -2851,6 +2849,8 @@ focus_tree = {
 			}
 		}
 	}
+
+
 
 	focus = {
 		id = YUG_all_yugoslavian_regiments
@@ -4326,7 +4326,7 @@ focus_tree = {
 	focus = {
 		id = YUG_recognize_the_soviet_union
 		icon = GFX_focus_generic_soviet_politics
-		mutually_exclusive = { focus = YUG_western_focus }
+		#mutually_exclusive = { focus = YUG_western_focus } # HOR
 		x = 11
 		y = 0
 
