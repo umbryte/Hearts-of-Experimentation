@@ -100,9 +100,6 @@ set_war_support = 0.1
 # 322
 # 757
 # 758
-# 1054 # inner-Kalimantan (CUSTOM STATE)
-# 1055 # inner-West Papua (CUSTOM STATE)
-# 1056 # inner Papua (CUSTOM STATE)
 # 1005
 # 1006
 # 1007

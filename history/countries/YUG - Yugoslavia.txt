@@ -131,34 +131,31 @@ set_technology = {
 
 set_grand_doctrine = superior_firepower
 
-#if = { # HOR
-#	limit = {
-#		NOT = { has_dlc = "By Blood Alone" }
-#	}
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
 	set_technology = {
 		early_fighter = 1
-		early_transport_plane = 1
-		fighter1 = 1 # HOR
-		early_bomber = 1 # HOR
 	}
-#}
-if = { # HOR
-#	limit = {
-#		has_dlc = "No Step Back"
-#	}
-#	set_technology = {
-#		gwtank_chassis = 1
-#	}
-#}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
 
-#if = { # HOR
-#	limit = {
-#		NOT = { has_dlc = "No Step Back" }
-#	}
-#	set_technology = {
-#		gwtank = 1
-#	}
-#}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

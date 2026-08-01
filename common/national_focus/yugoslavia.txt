@@ -58,7 +58,7 @@ focus_tree = {
 	focus = {
 		id = YUG_western_focus
 		icon = GFX_goal_generic_position_armies
-		#mutually_exclusive = { focus = YUG_recognize_the_soviet_union } - HOR
+		#mutually_exclusive = { focus = YUG_recognize_the_soviet_union } # HOR
 		x = 3 # WAS 2 - HOR
 		y = 0
 
@@ -331,38 +331,6 @@ focus_tree = {
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = YUG_brigadistas_idea
 			custom_effect_tooltip = will_be_removed_once_scw_is_over_tt
-		}
-	}
-	
-	focus = {
-		id = YUG_local_militias
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = YUG_surrender_italian_claims } # HOR
-		x = 1 # WAS 4 - HOR
-		y = 1
-		relative_position_id = YUG_surrender_italian_claims # WAS YUG_reinforce_old_alliances - HOR
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_MANPOWER }
-
-		completion_reward = {
-			add_ideas = YUG_idea_local_militias
 		}
 	}
 	
@@ -1749,7 +1717,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = YUG_attract_allied_capital } # HOR
 		prerequisite = { focus = YUG_attract_axis_capital } # HOR
-		#mutually_exclusive = { focus = YUG_limited_self_government } - HOR
+		mutually_exclusive = { focus = YUG_limited_self_government }
 		x = 0
 		y = 2 # WAS 1 - HOR
 		relative_position_id = YUG_friendship_treaty_with_italy # WAS YUG_attract_axis_capital - HOR
@@ -2221,7 +2189,7 @@ focus_tree = {
 		id = YUG_join_axis
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = YUG_concessions_for_macedonians focus = YUG_surrender_macedonia } # HOR
-		#mutually_exclusive = { focus = YUG_end_the_regency } - HOR
+		#mutually_exclusive = { focus = YUG_end_the_regency } # HOR
 		x = 0
 		y = 1
 		relative_position_id = YUG_concessions_for_macedonians
@@ -2376,7 +2344,7 @@ focus_tree = {
 				controls_state = 163
 				is_in_faction = yes
 			}
-			NOT = { has_completed_focus = YUG_end_the_regency }
+			#NOT = { has_completed_focus = YUG_end_the_regency } # HOR
 		}
 
 		bypass = {
@@ -2402,6 +2370,7 @@ focus_tree = {
 		icon = GFX_goal_generic_alliance # WAS GFX_goal_support_fascism - HOR
 		prerequisite = { focus = YUG_join_axis }
 		prerequisite = { focus = YUG_invite_german_military_mission }
+		mutually_exclusive = { focus = YUG_zara_for_axis }
 		x = -1
 		y = 1
 		relative_position_id = YUG_join_axis
@@ -2465,6 +2434,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = YUG_local_militias
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = YUG_surrender_italian_claims } # HOR
+		x = 1 # WAS 4 - HOR
+		y = 1
+		relative_position_id = YUG_surrender_italian_claims # WAS YUG_reinforce_old_alliances - HOR
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		completion_reward = {
+			add_ideas = YUG_idea_local_militias
+		}
+	}
+
+	focus = {
 		id = YUG_claim_macedonia
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = YUG_zara_for_axis focus = YUG_surrender_italian_claims }
@@ -2493,7 +2494,7 @@ focus_tree = {
 					is_in_faction_with = ROOT
 				}
 			}
-			NOT = { has_completed_focus = YUG_end_the_regency }
+			#NOT = { has_completed_focus = YUG_end_the_regency } # HOR
 		}
 
 		bypass = {
@@ -2542,6 +2543,409 @@ focus_tree = {
 				}
 			}
 			news_event = { id = news.327 }
+		}
+	}
+
+	focus = { # HOR FOCUS
+		id = YUG_partisan_uprising
+		icon = GFX_YUG_partisan_uprising
+		x = 6 
+		y = 0
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			surrender_progress > 0.3
+			is_in_faction_with = GER
+			has_war_with = SOV
+			has_war_with = ENG
+			NOT = {
+				GER = {
+					divisions_in_state = {
+						state = 1060
+						size > 9
+					}
+				}
+			}
+			#NOT = { # TEMPORARY
+			#	has_completed_focus = YUG_reach_out_to_albania
+			#	has_completed_focus = YUG_reach_out_to_romania
+			#	has_completed_focus = YUG_reach_out_to_italy
+			#	has_completed_focus = YUG_reach_out_to_greece
+			#	has_completed_focus = YUG_reach_out_to_turkey
+			#}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = YUG_partisan_uprising_tt
+			hidden_effect = {
+				1060 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11586
+						instant_build = yes
+					}
+				}
+				add_ideas = yugoslav_partisans
+				set_technology = { 
+					militia_tech = 1
+					popup = yes
+				}
+				every_country = {
+					news_event = hor_events.20
+				}
+				set_cosmetic_tag = YUG_DFY
+				ENG = {
+					add_to_faction = YUG
+				}
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = fascism
+					size = 0.0
+					army_ratio = 1.0
+					navy_ratio = 0.0
+					air_ratio = 0.0
+					capital = 109
+					states = {
+						107 103 109 104 108 45 764 803 802 804 970 106 1059 102 105 853
+					}
+					PREV = {
+        				YUG_milan_stojadinovic = {
+            				set_nationality = PREV.PREV
+        				}
+    				}
+    				promote_character = YUG_milan_stojadinovic
+					keep_all_characters = yes
+					GER = {
+						puppet = {
+    						target = PREV
+    						end_wars = no
+							end_civil_wars = no
+						}
+					}
+				}
+				random_other_country = {
+					limit = {
+						original_tag = YUG
+						NOT = { has_government = democratic }
+					}
+					add_ideas = yugoslav_radicals
+				}
+				division_template = {
+					name = "Partizanska Divizija"
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+						militia = { x = 2 y = 0 }
+						militia = { x = 2 y = 1 }
+						militia = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 } 
+						artillery = { x = 0 y = 1 }   
+						anti_air = { x = 0 y = 2 }
+					}
+				}
+				1060 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				102 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				104 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				108 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				105 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				804 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				103 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				803 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				853 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				1059 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				109 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				45 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				764 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				107 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				802 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				106 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+				970 = {
+					create_unit = {
+						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
+						owner = YUG
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_establish_SFRY
+		icon = GFX_focus_prc_agrarian_socialism
+		prerequisite = { focus = YUG_partisan_uprising }
+		x = 0
+		y = 1
+		relative_position_id = YUG_partisan_uprising
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			has_war = no
+			controls_state = 45
+			controls_state = 102
+			controls_state = 103
+			controls_state = 104
+			controls_state = 105
+			controls_state = 106
+			controls_state = 107
+			controls_state = 108
+			controls_state = 109
+			controls_state = 163
+			controls_state = 736
+			controls_state = 802
+			controls_state = 803
+			controls_state = 804
+			controls_state = 852
+			controls_state = 853
+			controls_state = 970
+			controls_state = 1092
+			controls_state = 1093
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = YUG_establish_SFRY_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			YUG = { drop_cosmetic_tag }
+			hidden_effect = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				set_popularities = {
+    				communism = 100
+				}
+				set_rule = {
+					can_send_volunteers = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_invite_italian_naval_experts
+		icon = GFX_goal_generic_occupy_states_coastal
+		#prerequisite = { focus = YUG_zara_for_axis focus = YUG_surrender_italian_claims } - HOR
+		prerequisite = { focus = YUG_local_militias } # HOR
+		prerequisite = { focus = YUG_all_yugoslavian_regiments } # HOR
+		x = 0
+		y = 2 # WAS 1 - HOR
+		relative_position_id = YUG_surrender_italian_claims # WAS YUG_zara_for_axis - HOR
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			ITA = {
+				is_in_faction_with = ROOT
+				NOT = { has_war_with = ROOT }
+				exists = yes
+				has_capitulated = no
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_to_tech_sharing_group = YUG_naval_research_group
+			ITA = {
+				add_to_tech_sharing_group = YUG_naval_research_group
+			}
+			navy_experience = 50
+		}
+	}
+
+	focus = { # HOR
+		id = YUG_war_on_bulgaria
+		icon = GFX_focus_generic_attack_bulgaria
+		prerequisite = { focus = YUG_invite_italian_naval_experts }
+		x = 0
+		y = 1
+		relative_position_id = YUG_invite_italian_naval_experts
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			BUL = {
+				NOT = { has_war_with = ROOT }
+				exists = yes
+				is_puppet = no
+				is_in_faction = no
+				is_ai = yes
+			}
+		}
+		
+		bypass = {
+			BUL = {
+				OR = {
+					exists = no
+					is_puppet_of = ROOT
+					is_in_faction = yes
+					is_ai = no
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				target = BUL
+				type = annex_everything
+				expire = 0
+			}
+			48 = { add_claim_by = YUG }
+			212 = { add_claim_by = YUG }
+			801 = { add_claim_by = YUG }
+			211 = { add_claim_by = YUG }
 		}
 	}
 
@@ -2996,408 +3400,6 @@ focus_tree = {
 		}
 	}
 
-	focus = { # HOR FOCUS
-		id = YUG_partisan_uprising
-		icon = GFX_YUG_partisan_uprising
-		x = 6 
-		y = 0
-
-		cost = 1
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-			surrender_progress > 0.3
-			is_in_faction_with = GER
-			has_war_with = SOV
-			has_war_with = ENG
-			NOT = {
-				GER = {
-					divisions_in_state = {
-						state = 1060
-						size > 9
-					}
-				}
-			}
-			#NOT = { # TEMPORARY
-			#	has_completed_focus = YUG_reach_out_to_albania
-			#	has_completed_focus = YUG_reach_out_to_romania
-			#	has_completed_focus = YUG_reach_out_to_italy
-			#	has_completed_focus = YUG_reach_out_to_greece
-			#	has_completed_focus = YUG_reach_out_to_turkey
-			#}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = YUG_partisan_uprising_tt
-			hidden_effect = {
-				1060 = {
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province = 11586
-						instant_build = yes
-					}
-				}
-				add_ideas = yugoslav_partisans
-				set_technology = { 
-					militia_tech = 1
-					popup = yes
-				}
-				every_country = {
-					news_event = hor_events.20
-				}
-				set_cosmetic_tag = YUG_DFY
-				ENG = {
-					add_to_faction = YUG
-				}
-				start_civil_war = {
-					ruling_party = democratic
-					ideology = fascism
-					size = 0.0
-					army_ratio = 1.0
-					navy_ratio = 0.0
-					air_ratio = 0.0
-					capital = 109
-					states = {
-						107 103 109 104 108 45 764 803 802 804 970 106 1059 102 105 853
-					}
-					PREV = {
-        				YUG_milan_stojadinovic = {
-            				set_nationality = PREV.PREV
-        				}
-    				}
-    				promote_character = YUG_milan_stojadinovic
-					keep_all_characters = yes
-					GER = {
-						puppet = {
-    						target = PREV
-    						end_wars = no
-							end_civil_wars = no
-						}
-					}
-				}
-				random_other_country = {
-					limit = {
-						original_tag = YUG
-						NOT = { has_government = democratic }
-					}
-					add_ideas = yugoslav_radicals
-				}
-				division_template = {
-					name = "Partizanska Divizija"
-					regiments = {
-						militia = { x = 0 y = 0 }
-						militia = { x = 0 y = 1 }
-						militia = { x = 0 y = 2 }
-						militia = { x = 1 y = 0 }
-						militia = { x = 1 y = 1 }
-						militia = { x = 1 y = 2 }
-						militia = { x = 2 y = 0 }
-						militia = { x = 2 y = 1 }
-						militia = { x = 2 y = 2 }
-					}
-					support = {
-						engineer = { x = 0 y = 0 } 
-						artillery = { x = 0 y = 1 }   
-						anti_air = { x = 0 y = 2 }
-					}
-				}
-				1060 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				102 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				104 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				108 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				105 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				804 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				103 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				803 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				853 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				1059 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				109 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				45 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				764 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				107 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				802 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				106 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-				970 = {
-					create_unit = {
-						division = "division_template = \"Partizanska Divizija\" start_experience_factor = 1.0"
-						owner = YUG
-						allow_spawning_on_enemy_provs = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = YUG_establish_SFRY
-		icon = GFX_focus_prc_agrarian_socialism
-		prerequisite = { focus = YUG_partisan_uprising }
-		x = 0
-		y = 1
-		relative_position_id = YUG_partisan_uprising
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		available = {
-			has_war = no
-			controls_state = 45
-			controls_state = 102
-			controls_state = 103
-			controls_state = 104
-			controls_state = 105
-			controls_state = 106
-			controls_state = 107
-			controls_state = 108
-			controls_state = 109
-			controls_state = 163
-			controls_state = 736
-			controls_state = 802
-			controls_state = 803
-			controls_state = 804
-			controls_state = 852
-			controls_state = 853
-			controls_state = 970
-			controls_state = 1059
-			controls_state = 1060
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = YUG_establish_SFRY_tt
-			hidden_effect = {
-				drop_cosmetic_tag = YUG_DFY
-				set_politics = {
-					ruling_party = communism
-					elections_allowed = no
-				}
-				set_popularities = {
-    				communism = 100
-				}
-				set_rule = {
-					can_send_volunteers = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = YUG_invite_italian_naval_experts
-		icon = GFX_goal_generic_occupy_states_coastal
-		#prerequisite = { focus = YUG_zara_for_axis focus = YUG_surrender_italian_claims } - HOR
-		prerequisite = { focus = YUG_local_militias } # HOR
-		prerequisite = { focus = YUG_all_yugoslavian_regiments } # HOR
-		x = 0
-		y = 2 # WAS 1 - HOR
-		relative_position_id = YUG_surrender_italian_claims # WAS YUG_zara_for_axis - HOR
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			ITA = {
-				is_in_faction_with = ROOT
-				NOT = { has_war_with = ROOT }
-				exists = yes
-				has_capitulated = no
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_to_tech_sharing_group = YUG_naval_research_group
-			ITA = {
-				add_to_tech_sharing_group = YUG_naval_research_group
-			}
-			navy_experience = 50
-		}
-	}
-
-	focus = { # HOR
-		id = YUG_war_on_bulgaria
-		icon = GFX_focus_generic_attack_bulgaria
-		prerequisite = { focus = YUG_invite_italian_naval_experts }
-		x = 0
-		y = 1
-		relative_position_id = YUG_invite_italian_naval_experts
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			BUL = {
-				NOT = { has_war_with = ROOT }
-				exists = yes
-				is_puppet = no
-				is_in_faction = no
-				is_ai = yes
-			}
-		}
-		
-		bypass = {
-			BUL = {
-				OR = {
-					exists = no
-					is_puppet_of = ROOT
-					is_in_faction = yes
-					is_ai = no
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			create_wargoal = {
-				target = BUL
-				type = annex_everything
-				expire = 0
-			}
-			48 = { add_claim_by = YUG }
-			212 = { add_claim_by = YUG }
-			801 = { add_claim_by = YUG }
-			211 = { add_claim_by = YUG }
-		}
-	}
-
 	focus = {
 		id = YUG_all_yugoslavian_regiments
 		icon = GFX_goal_rhineland
@@ -3462,7 +3464,7 @@ focus_tree = {
 		id = YUG_end_the_regency
 		icon = GFX_focus_rom_royal_dictatorship
 		prerequisite = { focus = YUG_concessions_for_macedonians focus = YUG_surrender_macedonia focus = YUG_banat_for_support focus = YUG_autonomous_transylvania focus = YUG_fortify_banat }
-		mutually_exclusive = { focus = YUG_join_axis }
+		##mutually_exclusive = { focus = YUG_join_axis } # HOR
 		x = 0
 		y = 1
 		relative_position_id = YUG_banat_for_support
@@ -4325,7 +4327,7 @@ focus_tree = {
 	focus = {
 		id = YUG_recognize_the_soviet_union
 		icon = GFX_focus_generic_soviet_politics
-		mutually_exclusive = { focus = YUG_western_focus }
+		#mutually_exclusive = { focus = YUG_western_focus } # HOR
 		x = 11
 		y = 0
 

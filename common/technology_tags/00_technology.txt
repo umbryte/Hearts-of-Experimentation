@@ -149,28 +149,16 @@ technology_folders = {
 	}
 	armour_folder = {
 		ledger = army
-		#available = { # HOR
-		#	NOT = {
-		#		has_dlc = "No Step Back"
-		#	}
-		#}
-		available = { # HOR
-			has_game_rule = {
-				rule = tank_system
-				option = RULE_TANK_SYSTEM_HOR_ENABLED
+		available = {
+			NOT = {
+				has_dlc = "No Step Back"
 			}
 		}
 	}
 	nsb_armour_folder = {
 		ledger = army
-		#available = { # HOR
-		#	has_dlc = "No Step Back"
-		#}
-		available = { # HOR
-			has_game_rule = {
-				rule = tank_system
-				option = RULE_TANK_SYSTEM_VANILLA_ENABLED
-			}
+		available = {
+			has_dlc = "No Step Back"
 		}
 	}
 	artillery_folder = {

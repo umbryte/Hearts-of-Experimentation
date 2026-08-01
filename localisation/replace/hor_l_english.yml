@@ -224,9 +224,6 @@
  RULE_BFTM:0 "Battle For The Mediterranean"
  RULE_BFTM_ENABLED:0 "The Battle For The Mediterranean mechanic will be enabled."
  RULE_BFTM_DISABLED:0 "The Battle For The Mediterranean mechanic will be disabled."
- RULE_TANK_SYSTEM:0 "Tank System"
- RULE_TANK_SYSTEM_HOR_ENABLED:0 "The game will use the HOR Tank System (WIP)."
- RULE_TANK_SYSTEM_VANILLA_ENABLED:0 "The game will use the Vanilla Tank System."
 
 # HOST TOOL 2.0
 TPT_WAR_TT:0 "§HDeclaration of War§!\nThe selected Countries will start a War with eachother.\n\n"

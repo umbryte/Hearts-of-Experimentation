@@ -126,26 +126,26 @@ add_breakthrough_progress = {
 	value = 0.01
 }
 
-#if = { # HOR
-#	limit = {
-#		NOT = { has_dlc = "No Step Back" }
-#	}
-#	set_technology = {
-#		gwtank = 1
-#		basic_light_tank = 1
-#		improved_light_tank = 1
-#	}
-#}
-#if = {
-#	limit = {
-#		has_dlc = "No Step Back"
-#	}
-#	set_technology = {
-#		gwtank_chassis = 1
-#		basic_light_tank_chassis = 1
-#		improved_light_tank_chassis = 1
-#	}
-#}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+	}
+}
 
 if = {
 	limit = {
@@ -268,11 +268,8 @@ if = {
 
 ### TANK VARIANTS ###
 if = {
-	limit = { # HOR
-		has_game_rule = {
-			rule = tank_system
-			option = RULE_TANK_SYSTEM_VANILLA_ENABLED
-		}
+	limit = {
+		has_dlc = "No Step Back"
 	}
 	create_equipment_variant = {
 		name = "Tancik vz. 33"
@@ -394,11 +391,8 @@ if = {
 	}
 }
 if = {
-	limit = { # HOR
-		has_game_rule = {
-			rule = tank_system
-			option = RULE_TANK_SYSTEM_HOR_ENABLED
-		}
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
 	}
 	add_equipment_to_stockpile = {
 		type = light_tank_equipment_1
@@ -884,6 +878,7 @@ if = {
 	set_variable = { CZE_ceskoslovenska_armada_dynamic_modifier_command_power_gain_mult = 0 }
 	set_variable = { CZE_ceskoslovenska_armada_dynamic_modifier_party_popularity_stability_factor = 0 }
 	set_variable = { CZE_ceskoslovenska_armada_dynamic_modifier_mobilization_speed = 0 }
+
 	add_dynamic_modifier = { modifier = CZE_ceskoslovenska_armada_dynamic_modifier }
 
 	#Czech Air Force
@@ -968,11 +963,8 @@ YUG = {
 	}
 }
 if = {
-	limit = { # HOR
-		has_game_rule = {
-			rule = tank_system
-			option = RULE_TANK_SYSTEM_VANILLA_ENABLED
-		}
+	limit = {
+		has_dlc = "No Step Back"
 	}
 	create_production_license = { #T-32
 		target = YUG
@@ -992,11 +984,8 @@ if = {
 	}
 }
 if = {
-	limit = { # HOR
-		has_game_rule = {
-			rule = tank_system
-			option = RULE_TANK_SYSTEM_HOR_ENABLED
-		}
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
 	}
 	create_production_license = { #T-32
 		target = YUG
@@ -1273,11 +1262,8 @@ if = {
 		}
 	}
 	if = {
-		limit = { # HOR
-			has_game_rule = {
-				rule = tank_system
-				option = RULE_TANK_SYSTEM_VANILLA_ENABLED
-			}
+		limit = {
+			has_dlc = "No Step Back"
 		}
 		create_production_license = { #AH-IV
 			target = PER
@@ -1297,11 +1283,8 @@ if = {
 		}
 	}
 	if = {
-		limit = { # HOR
-			has_game_rule = {
-				rule = tank_system
-				option = RULE_TANK_SYSTEM_HOR_ENABLED
-			}
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
 		}
 		create_production_license = { #AH-IV
 			target = PER

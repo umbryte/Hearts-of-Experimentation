@@ -165,24 +165,24 @@ add_breakthrough_progress = {
 	value = 0.5
 }
 
-#if = { # HOR
-#	limit = {
-#		NOT = { has_dlc = "No Step Back" }
-#	}
-#	set_technology = {
-#		gwtank = 1
-#		basic_light_tank = 1
-#	}
-#}
-#if = { # HOR
-#	limit = {
-#		has_dlc = "No Step Back"
-#	}
-#	set_technology = {
-#		gwtank_chassis = 1
-#		basic_light_tank_chassis = 1
-#	}
-#}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
 
 if = {
 	limit = {
@@ -938,11 +938,8 @@ if = {
 }
 
 if = {
-	limit = { # HOR
-		has_game_rule = {
-			rule = tank_system
-			option = RULE_TANK_SYSTEM_VANILLA_ENABLED
-		}
+	limit = {
+		has_dlc = "No Step Back"
 	}
 	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
 		name = "Light Tank Mk. IV"
@@ -1434,7 +1431,7 @@ if = {
 		}
 		obsolete = yes
 	}
-	
+
 	# Battleships #
 	create_equipment_variant = {
 		name = "Nelson Class"
@@ -1917,11 +1914,8 @@ if = {
 		}
 	}
 	if = {
-		limit = { # HOR
-			has_game_rule = {
-				rule = tank_system
-				option = RULE_TANK_SYSTEM_VANILLA_ENABLED
-			}
+		limit = {
+			has_dlc = "No Step Back"
 		}
 		create_equipment_variant = {
 			name = "Matilda I"

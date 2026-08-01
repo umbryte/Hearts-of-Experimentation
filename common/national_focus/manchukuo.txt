@@ -581,7 +581,7 @@
 	}
 
 	focus = { # HOR FOCUS
-		id = MAN_supply_empire
+		id = MAN_supply_empire_focus
 		icon = GFX_focus_generic_energy
 		prerequisite = { focus = MAN_first_five_year_plan }
 		x = 0
@@ -593,11 +593,11 @@
 		available = {
 
 		}
-
+		
 		ai_will_do = {
 			factor = 100
 		}
-		
+
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -2494,49 +2494,6 @@
 		}
 	}
 
-	focus = { # HOR FOCUS
-		id = MAN_reintegrate_japan_lands
-		icon = GFX_focus_PER_fascist_reach_out_to_japan
-		prerequisite = { focus = MAN_reclaim_the_empire }
-		x = 1
-		y = 1
-		relative_position_id = MAN_reclaim_the_empire
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			609 = {
-				is_owned_and_controlled_by = JAP
-			}
-			745 = {
-				is_owned_and_controlled_by = JAP
-			}
-		}
-
-		bypass = {
-			609 = {
-				is_owned_and_controlled_by = MAN
-			}
-			745 = {
-				is_owned_and_controlled_by = MAN
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			JAP = { country_event = { id = hor_events.15 } }
-		}
-	}
-
 	focus = {
 		id = MAN_claim_the_mandate_of_heaven
 		icon = GFX_focus_man_claim_the_mandate_of_heaven
@@ -2748,6 +2705,49 @@
 
 		}
 
+	}
+
+	focus = { # HOR FOCUS
+		id = MAN_reintegrate_japan_lands
+		icon = GFX_focus_PER_fascist_reach_out_to_japan
+		prerequisite = { focus = MAN_reclaim_the_empire }
+		x = 1
+		y = 1
+		relative_position_id = MAN_reclaim_the_empire
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			609 = {
+				is_owned_and_controlled_by = JAP
+			}
+			745 = {
+				is_owned_and_controlled_by = JAP
+			}
+		}
+
+		bypass = {
+			609 = {
+				is_owned_and_controlled_by = MAN
+			}
+			745 = {
+				is_owned_and_controlled_by = MAN
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			JAP = { country_event = { id = hor_events.15 } }
+		}
 	}
 
 	focus = {

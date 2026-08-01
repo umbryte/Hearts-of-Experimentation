@@ -26,6 +26,12 @@ set_technology = {
 	CAS1 = 1
 	early_transport_plane = 1
 	sf_gear = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	basic_heavy_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
 }
 
 set_research_slots = 4

@@ -13,7 +13,7 @@ set_technology = {
 	tech_recon = 1
 	tech_mountaineers = 1
 	tech_engineers = 1
-	
+
 	basic_fortification_tech = 1
 	sf_gear = 1 # HOR
 }

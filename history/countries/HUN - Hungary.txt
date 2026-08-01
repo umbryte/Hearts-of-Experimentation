@@ -105,24 +105,24 @@ set_technology = {
 	interwar_antiair = 1 # HOR
 }
 
-#IF = { # HOR
-#	limit = {
-#		NOT = {
-#			has_dlc = "No Step Back"
-#		}
-#	}
-#	set_technology = {
-#		gwtank = 1
-#	}
-#}
-#IF = {
-#	limit = {
-#		has_dlc = "No Step Back"
-#	}
-#	set_technology = {
-#		gwtank_chassis = 1
-#	}
-#}
+IF = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+IF = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
 
 ### SETUP NATIONAL SPIRITS NO WW ###
 IF = {
@@ -239,11 +239,8 @@ set_variable = { HUN_academy_of_sciences_research_speed_factor = 0.03 }
 
 ### TANK VARIANTS ###
 IF = {
-	limit = { # HOR
-		has_game_rule = {
-			rule = tank_system
-			option = RULE_TANK_SYSTEM_VANILLA_ENABLED
-		}
+	limit = {
+		has_dlc = "No Step Back"
 	}
 	create_equipment_variant = {
 		name = "Straussler V-4"

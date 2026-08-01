@@ -12909,16 +12909,19 @@ news_event = {
 	major = yes
 	
 	is_triggered_only = yes
+
+	#immediate = { # HOR, un-comment when Romania rework is finished >.>
+	#	hidden_effect = {
+	#		ROM = {
+	#			complete_national_focus = ROM_force_abdication_hor
+	#		}
+	#	}
+	#}
 	
 	option = {
 		name = news.323.a
 		trigger = {
 			TAG = ROM
-		}
-		hidden effect = { # HOR
-			ROM = {
-				complete_national_focus = ROM_force_abdication_hor
-			}
 		}
 	}
 	option = {

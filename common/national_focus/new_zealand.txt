@@ -628,7 +628,7 @@
 				limit = {
 					free_building_slots = {
 						building = air_base
-						size > 1
+						size > 2 # WAS 1 - HOR
 					}
 				}
 				add_building_construction = {
@@ -2423,7 +2423,7 @@
 				num_of_factories > 100 # WAS 50 - HOR
 				any_other_country = {
 					is_in_faction_with = ROOT
-					num_of_factories > 100 # WAS 50 - HOR
+					num_of_factories > 200 # WAS 50 - HOR
 				}
 			}
 		}

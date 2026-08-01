@@ -7107,13 +7107,13 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_purge_the_kodoha_faction
 		icon = GFX_focus_JAP_purge_the_kodoha_faction
-		#mutually_exclusive = { # HOR
-		#	focus = JAP_the_unthinkable_option 
-		#	focus = JAP_support_the_kodoha_faction 
-		#	focus = JAP_strengthen_civilian_government 
-		#	focus = JAP_revere_the_emperor_destroy_the_traitors 
-		#	focus = JAP_okadas_military_purge_speech 
-		#}
+		mutually_exclusive = {
+			focus = JAP_the_unthinkable_option 
+			focus = JAP_support_the_kodoha_faction 
+			focus = JAP_strengthen_civilian_government 
+			focus = JAP_revere_the_emperor_destroy_the_traitors 
+			focus = JAP_okadas_military_purge_speech 
+		}
 		x = 0 # WAS 70 - HOR
 		y = 0
 		
@@ -9526,65 +9526,6 @@ focus_tree = {
 	}
 
 	focus = { # HOR FOCUS
-		id = JAP_geacps_trade3_ins
-		icon = GFX_geacps_trade2
-		prerequisite = { focus = JAP_geacps_trade2_raj }
-		x = 0
-		y = 1
-		relative_position_id = JAP_geacps_trade2_raj
-
-		cost = 3
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-
-		available = {
-			has_war_with_major = yes
-			INS = {
-				OR = {
-					exists = no
-					has_capitulated = yes
-					is_ally_with = ROOT
-				}
-			}
-		}
-		
-		bypass = {
-			has_completed_focus = JAP_geacps_trade2_ins
-		}
-
-		cancel = {
-			has_completed_focus = JAP_geacps_trade2_ins
-		}
-
-		completion_reward = {
-			JAP = {
-				swap_ideas = {
-					remove_idea = geacps_trade_spirit2
-					add_idea = geacps_trade_spirit3
-				}
-			}
-			MAN = {
-				swap_ideas = {
-					remove_idea = geacps_trade_spirit2
-					add_idea = geacps_trade_spirit3
-				}
-			}
-			SIA = {
-				swap_ideas = {
-					remove_idea = geacps_trade_spirit2
-					add_idea = geacps_trade_spirit3
-				}
-			}
-		}
-	}
-
-	focus = { # HOR FOCUS
 		id = JAP_geacps_trade2_raj
 		icon = GFX_geacps_trade3
 		prerequisite = { focus = JAP_geacps_trade1 }
@@ -9639,6 +9580,65 @@ focus_tree = {
 				swap_ideas = {
 					remove_idea = geacps_trade_spirit1
 					add_idea = geacps_trade_spirit2
+				}
+			}
+		}
+	}
+
+	focus = { # HOR FOCUS
+		id = JAP_geacps_trade3_ins
+		icon = GFX_geacps_trade2
+		prerequisite = { focus = JAP_geacps_trade2_raj }
+		x = 0
+		y = 1
+		relative_position_id = JAP_geacps_trade2_raj
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		available = {
+			has_war_with_major = yes
+			INS = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+					is_ally_with = ROOT
+				}
+			}
+		}
+		
+		bypass = {
+			has_completed_focus = JAP_geacps_trade2_ins
+		}
+
+		cancel = {
+			has_completed_focus = JAP_geacps_trade2_ins
+		}
+
+		completion_reward = {
+			JAP = {
+				swap_ideas = {
+					remove_idea = geacps_trade_spirit2
+					add_idea = geacps_trade_spirit3
+				}
+			}
+			MAN = {
+				swap_ideas = {
+					remove_idea = geacps_trade_spirit2
+					add_idea = geacps_trade_spirit3
+				}
+			}
+			SIA = {
+				swap_ideas = {
+					remove_idea = geacps_trade_spirit2
+					add_idea = geacps_trade_spirit3
 				}
 			}
 		}
@@ -14224,8 +14224,8 @@ focus_tree = {
 				FRA = { 
 					country_event = { 
 						id = france.1 
-						hours = 12
-						random_hours = 24
+						#hours = 12 # HOR
+						#random_hours = 24 # HOR
 					} 
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -14248,8 +14248,8 @@ focus_tree = {
 				VIC = { 
 					country_event = { 
 						id = france.1 
-						hours = 12
-						random_hours = 24
+						#hours = 12 # HOR
+						#random_hours = 24 # HOR
 					} 
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -14414,6 +14414,9 @@ focus_tree = {
 				SIA = {
 					is_puppet_of = JAP
 				}
+				SIA = {
+					is_in_faction_with = JAP
+				}
 			}
 		}
 
@@ -14542,6 +14545,9 @@ focus_tree = {
 				SIA = {
 					is_puppet_of = JAP
 				}
+				SIA = {
+					is_in_faction_with = JAP
+				}
 			}
 		}
 
@@ -14622,6 +14628,9 @@ focus_tree = {
 				SIA = {
 					is_puppet_of = JAP
 				}
+				SIA = {
+					is_in_faction_with = JAP
+				}
 			}
 		}
 
@@ -14696,45 +14705,6 @@ focus_tree = {
 				give_resource_rights = { receiver = JAP state = 724 }
 				give_resource_rights = { receiver = JAP state = 1076 }
 				give_resource_rights = { receiver = JAP state = 869 }
-			}
-		}
-	}
-
-	focus = { # HOR FOCUS
-		id = JAP_singapore 
-		icon = GFX_JAP_singapore
-		prerequisite = { focus = JAP_strike_the_southern_road }
-		x = 1
-		y = 1
-		relative_position_id = JAP_strike_the_southern_road
-
-		cost = 4
-
-		available = {
-			SIA = { controls_state = 336 }
-			SIA = { controls_state = 1021 }
-		}
-
-		bypass = {
-			JAP = { controls_state = 336 }
-			JAP = { controls_state = 1021 }
-		}
-
-		cancel = {
-			NOT = {
-				SIA = { controls_state = 336 }
-				SIA = { controls_state = 1021 }
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			JAP = {
-				transfer_state = 336
-				transfer_state = 1021
 			}
 		}
 	}
@@ -15081,6 +15051,45 @@ focus_tree = {
 
 		}
 
+	}
+
+	focus = { # HOR FOCUS
+		id = JAP_singapore 
+		icon = GFX_JAP_singapore
+		prerequisite = { focus = JAP_strike_the_southern_road }
+		x = 1
+		y = 1
+		relative_position_id = JAP_strike_the_southern_road
+
+		cost = 4
+
+		available = {
+			SIA = { controls_state = 336 }
+			SIA = { controls_state = 1021 }
+		}
+
+		bypass = {
+			JAP = { controls_state = 336 }
+			JAP = { controls_state = 1021 }
+		}
+
+		cancel = {
+			NOT = {
+				SIA = { controls_state = 336 }
+				SIA = { controls_state = 1021 }
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			JAP = {
+				transfer_state = 336
+				transfer_state = 1021
+			}
+		}
 	}
 
 	focus = {
@@ -27403,7 +27412,7 @@ focus_tree = {
 			has_resources_in_collection = {
 				collection = collection:country_and_all_subjects
 				resource = steel
-				amount > 1999 # WAS 199 - HOR
+				amount > 2999 # WAS 199 - HOR
 				extracted = yes
 			}
 		
@@ -27411,7 +27420,7 @@ focus_tree = {
 			has_resources_in_collection = {
 				collection = collection:country_and_all_subjects
 				resource = aluminium
-				amount > 1999 # WAS 199 - HOR
+				amount > 2999 # WAS 199 - HOR
 				extracted = yes
 			}
 		
@@ -27419,7 +27428,7 @@ focus_tree = {
 			has_resources_in_collection = {
 				collection = collection:country_and_all_subjects
 				resource = oil
-				amount > 2499 # WAS 249 - HOR
+				amount > 3499 # WAS 249 - HOR
 				extracted = yes
 			}
 		
@@ -27427,7 +27436,7 @@ focus_tree = {
 			has_resources_in_collection = {
 				collection = collection:country_and_all_subjects
 				resource = tungsten
-				amount > 1999 # WAS 199 - HOR
+				amount > 2999 # WAS 199 - HOR
 				extracted = yes
 			}
 		
@@ -27435,7 +27444,7 @@ focus_tree = {
 			has_resources_in_collection = {
 				collection = collection:country_and_all_subjects
 				resource = chromium
-				amount > 1499 # WAS 149 - HOR
+				amount > 2499 # WAS 149 - HOR
 				extracted = yes
 			}
 		
@@ -27443,7 +27452,7 @@ focus_tree = {
 			has_resources_in_collection = {
 				collection = collection:country_and_all_subjects
 				resource = rubber
-				amount > 2999 # WAS 299 - HOR
+				amount > 3999 # WAS 299 - HOR
 				extracted = yes
 			}
 		
@@ -27451,7 +27460,7 @@ focus_tree = {
 			has_resources_in_collection = {
 				collection = collection:country_and_all_subjects
 				resource = coal
-				amount > 1999 # WAS 199 - HOR
+				amount > 2999 # WAS 199 - HOR
 				extracted = yes
 			}
 			

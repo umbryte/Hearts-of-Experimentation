@@ -487,31 +487,6 @@
 		}
 	}
 
-	focus = { # HOR FOCUS
-		id = MAN_supply_empire
-		icon = GFX_focus_generic_energy
-		prerequisite = { focus = MAN_tsr_first_five_year_plan }
-		x = 0
-		y = 1
-		relative_position_id = MAN_tsr_first_five_year_plan
-
-		cost = 5
-
-		available = {
-
-		}
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = MAN_supply_empire
-		}
-	}
-
 	focus = {
 		id = MAN_tsr_obedience
 		icon = GFX_focus_JAP_align_the_concordia_association
@@ -677,7 +652,7 @@
 	}
 
 	focus = { # HOR FOCUS
-		id = MAN_port_expansion
+		id = MAN_tsr_port_expansion
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = MAN_tsr_obedience }
 		x = 4
@@ -743,6 +718,31 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			country_event = wtt_manchukou.11
+		}
+	}
+
+	focus = { # HOR FOCUS
+		id = MAN_tsr_supply_empire_focus
+		icon = GFX_focus_generic_energy
+		prerequisite = { focus = MAN_tsr_first_five_year_plan }
+		x = 0
+		y = 1
+		relative_position_id = MAN_tsr_first_five_year_plan
+
+		cost = 5
+
+		available = {
+
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = MAN_supply_empire
 		}
 	}
 
@@ -2299,8 +2299,8 @@
 			set_cosmetic_tag = MAN_restored
 
 			if = { # HOR
-				NOT = {
-					limit = { has_tech = railway_gun }
+				limit = {
+					NOT = { has_tech = railway_gun }
 				}
 				set_technology = { 
 						railway_gun = 1
@@ -2364,7 +2364,8 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			MAN_low_legitimacy_level_down = yes
+			#MAN_low_legitimacy_level_down = yes # HOR
+			MAN_low_legitimacy_clear_all = yes # HOR
 			set_cosmetic_tag = MAN_empire_of_manchukuo
 		}
 	}
@@ -5523,7 +5524,7 @@
 	}
 
 	focus = { # HOR FOCUS
-		id = MAN_qing_cores
+		id = MAN_tsr_qing_cores
 		icon = GFX_focus_CHI_the_northern_mandate
 		prerequisite = { focus = MAN_tsr_claim_the_mandate_of_heaven }
 		x = 0

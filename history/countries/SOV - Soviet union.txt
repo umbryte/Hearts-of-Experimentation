@@ -807,29 +807,29 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 set_grand_doctrine = mass_assault
 set_grand_doctrine = new_fleet_in_being
 
-#if = { # HOR
-#	limit = {
-#		NOT = { has_dlc = "No Step Back" }
-#	}
-#	set_technology = {
-#		gwtank = 1
-#		basic_light_tank = 1
-#
-#	}
-#}
-#if = { # HOR
-#	limit = {
-#		has_dlc = "No Step Back"
-#	}
-#	set_technology = {
-#		gwtank_chassis = 1
-#		basic_light_tank_chassis = 1
-#		improved_light_tank_chassis = 1
-#		basic_heavy_tank_chassis = 1 # HOR
-#		engine_tech_1 = 1
-#		engine_tech_2 = 1
-#	}
-#}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		engine_tech_1 = 1
+		engine_tech_2 = 1
+		basic_heavy_tank_chassis = 1 # HOR
+	}
+}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -878,6 +878,7 @@ add_ideas = {
 	home_of_revolution
 	trotskyite_plot_nsb
 	SOV_politicized_military
+
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
 
@@ -1435,11 +1436,8 @@ if = {
 #}
 
 if = {
-	limit = { # HOR
-		has_game_rule = {
-			rule = tank_system
-			option = RULE_TANK_SYSTEM_VANILLA_ENABLED
-		}
+	limit = {
+		has_dlc = "No Step Back"
 	}
 	create_equipment_variant = { #Note: There is a copy of this variant in Finnish Scripted Effects file (FIN_purchase_soviet_equipment_for_cw). Any changes here should also be applied there
 		name = "T-27"
@@ -1514,8 +1512,10 @@ if = {
 			tank_nsb_engine_upgrade = 10
 			tank_nsb_armor_upgrade = 2
 		}
+
 		icon = "GFX_SOV_improved_light_tank_medium"
 		model = "SOV_light_armor_entity"
+	
 	}
 
 	create_equipment_variant = {

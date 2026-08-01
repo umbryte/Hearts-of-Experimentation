@@ -589,7 +589,7 @@
 			air_experience = 25
 			SOV = {
 				add_equipment_to_stockpile = {
-					type = fighter1 # WAS small_plane_airframe - HOR
+					type = fighter # WAS small_plane_airframe - HOR
 					amount = 100
 					producer = FRA
 				}

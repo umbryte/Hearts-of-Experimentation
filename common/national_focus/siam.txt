@@ -5161,47 +5161,47 @@
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = SIA_the_greater_thai_empire_available_trigger
+				#tooltip = SIA_the_greater_thai_empire_available_trigger # HOR
 				all_of_scopes = {
 					array = indochina_states
 					is_controlled_by = ROOT
-					compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement
+					#compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement # HOR
 				}
 			}
 			
 			993 = {
 				is_controlled_by = ROOT
-				compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement
+				#compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement # HOR
 			}
 
 			999 = {
 				is_controlled_by = ROOT
-				compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement
+				#compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement # HOR
 			}
 
 			994 = {
 				is_controlled_by = ROOT
-				compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement
+				#compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement # HOR
 			}
 
 			1062 = {
 				is_controlled_by = ROOT
-				compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement
+				#compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement # HOR
 			}
 
 			1064 = {
 				is_controlled_by = ROOT
-				compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement
+				#compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement # HOR
 			}
 
 			1061 = {
 				is_controlled_by = ROOT
-				compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement
+				#compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement # HOR
 			}
 
 			1065 = {
 				is_controlled_by = ROOT
-				compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement
+				#compliance > var:ROOT.SIA_greater_thai_empire_compliance_requirement # HOR
 			}
 
 		}

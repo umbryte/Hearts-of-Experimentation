@@ -1,4 +1,4 @@
-﻿﻿set_research_slots = 3 # HOR
+﻿set_research_slots = 3 # HOR
 
 set_rule = { can_create_collaboration_government = no } # HOR
 
@@ -39,22 +39,22 @@ set_technology = {
 set_grand_doctrine = grand_battleplan
 set_grand_doctrine = new_fleet_in_being
 
-#if = { # HOR
-#	limit = {
-#		NOT = { has_dlc = "No Step Back" }
-#	}
-#	set_technology = {
-#		gwtank = 1
-#	}
-#}
-#if = {
-#	limit = {
-#		has_dlc = "No Step Back"
-#	}
-#	set_technology = {
-#		gwtank_chassis = 1
-#	}
-#}
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

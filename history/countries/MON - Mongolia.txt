@@ -14,6 +14,7 @@ set_technology = {
 	interwar_antiair = 1 # HOR
 	basic_train = 1 # HOR
 	tech_support = 1 # HOR
+	gwtank_chassis = 1 # HOR
 }
 
 add_ideas = {

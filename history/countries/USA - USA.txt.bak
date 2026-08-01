@@ -819,8 +819,11 @@ if = {
 #	}
 #}
 if = {
-	limit = {
-		has_dlc = "No Step Back"
+	limit = { # HOR
+		has_game_rule = {
+			rule = tank_system
+			option = RULE_TANK_SYSTEM_VANILLA_ENABLED
+		}
 	}
 	create_equipment_variant = {
 		name = "M1 Combat Car"
@@ -1230,7 +1233,6 @@ if = {
 		}
 		obsolete = yes
 	}
-
 	create_equipment_variant = {
 		name = "Lexington Class"
 		type = ship_hull_carrier_conversion_bb

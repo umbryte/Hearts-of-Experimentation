@@ -8,8 +8,9 @@ state={
 		owner = SIA
 		add_core_of = SIA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4 # WAS 2 - HOR
 			industrial_complex = 2 # HOR
+			arms_factory = 1 # HOR
 		}
 		victory_points = {
 			10398 1  #Petchabun

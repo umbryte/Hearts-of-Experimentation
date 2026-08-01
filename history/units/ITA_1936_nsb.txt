@@ -64,22 +64,22 @@ division_template = { #Blackshirts
 	}
 }
 
-#division_template = { # HOR
-#	name = "Divisione Celere" 
-#	division_names_group = ITA_CAV_02 
-#
-#	regiments = { 
-#		cavalry = { x = 0 y = 0 }
-#		cavalry = { x = 0 y = 1 }
-#		cavalry = { x = 1 y = 0 }
-#		cavalry = { x = 1 y = 1 }
-#		motorized = { x = 2 y = 0 }													# (elite) Bersaglieri Regiment
-#		motorized = { x = 2 y = 1 }
-#		light_armor = { x = 3 y = 0 }												# L3/35 Tankette Battalion
-#	}
-#
-#	priority = 2 
-#}
+division_template = { 
+	name = "Divisione Celere" 
+	division_names_group = ITA_CAV_02 
+
+	regiments = { 
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }													# (elite) Bersaglieri Regiment
+		motorized = { x = 2 y = 1 }
+		light_armor = { x = 3 y = 0 }												# L3/35 Tankette Battalion
+	}
+
+	priority = 2 
+}
 
 division_template = { 
 	name = "Reggimento di Cavalleria" 
@@ -195,7 +195,7 @@ division_template = {
 	name = "Banda Indigena Irregolare"		
 	division_names_group = ITA_COL_02
 	override_model = ITA_irregular_infantry_alt_1_entity
-	is_locked = yes
+	#is_locked = yes # HOR
 	template_counter = 66
 	# Note: Represents irregular infantry from the colonies (daskalian, dubats and other "bands")
 	regiments = {
@@ -212,7 +212,7 @@ division_template = {
 	division_names_group = ITA_CAV_05
 	override_model = ITA_cavalry_alt_3_entity
 	template_counter = 5
-	is_locked = yes
+	#is_locked = yes # HOR
 	# Note: Represents irregular cavalry from the colonies (daskalian, dubats and other "bands")
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -232,7 +232,7 @@ division_template = {
 	override_model = ITA_irregular_infantry_alt_0_entity
 	template_counter = 66
 	obsolete = yes
-	is_locked = yes
+	#is_locked = yes # HOR
 	# Note: Represents irregular infantry from the colonies (daskalian, dubats and other "bands")
 	regiments = {
 		irregular_infantry = { x = 0 y = 0 }
@@ -251,7 +251,7 @@ division_template = {
 	override_model = ITA_irregular_infantry_alt_1_entity
 	template_counter = 66
 	obsolete = yes
-	is_locked = yes
+	#is_locked = yes # HOR
 	# Note: Represents irregular infantry from the colonies (daskalian, dubats and other "bands")
 	regiments = {
 		irregular_infantry = { x = 0 y = 0 }
@@ -270,7 +270,7 @@ division_template = {
 	division_names_group = ITA_COL_03
 	template_counter = 66
 	obsolete = yes
-	is_locked = yes
+	#is_locked = yes # HOR
 	# Note: Represents irregular infantry from the colonies (daskalian, dubats and other "bands")
 	regiments = {
 		irregular_infantry = { x = 0 y = 0 }
@@ -437,35 +437,35 @@ units = {
 		start_equipment_factor = 0.7 
 	}
 
-	### 6a Armata ## # HOR
-	## Corpo d'Armata Celere #
-	#division = { # 
-	#	division_name = {
-	#		is_name_ordered = yes
-	#		name_order = 1
-	#	}#  "1a Divisione Celere 'Eugenio di Savoia'" 
-	#	location = 11584 
-	#	division_template = "Divisione Celere" 
-	#	start_experience_factor = 0.3 
-	#}
-	#division = { # 
-	#	division_name = {
-	#		is_name_ordered = yes
-	#		name_order = 2
-	#	}#  "2a Divisione Celere 'Emanuele Filiberto'" 
-	#	location = 11584 
-	#	division_template = "Divisione Celere" 
-	#	start_experience_factor = 0.3 
-	#}
-	#division = { # 
-	#	division_name = {
-	#		is_name_ordered = yes
-	#		name_order = 3
-	#	}#  "3a Divisione Celere 'Principe Amedeo'" 
-	#	location = 11584 
-	#	division_template = "Divisione Celere" 
-	#	start_experience_factor = 0.3 
-	#}
+	## 6a Armata ##
+	# Corpo d'Armata Celere #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}#  "1a Divisione Celere 'Eugenio di Savoia'" 
+		location = 11584 
+		division_template = "Divisione Celere" 
+		start_experience_factor = 0.3 
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}#  "2a Divisione Celere 'Emanuele Filiberto'" 
+		location = 11584 
+		division_template = "Divisione Celere" 
+		start_experience_factor = 0.3 
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}#  "3a Divisione Celere 'Principe Amedeo'" 
+		location = 11584 
+		division_template = "Divisione Celere" 
+		start_experience_factor = 0.3 
+	}
 
 	### Gruppo d'Armata Sud ###
 	# VII Corpo d'Armata #
@@ -792,18 +792,18 @@ instant_effect = {
 			industrial_manufacturer = mio:ITA_brescia_arsenal_organization
 		}
 
-		#add_equipment_production = { # HOR
-		#	equipment = { 
-		#		type = light_tank_chassis_1 
-		#		creator = "ITA" 
-		#		version_name = "L3/35"
-		#	}
-		#
-		#	requested_factories = 1 
-		#	progress = 0.4 
-		#	efficiency = 50
-		#	industrial_manufacturer = mio:ITA_fiat_organization
-		#}
+		add_equipment_production = { 
+			equipment = { 
+				type = light_tank_chassis_1 
+				creator = "ITA" 
+				version_name = "L3/35"
+			}
+
+			requested_factories = 1 
+			progress = 0.4 
+			efficiency = 50
+			industrial_manufacturer = mio:ITA_fiat_organization
+		}
 
 		add_equipment_production = { 
 			equipment = { 

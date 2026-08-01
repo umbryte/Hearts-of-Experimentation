@@ -1576,7 +1576,7 @@ country_event = {
 							}
 							has_state_flag = vichy_italian_conquest
 						}
-						ITA = { transfer_state_to = VIC }
+						transfer_state_to = VIC
 					}
 					
 					if = {

@@ -492,26 +492,26 @@ add_breakthrough_progress = {
 	value = 0.1
 }
 
-IF = { 
+IF = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
-#	set_technology = { # HOR
-#		gwtank = 1
-#		basic_light_tank = 1
-#		improved_light_tank = 1
-#	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+	}
 	set_oob = "JAP_1936"
 }
-IF = { 
+IF = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-#	set_technology = { # HOR
-#		gwtank_chassis = 1
-#		basic_light_tank_chassis = 1
-#		improved_light_tank_chassis = 1
-#	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+	}
 	set_oob = "JAP_1936_nsb"
 }
 
@@ -655,7 +655,6 @@ set_popularities = {
 	democratic = 23
 	communism = 2
 }
-
 
 
 ### Recruiting Characters ### 
@@ -1167,11 +1166,8 @@ add_mastery = {
 
 
 IF = {
-	limit = { # HOR
-		has_game_rule = {
-			rule = tank_system
-			option = RULE_TANK_SYSTEM_VANILLA_ENABLED
-		}
+	limit = {
+		has_dlc = "No Step Back"
 	}
 
 	create_equipment_variant = {

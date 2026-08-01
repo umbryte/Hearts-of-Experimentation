@@ -13,7 +13,7 @@ state = {
 		add_core_of = SIA
 
 		buildings = {
-			infrastructure = 4
+			infrastructure = 6 # WAS 4 - HOR
 			arms_factory = 4
 			industrial_complex = 4 #Was 5
 			dockyard = 2

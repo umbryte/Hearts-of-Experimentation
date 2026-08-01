@@ -529,7 +529,6 @@ script_enum_equipment_bonus_type = {
 	heavy_fighter_equipment_4
 	scout_plane_equipment_1
 	scout_plane_equipment_2
-	strat_bomber_equipment_0
 	strat_bomber_equipment_1
 	strat_bomber_equipment_2
 	strat_bomber_equipment_3
