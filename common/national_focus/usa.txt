@@ -2673,7 +2673,7 @@ focus_tree = {
 		}
 		available = {
 			democratic > 0.95
-			has_war_support > 0.35 # HOR
+			has_war_support > 0.30 # HOR
 		}
 		bypass = {
 			AND = {
@@ -3093,7 +3093,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_war = yes
-				has_war_support > 0.4 # WAS 0.3 - HOR
+				has_war_support > 0.35 # WAS 0.3 - HOR
 			}
 			democratic > 0.95
 		}
