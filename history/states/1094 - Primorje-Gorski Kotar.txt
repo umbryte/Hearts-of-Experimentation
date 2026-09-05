@@ -1,0 +1,30 @@
+state=
+{
+	id=1094
+	name="STATE_1094"
+	manpower = 111898
+	
+	state_category = enclave
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			13252 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13252 3
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+	}
+	provinces={
+		13252 # GOT 13252 FROM 103 - DALMATIA - HOR
+	}
+	
+	local_supplies=0.0 
+}

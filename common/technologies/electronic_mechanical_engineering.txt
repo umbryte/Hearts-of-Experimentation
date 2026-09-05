@@ -22,17 +22,18 @@ technologies = {
 			leads_to_tech = radio 
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = mechanical_computing 
 			research_cost_coeff = 1
 		}
-		
+
 		path = {
 			leads_to_tech = radio_detection
 			research_cost_coeff = 1
 		}
 		
+
+
 		enable_equipment_modules = { 
 			ship_fire_control_system_0
 		}
@@ -60,6 +61,7 @@ technologies = {
 
 		special_project_specialization = { specialization_air specialization_nuclear }
 		
+
 	}
 	
 	radio = {
@@ -195,7 +197,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 5
-				date > "1939.8.1"
+				date > "1942.3.1"
 			}
 		}
 		
@@ -212,7 +214,6 @@ technologies = {
 			building = radar_station
 			level = 1
 		}
-
 		coordination_bonus = 0.01
 		path = {
 			leads_to_tech = cavity_magnatron 
@@ -260,7 +261,8 @@ technologies = {
 		research_cost = 1.25
 		start_year = 1938
 		enable_equipment_modules = { 
-			ship_radar_2	
+			ship_radar_2
+			
 		}
 		
 		folder = {
@@ -280,13 +282,27 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = ENG
-					tag = USA
 				}
-				factor = 5
+				factor = 10
+			}
+			modifier = {
+				OR = {
+					tag = USA
+					date > "1939.6.1"
+				}
+				factor = 10
 			}
 			modifier = {
 				date < "1938.1.1"
-				factor = 0.5
+				factor = 0.1
+			}
+			modifier = {
+				date > "1939.6.1"
+				factor = 2
+			}
+			modifier = {
+				date > "1940.6.1"
+				factor = 2
 			}
 		}
 		
@@ -381,7 +397,7 @@ technologies = {
 				}
 			}
 			modifier = {
-				factor = 0.5
+				factor = 0.1
 				date < "1940.1.1"
 			}
 		}
@@ -1089,6 +1105,7 @@ technologies = {
 
 	}
 
+
 	land_fort_tech_1 = {
 
 		enable_equipment_modules = {
@@ -1628,6 +1645,44 @@ technologies = {
 				localization_key = SP_UNLOCK_PROJECT
 				PROJECT = sp_nuclear_reactor	
 			}
+
+			hidden_effect = {
+				if = {
+					limit = {
+						has_dlc = "By Blood Alone"
+					}
+					if = {
+						limit = {
+							check_variable = { global.atomic_research_race < 3 }
+						}
+						add_to_variable = { global.atomic_research_race = 1 }
+						if = {
+							limit = {
+								original_tag = ITA
+								NOT = { has_country_flag = ITA_pioneer_in_atomic_research_flag }
+							}
+							set_country_flag = ITA_pioneer_in_atomic_research_flag
+						}
+						else_if = {
+							limit = {
+								check_variable = { global.atomic_research_race = 3 }
+								NOT = {
+									any_country = {
+										original_tag = ITA
+										has_country_flag = ITA_pioneer_in_atomic_research_flag
+									}
+								}
+							}
+							random_country = {
+								limit = {
+									original_tag = ITA
+								}
+								set_country_flag = ITA_late_to_the_atomic_party_flag
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -1635,7 +1690,7 @@ technologies = {
 
 		# can build reactors
 		
-		start_year = 1944
+		start_year = 1943
 		research_cost = 5
 		
 		#folder = {
@@ -1703,7 +1758,7 @@ technologies = {
 
 	nukes = {
 	
-		start_year = 1946
+		start_year = 1945
 		research_cost = 5
 		
 		#folder = {

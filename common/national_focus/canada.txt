@@ -3156,7 +3156,7 @@ focus_tree = {
 	focus = {
 		id = CAN_dominion_rifle_association
 		icon = GFX_focus_CAN_rifle_association
-		x = 2
+		x = 0 # WAS 2 - HOR
 		y = 1
 		prerequisite = { focus = CAN_permanent_joint_defense_board focus = CAN_shadow_factories focus = CAN_swastika_clubs }
 		relative_position_id = CAN_permanent_joint_defense_board
@@ -4338,7 +4338,7 @@ focus_tree = {
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 28 # WAS 39 - HOR
+		x = 26 # WAS 39 - HOR
 		y = 0
 
 		cost = 10
@@ -4904,7 +4904,7 @@ focus_tree = {
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 32 # WAS 43 - HOR
+		x = 30 # WAS 43 - HOR
 		y = 0
 
 		cost = 10

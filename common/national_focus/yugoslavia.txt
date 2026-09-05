@@ -1928,6 +1928,7 @@ focus_tree = {
 			}
 			ITA = {
 				transfer_state = 853
+				transfer_state = 1094
 			}
 			HUN = {
 				transfer_state = 1092
@@ -1957,6 +1958,9 @@ focus_tree = {
 				remove_core_of = ROOT
 			}
 			1092 = {
+				remove_core_of = ROOT
+			}
+			1094 = {
 				remove_core_of = ROOT
 			}
 		}
@@ -2821,6 +2825,8 @@ focus_tree = {
 			controls_state = 970
 			controls_state = 1092
 			controls_state = 1093
+			controls_state = 1094
+			controls_state = 1095
 		}
 
 		bypass = {

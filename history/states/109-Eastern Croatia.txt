@@ -2,7 +2,7 @@
 state={
 	id=109
 	name="STATE_109" # Croatia
-	manpower = 2224400
+	manpower = 1787200 # WAS 2224400 BEFORE THE SREM SPLIT - HOR
 
 	resources = {
 		coal = 10 #initial distribution
@@ -25,7 +25,7 @@ state={
 	}
 
 	provinces={
-		624 3592 3596 3627 6647 9595 9611 11577 11580 11581 11594
+		624 3592 3596 3627 6647 9595 9611 11577 11581 11594 # MOVED 11580 TO 1095 - SREM - HOR
 	}
 
 	local_supplies=0.0 

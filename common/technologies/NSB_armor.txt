@@ -117,7 +117,7 @@ technologies = {
 		#}
 
 		path = { # HOR
-			leads_to_tech = hor_flametank_tech_alt
+			leads_to_tech = hor_flametank_tech
 			research_cost_coeff = 1
 		}
 
@@ -1899,7 +1899,7 @@ technologies = {
 		}
 	}
 
-	hor_flametank_tech_alt = { # HOR
+	hor_flametank_tech = { # HOR
 		
 		research_cost = 2
 		start_year = 1936

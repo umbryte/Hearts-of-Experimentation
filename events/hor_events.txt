@@ -456,7 +456,7 @@ news_event = {
 	title = hor_events.20.t
 	desc = hor_events.20.d 
 
-	picture = GFX_report_yugoslav_partisans
+	picture = GFX_news_event_yugoslav_coup
 
 	is_triggered_only = yes
 	

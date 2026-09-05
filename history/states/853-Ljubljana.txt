@@ -13,9 +13,7 @@ state=
 			infrastructure = 6
 			dockyard = 4 # HOR
 			industrial_complex = 1 # HOR
-			13252 = { # HOR
-				naval_base = 1
-			}
+			
 		}
 		victory_points = {
 			9627 3 
@@ -24,7 +22,7 @@ state=
 		add_core_of = SLV
 	}
 	provinces={
-		6650 9627 13252 # GOT 13252 FROM 103 - DALMATIA - HOR
+		6650 9627
 	}
 	
 	local_supplies=5.0 

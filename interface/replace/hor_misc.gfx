@@ -2,39 +2,11 @@
 	
 spriteTypes = { 
 
-    ### HOR FLAME TANK ICONS ###
-	
-	## TECH ICONS ##
-	
-	SpriteType = {
-		name = "GFX_hor_flametank_tech_alt_medium"
-		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_flamethrower.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hor_flametank_tech_medium"
-		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_flamethrower.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hor_armored_advanced_flamethrower_tech_medium"
-		texturefile = "gfx/interface/technologies/sp_armored_advanced_flamethrower.dds"
-	}
-	
-	## SUPPORT COMPANIES ##
-	
-	spriteType = { name = "GFX_unit_light_flame_tank_hor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_light_flamethrower_tank_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_medium_flame_tank_hor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_heavy_flame_tank_hor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_flamethrower_tank_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_light_flame_tank_hor_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_flamethrower_tank_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_medium_flame_tank_hor_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_heavy_flame_tank_hor_icon_medium_white"						textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_flamethrower_tank_icon.dds" noOfFrames = 2}
-
 	### USA LEND LEASE EVENT PICTURE ### 
 	
 	spriteType = {
-		name = "GFX_report_yugoslav_partisans"
-		texturefile = "gfx/event_pictures/report_yugoslav_partisans.dds"
+		name = "GFX_report_event_usa_lend_lease"
+		texturefile = "gfx/event_pictures/report_event_usa_lend_lease.dds"
 	}
 
 	### AXIS RESEARCH ICON ###
