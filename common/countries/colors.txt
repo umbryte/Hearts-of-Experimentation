@@ -1,5 +1,10 @@
 #reload countrycolors
 
+VOJ = { # HOR
+	color = rgb { 88 111 176 }
+	color_ui = rgb { 88 111 176 }
+}
+
 VIC = { # HOR
 	color = rgb { 80 168 181 }
 	color_ui = rgb { 80 168 181 }

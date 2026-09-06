@@ -1,7 +1,14 @@
 ### MISC ###
 	
-spriteTypes = { 
+spriteTypes = {
 
+    ### HOR FLAME TANK ICON ###
+	
+	SpriteType = {
+		name = "GFX_hor_flametank_tech_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_flamethrower.dds"
+	}
+	
 	### USA LEND LEASE EVENT PICTURE ### 
 	
 	spriteType = {

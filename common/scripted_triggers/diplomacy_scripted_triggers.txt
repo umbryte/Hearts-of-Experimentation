@@ -206,6 +206,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = HRZ } }
 			NOT = { FROM = { tag = MAC } }
 			NOT = { FROM = { tag = TRA } }
+			NOT = { FROM = { tag = VOJ } } # HOR
 		}
 	}
 	if = {

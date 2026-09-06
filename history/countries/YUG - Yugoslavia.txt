@@ -131,14 +131,14 @@ set_technology = {
 
 set_grand_doctrine = superior_firepower
 
-if = {
-	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
-	}
+#if = { # HOR
+#	limit = {
+#		NOT = { has_dlc = "By Blood Alone" }
+#	}
 	set_technology = {
 		early_fighter = 1
 	}
-}
+#}
 if = {
 	limit = {
 		has_dlc = "No Step Back"

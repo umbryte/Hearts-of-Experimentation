@@ -386,3 +386,4 @@ CPS = "countries/Champasak.txt"
 # HOR
 CNT = "countries/ConeTown.txt"
 VIC = "countries/Vichy France.txt"
+VOJ = "countries/Vojvodina.txt"
