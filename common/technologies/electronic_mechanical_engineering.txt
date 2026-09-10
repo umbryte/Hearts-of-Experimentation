@@ -1581,10 +1581,6 @@ technologies = {
 		#	research_cost_coeff = 1
 		#}
 		
-		allow = {
-			date > 1939.1.1
-		}
-		
 		start_year = 1940
 		research_cost = 5
 		
@@ -1633,12 +1629,7 @@ technologies = {
 			nuclear
 		}
 
-		enable_building = {
-			building = nuclear_facility
-			level = 1
-		}
-
-		#special_project_specialization = { specialization_nuclear }
+		special_project_specialization = { specialization_nuclear }
 		
 		on_research_complete = {
 			custom_effect_tooltip = {

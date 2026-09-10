@@ -397,7 +397,6 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = 0.25
-				#production_speed_industrial_complex_factor = -0.1 # HOR
 				production_speed_arms_factory_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = -0.1
@@ -620,7 +619,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_expected_value = 0.2
-				production_speed_industrial_complex_factor = -0.1 # HOR
+				#production_speed_industrial_complex_factor = -0.1 # HOR
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
@@ -917,7 +916,7 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				conscription = -0.03
-				production_speed_industrial_complex_factor = -0.2 # HOR
+				#production_speed_industrial_complex_factor = -0.2 # HOR
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3

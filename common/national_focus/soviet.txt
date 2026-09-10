@@ -13789,9 +13789,9 @@ focus_tree = {
 
 	focus = {
 		id = SOV_claims_in_baltic
-		icon = GFX_SOV_claims_in_baltic_ccp_2d_sov_compatibility
+		icon = GFX_SOV_seize_the_baltic # WAS GFX_SOV_claims_in_baltic_ccp_2d_sov_compatibility - HOR
 		prerequisite = { focus = SOV_the_comintern } # WAS SOV_baltic_security - HOR
-		x = -1 # WAS 1 - HOR
+		x = 0 # WAS 1 - HOR
 		y = 1
 		relative_position_id = SOV_the_comintern # WAS SOV_baltic_security - HOR
 		cost = 10
@@ -13831,41 +13831,41 @@ focus_tree = {
 
 		completion_reward = {
 			# Estonia
-			#custom_effect_tooltip = SOV_estonian_claimed_states_tt
-			#hidden_effect = {
-			#	EST = {
-			#		every_owned_state = {
-			#			limit = {
-			#				is_core_of = PREV
-			#			}
-			#			ROOT = { add_state_claim = PREV }
-			#		}
-			#	}
-			#}
+			#custom_effect_tooltip = SOV_estonian_claimed_states_tt # HOR 
+			hidden_effect = {
+				EST = {
+					every_owned_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						ROOT = { add_state_claim = PREV }
+					}
+				}
+			}
 			# Latvia
-			#custom_effect_tooltip = SOV_latvian_claimed_states_tt
-			#hidden_effect = {
-			#	LAT = {
-			#		every_owned_state = {
-			#			limit = {
-			#				is_core_of = PREV
-			#			}
-			#			ROOT = { add_state_claim = PREV }
-			#		}
-			#	}
-			#}
+			#custom_effect_tooltip = SOV_latvian_claimed_states_tt # HOR 
+			hidden_effect = {
+				LAT = {
+					every_owned_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						ROOT = { add_state_claim = PREV }
+					}
+				}
+			}
 			# Lithuania
-			#custom_effect_tooltip = SOV_lithuanian_claimed_states_tt
-			#hidden_effect = {
-			#	LIT = {
-			#		every_owned_state = {
-			#			limit = {
-			#				is_core_of = PREV
-			#			}
-			#			ROOT = { add_state_claim = PREV }
-			#		}
-			#	}
-			#}
+			#custom_effect_tooltip = SOV_lithuanian_claimed_states_tt # HOR 
+			hidden_effect = {
+				LIT = {
+					every_owned_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						ROOT = { add_state_claim = PREV }
+					}
+				}
+			}
 			#Activate targeted decisions
 			#activate_targeted_decision = { target = EST decision = SOV_send_ultimatum_to_country_baltic }
 			#activate_targeted_decision = { target = LAT decision = SOV_send_ultimatum_to_country_baltic }
@@ -13889,7 +13889,7 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_finland
 		#prerequisite = { focus = SOV_respect_baltic_self_determination focus = SOV_claims_in_baltic } # HOR
 		prerequisite = { focus = SOV_claims_in_baltic } # HOR
-		x = -1 # WAS 0 - HOR
+		x = -2 # WAS 0 - HOR
 		y = 1
 		relative_position_id = SOV_claims_in_baltic # WAS SOV_respect_baltic_self_determination - HOR
 		cost = 10
@@ -14059,7 +14059,7 @@ focus_tree = {
 		icon = GFX_SOV_claims_on_poland_ccp_2d_sov_compatibility
 		#prerequisite = { focus = SOV_respect_baltic_self_determination focus = SOV_claims_in_baltic } # HOR
 		prerequisite = { focus = SOV_claims_in_baltic } # HOR
-		x = 1 # WAS 0 - HOR
+		x = 2 # WAS 0 - HOR
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
 		cost = 10
@@ -14379,10 +14379,10 @@ focus_tree = {
 	focus = {
 		id = SOV_claim_on_bessarabia
 		icon = GFX_focus_generic_attack_romania
-		prerequisite = { focus = SOV_claims_on_poland }
-		prerequisite = { focus = SOV_secure_leningrad } # HOR
-		x = -1 # WAS 3 - HOR
-		y = 1
+		#prerequisite = { focus = SOV_claims_on_poland } # HOR
+		prerequisite = { focus = SOV_claims_in_baltic } # HOR
+		x = -2 # WAS 3 - HOR
+		y = 0 # WAS 1 - HOR
 		relative_position_id = SOV_claims_on_poland
 		cost = 10
 
@@ -14508,10 +14508,12 @@ focus_tree = {
 	focus = {
 		id = SOV_integrate_western_territories
 
-		icon = GFX_focus_SOV_socialism_in_one_country
+		icon = GFX_SOV_integrate_western_territories
 		prerequisite = { focus = SOV_claim_on_bessarabia }
+		prerequisite = { focus = SOV_claims_on_poland }
+		prerequisite = { focus = SOV_secure_leningrad }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = SOV_claim_on_bessarabia
 		cost = 5
 
@@ -14538,7 +14540,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			custom_effect_tooltip = sov_integrate_territories_tt
+			custom_effect_tooltip = SOV_integrate_territories_tt
 		}
 	}
 
@@ -14963,7 +14965,7 @@ ai_will_do = {
 		icon = GFX_focus_generic_attack_iran
 		#prerequisite = { focus = SOV_support_afghan_ideology } # HOR
 		prerequisite = { focus = SOV_the_comintern } # HOR
-		x = 1 # WAS 0 - HOR
+		x = 3 # WAS 0 - HOR
 		y = 1
 		relative_position_id = SOV_the_comintern # WAS SOV_support_afghan_ideology - HOR
 		cost = 5

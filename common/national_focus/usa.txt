@@ -2167,7 +2167,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 10
+		cost = 5 # WAS 10 - HOR
 
 		ai_will_do = {
 			factor = 1
@@ -2312,32 +2312,32 @@ focus_tree = {
 			SOV = {
 				add_equipment_to_stockpile = {
     				type = infantry_equipment_2
-    				amount = 10000
+    				amount = 30000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = motorized_equipment_1
-    				amount = 6000
+    				amount = 18000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = support_equipment_1
-    				amount = 5000
+    				amount = 15000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = artillery_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_air_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_tank_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				hidden_effect = {
@@ -2380,200 +2380,210 @@ focus_tree = {
 			ENG = {
 				add_equipment_to_stockpile = {
     				type = infantry_equipment_2
-    				amount = 10000
+    				amount = 30000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = motorized_equipment_1
-    				amount = 6000
+    				amount = 18000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = support_equipment_1
-    				amount = 5000
+    				amount = 15000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = artillery_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_air_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_tank_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
+				}
+				hidden_effect = {
+					ENG = { country_event = hor_events.18 }
 				}
 			}
 			CAN = {
 				add_equipment_to_stockpile = {
     				type = infantry_equipment_2
-    				amount = 10000
+    				amount = 30000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = motorized_equipment_1
-    				amount = 6000
+    				amount = 18000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = support_equipment_1
-    				amount = 5000
+    				amount = 15000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = artillery_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_air_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_tank_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
+				}
+				hidden_effect = {
+					CAN = { country_event = hor_events.18 }
 				}
 			}
 			RAJ = {
 				add_equipment_to_stockpile = {
     				type = infantry_equipment_2
-    				amount = 10000
+    				amount = 30000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = motorized_equipment_1
-    				amount = 6000
+    				amount = 18000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = support_equipment_1
-    				amount = 5000
+    				amount = 15000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = artillery_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_air_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_tank_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
+				}
+				hidden_effect = {
+					RAJ = { country_event = hor_events.18 }
 				}
 			}
 			AST = {
 				add_equipment_to_stockpile = {
     				type = infantry_equipment_2
-    				amount = 10000
+    				amount = 30000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = motorized_equipment_1
-    				amount = 6000
+    				amount = 18000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = support_equipment_1
-    				amount = 5000
+    				amount = 15000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = artillery_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_air_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_tank_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
+				}
+				hidden_effect = {
+					AST = { country_event = hor_events.18 }
 				}
 			}
 			SAF = {
 				add_equipment_to_stockpile = {
     				type = infantry_equipment_2
-    				amount = 10000
+    				amount = 30000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = motorized_equipment_1
-    				amount = 6000
+    				amount = 18000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = support_equipment_1
-    				amount = 5000
+    				amount = 15000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = artillery_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_air_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_tank_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
+				}
+				hidden_effect = {
+					SAF = { country_event = hor_events.18 }
 				}
 			}
 			NZL = {
 				add_equipment_to_stockpile = {
     				type = infantry_equipment_2
-    				amount = 10000
+    				amount = 30000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = motorized_equipment_1
-    				amount = 6000
+    				amount = 18000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = support_equipment_1
-    				amount = 5000
+    				amount = 15000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = artillery_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_air_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_tank_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				hidden_effect = {
-					ENG = { country_event = hor_events.18 }
-					CAN = { country_event = hor_events.18 }
-					RAJ = { country_event = hor_events.18 }
-					AST = { country_event = hor_events.18 }
-					SAF = { country_event = hor_events.18 }
 					NZL = { country_event = hor_events.18 }
 				}
 			}
@@ -2613,32 +2623,32 @@ focus_tree = {
 			FRA = {
 				add_equipment_to_stockpile = {
     				type = infantry_equipment_2
-    				amount = 10000
+    				amount = 30000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = motorized_equipment_1
-    				amount = 6000
+    				amount = 18000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = support_equipment_1
-    				amount = 5000
+    				amount = 15000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = artillery_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_air_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				add_equipment_to_stockpile = {
     				type = anti_tank_equipment_2
-    				amount = 4000
+    				amount = 12000
     				producer = USA
 				}
 				hidden_effect = {
@@ -2682,7 +2692,7 @@ focus_tree = {
 					all_owned_state = {
 						free_building_slots = {
 							building = industrial_complex
-							size < 6 # USED TO BE 3 - HOR
+							size < 10 # USED TO BE 3 - HOR
 							include_locked = yes
 						}
 					}
@@ -2692,7 +2702,7 @@ focus_tree = {
 					all_owned_state = {
 						free_building_slots = {
 							building = dockyard
-							size < 6 # USED TO BE 3 - HOR
+							size < 10 # USED TO BE 3 - HOR
 							include_locked = yes
 						}
 					}
@@ -2705,10 +2715,10 @@ focus_tree = {
 			air_experience = 10
 			every_state = {
 				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
-				add_extra_state_shared_building_slots = 6 # USED TO BE 3 - HOR
+				add_extra_state_shared_building_slots = 10 # USED TO BE 3 - HOR
 				add_building_construction = {
 					type = arms_factory
-					level = 6 # USED TO BE 3 - HOR
+					level = 10 # USED TO BE 3 - HOR
 					instant_build = yes
 				}
 			}
@@ -2723,14 +2733,14 @@ focus_tree = {
 					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
-						size > 4 # USED TO BE 2 - HOR
+						size > 0 # USED TO BE 2 - HOR
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 6 # USED TO BE 3 - HOR
+				add_extra_state_shared_building_slots = 10 # USED TO BE 3 - HOR
 				add_building_construction = {
 					type = arms_factory
-					level = 6 # USED TO BE 3 - HOR
+					level = 10 # USED TO BE 3 - HOR
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -2740,14 +2750,14 @@ focus_tree = {
 					is_core_of = ROOT
 					free_building_slots = {
 						building = arms_factory
-						size > 4 # USED TO BE 2 - HOR
+						size > 0 # USED TO BE 2 - HOR
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 6 # USED TO BE 3 - HOR
+				add_extra_state_shared_building_slots = 10 # USED TO BE 3 - HOR
 				add_building_construction = {
 					type = arms_factory
-					level = 6 # USED TO BE 3 - HOR
+					level = 10 # USED TO BE 3 - HOR
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -2758,14 +2768,14 @@ focus_tree = {
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
-						size > 4 # USED TO BE 2 - HOR
+						size > 0 # USED TO BE 2 - HOR
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 6 # USED TO BE 3 - HOR
+				add_extra_state_shared_building_slots = 10 # USED TO BE 3 - HOR
 				add_building_construction = {
 					type = dockyard
-					level = 6 # USED TO BE 3 - HOR
+					level = 10 # USED TO BE 3 - HOR
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -2776,14 +2786,14 @@ focus_tree = {
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
-						size > 4 # USED TO BE 2 - HOR
+						size > 0 # USED TO BE 2 - HOR
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 6 # USED TO BE 3 - HOR
+				add_extra_state_shared_building_slots = 10 # USED TO BE 3 - HOR
 				add_building_construction = {
 					type = dockyard
-					level = 6 # USED TO BE 3 - HOR
+					level = 10 # USED TO BE 3 - HOR
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
