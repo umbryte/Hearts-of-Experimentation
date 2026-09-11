@@ -2,6 +2,13 @@
 	
 spriteTypes = {
 
+	## EXPAND THE USSR DECISION CATEGORY PICTURE ##
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_expand_the_ussr"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_expand_the_ussr.dds"
+	}
+
     ### HOR FLAME TANK ICON ###
 	
 	SpriteType = {

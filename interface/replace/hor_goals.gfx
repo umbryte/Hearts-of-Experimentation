@@ -40,16 +40,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_SOV_integrate_western_territories"
-		texturefile = "gfx/interface/goals/SOV_integrate_western_territories.dds"
+		name = "GFX_SOV_expand_the_ussr"
+		texturefile = "gfx/interface/goals/SOV_expand_the_ussr.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_SOV_integrate_western_territories_shine"
-		texturefile = "gfx/interface/goals/SOV_integrate_western_territories.dds"
+		name = "GFX_SOV_expand_the_ussr_shine"
+		texturefile = "gfx/interface/goals/SOV_expand_the_ussr.dds"
 				effectfile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SOV_integrate_western_territories.dds"
+			animationmaskfile = "gfx/interface/goals/SOV_expand_the_ussr.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 
 			animationrotation = -90.0       
 			animationlooping = no           
@@ -62,7 +62,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SOV_integrate_western_territories.dds"
+			animationmaskfile = "gfx/interface/goals/SOV_expand_the_ussr.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"  
 			animationrotation = 90.0        
 			animationlooping = no           

@@ -7964,12 +7964,24 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
 
+		select_effect = {
+			add_political_power = -50
+		}
+
 		completion_reward = {
+			hidden_effect = {  # HOR
+				SOV_kill_trotsky_effect = yes
+				SOV = { news_event = { id = news.37 } }
+			}
+			custom_effect_tooltip = SOV_behead_the_snake_hor_1_tt # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
+			custom_effect_tooltip = SOV_behead_the_snake_hor_2_tt # HOR
+			custom_effect_tooltip = generic_skip_one_line_tt # HOR
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
 				}
-				custom_effect_tooltip = SOV_behead_the_snake_lar_tt
+				#custom_effect_tooltip = SOV_behead_the_snake_lar_tt # HOR
 				create_operative_leader = {
 					name = "Ramón Mercader"
 					GFX = GFX_portrait_SOV_ramon_mercader
@@ -14506,9 +14518,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_integrate_western_territories
+		id = SOV_expand_the_ussr
 
-		icon = GFX_SOV_integrate_western_territories
+		icon = GFX_SOV_expand_the_ussr
 		prerequisite = { focus = SOV_claim_on_bessarabia }
 		prerequisite = { focus = SOV_claims_on_poland }
 		prerequisite = { focus = SOV_secure_leningrad }
@@ -14541,6 +14553,18 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_integrate_territories_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_owned_state = {
+				limit = {
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				add_dynamic_modifier = { 
+					modifier = SOV_sovietization 
+					days = 365
+				}
+			}
 		}
 	}
 

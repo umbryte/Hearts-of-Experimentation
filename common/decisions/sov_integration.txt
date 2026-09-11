@@ -1,11 +1,11 @@
-sov_integration_cat = {
+SOV_integration_cat = {
 
-	sov_integrate_western_poland = {
+	SOV_integrate_western_poland = {
 
 		priority = 100
-		icon = eng_trade_unions_demand
-		cost = 25
-		days_remove = 60
+		icon = GFX_decision_SOV_secure_the_administration
+		cost = 45
+		days_remove = 45
 		fire_only_once = yes
 
 		allowed = {
@@ -35,15 +35,27 @@ sov_integration_cat = {
 			96 = { add_core_of = ROOT }
 			97 = { add_core_of = ROOT }
 		}
+
+		highlight_states = {
+    			highlight_state_targets = {
+        			state = 89
+        			state = 91
+				state = 93
+				state = 94
+				state = 95
+				state = 96
+				state = 97
+    			}
+		}
 	}
 
-	sov_integrate_lithuania = {
+	SOV_integrate_lithuania = {
 
 		priority = 100
-		cost = 25
-		days_remove = 45
+		cost = 35
+		days_remove = 30
 		fire_only_once = yes
-		icon = eng_trade_unions_demand
+		icon = GFX_decision_SOV_secure_the_administration
 
 		allowed = {
 			original_tag = SOV
@@ -75,12 +87,22 @@ sov_integration_cat = {
 			784 = { add_core_of = ROOT }
 		}
 
+		highlight_states = {
+    			highlight_state_targets = {
+        			state = 188
+        			state = 189
+				state = 815
+				state = 11
+				state = 814
+				state = 784
+    			}
+		}
 	}
 
-	sov_integrate_latvia = {
+	SOV_integrate_latvia = {
 
 		priority = 100
-		icon = eng_trade_unions_demand
+		icon = GFX_decision_SOV_secure_the_administration
 		fire_only_once = yes
 
 		allowed = {
@@ -91,8 +113,8 @@ sov_integration_cat = {
 			has_government = communism
 		}
 
-		cost = 25
-		days_remove = 45
+		cost = 35
+		days_remove = 30
 
 		available = {
 			190 = { is_owned_and_controlled_by = ROOT }
@@ -115,14 +137,23 @@ sov_integration_cat = {
 			810 = { add_core_of = ROOT }
 		}
 
+		highlight_states = {
+    			highlight_state_targets = {
+        			state = 190
+        			state = 809
+				state = 808
+				state = 12
+				state = 810
+    			}
+		}
 	}
 
-	sov_integrate_estonia = {
+	SOV_integrate_estonia = {
 		priority = 100
-		cost = 25
-		days_remove = 45
+		cost = 35
+		days_remove = 30
 		fire_only_once = yes
-		icon = eng_trade_unions_demand
+		icon = GFX_decision_SOV_secure_the_administration
 
 		allowed = {
 			original_tag = SOV
@@ -153,15 +184,24 @@ sov_integration_cat = {
 			191 = { add_core_of = ROOT }
 		}
 
+		highlight_states = {
+    			highlight_state_targets = {
+        			state = 811
+        			state = 812
+				state = 13
+				state = 813
+				state = 191
+    			}
+		}
 	}
 
-	sov_integrate_bessarabia = {
+	SOV_integrate_bessarabia = {
 
 		priority = 100
-		cost = 25
+		cost = 35
 		days_remove = 30
 		fire_only_once = yes
-		icon = eng_trade_unions_demand
+		icon = GFX_decision_SOV_secure_the_administration
 
 		allowed = {
 			original_tag = SOV
@@ -185,15 +225,23 @@ sov_integration_cat = {
 			78 = { add_core_of = ROOT }
 			766 = { add_core_of = ROOT }
 		}
+
+		highlight_states = {
+    			highlight_state_targets = {
+        			state = 80
+        			state = 78
+				state = 766
+    			}
+		}
 	}
 
-	sov_integrate_finnish_karelia = {
+	SOV_integrate_finnish_karelia = {
 
 		priority = 100
 		cost = 25
 		days_remove = 15
 		fire_only_once = yes
-		icon = eng_trade_unions_demand
+		icon = GFX_decision_SOV_secure_the_administration
 
 		allowed = {
 			original_tag = SOV
@@ -205,16 +253,146 @@ sov_integration_cat = {
 
 		available = {
 			146 = { is_owned_and_controlled_by = ROOT }
+			147 = { is_owned_and_controlled_by = ROOT }
 		}
 
 		remove_effect = {
 			146 = { add_core_of = ROOT }
+			147 = { add_core_of = ROOT }
+		}
+		
+		highlight_states = {
+    			highlight_state_targets = {
+        			state = 146
+				state = 147
+    			}
+		}
+	}
 
-			if = {
-				limit = { 147 = { is_owned_and_controlled_by = ROOT } }
-				147 = { add_core_of = ROOT }
-			}
+	SOV_integrate_south_sakhalin_and_kuril = {
+
+		priority = 100
+		cost = 25
+		days_remove = 15
+		fire_only_once = yes
+		icon = GFX_decision_SOV_secure_the_administration
+
+		allowed = {
+			original_tag = SOV
 		}
 
+		visible = {
+			has_government = communism
+		}
+
+		available = {
+			537 = { is_owned_and_controlled_by = ROOT }
+			555 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		remove_effect = {
+			537 = { add_core_of = ROOT }
+			555 = { add_core_of = ROOT }
+		}
+		
+		highlight_states = {
+    			highlight_state_targets = {
+        			state = 537
+				state = 555
+    			}
+		}
+	}
+
+	SOV_integrate_petsamo = {
+
+		priority = 100
+		cost = 15
+		days_remove = 15
+		fire_only_once = yes
+		icon = GFX_decision_SOV_secure_the_administration
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		available = {
+			722 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		remove_effect = {
+			722 = { add_core_of = ROOT }
+		}
+		
+		highlight_states = {
+    			highlight_state_targets = {
+        			state = 722
+    			}
+		}
+	}
+
+	SOV_integrate_kaliningrad = {
+
+		priority = 100
+		cost = 15
+		days_remove = 15
+		fire_only_once = yes
+		icon = GFX_decision_SOV_secure_the_administration
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		available = {
+			763 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		remove_effect = {
+			763 = { add_core_of = ROOT }
+		}
+		
+		highlight_states = {
+    			highlight_state_targets = {
+        			state = 763
+    			}
+		}
+	}
+
+	SOV_integrate_carpathian_ruthenia = {
+
+		priority = 100
+		cost = 15
+		days_remove = 15
+		fire_only_once = yes
+		icon = GFX_decision_SOV_secure_the_administration
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		visible = {
+			has_government = communism
+		}
+
+		available = {
+			73 = { is_owned_and_controlled_by = ROOT }
+		}
+
+		remove_effect = {
+			73 = { add_core_of = ROOT }
+		}
+		
+		highlight_states = {
+    			highlight_state_targets = {
+        			state = 73
+    			}
+		}
 	}
 }

@@ -1,12 +1,18 @@
-sov_integration_cat = {
-	priority = 100
+SOV_integration_cat = {
+
 	icon = generic_communism
+
+	picture = GFX_decision_cat_picture_expand_the_ussr
+
+	priority = 100
+
 	allowed = {
 		original_tag = SOV
 	}
+
 	visible = {
 		NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		SOV = { has_completed_focus = SOV_integrate_western_territories }
+		SOV = { has_completed_focus = SOV_expand_the_ussr }
 		SOV = { has_government = communism }
 	}
 }

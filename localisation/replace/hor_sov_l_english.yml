@@ -1,6 +1,9 @@
 ﻿l_english:
 
-# SOVIET UNION STUFF
+# UNION OF SOVIET SOCIALIST REPUBLICS STUFF
+
+ # DYNAMIC MODIFIERS
+ SOV_sovietization:0 "Sovietization"
 
  # CHARACTERS
  SOV_Boris_Georgievich_Chilikin:0 "Boris Georgievich Chilikin"
@@ -10,6 +13,8 @@
  SOV_Vasily_Gavrilovich_Grabin:0 "Vasily Gavrilovich Grabin"
  
  #TOOLTIPS
+ SOV_behead_the_snake_hor_1_tt:0 "§R50 Political Power will get removed upon selecting this focus!§!"
+ SOV_behead_the_snake_hor_2_tt:0 "§YLev Trotsky§! [SOV.GetFlag] will get assassinated."
  SOV_integrate_territories_tt:0 "Activates decisions to §Yintegrate territories§! into the §RSoviet Socialist Republics.§!"
  SOV_propaganda_more_metal_tt:0 "Providing §G+100§! §Y$state_resource_aluminium$§!, §Y$state_resource_tungsten$§!, §Y$state_resource_steel$§! or §Y$state_resource_chromium$§! for each state producing any of those resources."
  SOV_development_of_tankograd_factories_tt:1 "Adds §G2§! Building Slot and §Y2 Military Factories§! in every state in the Urals or in the Far East with at least 6 military factories. (Max. 20)"
@@ -23,22 +28,26 @@
  SOV_bastions_of_steel_idea:0 "Bastions Of Steel"
  
  #FOCUSES
- SOV_integrate_western_territories:0 "Integrate Western Territories"
- SOV_integrate_western_territories_desc:0 "With the previous Russian lands back under our control it is important that we now reintegrate them into the SSRs and create new ones for states such as the Baltics."
+ SOV_expand_the_ussr:0 "Expand the USSR"
+ SOV_expand_the_ussr_desc:0 "With the previous Russian lands back under our control it is important that we now reintegrate them into the SSRs and create new ones for regions such as the Baltics and Moldova."
  SOV_forts:0 "The Bastions Of Steel"
  SOV_forts_desc:0 "Through the tireless labor of the Soviet people and the unwavering will of the Party, we shall raise mighty fortifications across the motherland. These steel-clad bastions will serve as unbreakable bulwarks against any who dare set foot on Socialist soil."
  SOV_claims_in_baltic:0 "Seize The Baltic"
  SOV_claims_in_baltic_desc:0 "It is time for Our Motherland to expand her borders! We welcome our comrades in the Baltic with open arms under one Red Banner!"
 
  # DECISIONS
- sov_integration_cat:0 "Integrate Western Territories"
- sov_integrate_western_poland:0 "Integrate Eastern Poland into Belarus and Ukraine"
- sov_integrate_lithuania:0 "Create Lithuanian SSR"
- sov_integrate_latvia:0 "Create Latvian SSR"
- sov_integrate_estonia:0 "Create Estonian SSR"
- sov_integrate_bessarabia:0 "Create Moldovan SSR"
- sov_integrate_finnish_karelia:0 "Integrate Territory into Karelia"
- SOV_annex_mon:0 "Annex Mongolia"
+ SOV_integration_cat:0 "Expand the Union of Soviet Socialist Republics"
+ SOV_integration_cat_desc:0 " "
+ SOV_integrate_western_poland:0 "Integrate Eastern Poland into the Belorussian SSR and Ukrainian SSR"
+ SOV_integrate_lithuania:0 "Establish the Lithuanian SSR"
+ SOV_integrate_latvia:0 "Establish the Latvian SSR"
+ SOV_integrate_estonia:0 "Establish the Estonian SSR"
+ SOV_integrate_bessarabia:0 "Establish the Moldovian SSR"
+ SOV_integrate_finnish_karelia:0 "Integrate Karelia and Salla into the Russian SSR"
+ SOV_integrate_petsamo:0 "Integrate Petsamo into the Russian SSR"
+ SOV_integrate_kaliningrad:0 "Integrate Kaliningrad into the Russian SSR"
+ SOV_integrate_carpathian_ruthenia:0 "Integrate Carpathian Ruthenia into the Ukrainian SSR"
+ SOV_integrate_south_sakhalin_and_kuril:0 "Integrate South Sakhalin and the Kuril Islands into the Russian SSR"
  
  # PLANE NAMES - SOV
  SOV_fighter_equipment_0:0 "Polikarpov I-15"
