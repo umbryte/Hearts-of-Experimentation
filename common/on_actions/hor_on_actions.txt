@@ -1,5 +1,79 @@
 on_actions = {
 
+	on_startup = {
+        	effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = peacetime_excercises
+						option = RULE_PEACETIME_EXCERCISES_ENABLED
+					}
+				}
+            			every_country = {
+                			limit = {
+                    				is_playable_country = yes
+                    				has_war = no
+                			}
+                			add_ideas = peacetime_excercises
+            			}
+			}
+        	}
+    	}
+
+   on_weekly = {
+    effect = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = peacetime_excercises
+				option = RULE_PEACETIME_EXCERCISES_ENABLED
+			}
+		}
+	}
+        every_country = {
+            limit = {
+                is_playable_country = yes
+            }
+            
+            save_global_event_target_as = current_subject
+            
+            if = {
+                limit = {
+                    has_idea = peacetime_excercises
+                    OR = {
+                        has_war = yes
+                        any_country = {
+                            has_volunteers_amount_from = {
+                                tag = event_target:current_subject
+                                count > 0
+                            }
+                        }
+                    }
+                }
+                remove_ideas = peacetime_excercises
+            }
+            
+            if = {
+                limit = {
+                    NOT = { has_idea = peacetime_excercises }
+                    has_war = no
+                    NOT = {
+                        any_country = {
+                            has_volunteers_amount_from = {
+                                tag = event_target:current_subject
+                                count > 0
+                            }
+                        }
+                    }
+                }
+                add_ideas = peacetime_excercises
+            }
+            
+            clear_global_event_target = current_subject
+        }
+    }
+}
+
 	### BFTM ###
 
 	on_startup = {

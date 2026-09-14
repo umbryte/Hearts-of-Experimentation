@@ -224,6 +224,9 @@
  RULE_BFTM:0 "Battle For The Mediterranean"
  RULE_BFTM_ENABLED:0 "The Battle For The Mediterranean mechanic will be enabled."
  RULE_BFTM_DISABLED:0 "The Battle For The Mediterranean mechanic will be disabled."
+ RULE_PEACETIME_EXCERCISES:0 "Peacetime Excercises"
+ RULE_PEACETIME_EXCERCISES_ENABLED:0 "Peacetime Excercises will be enabled."
+ RULE_PEACETIME_EXCERCISES_DISABLED:0 "Peacetime Excercises will be disabled."
 
 # HOST TOOL 2.0
 TPT_WAR_TT:0 "§HDeclaration of War§!\nThe selected Countries will start a War with eachother.\n\n"
@@ -463,6 +466,9 @@ WTREMOVE_DELAYED:0 ""
  reapply_trans_republic_tag:0 "Become trans again"
  create_mp_template:0 "Create a 40W Cavalry template for Resistance"
  create_xp_template:0 "Create a 40W Infantry template for One Division Training for Army XP"
+ 
+# PEACETIME EXCERCISES
+ peacetime_excercises:0 "Peacetime Excercises"
 
 # CUSTOM NEUTRALITY IDEA 
  neutrality_idea2:0 "True Neutrality"
@@ -516,6 +522,8 @@ WTREMOVE_DELAYED:0 ""
  
  YUG_neutrality:0 "Kingdom of Yugoslavia"
  YUG_neutrality_DEF:0 "the Kingdom of Yugoslavia"
+ YUG_communism:0 "Socialist Federal Republic of Yugoslavia"
+ YUG_communism_DEF:0 "the Socialist Federal Republic of Yugoslavia"
  YUG_TBU:0 "True Balkan Union"
  YUG_TBU_DEF:0 "the True Balkan Union"
  YUG_TBU_ADJ:0 "Balkan"
@@ -534,6 +542,21 @@ WTREMOVE_DELAYED:0 ""
  
  CRO_communism:0 "Socialist Republic of Croatia"
  CRO_communism_DEF:0 "the Socialist Republic of Croatia"
+ 
+ BOS_communism:0 "Socialist Republic of Bosnia and Herzegovina"
+ BOS_communism_DEF:0 "the Socialist Republic of Bosnia and Herzegovina"
+ BOS_democratic:0 "Bosnia and Herzegovina"
+ BOS_democratic_DEF:0 "Bosnia and Herzegovina"
+ 
+ SLV_fascism:0 "Slovene Home Guard"
+ SLV_fascism_DEF:0 "the Slovene Home Guard"
+ SLV_communism:0 "Socialist Republic of Slovenia"
+ SLV_communism_DEF:0 "the Socialist Republic of Slovenia"
+ 
+ MAC_fascism:0 "Independent Macedonia"
+ MAC_fascism_DEF:0 "Independent Macedonia"
+ MAC_communism:0 "Socialist Republic of Macedonia"
+ MAC_communism_DEF:0 "the Socialist Republic of Macedonia"
  
  MNT_neutrality:0 "Kingdom of Montenegro"
  MNT_neutrality_DEF:0 "the Kingdom of Montenegro"

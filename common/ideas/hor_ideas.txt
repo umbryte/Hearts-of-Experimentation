@@ -55,6 +55,23 @@ ideas = {
 	
 	country = {
 
+		peacetime_excercises = {
+
+			picture = generic_stockpile_fuel
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_fuel_consumption_factor = -0.9
+                		navy_fuel_consumption_factor = -0.99
+			}
+
+		}
+
 		axis_minor_specialforces_cap = {
 			
 			picture = PER_special_units_division_idea
