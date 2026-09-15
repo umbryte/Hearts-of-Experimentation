@@ -1,5 +1,15 @@
 on_actions = {
 
+	on_weekly = {
+		effect = {
+			add_daily_mastery = {
+				amount = 1
+				days = 7
+				name = Passive_Mastery
+			}
+		}
+	}
+
 	on_startup = {
         	effect = {
 			if = {
